@@ -1,0 +1,29 @@
+.page-container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    background-color: rgb(249, 247, 243);
+}
+
+.titreSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(128, 179, 223);
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 991px) {
+    .card-container {
+        padding-top: 0px;
+        background-color: white;
+    }
+    .page-container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,21 @@
+.footer {
+    margin-top: 200px;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.pfooter {
+    color: white;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 991px) {
+    .pfooter {
+        font-size: 12px;
+    }
+}

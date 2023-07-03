@@ -1,0 +1,60 @@
+#error-main {
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-404 {
+    margin-top: 66px;
+    margin-bottom: 40px;
+    height: auto;
+    font-size: 288px;
+    color: #ff6060;
+}
+
+p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    align-items: center;
+    color: #ff6060;
+}
+
+.nav-error {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-link {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 200px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #ff6060;
+}
+
+@media screen and (max-width: 991px) {
+    .error-404 {
+        margin-top: 150px;
+        font-size: 96px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+    }
+    .nav-error {
+        width: 100%;
+    }
+
+    .error-link {
+        margin-top: 110px;
+    }
+}
