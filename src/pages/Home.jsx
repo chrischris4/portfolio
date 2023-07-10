@@ -6,6 +6,7 @@ import backendImage from '../assets/backend.png';
 import outilImage from '../assets/outil.png';
 import exempleImage from '../assets/exemple.jpg';
 import ContactForm from '../components/ContactForm';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -59,10 +60,44 @@ function Home() {
                 <h2>Mes projets</h2>
             </div>
             <div id="project">
-                <img className="exempleImg" src={exempleImage} alt="" />
-                <img className="exempleImg" src={exempleImage} alt="" />
-                <img className="exempleImg" src={exempleImage} alt="" />
-                <img className="exempleImg" src={exempleImage} alt="" />
+                <div className="filter">
+                    <button className="tout">Tout</button>
+                    <button className="frontend">Frontend</button>
+                    <button className="backend">Backend</button>
+                    <button className="seo">SEO</button>
+                </div>
+                <div className="allProject">
+                    <Link className="projectLink" to={`/Kasa`}>
+                        <img
+                            className="exempleImg tout backend"
+                            src={exempleImage}
+                            alt=""
+                        />
+                    </Link>
+                    <Link className="projectLink" to={`/LeVieuxGrimoire`}>
+                        <img
+                            className="exempleImg tout seo"
+                            src={exempleImage}
+                            alt=""
+                        />
+                    </Link>
+
+                    <Link className="projectLink" to={`/SophieBluel`}>
+                        <img
+                            className="exempleImg tout frontend"
+                            src={exempleImage}
+                            alt=""
+                        />
+                    </Link>
+
+                    <Link className="projectLink" to={`/Kasa`}>
+                        <img
+                            className="exempleImg tout frontend"
+                            src={exempleImage}
+                            alt=""
+                        />
+                    </Link>
+                </div>
             </div>
             <div className="sectionTitle">
                 <h2>Me contacter</h2>
