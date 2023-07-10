@@ -1,26 +1,25 @@
-import { Link } from 'react-router-dom';
 import '../styles/Header.css';
-import profil from '../assets/lalala.jpg';
+import profil from '../assets/moi.png';
 
 function Header() {
     return (
         <div className="header">
+            <div>
+                <img id="profilPic" src={profil} alt="" />
+            </div>
             <nav>
-                <div>
-                    <img id="profilPic" src={profil} alt="" />
-                </div>
-                <Link to="#" className="link">
+                <a href="#about" className="link">
                     À propos
-                </Link>
-                <Link to="#" className="link">
+                </a>
+                <a href="#competence" className="link">
                     Compétence
-                </Link>
-                <Link to="#" className="link">
-                    Portfolio
-                </Link>
-                <Link to="#" className="link">
+                </a>
+                <a href="#project" className="link">
+                    Mes projets
+                </a>
+                <a href="#contactForm" className="link">
                     Contact
-                </Link>
+                </a>
             </nav>
         </div>
     );
