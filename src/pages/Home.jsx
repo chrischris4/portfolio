@@ -11,18 +11,10 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <div className="page-container">
-            <Banner title="JOST Christopher" cover={bannerImage} />
-            <div className="sectionTitle">
-                <h2>A propos de moi</h2>
-            </div>
-            <div id="about">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus expedita cum nisi alias voluptas, nam provident
-                    quidem voluptate delectus officia nesciunt earum mollitia
-                    natus assumenda eos repellat distinctio nihil reprehenderit?
-                </p>
-            </div>
+            <Banner
+                title="JOST Christopher Devellopeur FullStack"
+                cover={bannerImage}
+            />
             <div className="sectionTitle">
                 <h2>Compétences</h2>
             </div>
@@ -62,14 +54,14 @@ function Home() {
             <div id="project">
                 <div className="filter">
                     <button className="tout">Tout</button>
-                    <button className="frontend">Frontend</button>
-                    <button className="backend">Backend</button>
+                    <button className="front">Frontend</button>
+                    <button className="back">Backend</button>
                     <button className="seo">SEO</button>
                 </div>
                 <div className="allProject">
                     <Link className="projectLink" to={`/Kasa`}>
                         <img
-                            className="exempleImg tout backend"
+                            className="exempleImg tout back"
                             src={exempleImage}
                             alt=""
                         />
@@ -84,7 +76,7 @@ function Home() {
 
                     <Link className="projectLink" to={`/SophieBluel`}>
                         <img
-                            className="exempleImg tout frontend"
+                            className="exempleImg tout front"
                             src={exempleImage}
                             alt=""
                         />
@@ -92,7 +84,7 @@ function Home() {
 
                     <Link className="projectLink" to={`/Kasa`}>
                         <img
-                            className="exempleImg tout frontend"
+                            className="exempleImg tout front"
                             src={exempleImage}
                             alt=""
                         />

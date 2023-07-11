@@ -6,15 +6,29 @@
     margin: auto;
     width: 100%;
     color: black;
-    background-color: rgb(147, 147, 147);
+    background-color: white;
     align-items: center;
-    padding: 32px 0px 32px 0px;
+    padding: 15px 0px 15px 0px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
+.profil {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.profil p {
+    padding-left: 5px;
+    text-align: start;
+    font-size: 15px;
+    width: 20%;
+}
+
 #profilPic {
+    margin-left: 100px;
     object-fit: cover;
     width: 100px;
     height: 100px;
@@ -22,6 +36,7 @@
 }
 
 nav {
+    margin-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,14 +44,16 @@ nav {
 }
 
 .link {
+    border-bottom: 2px solid white;
+    padding: 2px;
     margin-left: 50px;
     font-size: 24px;
     text-decoration: none;
     color: black;
 }
 
-.link :hover {
-    border-bottom: 1px solid black;
+.link:hover {
+    border-bottom: 2px solid black;
     color: black;
 }
 
