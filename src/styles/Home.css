@@ -6,8 +6,9 @@
 }
 
 .sectionTitle {
+    font-size: 20px;
+    width: 80%;
     margin: auto;
-    align-items: center;
 }
 
 .frontendImg,
@@ -18,14 +19,14 @@
 }
 
 #competence {
-    padding-top: 30px;
     border-radius: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     color: black;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 ul,
@@ -53,6 +54,7 @@ ol {
     width: 80%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 button {

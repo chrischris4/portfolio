@@ -1,5 +1,6 @@
 import '../styles/Header.css';
 import profil from '../assets/moi.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -9,9 +10,9 @@ function Header() {
                 <p>JOST Christopher</p>
             </div>
             <nav>
-                <a href="#accueil" className="link">
+                <Link className="link" to={`/`}>
                     Accueil
-                </a>
+                </Link>
                 <a href="#competence" className="link">
                     Compétences
                 </a>

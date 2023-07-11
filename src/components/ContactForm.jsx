@@ -1,4 +1,6 @@
+import '../styles/ContactForm.css';
 import React, { useState } from 'react';
+import exemple from '../assets/exemple.jpg';
 
 function ContactForm() {
     const [name, setName] = useState('');
@@ -26,9 +28,9 @@ function ContactForm() {
     };
 
     return (
-        <div>
+        <div className="contactForm">
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className="contactName">
                     <label htmlFor="name">Nom :</label>
                     <input
                         type="text"
@@ -38,7 +40,7 @@ function ContactForm() {
                         required
                     />
                 </div>
-                <div>
+                <div className="contactMail">
                     <label htmlFor="email">Email :</label>
                     <input
                         type="email"
@@ -48,7 +50,7 @@ function ContactForm() {
                         required
                     />
                 </div>
-                <div>
+                <div className="contactMsg">
                     <label htmlFor="message">Message :</label>
                     <textarea
                         id="message"
@@ -57,8 +59,11 @@ function ContactForm() {
                         required
                     />
                 </div>
-                <button type="submit">Envoyer</button>
+                <button className="contactButton" type="submit">
+                    Envoyer
+                </button>
             </form>
+            <img className="formImg" src={exemple} alt="" />
         </div>
     );
 }

@@ -1,0 +1,65 @@
+.pageProject {
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+}
+
+.pageProjectTitle {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin: auto;
+    font-size: 30px;
+}
+
+.gitPic {
+    width: 70px;
+    height: 70px;
+}
+
+.pageInfo {
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.pageImg {
+    width: 30%;
+}
+
+.imgInfo {
+    width: 30%;
+}
+
+.pageInfoReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.pageLink {
+    margin: auto;
+    margin-top: 100px;
+
+    width: fit-content;
+    display: flex;
+    border-bottom: 2px solid white;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+.pageLink:hover {
+    border-bottom: 2px solid black;
+}
