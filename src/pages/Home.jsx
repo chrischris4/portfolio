@@ -60,11 +60,15 @@ function Home() {
                 </div>
                 <div className="allProject">
                     <Link className="projectLink" to={`/Kasa`}>
+                        <div className="overlay"></div>
                         <img
                             className="exempleImg tout back"
                             src={exempleImage}
                             alt=""
                         />
+                        <div className="overlayTitle">
+                            Kasa - Site Agence de Location
+                        </div>
                     </Link>
                     <Link className="projectLink" to={`/LeVieuxGrimoire`}>
                         <img
