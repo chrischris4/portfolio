@@ -8,10 +8,10 @@ function Banner(props) {
             <div className="about">
                 <div className="box1"></div>
                 <div className="box2"></div>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Officia minima accusamus repudiandae, maxime vero voluptate?
-                Vero sit ducimus ea eum provident ex fugit pariatur aspernatur
-                similique ab, laudantium quas rem!
+                Je suis un développeur spécialisé dans la création
+                d'applications web dynamiques avec JavaScript, React et Node.js.
+                Prêt à relever de nouveaux défis et à contribuer à des projets
+                innovants !
             </div>
         </div>
     );
