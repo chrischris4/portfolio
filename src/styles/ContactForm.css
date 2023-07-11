@@ -8,7 +8,7 @@
 }
 
 .formImg {
-    width: 50%;
+    width: 45%;
 }
 
 form {
@@ -24,9 +24,6 @@ input {
 
 textarea {
     width: 100%;
-}
-
-.contactName {
 }
 
 .contactMsg {

@@ -1,6 +1,6 @@
 import '../styles/ContactForm.css';
 import React, { useState } from 'react';
-import exemple from '../assets/exemple.jpg';
+import contact from '../assets/contact.png';
 
 function ContactForm() {
     const [name, setName] = useState('');
@@ -30,6 +30,8 @@ function ContactForm() {
     return (
         <div className="contactForm">
             <form onSubmit={handleSubmit}>
+                <p>Pour plus d'informations, n'hésitez pas à me contacter ! </p>
+
                 <div className="contactName">
                     <label htmlFor="name">Nom :</label>
                     <input
@@ -63,7 +65,7 @@ function ContactForm() {
                     Envoyer
                 </button>
             </form>
-            <img className="formImg" src={exemple} alt="" />
+            <img className="formImg" src={contact} alt="" />
         </div>
     );
 }
