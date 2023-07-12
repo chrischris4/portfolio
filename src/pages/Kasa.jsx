@@ -39,7 +39,7 @@ function Kasa() {
                 </div>
             </div>
             <Link className="pageLink" to={`/`}>
-                Retourner à l'Accueil
+                Retourner sur la page d'Accueil
             </Link>
         </div>
     );

@@ -9,7 +9,7 @@ function Footer() {
                 <img className="gitFooter" src={git} alt="" />
                 <img className="linkedinFooter" src={linkedin} alt="" />
             </div>
-            <p className="pFooter">© 2020 by JOST Christopher</p>
+            <p className="pFooter">© 2023 by JOST Christopher</p>
         </div>
     );
 }

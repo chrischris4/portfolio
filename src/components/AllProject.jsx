@@ -77,10 +77,11 @@ function AllProject() {
                     <div className="overlay"></div>
                     <img className="exempleImg" src={exempleImage} alt="" />
                     <div className="overlayTitle">
-                        Nina Carducci - Site de Présentation Photographe
+                        Nina Carducci - Site de Photographie
                     </div>
                 </Link>
             </div>
+            <div id="contactLien"></div>
         </div>
     );
 }

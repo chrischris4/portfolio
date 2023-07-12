@@ -11,7 +11,7 @@ function NinaCarducci() {
     return (
         <div className="pageProject">
             <div className="pageProjectTitle">
-                <h1>Nina Carducci - Site de Présentaion Photographe</h1>
+                <h1>Nina Carducci - Site de Photographie</h1>
                 <img className="gitPic" src={git} alt="" />
             </div>
             <div className="pageInfo">
