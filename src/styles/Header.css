@@ -35,6 +35,11 @@
     border-radius: 50%;
 }
 
+.linkedin {
+    width: 45px;
+    height: 45px;
+}
+
 nav {
     margin-right: 100px;
     display: flex;

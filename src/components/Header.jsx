@@ -1,6 +1,7 @@
 import '../styles/Header.css';
 import profil from '../assets/moi.png';
 import { Link } from 'react-router-dom';
+import linkedin from '../assets/linkedin.png';
 
 function Header() {
     return (
@@ -10,6 +11,7 @@ function Header() {
                 <p>JOST Christopher</p>
             </div>
             <nav>
+                <img className="linkedin" src={linkedin} alt="" />
                 <Link className="link" to={`/`}>
                     Accueil
                 </Link>

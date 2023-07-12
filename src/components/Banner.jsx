@@ -6,8 +6,6 @@ function Banner(props) {
             <img className="banner-image" src={props.cover} alt={props.title} />
             <div className="banner-title">{props.title}</div>
             <div className="about">
-                <div className="box1"></div>
-                <div className="box2"></div>
                 Je suis un développeur spécialisé dans la création
                 d'applications web dynamiques avec JavaScript, React et Node.js.
                 Prêt à relever de nouveaux défis et à contribuer à des projets
