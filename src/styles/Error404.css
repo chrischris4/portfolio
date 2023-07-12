@@ -29,12 +29,16 @@ p {
 }
 
 .error-link {
-    text-align: center;
+    font-size: 24px;
+    color: black;
     font-weight: 500;
     margin-top: 200px;
-    font-size: 16px;
-    font-family: 'Montserrat';
     text-decoration: none;
+    border-bottom: solid 2px white;
+}
+
+.error-link:hover {
+    border-bottom: solid 2px black;
 }
 
 @media screen and (max-width: 991px) {
