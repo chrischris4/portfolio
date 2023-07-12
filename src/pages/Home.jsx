@@ -4,15 +4,18 @@ import '../styles/Home.css';
 import frontendImage from '../assets/frontend.png';
 import backendImage from '../assets/backend.png';
 import outilImage from '../assets/outil.png';
-import exempleImage from '../assets/exemple.jpg';
 import ContactForm from '../components/ContactForm';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import AllProject from '../components/AllProject';
 
 function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="page-container">
             <Banner
-                title="JOST Christopher Devellopeur FullStack"
+                title="JOST Christopher Développeur FullStack"
                 cover={bannerImage}
             />
             <div className="sectionTitle">
@@ -51,50 +54,7 @@ function Home() {
             <div className="sectionTitle">
                 <h2>Mes projets</h2>
             </div>
-            <div id="project">
-                <div className="filter">
-                    <button className="tout">Tout</button>
-                    <button className="front">Frontend</button>
-                    <button className="back">Backend</button>
-                    <button className="seo">SEO</button>
-                </div>
-                <div className="allProject">
-                    <Link className="projectLink" to={`/Kasa`}>
-                        <div className="overlay"></div>
-                        <img
-                            className="exempleImg tout back"
-                            src={exempleImage}
-                            alt=""
-                        />
-                        <div className="overlayTitle">
-                            Kasa - Site Agence de Location
-                        </div>
-                    </Link>
-                    <Link className="projectLink" to={`/LeVieuxGrimoire`}>
-                        <img
-                            className="exempleImg tout seo"
-                            src={exempleImage}
-                            alt=""
-                        />
-                    </Link>
-
-                    <Link className="projectLink" to={`/SophieBluel`}>
-                        <img
-                            className="exempleImg tout front"
-                            src={exempleImage}
-                            alt=""
-                        />
-                    </Link>
-
-                    <Link className="projectLink" to={`/Kasa`}>
-                        <img
-                            className="exempleImg tout front"
-                            src={exempleImage}
-                            alt=""
-                        />
-                    </Link>
-                </div>
-            </div>
+            <AllProject />{' '}
             <div className="sectionTitle">
                 <h2>Me contacter</h2>
             </div>

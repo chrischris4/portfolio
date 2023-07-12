@@ -2,8 +2,12 @@ import '../styles/Kasa.css';
 import exemple from '../assets/exemple.jpg';
 import git from '../assets/git.png';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function Kasa() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="pageProject">
             <div className="pageProjectTitle">
