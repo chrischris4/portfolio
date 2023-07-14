@@ -3,13 +3,8 @@ import React, { useState } from 'react';
 import contact from '../assets/contact.png';
 
 function ContactForm() {
-    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-    };
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -21,7 +16,6 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setName('');
         setEmail('');
         setMessage('');
         alert('Votre message a été envoyé avec succès.');
@@ -31,17 +25,6 @@ function ContactForm() {
         <div className="contactForm">
             <form onSubmit={handleSubmit}>
                 <p>Pour plus d'informations, n'hésitez pas à me contacter ! </p>
-
-                <div className="contactName">
-                    <label htmlFor="name">Nom :</label>
-                    <input
-                        type="text"
-                        id="name"
-                        value={name}
-                        onChange={handleNameChange}
-                        required
-                    />
-                </div>
                 <div className="contactMail">
                     <label htmlFor="email">Email :</label>
                     <input

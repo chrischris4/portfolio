@@ -18,10 +18,21 @@
 .linkedinFooter {
     width: 52px;
     height: 52px;
+    transition: transform 0.3s ease;
 }
+
+.linkedinFooter:hover {
+    transform: scale(1.1);
+}
+
 .gitFooter {
     width: 50px;
     height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.gitFooter:hover {
+    transform: scale(1.1);
 }
 
 .pFooter {

@@ -6,8 +6,12 @@ function Footer() {
     return (
         <div className="footer">
             <div className="lienFooter">
-                <img className="gitFooter" src={git} alt="" />
-                <img className="linkedinFooter" src={linkedin} alt="" />
+                <a href="https://www.linkedin.com/in/christopher-jost-888b75195/">
+                    <img className="gitFooter" src={git} alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/christopher-jost-888b75195/">
+                    <img className="linkedinFooter" src={linkedin} alt="" />
+                </a>
             </div>
             <p className="pFooter">© 2023 by JOST Christopher</p>
         </div>

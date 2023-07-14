@@ -20,6 +20,7 @@ function Home() {
                 cover={bannerImage}
             />
             <div className="sectionTitle">
+                <div className="styleTitle"></div>
                 <h2>Compétences</h2>
             </div>
             <div id="competence">
@@ -56,10 +57,12 @@ function Home() {
             </div>
             <div id="projectLien"></div>
             <div className="sectionTitle">
+                <div className="styleTitle"></div>
                 <h2>Mes projets</h2>
             </div>
             <AllProject />{' '}
             <div className="sectionTitle">
+                <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
             </div>
             <div id="contactForm">
