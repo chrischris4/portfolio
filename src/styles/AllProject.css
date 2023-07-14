@@ -105,4 +105,5 @@ button:hover {
     margin-right: 10px;
     padding: 2px;
     font-family: 'Oswald', sans-serif;
+    transform: scale(1.05);
 }
