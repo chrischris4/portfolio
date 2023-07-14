@@ -57,3 +57,28 @@ textarea {
     color: black;
     border: solid 2px black;
 }
+
+@media screen and (max-width: 991px) {
+    form {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .formImg {
+        display: none;
+    }
+
+    form {
+        margin: auto;
+        width: fit-content;
+    }
+
+    .contactForm {
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

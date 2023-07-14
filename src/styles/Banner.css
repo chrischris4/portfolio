@@ -6,6 +6,7 @@
 }
 
 .banner {
+    padding-right: 20px;
     padding-top: 100px;
     display: flex;
     justify-content: flex-end;
@@ -22,7 +23,6 @@
 }
 
 .bannerLastName {
-    padding-right: 20px;
     color: black;
     font-size: 100px;
     font-weight: 500;
@@ -54,27 +54,25 @@
 }
 
 @media screen and (max-width: 991px) {
-    .banner {
-        width: 90%;
-        height: 111px;
-        margin: 20px auto 0px auto;
-        border-radius: 10px;
+    .bannerAll {
+        flex-direction: column;
+        margin-top: 50px;
     }
 
-    .bannerImage {
-        margin-bottom: 0px;
-        border-radius: 10px;
+    .banner {
+        padding-right: 0px;
+        padding-top: 50px;
+        padding-left: 30px;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: #c7c7a3;
     }
-    .bannerTitle {
-        padding-left: 10px;
-        margin-top: 0px;
-        border-radius: 10px;
-        margin-bottom: 0px;
-        height: 111px;
-        margin-left: 0px;
-        font-size: 24px;
-        top: 40px;
-        text-align: initial;
-        width: 80%;
+    .bannerBackground {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        height: 750px;
     }
 }

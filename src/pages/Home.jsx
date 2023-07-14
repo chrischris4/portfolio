@@ -20,23 +20,29 @@ function Home() {
                 <h2>Compétences</h2>
             </div>
             <div id="competence">
-                <div className="frontend">
-                    <img className="frontendImg" src={frontendImage} alt="" />
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>Html/Css</li>
-                        <li>React.JS</li>
-                    </ul>
-                </div>
-                <div className="backend">
-                    <img className="backendImg" src={backendImage} alt="" />
+                <div className="competenceMedia">
+                    <div className="frontend">
+                        <img
+                            className="frontendImg"
+                            src={frontendImage}
+                            alt=""
+                        />
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Html/Css</li>
+                            <li>React.JS</li>
+                        </ul>
+                    </div>
+                    <div className="backend">
+                        <img className="backendImg" src={backendImage} alt="" />
 
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>JavaScript</li>
-                        <li>Node.js</li>
-                    </ul>
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="outil">
                     <img className="outilImg" src={outilImage} alt="" />
