@@ -36,7 +36,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: rgba(220, 211, 190, 0.726) solid 2px;
+    border: #c7c7a3 solid 2px;
 }
 
 .linkedin {
@@ -58,7 +58,6 @@ nav {
 }
 
 .link {
-    border-bottom: 2px solid white;
     padding: 2px;
     margin-left: 50px;
     font-size: 24px;
@@ -68,9 +67,8 @@ nav {
 }
 
 .link:hover {
-    border-bottom: 2px solid black;
     color: black;
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 @media screen and (max-width: 991px) {

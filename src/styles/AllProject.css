@@ -10,7 +10,6 @@ button {
     color: white;
     background-color: black;
     font-size: 20px;
-    border-bottom: solid 2px black;
     margin-left: 10px;
     margin-right: 10px;
     padding: 2px;
@@ -19,8 +18,8 @@ button {
 }
 
 button:hover {
-    transform: scale(1.05);
-    border-bottom: solid 2px white;
+    transform: scale(1.07);
+    cursor: pointer;
 }
 
 .filter {
@@ -86,7 +85,7 @@ button:hover {
 }
 
 .projectLink:hover {
-    border: solid 4px rgba(220, 211, 190, 0.726);
+    border: solid 4px #c7c7a3;
     transform: scale(1.05);
 }
 
@@ -100,7 +99,6 @@ button:hover {
     color: white;
     background-color: black;
     font-size: 20px;
-    border-bottom: solid 2px white;
     margin-left: 10px;
     margin-right: 10px;
     padding: 2px;
