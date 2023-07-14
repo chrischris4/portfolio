@@ -15,10 +15,11 @@ button {
     padding: 2px;
     font-family: 'Oswald', sans-serif;
     transition: transform 0.3s ease;
+    border-bottom: solid 2px black;
 }
 
 button:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -86,7 +87,7 @@ button:hover {
 
 .projectLink:hover {
     border: solid 4px #c7c7a3;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .projectDisplay {
@@ -103,5 +104,6 @@ button:hover {
     margin-right: 10px;
     padding: 2px;
     font-family: 'Oswald', sans-serif;
-    transform: scale(1.05);
+    transform: scale(1.1);
+    border-bottom: 2px solid white;
 }

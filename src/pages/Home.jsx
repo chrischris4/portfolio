@@ -1,5 +1,4 @@
 import Banner from '../components/Banner';
-import bannerImage from '../assets/set.jpg';
 import '../styles/Home.css';
 import frontendImage from '../assets/frontend.png';
 import backendImage from '../assets/backend.png';
@@ -14,10 +13,8 @@ function Home() {
     }, []);
     return (
         <div className="page-container">
-            <Banner
-                title="JOST Christopher Développeur FullStack"
-                cover={bannerImage}
-            />
+            <Banner />
+            <div id="competenceLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Compétences</h2>
