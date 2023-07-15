@@ -11,10 +11,12 @@ function Banner() {
                     <div className="bannerFirstName">CHRISTOPHER</div>
                     <div className="bannerP"> Développeur FullStack</div>
                     <div className="bannerAbout">
-                        Développeur spécialisé dans la création d'applications
-                        web dynamiques. Prêt à relever de nouveaux défis et à
-                        contribuer à des projets innovants !
+                        Spécialisé dans la création d'applications web
+                        dynamiques. Prêt à contribuer à des projets innovants !
                     </div>
+                    <a href="#contactLien" className="bannerLink">
+                        Contact
+                    </a>
                 </div>
             </div>
         </div>

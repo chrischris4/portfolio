@@ -9,37 +9,22 @@
     color: black;
     background-color: white;
     align-items: center;
-    padding: 10px 0px 10px 0px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     border-bottom: 1px solid black;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+    padding: 15px 0px 15px 0px;
 }
 
 .profil {
+    padding-left: 20px;
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
-.profil p {
-    padding-left: 5px;
-    text-align: start;
-    font-size: 15px;
-    width: 20%;
-}
-
-#profilPic {
-    margin-left: 100px;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: #c7c7a3 solid 2px;
-}
-
 .linkedin {
+    margin-top: 3px;
     width: 45px;
     height: 45px;
     transition: transform 0.3s ease;
@@ -49,8 +34,18 @@
     transform: scale(1.1);
 }
 
+.github {
+    cursor: pointer;
+    padding-left: 13px;
+    width: 52px;
+    transition: transform 0.3s ease;
+}
+
+.github:hover {
+    transform: scale(1.1);
+}
+
 nav {
-    margin-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,8 +53,7 @@ nav {
 }
 
 .link {
-    padding: 2px;
-    margin-left: 50px;
+    padding: 0px 20px;
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -67,18 +61,40 @@ nav {
 }
 
 .link:hover {
+    transform: scale(1.1);
+}
+
+.vectorUp {
+    width: 40px;
+}
+
+.topPage {
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease;
+    padding: 0px 20px;
+    font-size: 20px;
+    text-decoration: none;
     color: black;
+    transition: transform 0.9s ease;
+}
+
+.topPage.show {
+    display: flex;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.topPage.show:hover {
     transform: scale(1.1);
 }
 
 @media screen and (max-width: 991px) {
     .profil {
-        display: none;
+        display: flex;
     }
 
     nav {
-        width: 90%;
-        margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;

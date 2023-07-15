@@ -13,6 +13,7 @@ function Home() {
     }, []);
     return (
         <div className="page-container">
+            <div id="topPageLink"></div>
             <Banner />
             <div id="competenceLien"></div>
             <div className="sectionTitle">
@@ -58,9 +59,6 @@ function Home() {
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
-            </div>
-            <div id="contactForm">
-                <ContactForm />
             </div>
         </div>
     );

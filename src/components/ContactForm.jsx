@@ -1,6 +1,5 @@
 import '../styles/ContactForm.css';
 import React, { useState } from 'react';
-import contact from '../assets/contact.png';
 
 function ContactForm() {
     const [email, setEmail] = useState('');
@@ -22,33 +21,36 @@ function ContactForm() {
     };
 
     return (
-        <div className="contactForm">
-            <form onSubmit={handleSubmit}>
+        <div className="contact">
+            <div className="contactP">
                 <p>Pour plus d'informations, n'hésitez pas à me contacter ! </p>
-                <div className="contactMail">
-                    <label htmlFor="email">Email :</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={handleEmailChange}
-                        required
-                    />
-                </div>
-                <div className="contactMsg">
-                    <label htmlFor="message">Message :</label>
-                    <textarea
-                        id="message"
-                        value={message}
-                        onChange={handleMessageChange}
-                        required
-                    />
-                </div>
-                <button className="contactButton" type="submit">
-                    Envoyer
-                </button>
-            </form>
-            <img className="formImg" src={contact} alt="" />
+            </div>
+            <div className="contactForm">
+                <form onSubmit={handleSubmit}>
+                    <div className="contactMail">
+                        <label htmlFor="email">Email :</label>
+                        <input
+                            placeholder="JohnDoe@gmail.com"
+                            type="email"
+                            value={email}
+                            onChange={handleEmailChange}
+                            required
+                        />
+                    </div>
+                    <div className="contactMsg">
+                        <label htmlFor="message">Message :</label>
+                        <textarea
+                            placeholder="Votre message"
+                            value={message}
+                            onChange={handleMessageChange}
+                            required
+                        />
+                    </div>
+                    <button className="contactButton" type="submit">
+                        Envoyer
+                    </button>
+                </form>
+            </div>
         </div>
     );
 }

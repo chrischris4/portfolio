@@ -1,7 +1,7 @@
 .bannerAll {
     display: flex;
     flex-direction: row;
-    margin-top: 110px;
+    margin-top: 65px;
     height: 650px;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: flex-end;
     width: 25%;
-    background-color: #c7c7a3;
+    background-color: #a3f5f9;
 }
 .banner {
     padding-top: 100px;
@@ -45,6 +45,7 @@
 }
 
 .bannerAbout {
+    margin-bottom: 35px;
     margin-top: 35px;
     border: 1px solid white;
     padding: 20px;
@@ -53,6 +54,20 @@
     font-size: 20px;
     font-weight: 500;
     width: 510px;
+}
+
+.bannerLink {
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.bannerLink:hover {
+    color: black;
+    background-color: #a3f5f9;
 }
 
 @media screen and (max-width: 991px) {
