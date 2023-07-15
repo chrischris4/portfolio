@@ -6,6 +6,8 @@
 }
 
 .bannerColor {
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
     padding-top: 100px;
     display: flex;
     justify-content: flex-end;
@@ -62,7 +64,6 @@
     padding: 10px 15px 10px 15px;
     text-decoration: none;
     color: white;
-    transition: transform 0.3s ease;
 }
 
 .bannerLink:hover {
