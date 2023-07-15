@@ -68,6 +68,20 @@ nav {
     width: 40px;
 }
 
+.backHomeLink {
+    padding-top: 2px;
+}
+
+.backHomeImg {
+    padding-left: 10px;
+
+    width: 53px;
+}
+
+.backHomeImg:hover {
+    transform: scale(1.1);
+}
+
 .topPage {
     display: none;
     opacity: 0;
