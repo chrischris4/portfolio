@@ -86,7 +86,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 635px) {
     .link {
         font-size: 14px;
     }

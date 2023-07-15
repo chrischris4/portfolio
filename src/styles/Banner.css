@@ -5,27 +5,31 @@
     height: 650px;
 }
 
-.banner {
-    padding-right: 20px;
+.bannerColor {
     padding-top: 100px;
     display: flex;
     justify-content: flex-end;
     width: 25%;
     background-color: #c7c7a3;
 }
-.bannerBackground {
+.banner {
     padding-top: 100px;
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
     background-color: #000000;
     width: 75%;
 }
 
+.bannerContent {
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
 .bannerLastName {
     color: black;
     font-size: 100px;
     font-weight: 500;
+    padding-right: 20px;
 }
 
 .bannerFirstName {
@@ -35,7 +39,6 @@
 }
 
 .bannerP {
-    padding-left: 5px;
     color: white;
     font-size: 35px;
     font-weight: 500;
@@ -44,35 +47,82 @@
 .bannerAbout {
     margin-top: 35px;
     border: 1px solid white;
-    margin-left: 5px;
-    padding: 40px;
+    padding: 20px;
     background-color: black;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 500;
-    width: 42%;
+    width: 510px;
 }
 
 @media screen and (max-width: 991px) {
     .bannerAll {
         flex-direction: column;
         margin-top: 50px;
+        height: fit-content;
+    }
+
+    .bannerColor {
+        padding-right: 0px;
+        padding-top: 50px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .bannerLastName {
+        padding-left: 20px;
+        padding-right: 0px;
+        font-size: 70px;
     }
 
     .banner {
-        padding-right: 0px;
-        padding-top: 50px;
-        padding-left: 30px;
-        justify-content: flex-start;
-        width: 100%;
-        background-color: #c7c7a3;
-    }
-    .bannerBackground {
         padding-top: 0px;
         display: flex;
         flex-direction: column;
         background-color: #000000;
         width: 100%;
-        height: 750px;
+    }
+
+    .bannerFirstName {
+        font-size: 70px;
+    }
+
+    .bannerP {
+        font-size: 25px;
+    }
+
+    .bannerAbout {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bannerColor {
+        padding-top: 10px;
+    }
+
+    .bannerLastName {
+        padding-left: 20px;
+        padding-right: 0px;
+        font-size: 40px;
+    }
+
+    .bannerFirstName {
+        font-size: 40px;
+    }
+
+    .bannerP {
+        font-size: 15px;
+    }
+
+    .bannerAbout {
+        margin-top: 10px;
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .bannerContent {
+        height: fit-content;
+        padding-right: 20px;
     }
 }
