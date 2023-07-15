@@ -13,7 +13,7 @@
     justify-content: space-between;
     flex-direction: row;
     border-bottom: 1px solid black;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0px;
 }
 
 .profil {
@@ -71,9 +71,8 @@ nav {
 .topPage {
     display: none;
     opacity: 0;
-    transition: opacity 5s ease;
+    transition: opacity 6s ease;
     padding: 0px 20px;
-    font-size: 20px;
     text-decoration: none;
     color: black;
     transition: transform 0.9s ease;
@@ -82,6 +81,7 @@ nav {
 .topPage.show {
     display: flex;
     opacity: 1;
+    transition: opacity 0.5s ease;
     transition: transform 0.3s ease;
 }
 
@@ -103,6 +103,30 @@ nav {
 }
 
 @media screen and (max-width: 635px) {
+    .header {
+        padding: 5px 0px;
+    }
+    .linkedin {
+        margin-top: 3px;
+        width: 35px;
+        height: 35px;
+        transition: transform 0.3s ease;
+    }
+
+    .github {
+        cursor: pointer;
+        padding-left: 13px;
+        width: 41px;
+        transition: transform 0.3s ease;
+    }
+
+    .link {
+        padding: 0px 10px;
+    }
+
+    .vectorUp {
+        width: 30px;
+    }
     .link {
         font-size: 14px;
     }

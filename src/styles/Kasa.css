@@ -71,3 +71,34 @@
 .sectionTitle {
     width: 90%;
 }
+@media screen and (max-width: 635px) {
+    .pageProjectTitle {
+        background-color: #a3f5f9;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        margin: auto;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .pageInfo {
+        flex-direction: column;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .pageInfoReverse {
+        flex-direction: column;
+    }
+
+    .pageImg {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .imgInfo {
+        width: 80%;
+    }
+}

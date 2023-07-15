@@ -112,9 +112,12 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 635px) {
+    .bannerAll {
+        margin-top: 20px;
+    }
     .bannerColor {
-        padding-top: 10px;
+        padding-top: 40px;
     }
 
     .bannerLastName {
@@ -135,10 +138,15 @@
         margin-top: 10px;
         width: 80%;
         font-size: 15px;
+        margin-bottom: 30px;
     }
 
     .bannerContent {
         height: fit-content;
         padding-right: 20px;
+    }
+
+    .bannerLink {
+        font-size: 15px;
     }
 }

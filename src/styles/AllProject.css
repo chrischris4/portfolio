@@ -24,6 +24,7 @@
 }
 
 .filter {
+    border-radius: 10px 10px 0px 0px;
     background-color: black;
     padding-top: 30px;
     width: 100%;
@@ -33,6 +34,7 @@
 }
 
 .allProject {
+    border-radius: 0px 0px 10px 10px;
     margin: auto;
     width: 80%;
     padding-top: 30px;
@@ -115,6 +117,13 @@
 }
 
 @media screen and (max-width: 991px) {
+    .filter {
+        border-radius: 0px;
+    }
+
+    .allProject {
+        border-radius: 0px;
+    }
     #project {
         width: 100%;
     }
@@ -132,6 +141,17 @@
 }
 
 @media screen and (max-width: 600px) {
+    .filter {
+        border-radius: 0px;
+    }
+
+    .buttonFilter {
+        font-size: 15px;
+    }
+
+    .allProject {
+        border-radius: 0px;
+    }
     .overlayTitle {
         opacity: 1;
         padding-right: 10px;

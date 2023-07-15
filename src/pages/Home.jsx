@@ -3,7 +3,6 @@ import '../styles/Home.css';
 import frontendImage from '../assets/frontend.png';
 import backendImage from '../assets/backend.png';
 import outilImage from '../assets/outil.png';
-import ContactForm from '../components/ContactForm';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
 
@@ -23,31 +22,36 @@ function Home() {
             <div id="competence">
                 <div className="frontend">
                     <img className="frontendImg" src={frontendImage} alt="" />
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>Html/Css</li>
-                        <li>React.JS</li>
-                    </ul>
+                    <div className="competenceRow">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Html/Css</li>
+                            <li>React.JS</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="backend">
                     <img className="backendImg" src={backendImage} alt="" />
-
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>JavaScript</li>
-                        <li>Node.js</li>
-                    </ul>
+                    <div className="competenceRow">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="outil">
                     <img className="outilImg" src={outilImage} alt="" />
-                    <h3>Outils</h3>
-                    <ul>
-                        <li>VsCode</li>
-                        <li>Github</li>
-                        <li>Postman</li>
-                        <li>npm</li>
-                    </ul>
+                    <div className="competenceRow">
+                        <h3>Outils</h3>
+                        <ul>
+                            <li>VsCode</li>
+                            <li>Github</li>
+                            <li>Postman</li>
+                            <li>npm</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div id="projectLien"></div>
