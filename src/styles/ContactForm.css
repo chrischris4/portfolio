@@ -69,6 +69,7 @@ textarea {
 }
 
 .contactButton:hover {
+    border: 1px solid #a3f5f9;
     background-color: #a3f5f9;
     color: black;
 }

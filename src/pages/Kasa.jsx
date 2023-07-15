@@ -1,6 +1,5 @@
 import '../styles/Kasa.css';
 import exemple from '../assets/exemple.jpg';
-import git from '../assets/git.png';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -10,9 +9,12 @@ function Kasa() {
     }, []);
     return (
         <div className="pageProject">
+            <div id="topPageLink"></div>
             <div className="pageProjectTitle">
                 <h1>Kasa - Site Agence de Location </h1>
-                <img className="gitPic" src={git} alt="" />
+            </div>
+            <div className="pageProjectButton">
+                <button className="pageButton">Github</button>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={exemple} alt="" />

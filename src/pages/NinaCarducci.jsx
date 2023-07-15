@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import '../styles/Kasa.css';
 import exemple from '../assets/exemple.jpg';
-import git from '../assets/git.png';
 import { Link } from 'react-router-dom';
 
 function NinaCarducci() {
@@ -10,9 +9,12 @@ function NinaCarducci() {
     }, []);
     return (
         <div className="pageProject">
+            <div id="topPageLink"></div>
             <div className="pageProjectTitle">
                 <h1>Nina Carducci - Site de Photographie</h1>
-                <img className="gitPic" src={git} alt="" />
+            </div>
+            <div className="pageProjectButton">
+                <button className="pageButton">Github</button>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={exemple} alt="" />

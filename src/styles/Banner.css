@@ -12,7 +12,6 @@
     display: flex;
     justify-content: flex-end;
     width: 25%;
-    background-color: #a3f5f9;
 }
 .banner {
     padding-top: 100px;
@@ -47,10 +46,10 @@
 }
 
 .bannerAbout {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     margin-top: 35px;
     border: 1px solid white;
-    padding: 20px;
+    padding: 15px;
     background-color: black;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -61,12 +60,13 @@
 .bannerLink {
     border: 1px solid white;
     font-size: 20px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     color: white;
 }
 
 .bannerLink:hover {
+    border: 1px solid #a3f5f9;
     color: black;
     background-color: #a3f5f9;
 }
@@ -138,7 +138,7 @@
         margin-top: 10px;
         width: 80%;
         font-size: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .bannerContent {
