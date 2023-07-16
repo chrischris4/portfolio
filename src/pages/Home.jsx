@@ -10,9 +10,11 @@ function Home() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
     return (
         <div className="page-container">
             <div id="topPageLink"></div>
+            <div id="backHome"></div>
             <Banner />
             <div id="competenceLien"></div>
             <div className="sectionTitle">

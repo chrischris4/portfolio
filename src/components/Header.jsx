@@ -2,14 +2,13 @@ import '../styles/Header.css';
 import linkedin from '../assets/linkedin.png';
 import git from '../assets/git.png';
 import vectorUp from '../assets/vectorUp.jpg';
-import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import backHome from '../assets/backHome.png';
+import { useLocation } from 'react-router-dom';
 
 function Header() {
     const location = useLocation();
 
-    const linksHome = location.pathname === '/';
     const allLinksPages = [
         '/Kasa',
         '/LeVieuxGrimoire',
@@ -17,6 +16,8 @@ function Header() {
         '/SophieBluel',
     ];
     const linksPage = allLinksPages.includes(location.pathname);
+
+    const linksHome = location.pathname === '/';
 
     window.addEventListener('scroll', function () {
         var topPage = document.querySelector('.topPage');
@@ -33,20 +34,16 @@ function Header() {
             <div className="profil">
                 <a href="https://www.linkedin.com/in/christopher-jost-888b75195/">
                     <img className="linkedin" src={linkedin} alt="" />
-                </a>{' '}
+                </a>
                 <img className="github" src={git} alt="" />
-                {linksPage && (
-                    <>
-                        <Link className="backHomeLink" to={`/`}>
-                            <img
-                                className="backHomeImg"
-                                src={backHome}
-                                alt=""
-                            />
-                        </Link>
-                    </>
-                )}
             </div>
+            {linksPage && (
+                <>
+                    <Link className="backHomeLink" to={`/`}>
+                        <img className="backHomeImg" src={backHome} alt="" />
+                    </Link>
+                </>
+            )}
             <nav>
                 {linksHome && (
                     <>

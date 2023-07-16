@@ -45,6 +45,18 @@
     transform: scale(1.1);
 }
 
+.backHomeImg {
+    margin: -18px 0px 0px -22px;
+    position: absolute;
+    left: 50%;
+    width: 45px;
+    transition: transform 0.3s ease;
+}
+
+.backHomeImg:hover {
+    transform: scale(1.1);
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -66,20 +78,6 @@ nav {
 
 .vectorUp {
     width: 40px;
-}
-
-.backHomeLink {
-    padding-top: 2px;
-}
-
-.backHomeImg {
-    padding-left: 10px;
-
-    width: 53px;
-}
-
-.backHomeImg:hover {
-    transform: scale(1.1);
 }
 
 .topPage {
@@ -132,6 +130,11 @@ nav {
         padding-left: 13px;
         width: 41px;
         transition: transform 0.3s ease;
+    }
+
+    .backHomeImg {
+        margin: -14px 0px 0px -17px;
+        width: 34px;
     }
 
     .link {
