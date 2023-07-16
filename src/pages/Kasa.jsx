@@ -1,6 +1,5 @@
 import '../styles/Kasa.css';
 import exemple from '../assets/exemple.jpg';
-import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 function Kasa() {
@@ -40,9 +39,6 @@ function Kasa() {
                     temporibus dolore fugiat eius cupiditate totam quasi.
                 </div>
             </div>
-            <Link className="pageLink" to={`/`}>
-                Retourner sur la page d'Accueil
-            </Link>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>

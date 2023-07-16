@@ -100,7 +100,7 @@ ol {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 635px) {
     .sectionTitle {
         margin-top: 50px;
         font-size: 15px;
