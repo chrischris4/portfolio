@@ -25,8 +25,7 @@
 
 .linkedin {
     animation: fade-in 2s ease forwards;
-
-    margin-top: 3px;
+    margin-top: 5px;
     width: 45px;
     height: 45px;
     background-color: white;
@@ -116,6 +115,10 @@ nav {
         display: flex;
     }
 
+    .linkedin {
+        margin-top: 4px;
+    }
+
     nav {
         display: flex;
         align-items: center;
@@ -128,8 +131,12 @@ nav {
     .header {
         padding: 5px 0px;
     }
+
+    .profil {
+        padding-left: 10px;
+    }
     .linkedin {
-        margin-top: 3px;
+        margin-top: 5px;
         width: 35px;
         height: 35px;
         transition: transform 0.3s ease;
@@ -137,7 +144,7 @@ nav {
 
     .github {
         cursor: pointer;
-        padding-left: 13px;
+        padding-left: 10px;
         width: 41px;
         transition: transform 0.3s ease;
     }
@@ -148,11 +155,16 @@ nav {
     }
 
     .link {
-        padding: 0px 10px;
+        margin: 0px 10px;
+        padding: 0px 0px;
     }
 
     .vectorUp {
         width: 30px;
+    }
+
+    .topPage {
+        padding: 0px 10px;
     }
     .link {
         font-size: 14px;
