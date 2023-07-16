@@ -24,6 +24,8 @@
 }
 
 .linkedin {
+    animation: fade-in 2s ease forwards;
+
     margin-top: 3px;
     width: 45px;
     height: 45px;
@@ -36,6 +38,8 @@
 }
 
 .github {
+    animation: fade-in 2s ease forwards;
+
     cursor: pointer;
     padding-left: 13px;
     width: 52px;
@@ -47,11 +51,12 @@
 }
 
 .backHomeImg {
+    animation: fade-in 2s ease forwards;
     margin: -18px 0px 0px -22px;
     position: absolute;
     left: 50%;
     width: 45px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .backHomeImg:hover {
@@ -66,27 +71,29 @@ nav {
 }
 
 .link {
-    padding: 0px 20px;
+    margin: 0px 20px;
     font-size: 20px;
     text-decoration: none;
     color: black;
+    animation: fade-in 2s ease forwards;
     transition: transform 0.5s ease;
+    border-bottom: white 2px solid;
 }
 
 .link:hover {
-    background-color: #a3f5f982;
-    border-radius: 5px;
+    border-bottom: solid 2px #a3f5f9;
     transform: scale(1.1);
 }
 
 .vectorUp {
+    animation: fade-in 2s ease forwards;
     width: 40px;
 }
 
 .topPage {
     display: none;
     opacity: 0;
-    transition: opacity 6s ease;
+    transition: opacity ease;
     padding: 0px 20px;
     text-decoration: none;
     color: black;

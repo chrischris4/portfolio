@@ -1,36 +1,38 @@
 import { Link } from 'react-router-dom';
 import exempleImage from '../assets/exemple.jpg';
 import '../styles/AllProject.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function AllProject() {
+    const [activeFilter, setActiveFilter] = useState('tout');
+    const [showProjects, setShowProjects] = useState(true);
+
     useEffect(() => {
         const filterButtons = document.querySelectorAll('.buttonFilter');
         const imageItems = document.querySelectorAll('.projectLink');
 
         filterButtons.forEach((filterButton) => {
-            filterButton.addEventListener('click', function (event) {
-                let filterValue = this.getAttribute('dataFilter');
+            filterButton.addEventListener('click', function () {
+                const filterValue = this.getAttribute('dataFilter');
 
-                imageItems.forEach((item) => {
-                    if (!item.classList.contains(filterValue)) {
-                        item.style.display = 'none';
-                    } else {
-                        item.style.display = '';
-                    }
-                });
-            });
-        });
+                setShowProjects(false);
 
-        filterButtons.forEach((button) => {
-            button.addEventListener('click', () => {
-                button.classList.add('filterActive');
+                setTimeout(() => {
+                    setActiveFilter(filterValue);
 
-                filterButtons.forEach((otherButton) => {
-                    if (otherButton !== button) {
-                        otherButton.classList.remove('filterActive');
-                    }
-                });
+                    imageItems.forEach((item) => {
+                        if (
+                            filterValue === 'tout' ||
+                            item.classList.contains(filterValue)
+                        ) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    setShowProjects(true);
+                }, 500);
             });
         });
     }, []);
@@ -38,20 +40,42 @@ function AllProject() {
     return (
         <div id="project">
             <div className="filter">
-                <button className="buttonFilter tout" dataFilter="tout">
+                <button
+                    className={`buttonFilter ${
+                        activeFilter === 'tout' ? 'filterActive' : ''
+                    }`}
+                    dataFilter="tout"
+                >
                     Tout
                 </button>
-                <button className="buttonFilter front" dataFilter="front">
+                <button
+                    className={`buttonFilter ${
+                        activeFilter === 'front' ? 'filterActive' : ''
+                    }`}
+                    dataFilter="front"
+                >
                     Frontend
                 </button>
-                <button className="buttonFilter back" dataFilter="back">
+                <button
+                    className={`buttonFilter ${
+                        activeFilter === 'back' ? 'filterActive' : ''
+                    }`}
+                    dataFilter="back"
+                >
                     Backend
                 </button>
-                <button className="buttonFilter seo" dataFilter="seo">
+                <button
+                    className={`buttonFilter ${
+                        activeFilter === 'seo' ? 'filterActive' : ''
+                    }`}
+                    dataFilter="seo"
+                >
                     SEO
                 </button>
             </div>
-            <div className="allProject">
+            <div
+                className={`allProject ${showProjects ? 'show-projects' : ''}`}
+            >
                 <Link className="projectLink tout front" to={`/Kasa`}>
                     <div className="overlay"></div>
                     <img className="exempleImg" src={exempleImage} alt="" />

@@ -81,7 +81,12 @@
     position: relative;
     width: 40%;
     margin-bottom: 30px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.show-projects .projectLink {
+    opacity: 1;
 }
 
 .exempleImg {
