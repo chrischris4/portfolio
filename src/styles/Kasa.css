@@ -38,6 +38,7 @@
     font-size: 20px;
     text-decoration: none;
     color: white;
+    transition: 0.5s ease;
 }
 
 .pageButton:hover {
@@ -144,6 +145,7 @@
         flex-direction: column;
         padding-bottom: 25px;
         padding-top: 25px;
+        width: 80%;
     }
 
     .pageInfoReverse {
@@ -153,6 +155,7 @@
             rgb(255, 255, 255) 100%
         );
         flex-direction: column;
+        width: 80%;
     }
 
     .pageImg {

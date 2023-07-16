@@ -62,10 +62,11 @@ textarea {
     padding: 5px;
     margin-bottom: 50px;
     border: 1px solid white;
-    background-color: white;
+    background-color: black;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: 0.5s ease;
 }
 
 .contactButton:hover {

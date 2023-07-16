@@ -27,6 +27,7 @@
     margin-top: 3px;
     width: 45px;
     height: 45px;
+    background-color: white;
     transition: transform 0.3s ease;
 }
 
@@ -69,10 +70,12 @@ nav {
     font-size: 20px;
     text-decoration: none;
     color: black;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .link:hover {
+    background-color: #a3f5f982;
+    border-radius: 5px;
     transform: scale(1.1);
 }
 

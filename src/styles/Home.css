@@ -68,6 +68,17 @@ ol {
     list-style: none;
     /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
     background: linear-gradient(
+        180deg,
+        rgba(129, 229, 246, 0.338) 0%,
+        rgb(255, 255, 255) 100%
+    );
+    transition: 0.5s ease;
+}
+
+.frontend:hover,
+.backend:hover,
+.outil:hover {
+    background: linear-gradient(
         360deg,
         rgba(129, 229, 246, 0.338) 0%,
         rgb(255, 255, 255) 100%
