@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Error404 from './pages/Error404';
 import Kasa from './pages/Kasa';
-import LeVieuxGrimoire from './pages/LeVieuxGrimoire';
+import MonVieuxGrimoire from './pages/MonVieuxGrimoire';
 import NinaCarducci from './pages/NinaCarducci';
 import SophieBluel from './pages/SophieBluel';
 import ContactForm from './components/ContactForm';
@@ -19,7 +19,10 @@ function App() {
                 <Route path="/Kasa" element={<Kasa />} />
                 <Route path="/SophieBluel" element={<SophieBluel />} />
                 <Route path="/NinaCarducci" element={<NinaCarducci />} />
-                <Route path="/LeVieuxGrimoire" element={<LeVieuxGrimoire />} />
+                <Route
+                    path="/MonVieuxGrimoire"
+                    element={<MonVieuxGrimoire />}
+                />
                 <Route path="/*" element={<Error404 />} />
             </Routes>
             <ContactForm />

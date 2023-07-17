@@ -11,7 +11,7 @@ function Header() {
 
     const allLinksPages = [
         '/Kasa',
-        '/LeVieuxGrimoire',
+        '/MonVieuxGrimoire',
         '/NinaCarducci',
         '/SophieBluel',
     ];
