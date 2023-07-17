@@ -34,17 +34,17 @@ function Banner() {
 
         wordSpans.forEach((span, index) => {
             span.style.animationDelay = `${delay}s`;
-            delay += index % 2 === 0 ? 0.2 : 0.15; // Ajustez les délais pour une apparence plus fluide
+            delay += index % 2 === 0 ? 0.25 : 0.15; // Ajustez les délais pour une apparence plus fluide
         });
 
         setTimeout(() => {
             bannerAbout.classList.add('show-border');
-        }, 3300); // Définissez le délai pour l'affichage de la bordure (1,5 seconde dans cet exemple)
+        }, 3600); // Définissez le délai pour l'affichage de la bordure (1,5 seconde dans cet exemple)
 
         setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
             bannerLink.classList.add('show-link');
-        }, 3300);
+        }, 3600);
 
         bannerAbout.classList.add('fade-in');
     }, []);

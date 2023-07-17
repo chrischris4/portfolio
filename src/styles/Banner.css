@@ -53,7 +53,7 @@
     color: white;
     font-size: 20px;
     font-weight: 500;
-    width: 510px;
+    width: 455px;
     opacity: 0;
     animation: fade-in 0.9s ease forwards;
     border: 1px black solid;
@@ -146,7 +146,6 @@
     .bannerLastName {
         padding-left: 20px;
         padding-right: 0px;
-        font-size: 70px;
     }
 
     .banner {
@@ -155,18 +154,6 @@
         flex-direction: column;
         background-color: #000000;
         width: 100%;
-    }
-
-    .bannerFirstName {
-        font-size: 70px;
-    }
-
-    .bannerP {
-        font-size: 25px;
-    }
-
-    .bannerAbout {
-        width: 340px;
     }
 }
 
@@ -189,7 +176,7 @@
     }
 
     .bannerP {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .bannerAbout {

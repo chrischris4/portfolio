@@ -24,28 +24,44 @@
 }
 
 .filter {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px;
     background-color: black;
     padding-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .allProject {
     border-radius: 0px 0px 10px 10px;
     margin: auto;
     width: 80%;
-    padding-top: 30px;
-    justify-content: space-around;
+    padding-top: 35px;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     color: black;
     margin: auto;
+}
+
+.projectContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
     background-color: black;
+    width: 48%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.show-projects .projectContent {
+    opacity: 1;
 }
 
 .overlay {
@@ -77,16 +93,12 @@
 }
 
 .projectLink {
+    margin: 20px 20px;
+    display: flex;
     border: solid 4px black;
     position: relative;
-    width: 40%;
-    margin-bottom: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-}
-
-.show-projects .projectLink {
-    opacity: 1;
+    transition: transform 0.3s ease;
+    border: solid 2px black;
 }
 
 .exempleImg {
@@ -94,7 +106,7 @@
 }
 
 .projectLink:hover {
-    border: solid 4px #a3f5f9;
+    border: solid 2px #a3f5f9;
     transform: scale(1.02);
 }
 
@@ -120,10 +132,14 @@
 @media screen and (max-width: 991px) {
     .filter {
         border-radius: 0px;
+        padding-bottom: 2px;
+        margin-bottom: 0px;
     }
 
     .allProject {
+        padding-top: 0px;
         border-radius: 0px;
+        background-color: black;
     }
     #project {
         width: 100%;
@@ -134,10 +150,14 @@
         flex-direction: column;
     }
 
+    .projectContent {
+        width: 100%;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
     .projectLink {
-        margin: auto;
-        margin-bottom: 30px;
-        width: 90%;
+        margin: 40px 40px;
     }
 
     .overlayTitle {
