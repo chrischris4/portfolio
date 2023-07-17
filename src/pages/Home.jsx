@@ -25,21 +25,37 @@ function Home() {
             </div>
             <div className="parcour">
                 <div className="adrar">
-                    <div className="adrarP">J'ai étudier a adrar </div>
+                    <div className="adrarP">
+                        J'ai fais une formation chez Adrar en 2021 - 2022 durant
+                        laquelle j'ai pu découvrir entre autre le métier de
+                        Développeur Web, et les base du coding.
+                    </div>
                     <a
                         className="parcourLink"
                         href="https://www.adrar-formation.com/"
                     >
-                        <img className="adrarImg" src={adrarImg} alt="" />
+                        <div className="overlayParcour">
+                            Visiter leur site !
+                        </div>
+                        <img className="adrarImg" src={adrarImg} alt="" />{' '}
                     </a>
                 </div>
                 <div className="open">
-                    <div className="openP"> J'ai étudier a open </div>
+                    <div className="openP">
+                        J'ai fais une formation chez OpenClassroom du 12/22 au
+                        08/23, cette formation m'a permis de me professionaliser
+                        et apronfondir mes connaissances en SEO, Frontend et
+                        Backend.
+                    </div>
                     <a
                         className="parcourLink"
                         href="https://openclassrooms.com/fr/"
                     >
-                        <img className="openImg" src={openImg} alt="" />{' '}
+                        <div className="overlayParcour">
+                            Visiter leur site !
+                        </div>
+
+                        <img className="openImg" src={openImg} alt="" />
                     </a>
                 </div>
                 <div className="cv">

@@ -4,9 +4,11 @@ import '../styles/Project.css';
 function Project(props) {
     return (
         <Link className="projectLink " to={props.link}>
-            <div className="overlay"></div>
+            <div className="overlay">Voir plus..</div>
             <img className="exempleImg" src={props.cover} alt="" />
-            <div className="overlayTitle">{props.title}</div>
+            <div className="overlayTitle">
+                <div className="projectTitle">{props.title} </div>
+            </div>
         </Link>
     );
 }
