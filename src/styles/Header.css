@@ -25,7 +25,7 @@
 
 .linkedin {
     animation: fade-in 2s ease forwards;
-    margin-top: 5px;
+    margin-top: 1px;
     width: 45px;
     height: 45px;
     background-color: white;
@@ -38,7 +38,6 @@
 
 .github {
     animation: fade-in 2s ease forwards;
-
     cursor: pointer;
     padding-left: 13px;
     width: 52px;
@@ -110,23 +109,6 @@ nav {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 991px) {
-    .profil {
-        display: flex;
-    }
-
-    .linkedin {
-        margin-top: 4px;
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: black;
-    }
-}
-
 @media screen and (max-width: 635px) {
     .header {
         padding: 5px 0px;
@@ -136,17 +118,13 @@ nav {
         padding-left: 10px;
     }
     .linkedin {
-        margin-top: 5px;
         width: 35px;
         height: 35px;
-        transition: transform 0.3s ease;
     }
 
     .github {
-        cursor: pointer;
-        padding-left: 10px;
+        padding-left: 5px;
         width: 41px;
-        transition: transform 0.3s ease;
     }
 
     .backHomeImg {

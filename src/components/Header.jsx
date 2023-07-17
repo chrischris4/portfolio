@@ -35,7 +35,9 @@ function Header() {
                 <a href="https://www.linkedin.com/in/christopher-jost-888b75195/">
                     <img className="linkedin" src={linkedin} alt="" />
                 </a>
-                <img className="github" src={git} alt="" />
+                <a href="https://github.com/chrischris4">
+                    <img className="github" src={git} alt="" />
+                </a>
             </div>
             {linksPage && (
                 <>

@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="lienFooter">
-                <a href="https://www.linkedin.com/in/christopher-jost-888b75195/">
+                <a href="https://github.com/chrischris4">
                     <img className="gitFooter" src={git} alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/christopher-jost-888b75195/">
