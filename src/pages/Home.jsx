@@ -1,5 +1,7 @@
 import Banner from '../components/Banner';
 import '../styles/Home.css';
+import adrarImg from '../assets/adrar.png';
+import openImg from '../assets/open.png';
 import frontendImage from '../assets/frontend.png';
 import backendImage from '../assets/backend.png';
 import outilImage from '../assets/outil.png';
@@ -16,6 +18,35 @@ function Home() {
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
+            <div id="parcourLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>Parcour</h2>
+            </div>
+            <div className="parcour">
+                <div className="adrar">
+                    <div className="adrarP">J'ai étudier a adrar </div>
+                    <a
+                        className="parcourLink"
+                        href="https://www.adrar-formation.com/"
+                    >
+                        <img className="adrarImg" src={adrarImg} alt="" />
+                    </a>
+                </div>
+                <div className="open">
+                    <div className="openP"> J'ai étudier a open </div>
+                    <a
+                        className="parcourLink"
+                        href="https://openclassrooms.com/fr/"
+                    >
+                        <img className="openImg" src={openImg} alt="" />{' '}
+                    </a>
+                </div>
+                <div className="cv">
+                    <button className="buttonCv">Voir CV</button>
+                    <button className="buttonCv">Télécharger CV</button>
+                </div>
+            </div>
             <div id="competenceLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

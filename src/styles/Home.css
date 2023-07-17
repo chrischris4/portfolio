@@ -28,6 +28,67 @@
     background-color: #a3f5f9;
 }
 
+.parcour {
+    padding: 20px 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.openImg,
+.adrarImg {
+    border: 1px solid black;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.openImg:hover,
+.adrarImg:hover {
+    transform: scale(1.02);
+}
+
+.parcourLink {
+    transition: transform 0.3s ease;
+    width: 40%;
+}
+
+.parcourLink:hover {
+    transform: scale(1.02);
+}
+
+.open,
+.adrar,
+.cv {
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonCv {
+    cursor: pointer;
+    font-family: 'Oswald';
+    margin: 0px 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+    background-color: black;
+}
+
+.buttonCv:hover {
+    border: #a3f5f9 solid 1px;
+    color: black;
+    background-color: #a3f5f9;
+}
+
 .frontendImg,
 .backendImg,
 .outilImg {
@@ -58,15 +119,13 @@ ol {
 .outil {
     height: 250px;
     border-radius: 10px;
-    /* border: solid 1px black; */
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px;
     width: 25%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
     background: linear-gradient(
         180deg,
         rgba(129, 229, 246, 0.338) 0%,
