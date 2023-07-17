@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styles/Kasa.css';
+import '../styles/Page.css';
 import exemple from '../assets/exemple.jpg';
 
 function NinaCarducci() {

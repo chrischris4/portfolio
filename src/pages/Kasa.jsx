@@ -1,4 +1,4 @@
-import '../styles/Kasa.css';
+import '../styles/Page.css';
 import exemple from '../assets/exemple.jpg';
 import { useEffect } from 'react';
 

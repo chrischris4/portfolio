@@ -1,14 +1,35 @@
+.projectContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: black;
+    width: 48%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.show-projects .projectContent {
+    opacity: 1;
+}
+
 .overlay {
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
-        rgba(0, 0, 0, 1) 100%
+        rgba(0, 0, 0, 0.7) 100%
     );
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
+    transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
 
 .overlayTitle {
@@ -16,18 +37,24 @@
     align-items: flex-end;
     padding-left: 10px;
     color: white;
-    width: 100%;
     height: 100%;
+    width: 100%;
     position: absolute;
     bottom: 0px;
     left: 0px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
 }
 
 .projectLink {
+    width: 100%;
+    margin: 20px 20px;
+    display: flex;
     border: solid 4px black;
     position: relative;
-    width: 40%;
-    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    border: solid 2px black;
 }
 
 .exempleImg {
@@ -35,5 +62,35 @@
 }
 
 .projectLink:hover {
-    border: solid 4px white;
+    border: solid 2px #a3f5f9;
+    transform: scale(1.02);
+}
+
+.projectDisplay {
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .projectContent {
+        width: 100%;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .projectLink {
+        margin: 40px 40px;
+    }
+
+    .overlayTitle {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .overlayTitle {
+        font-size: 25px;
+        padding-right: 10px;
+        width: fit-content;
+    }
 }

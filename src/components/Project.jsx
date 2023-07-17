@@ -1,15 +1,14 @@
-import exempleImage from '../assets/exemple.jpg';
 import { Link } from 'react-router-dom';
 import '../styles/Project.css';
 
-function Projet() {
+function Project(props) {
     return (
-        <Link className="projectLink" to={`/Kasa`}>
+        <Link className="projectLink " to={props.link}>
             <div className="overlay"></div>
-            <img className="exempleImg tout back" src={exempleImage} alt="" />
-            <div className="overlayTitle">Kasa - Site Agence de Location</div>
+            <img className="exempleImg" src={props.cover} alt="" />
+            <div className="overlayTitle">{props.title}</div>
         </Link>
     );
 }
 
-export default Projet;
+export default Project;

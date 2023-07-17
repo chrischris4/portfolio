@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
 import kasa from '../assets/kasa.png';
 import MVG from '../assets/MVG.png';
 import SophieBluel from '../assets/SophieBluel.png';
 import nina from '../assets/nina.png';
+import booki from '../assets/Booki.png';
 import '../styles/AllProject.css';
+import '../styles/Project.css';
 import { useEffect, useState } from 'react';
+import Project from './Project';
 
 function AllProject() {
     const [activeFilter, setActiveFilter] = useState('tout');
@@ -80,40 +82,35 @@ function AllProject() {
                 className={`allProject ${showProjects ? 'show-projects' : ''}`}
             >
                 <div className="projectContent tout front">
-                    <Link className="projectLink " to={`/Kasa`}>
-                        <div className="overlay"></div>
-                        <img className="exempleImg" src={kasa} alt="" />
-                        <div className="overlayTitle">
-                            Kasa - Site d'Agence de Location
-                        </div>
-                    </Link>
-                </div>
-                <div className="projectContent tout back">
-                    <Link className="projectLink " to={`/MonVieuxGrimoire`}>
-                        <div className="overlay"></div>
-                        <img className="exempleImg" src={MVG} alt="" />
-                        <div className="overlayTitle">
-                            Mon Vieux Grimoire - Site de Notation de Livre
-                        </div>
-                    </Link>
+                    <Project
+                        title="Kasa - Agence Immobilier"
+                        cover={kasa}
+                        link={`/Kasa`}
+                    />
                 </div>
                 <div className="projectContent tout front">
-                    <Link className="projectLink " to={`/SophieBluel`}>
-                        <div className="overlay"></div>
-                        <img className="exempleImg" src={SophieBluel} alt="" />
-                        <div className="overlayTitle">
-                            Sophie Bluel - Site de Présentation
-                        </div>
-                    </Link>
+                    <Project
+                        title="Sophie Bluel - Designer"
+                        cover={SophieBluel}
+                        link={`/SophieBluel`}
+                    />
+                </div>
+                <div className="projectContent tout back">
+                    <Project
+                        title="Mon Vieux Grimoire - Notation de Livres"
+                        cover={MVG}
+                        link={`/MonVieuxGrimoire`}
+                    />
                 </div>
                 <div className="projectContent tout seo">
-                    <Link className="projectLink tout seo" to={`/NinaCarducci`}>
-                        <div className="overlay"></div>
-                        <img className="exempleImg" src={nina} alt="" />
-                        <div className="overlayTitle">
-                            Nina Carducci - Site de Photographie
-                        </div>
-                    </Link>
+                    <Project
+                        title="Nina Carducci - Portfolio d'Une Photographe"
+                        cover={nina}
+                        link={`/NinaCarducci`}
+                    />
+                </div>
+                <div className="projectContent tout front">
+                    <Project title="Booki - Agence de Location" cover={booki} />
                 </div>
             </div>
             <div id="contactLien"></div>
