@@ -37,16 +37,21 @@ function Banner() {
             delay += index % 2 === 0 ? 0.25 : 0.15; // Ajustez les délais pour une apparence plus fluide
         });
 
-        setTimeout(() => {
+        const borderTimeout = setTimeout(() => {
             bannerAbout.classList.add('show-border');
         }, 3600); // Définissez le délai pour l'affichage de la bordure (1,5 seconde dans cet exemple)
 
-        setTimeout(() => {
+        const linkTimeout = setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
             bannerLink.classList.add('show-link');
         }, 3600);
 
         bannerAbout.classList.add('fade-in');
+
+        return () => {
+            clearTimeout(borderTimeout);
+            clearTimeout(linkTimeout);
+        };
     }, []);
 
     return (
