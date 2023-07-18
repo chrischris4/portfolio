@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
-import exemple from '../assets/exemple.jpg';
+import nina from '../assets/nina.png';
+import nina2 from '../assets/nina2.png';
+import nina3 from '../assets/nina3.png';
 
 function NinaCarducci() {
     useEffect(() => {
@@ -16,7 +18,7 @@ function NinaCarducci() {
                 <button className="pageButton">Github</button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={nina} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt
@@ -24,7 +26,7 @@ function NinaCarducci() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={nina2} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt
@@ -32,7 +34,7 @@ function NinaCarducci() {
                 </div>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={nina3} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt

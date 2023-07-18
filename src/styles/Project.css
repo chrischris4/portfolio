@@ -50,8 +50,6 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
     font-size: 20px;
     transition: transform 0.3s ease;
 }
@@ -70,7 +68,7 @@
     transition: transform 0.3s ease;
 }
 
-.exempleImg {
+.projectImg {
     border-radius: 10px;
     width: 100%;
 }
@@ -102,8 +100,7 @@
 
 @media screen and (max-width: 635px) {
     .overlayTitle {
-        font-size: 25px;
+        font-size: 20px;
         padding-right: 10px;
-        width: fit-content;
     }
 }

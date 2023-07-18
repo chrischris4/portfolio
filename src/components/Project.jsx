@@ -7,7 +7,7 @@ function Project(props) {
             <div className="overlay">
                 <h3>Voir plus..</h3>
             </div>
-            <img className="exempleImg" src={props.cover} alt="" />
+            <img className="projectImg" src={props.cover} alt="" />
             <div className="overlayTitle">
                 <div className="projectTitle">{props.title} </div>
             </div>

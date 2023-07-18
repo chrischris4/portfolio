@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Error404 from './pages/Error404';
+import Booki from './pages/Booki';
 import Kasa from './pages/Kasa';
 import MonVieuxGrimoire from './pages/MonVieuxGrimoire';
 import NinaCarducci from './pages/NinaCarducci';
@@ -16,6 +17,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/Booki" element={<Booki />} />
                 <Route path="/Kasa" element={<Kasa />} />
                 <Route path="/SophieBluel" element={<SophieBluel />} />
                 <Route path="/NinaCarducci" element={<NinaCarducci />} />

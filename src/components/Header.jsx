@@ -7,6 +7,12 @@ import backHome from '../assets/backHome.png';
 import { useLocation } from 'react-router-dom';
 
 function Header() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
     const location = useLocation();
 
     const allLinksPages = [
@@ -14,6 +20,7 @@ function Header() {
         '/MonVieuxGrimoire',
         '/NinaCarducci',
         '/SophieBluel',
+        '/Booki',
     ];
     const linksPage = allLinksPages.includes(location.pathname);
 
@@ -32,10 +39,18 @@ function Header() {
     return (
         <div className="header">
             <div className="profil">
-                <a href="https://www.linkedin.com/in/christopher-jost-888b75195/">
+                <a
+                    href="https://www.linkedin.com/in/christopher-jost-888b75195/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img className="linkedin" src={linkedin} alt="" />
                 </a>
-                <a href="https://github.com/chrischris4">
+                <a
+                    href="https://github.com/chrischris4"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img className="github" src={git} alt="" />
                 </a>
             </div>
@@ -57,7 +72,11 @@ function Header() {
                         </a>
                     </>
                 )}
-                <a href="#topPageLink" className="topPage">
+                <a
+                    href="#topPageLink"
+                    className="topPage"
+                    onClick={scrollToTop}
+                >
                     <img className="vectorUp" src={vectorUp} alt="" />
                 </a>
             </nav>

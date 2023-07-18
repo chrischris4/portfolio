@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
-import exemple from '../assets/exemple.jpg';
+import sophie from '../assets/SophieBluel.png';
+import sophie2 from '../assets/SophieBluel2.png';
+
+import sophie3 from '../assets/SophieBluel3.png';
 
 function SophieBluel() {
     useEffect(() => {
@@ -16,7 +19,7 @@ function SophieBluel() {
                 <button className="pageButton">Github</button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={sophie} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt
@@ -24,7 +27,7 @@ function SophieBluel() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={sophie2} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt
@@ -32,7 +35,7 @@ function SophieBluel() {
                 </div>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={sophie3} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt

@@ -110,7 +110,11 @@ function AllProject() {
                     />
                 </div>
                 <div className="projectContent tout front">
-                    <Project title="Booki - Agence de Location" cover={booki} />
+                    <Project
+                        title="Booki - Agence de Location"
+                        cover={booki}
+                        link={`/Booki`}
+                    />
                 </div>
             </div>
             <div id="contactLien"></div>

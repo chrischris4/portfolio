@@ -48,7 +48,7 @@
 }
 
 .pageInfo {
-    border: 2px white solid;
+    border: 4px white solid;
     border-radius: 10px;
     margin: auto;
     margin-top: 40px;
@@ -66,10 +66,12 @@
     transition: 0.5s ease;
 }
 .pageInfo:hover {
-    border: 2px #a3f5f9 solid;
+    border: 4px #a3f5f9 solid;
 }
 
 .pageImg {
+    border-radius: 10px;
+    border: 1px solid black;
     width: 45%;
 }
 
@@ -78,7 +80,7 @@
 }
 
 .pageInfoReverse {
-    border: 2px solid white;
+    border: 4px solid white;
     border-radius: 10px;
     background: linear-gradient(
         90deg,
@@ -97,7 +99,7 @@
 }
 
 .pageInfoReverse:hover {
-    border: 2px solid #a3f5f9;
+    border: 4px solid #a3f5f9;
 }
 .pageLink {
     margin: auto;

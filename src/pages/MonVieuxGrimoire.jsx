@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
-import exemple from '../assets/exemple.jpg';
+import mvg from '../assets/MVG.png';
+import mvg2 from '../assets/MVG2.png';
+import mvg3 from '../assets/MVG3.png';
 
 function LeVieuxGrimoire() {
     useEffect(() => {
@@ -16,7 +18,7 @@ function LeVieuxGrimoire() {
                 <button className="pageButton">Github</button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={mvg} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt
@@ -24,7 +26,7 @@ function LeVieuxGrimoire() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={mvg2} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt
@@ -32,7 +34,7 @@ function LeVieuxGrimoire() {
                 </div>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={exemple} alt="" />
+                <img className="pageImg" src={mvg3} alt="" />
                 <div className="imgInfo">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Neque ab harum illum doloribus ad, distinctio, nesciunt
