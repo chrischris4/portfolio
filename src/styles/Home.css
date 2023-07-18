@@ -40,7 +40,15 @@
 
 .adrarP,
 .openP {
+    border: black 2px solid;
     width: 40%;
+    padding: 0px 20px 20px 20px;
+    transition: 0.5s ease;
+}
+
+.adrarP:hover,
+.openP:hover {
+    border: #a3f5f9 2px solid;
 }
 
 .openImg,
@@ -54,11 +62,23 @@
     transform: scale(1.02);
 }
 
+.overlayParcour h3 {
+    margin: 0px;
+}
+
+.overlayParcour p {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 2px;
+    border-bottom: 1px #a3f5f9 solid;
+}
+
 .overlayParcour {
     opacity: 0;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -149,16 +169,16 @@ ol {
 .backend,
 .outil {
     height: 250px;
+    border: 2px solid white;
     border-radius: 10px;
     padding: 30px 0px;
     width: 25%;
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
     background: linear-gradient(
-        180deg,
+        360deg,
         rgba(129, 229, 246, 0.338) 0%,
         rgb(255, 255, 255) 100%
     );
@@ -168,14 +188,29 @@ ol {
 .frontend:hover,
 .backend:hover,
 .outil:hover {
-    background: linear-gradient(
-        360deg,
-        rgba(129, 229, 246, 0.338) 0%,
-        rgb(255, 255, 255) 100%
-    );
+    border: 2px solid #a3f5f9;
 }
 
 @media screen and (max-width: 991px) {
+    .open,
+    .adrar {
+        flex-direction: column;
+    }
+
+    .adrar {
+        margin-bottom: 20px;
+    }
+
+    .openP,
+    .adrarP {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .parcourLink {
+        width: 50%;
+    }
+
     #competence {
         justify-content: center;
         flex-wrap: wrap;

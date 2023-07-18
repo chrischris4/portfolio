@@ -48,6 +48,7 @@
 }
 
 .pageInfo {
+    border: 2px white solid;
     border-radius: 10px;
     margin: auto;
     margin-top: 40px;
@@ -62,6 +63,10 @@
         rgba(129, 229, 246, 0.279) 0%,
         rgb(255, 255, 255) 100%
     );
+    transition: 0.5s ease;
+}
+.pageInfo:hover {
+    border: 2px #a3f5f9 solid;
 }
 
 .pageImg {
@@ -73,6 +78,7 @@
 }
 
 .pageInfoReverse {
+    border: 2px solid white;
     border-radius: 10px;
     background: linear-gradient(
         90deg,
@@ -87,8 +93,12 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px 20px;
+    transition: 0.5s ease;
 }
 
+.pageInfoReverse:hover {
+    border: 2px solid #a3f5f9;
+}
 .pageLink {
     margin: auto;
     margin-top: 100px;

@@ -12,6 +12,10 @@
 .show-projects .projectContent {
     opacity: 1;
 }
+.overlay h3 {
+    margin: 0px;
+    border-bottom: 1px solid #a3f5f9;
+}
 
 .overlay {
     background: rgba(0, 0, 0, 0.5);
