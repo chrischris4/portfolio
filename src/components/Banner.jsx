@@ -1,5 +1,6 @@
 import '../styles/Banner.css';
 import { useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Banner() {
     useEffect(() => {
@@ -67,9 +68,15 @@ function Banner() {
                         Spécialisé dans la création d'applications web
                         dynamiques. Prêt à contribuer à des projets innovants !
                     </div>
-                    <a href="#contactLien" className="bannerLink">
+                    <ScrollLink
+                        to="contactLien"
+                        className="bannerLink"
+                        spy={true}
+                        smooth={true}
+                        duration={1000}
+                    >
                         Contact
-                    </a>
+                    </ScrollLink>
                 </div>
             </div>
         </div>

@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 import '../styles/Project.css';
 
 function Project(props) {
     return (
-        <Link className="projectLink " to={props.link}>
+        <RouterLink className="projectLink " to={props.link}>
             <div className="overlay">
                 <h3>Voir plus..</h3>
             </div>
@@ -11,7 +11,7 @@ function Project(props) {
             <div className="overlayTitle">
                 <div className="projectTitle">{props.title} </div>
             </div>
-        </Link>
+        </RouterLink>
     );
 }
 

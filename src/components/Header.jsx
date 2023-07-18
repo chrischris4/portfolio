@@ -2,15 +2,16 @@ import '../styles/Header.css';
 import linkedin from '../assets/linkedin.png';
 import git from '../assets/git.png';
 import vectorUp from '../assets/vectorUp.jpg';
-import { Link } from 'react-router-dom';
 import backHome from '../assets/backHome.png';
 import { useLocation } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 function Header() {
     const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
+        scroll.scrollToTop({
+            duration: 1000,
+            smooth: true,
         });
     };
     const location = useLocation();
@@ -56,20 +57,32 @@ function Header() {
             </div>
             {linksPage && (
                 <>
-                    <Link className="backHomeLink" to={`/`}>
+                    <RouterLink className="backHomeLink" to={`/`}>
                         <img className="backHomeImg" src={backHome} alt="" />
-                    </Link>
+                    </RouterLink>
                 </>
             )}
             <nav>
                 {linksHome && (
                     <>
-                        <a href="#competenceLien" className="link">
+                        <ScrollLink
+                            to="competenceLien"
+                            className="link"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                        >
                             Compétences
-                        </a>
-                        <a href="#projectLien" className="link">
+                        </ScrollLink>
+                        <ScrollLink
+                            to="projectLien"
+                            className="link"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                        >
                             Mes projets
-                        </a>
+                        </ScrollLink>
                     </>
                 )}
                 <a
