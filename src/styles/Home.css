@@ -40,15 +40,7 @@
 
 .adrarP,
 .openP {
-    border: black 2px solid;
-    width: 40%;
-    padding: 0px 20px 20px 20px;
-    transition: 0.5s ease;
-}
-
-.adrarP:hover,
-.openP:hover {
-    border: #a3f5f9 2px solid;
+    width: 45%;
 }
 
 .openImg,
@@ -97,7 +89,7 @@
 .parcourLink {
     position: relative;
     transition: transform 0.3s ease;
-    width: 40%;
+    width: 45%;
 }
 
 .parcourLink:hover {
@@ -106,16 +98,26 @@
 
 .open,
 .adrar {
+    padding: 20px;
+    border: 2px solid black;
+    width: 90%;
+    margin: auto;
     color: white;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    transition: 0.5s ease;
+}
+
+.open:hover,
+.adrar:hover {
+    border: 2px solid #a3f5f9;
 }
 
 .cv {
-    padding-top: 20px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -194,6 +196,8 @@ ol {
 @media screen and (max-width: 991px) {
     .open,
     .adrar {
+        padding: 0px 0px 20px 0px;
+        width: 80%;
         flex-direction: column;
     }
 
@@ -203,12 +207,12 @@ ol {
 
     .openP,
     .adrarP {
-        width: 70%;
+        width: 90%;
         margin-bottom: 20px;
     }
 
     .parcourLink {
-        width: 50%;
+        width: 90%;
     }
 
     #competence {
@@ -241,6 +245,17 @@ ol {
         margin-top: 50px;
         font-size: 15px;
     }
+
+    .parcour {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .open,
+    .adrar {
+        width: 90%;
+    }
+
     #competence {
         flex-direction: column;
     }
