@@ -1,8 +1,8 @@
 import '../styles/Header.css';
 import linkedin from '../assets/linkedin.png';
-import git from '../assets/git.png';
+import git from '../assets/git.webp';
 import vectorUp from '../assets/vectorUp.jpg';
-import backHome from '../assets/backHome.png';
+import backHome from '../assets/backHome.webp';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';

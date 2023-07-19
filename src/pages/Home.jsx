@@ -1,9 +1,9 @@
 import Banner from '../components/Banner';
 import '../styles/Home.css';
-import adrarImg from '../assets/adrar.png';
+import adrarImg from '../assets/adrar.webp';
 import openImg from '../assets/open.png';
-import frontendImage from '../assets/frontend.png';
-import backendImage from '../assets/backend.png';
+import frontendImage from '../assets/frontend.webp';
+import backendImage from '../assets/backend.webp';
 import outilImage from '../assets/outil.png';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';

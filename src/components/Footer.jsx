@@ -1,5 +1,5 @@
 import '../styles/Footer.css';
-import git from '../assets/gitFooter.png';
+import git from '../assets/gitFooter.webp';
 import linkedin from '../assets/linkedinFooter.png';
 
 function Footer() {

@@ -2,7 +2,7 @@ import kasa from '../assets/kasa.png';
 import MVG from '../assets/MVG.png';
 import SophieBluel from '../assets/SophieBluel.png';
 import nina from '../assets/nina.png';
-import booki from '../assets/Booki.png';
+import booki from '../assets/Booki.webp';
 import '../styles/AllProject.css';
 import '../styles/Project.css';
 import { useEffect, useState } from 'react';

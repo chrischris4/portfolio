@@ -1,5 +1,5 @@
 import '../styles/Page.css';
-import booki from '../assets/Booki.png';
+import booki from '../assets/Booki.webp';
 import { useEffect } from 'react';
 
 function Booki() {
@@ -18,9 +18,9 @@ function Booki() {
             <div className="pageInfo">
                 <img className="pageImg" src={booki} alt="" />
                 <div className="imgInfo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque ab harum illum doloribus ad, distinctio, nesciunt
-                    temporibus dolore fugiat eius cupiditate totam quasi.
+                    Sur ce projet j'ai effectuer l'intégration du site en
+                    html/css, j'ai du gérer le responsive un format desktop,
+                    tablette et téléphone.
                 </div>
             </div>
             <div className="sectionTitle">

@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
 import sophie from '../assets/SophieBluel.png';
-import sophie2 from '../assets/SophieBluel2.png';
+import sophie2 from '../assets/SophieBluel3.png';
 
-import sophie3 from '../assets/SophieBluel3.png';
+import sophie3 from '../assets/SophieBluel2.png';
 
 function SophieBluel() {
     useEffect(() => {
@@ -13,7 +13,7 @@ function SophieBluel() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Sophie Bluel - Site de Présentation</h1>
+                <h1>Sophie Bluel - Site de Designer</h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">Github</button>
@@ -21,25 +21,25 @@ function SophieBluel() {
             <div className="pageInfo">
                 <img className="pageImg" src={sophie} alt="" />
                 <div className="imgInfo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque ab harum illum doloribus ad, distinctio, nesciunt
-                    temporibus dolore fugiat eius cupiditate totam quasi.
+                    Sur ce site j'ai gérer la partie Frontend du site, j'ai
+                    géneré la galerie de la page d'accueil à partir d'un fichier
+                    .json en effectuant des requêtes via une API.
                 </div>
             </div>
             <div className="pageInfoReverse">
                 <img className="pageImg" src={sophie2} alt="" />
                 <div className="imgInfo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque ab harum illum doloribus ad, distinctio, nesciunt
-                    temporibus dolore fugiat eius cupiditate totam quasi.
+                    Une fois le mode édition activé, le propriétaire du site
+                    pourra, grâce à une modale, ajouter, modifier ou supprimer
+                    des images présentes dans la galerie.
                 </div>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={sophie3} alt="" />
                 <div className="imgInfo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque ab harum illum doloribus ad, distinctio, nesciunt
-                    temporibus dolore fugiat eius cupiditate totam quasi.
+                    Le site contient une page d'authentification, pour qu'une
+                    fois identifier, le propriétaire du site puisse accéder à un
+                    mode édition.
                 </div>
             </div>
             <div className="sectionTitle">

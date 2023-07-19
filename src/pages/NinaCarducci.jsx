@@ -20,25 +20,29 @@ function NinaCarducci() {
             <div className="pageInfo">
                 <img className="pageImg" src={nina} alt="" />
                 <div className="imgInfo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque ab harum illum doloribus ad, distinctio, nesciunt
-                    temporibus dolore fugiat eius cupiditate totam quasi.
+                    Sur ce projet j'ai géré toute la partie SEO, tout d'abbord
+                    la gestion des titres, conversion et compression des images,
+                    minification du code et optimisation du html pour le
+                    réferencement.
                 </div>
             </div>
             <div className="pageInfoReverse">
                 <img className="pageImg" src={nina2} alt="" />
                 <div className="imgInfo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque ab harum illum doloribus ad, distinctio, nesciunt
-                    temporibus dolore fugiat eius cupiditate totam quasi.
+                    J'ai ajouté des richSnippet nécessaire pour le réferencement
+                    sur google, ainsi que pour les résaux sociaux.
                 </div>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={nina3} alt="" />
                 <div className="imgInfo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque ab harum illum doloribus ad, distinctio, nesciunt
-                    temporibus dolore fugiat eius cupiditate totam quasi.
+                    Afin d'atteindre le meilleurs score possible, j'ai utiliser
+                    des outils tel que{' '}
+                    <a className="lienInfo" href="https://pagespeed.web.dev/">
+                        Pagespeed
+                    </a>{' '}
+                    et l'extension Wave afin d'identifier au mieux les problèmes
+                    d'optimisation.
                 </div>
             </div>
             <div className="sectionTitle">
