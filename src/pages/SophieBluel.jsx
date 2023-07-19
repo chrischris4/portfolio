@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import '../styles/Page.css';
 import sophie from '../assets/SophieBluel.png';
 import sophie2 from '../assets/SophieBluel3.png';
-
 import sophie3 from '../assets/SophieBluel2.png';
 
 function SophieBluel() {
@@ -27,7 +26,7 @@ function SophieBluel() {
                 </button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={sophie} alt="" />
+                <img className="pageImg" src={sophie} alt="Sophie-Bluel" />
                 <div className="imgInfo">
                     Sur ce site j'ai gérer la partie Frontend du site, j'ai
                     géneré la galerie de la page d'accueil à partir d'un fichier
@@ -35,7 +34,7 @@ function SophieBluel() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={sophie2} alt="" />
+                <img className="pageImg" src={sophie2} alt="Sophie-Bluel" />
                 <div className="imgInfo">
                     Une fois le mode édition activé, le propriétaire du site
                     pourra, grâce à une modale, ajouter, modifier ou supprimer
@@ -43,7 +42,7 @@ function SophieBluel() {
                 </div>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={sophie3} alt="" />
+                <img className="pageImg" src={sophie3} alt="Sophie-Bluel" />
                 <div className="imgInfo">
                     Le site contient une page d'authentification, pour qu'une
                     fois identifier, le propriétaire du site puisse accéder à un

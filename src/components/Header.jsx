@@ -45,20 +45,24 @@ function Header() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img className="linkedin" src={linkedin} alt="" />
+                    <img className="linkedin" src={linkedin} alt="linkedin" />
                 </a>
                 <a
                     href="https://github.com/chrischris4"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img className="github" src={git} alt="" />
+                    <img className="github" src={git} alt="github" />
                 </a>
             </div>
             {linksPage && (
                 <>
                     <RouterLink className="backHomeLink" to={`/`}>
-                        <img className="backHomeImg" src={backHome} alt="" />
+                        <img
+                            className="backHomeImg"
+                            src={backHome}
+                            alt="accueil"
+                        />
                     </RouterLink>
                 </>
             )}
@@ -90,7 +94,11 @@ function Header() {
                     className="topPage"
                     onClick={scrollToTop}
                 >
-                    <img className="vectorUp" src={vectorUp} alt="" />
+                    <img
+                        className="vectorUp"
+                        src={vectorUp}
+                        alt="haut-de-page"
+                    />
                 </a>
             </nav>
         </div>

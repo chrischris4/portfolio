@@ -11,14 +11,18 @@ function Footer() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img className="gitFooter" src={git} alt="" />
+                    <img className="gitFooter" src={git} alt="github" />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/christopher-jost-888b75195/"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img className="linkedinFooter" src={linkedin} alt="" />
+                    <img
+                        className="linkedinFooter"
+                        src={linkedin}
+                        alt="linkedin"
+                    />
                 </a>
             </div>
             <p className="pFooter">© 2023 by JOST Christopher</p>

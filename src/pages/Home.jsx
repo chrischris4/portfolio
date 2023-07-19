@@ -42,12 +42,12 @@ function Home() {
                             <h3> Visiter leur site :</h3>
                             <p> adrar-formation.com</p>
                         </div>
-                        <img className="adrarImg" src={adrarImg} alt="" />{' '}
+                        <img className="adrarImg" src={adrarImg} alt="adrar" />{' '}
                     </a>
                 </div>
                 <div className="open">
                     <div className="openP">
-                        <h3>Formation OpenClassroom</h3>
+                        <h3>Formation OpenClassrooms</h3>
                         <h3>12/2022 - 08/23</h3>
                         Durant cette formation je me suis professionaliser et
                         ait apronfondit mes connaissances en SEO, Frontend et
@@ -64,7 +64,11 @@ function Home() {
                             <p> openclassrooms.com</p>
                         </div>
 
-                        <img className="openImg" src={openImg} alt="" />
+                        <img
+                            className="openImg"
+                            src={openImg}
+                            alt="openclassrooms"
+                        />
                     </a>
                 </div>
                 <div className="cv">
