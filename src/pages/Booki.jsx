@@ -13,13 +13,21 @@ function Booki() {
                 <h1>Booki - Agence de Location </h1>
             </div>
             <div className="pageProjectButton">
-                <button className="pageButton">Github</button>
+                <button className="pageButton">
+                    <a
+                        href="https://github.com/chrischris4/Booki_agence_de_location"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Github
+                    </a>
+                </button>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={booki} alt="" />
                 <div className="imgInfo">
                     Sur ce projet j'ai effectuer l'intégration du site en
-                    html/css, j'ai du gérer le responsive un format desktop,
+                    html/css, j'ai du gérer le responsive, un format desktop,
                     tablette et téléphone.
                 </div>
             </div>

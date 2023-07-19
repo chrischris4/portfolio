@@ -9,6 +9,15 @@
     top: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
 .pageProjectTitle {
     padding: 0px 20px;
     background-image: url('../assets/mimifleur.jpeg');
@@ -29,6 +38,7 @@
 }
 
 .pageButton {
+    text-decoration: none;
     cursor: pointer;
     font-family: 'Oswald';
     display: flex;

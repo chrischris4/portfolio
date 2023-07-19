@@ -11,10 +11,18 @@ function Kasa() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Kasa - Site Agence de Location </h1>
+                <h1>Kasa - Site Agence Immobilière </h1>
             </div>
             <div className="pageProjectButton">
-                <button className="pageButton">Github</button>
+                <button className="pageButton">
+                    <a
+                        href="https://github.com/chrischris4/Kasa_site_agence_immobiliere"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Github
+                    </a>
+                </button>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={kasa} alt="" />

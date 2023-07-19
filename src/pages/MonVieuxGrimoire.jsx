@@ -15,7 +15,15 @@ function LeVieuxGrimoire() {
                 <h1>Le Vieux Grimoire - Site de Notation de Livre</h1>
             </div>
             <div className="pageProjectButton">
-                <button className="pageButton">Github</button>
+                <button className="pageButton">
+                    <a
+                        href="https://github.com/chrischris4/Mon_vieux_grimoire_site_notation_de_livre"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Github
+                    </a>
+                </button>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={mvg} alt="" />

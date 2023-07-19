@@ -12,10 +12,18 @@ function NinaCarducci() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Nina Carducci - Site de Photographie</h1>
+                <h1>Nina Carducci - Site de Photographe</h1>
             </div>
             <div className="pageProjectButton">
-                <button className="pageButton">Github</button>
+                <button className="pageButton">
+                    <a
+                        href="https://github.com/chrischris4/Nina_carducci_site_de_photographe"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Github
+                    </a>
+                </button>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={nina} alt="" />

@@ -16,7 +16,15 @@ function SophieBluel() {
                 <h1>Sophie Bluel - Site de Designer</h1>
             </div>
             <div className="pageProjectButton">
-                <button className="pageButton">Github</button>
+                <button className="pageButton">
+                    <a
+                        href="https://github.com/chrischris4/Sophie_bluel_site_de_designer"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Github
+                    </a>
+                </button>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={sophie} alt="" />
