@@ -6,7 +6,8 @@
 }
 
 .bannerColor {
-    background-image: url('../assets/background.jpg');
+    background-image: url('../assets/mimifleur.jpeg');
+    background-position: 30% 70%;
     background-size: cover;
     padding-top: 100px;
     display: flex;
@@ -109,6 +110,7 @@
 }
 
 .bannerLink {
+    cursor: pointer;
     opacity: 0;
     transition: opacity 0.9s ease;
     border: 1px solid white;
@@ -137,6 +139,7 @@
     }
 
     .bannerColor {
+        background-position: center;
         padding-right: 0px;
         padding-top: 30px;
         justify-content: flex-start;

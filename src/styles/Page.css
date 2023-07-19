@@ -11,7 +11,8 @@
 
 .pageProjectTitle {
     padding: 0px 20px;
-    background-image: url('../assets/background.jpg');
+    background-image: url('../assets/mimifleur.jpeg');
+    background-position: center;
     background-size: cover;
     align-items: center;
     justify-content: space-evenly;
