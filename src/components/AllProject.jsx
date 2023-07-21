@@ -86,6 +86,7 @@ function AllProject() {
                         title="Kasa - Agence Immobilière"
                         cover={kasa}
                         link={`/Kasa`}
+                        loading="lazy"
                     />
                 </div>
                 <div className="projectContent tout front">
@@ -93,6 +94,7 @@ function AllProject() {
                         title="Sophie Bluel - Designer"
                         cover={SophieBluel}
                         link={`/SophieBluel`}
+                        loading="lazy"
                     />
                 </div>
                 <div className="projectContent tout back">
@@ -100,6 +102,7 @@ function AllProject() {
                         title="Mon Vieux Grimoire - Notation de Livres"
                         cover={MVG}
                         link={`/MonVieuxGrimoire`}
+                        loading="lazy"
                     />
                 </div>
                 <div className="projectContent tout seo">
@@ -107,6 +110,7 @@ function AllProject() {
                         title="Nina Carducci - Photographe"
                         cover={nina}
                         link={`/NinaCarducci`}
+                        loading="lazy"
                     />
                 </div>
                 <div className="projectContent tout front">
@@ -114,6 +118,7 @@ function AllProject() {
                         title="Booki - Agence de Location"
                         cover={booki}
                         link={`/Booki`}
+                        loading="lazy"
                     />
                 </div>
             </div>

@@ -42,13 +42,18 @@ function Home() {
                             <h3> Visiter leur site :</h3>
                             <p> adrar-formation.com</p>
                         </div>
-                        <img className="adrarImg" src={adrarImg} alt="adrar" />{' '}
+                        <img
+                            className="adrarImg"
+                            src={adrarImg}
+                            alt="adrar"
+                            loading="lazy"
+                        />
                     </a>
                 </div>
                 <div className="open">
                     <div className="openP">
                         <h3>Formation OpenClassrooms</h3>
-                        <h3>12/2022 - 08/23</h3>
+                        <h3>12/2022 - 08/2023</h3>
                         Durant cette formation je me suis professionaliser et
                         ait apronfondit mes connaissances en SEO, Frontend et
                         Backend.
@@ -68,6 +73,7 @@ function Home() {
                             className="openImg"
                             src={openImg}
                             alt="openclassrooms"
+                            loading="lazy"
                         />
                     </a>
                 </div>
@@ -83,7 +89,12 @@ function Home() {
             </div>
             <div id="competence">
                 <div className="frontend">
-                    <img className="frontendImg" src={frontendImage} alt="" />
+                    <img
+                        className="frontendImg"
+                        src={frontendImage}
+                        alt="frontend"
+                        loading="lazy"
+                    />
                     <div className="competenceRow">
                         <h3>Frontend</h3>
                         <ul>
@@ -93,7 +104,12 @@ function Home() {
                     </div>
                 </div>
                 <div className="backend">
-                    <img className="backendImg" src={backendImage} alt="" />
+                    <img
+                        className="backendImg"
+                        src={backendImage}
+                        alt="backend"
+                        loading="lazy"
+                    />
                     <div className="competenceRow">
                         <h3>Backend</h3>
                         <ul>
@@ -104,7 +120,12 @@ function Home() {
                     </div>
                 </div>
                 <div className="outil">
-                    <img className="outilImg" src={outilImage} alt="" />
+                    <img
+                        className="outilImg"
+                        src={outilImage}
+                        alt="outils"
+                        loading="lazy"
+                    />
                     <div className="competenceRow">
                         <h3>Outils</h3>
                         <ul>
@@ -121,7 +142,7 @@ function Home() {
                 <div className="styleTitle"></div>
                 <h2>Mes projets</h2>
             </div>
-            <AllProject />{' '}
+            <AllProject />
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>

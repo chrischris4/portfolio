@@ -26,7 +26,12 @@ function LeVieuxGrimoire() {
                 </button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={mvg} alt="Mon-vieux-grimoire" />
+                <img
+                    className="pageImg"
+                    src={mvg}
+                    alt="Mon-vieux-grimoire"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Je me suis occuper de toute la partie Backend de ce projet,
                     une application express en React, avec une base de donnés
@@ -36,7 +41,12 @@ function LeVieuxGrimoire() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={mvg2} alt="Mon-vieux-grimoire" />
+                <img
+                    className="pageImg"
+                    src={mvg2}
+                    alt="Mon-vieux-grimoire"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     J'ai créer un systeme d'authentification, afin que
                     l'utilisateur puisse s'inscrire et se connecter à son compte
@@ -46,7 +56,12 @@ function LeVieuxGrimoire() {
                 </div>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={mvg3} alt="Mon-vieux-grimoire" />
+                <img
+                    className="pageImg"
+                    src={mvg3}
+                    alt="Mon-vieux-grimoire"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     J'ai créer un model pour les livres contenant leur infos,
                     ainsi qu'un controller afin que l'on puisse ajouter,

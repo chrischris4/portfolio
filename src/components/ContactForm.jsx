@@ -2,6 +2,8 @@ import '../styles/ContactForm.css';
 import React, { useState } from 'react';
 
 function ContactForm() {
+    const myEmail = 'jostchristopher44@gmail.com';
+
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
@@ -23,7 +25,10 @@ function ContactForm() {
     return (
         <div className="contact">
             <div className="contactP">
-                <p>Pour plus d'informations, n'hésitez pas à me contacter ! </p>
+                <p>
+                    Pour plus d'informations, n'hésitez pas à me contacter via
+                    ce formulaire :{' '}
+                </p>
             </div>
             <div className="contactForm">
                 <form onSubmit={handleSubmit}>
@@ -50,6 +55,12 @@ function ContactForm() {
                         Envoyer
                     </button>
                 </form>
+            </div>
+            <div className="myEmail">
+                <p className="myEmailP">Ou en cliquant sur ce lien :</p>
+                <a className="myEmailLink" href={`mailto:${myEmail}`}>
+                    {myEmail}
+                </a>
             </div>
         </div>
     );

@@ -26,7 +26,12 @@ function NinaCarducci() {
                 </button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={nina} alt="Nina-Carducci" />
+                <img
+                    className="pageImg"
+                    src={nina}
+                    alt="Nina-Carducci"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Sur ce projet j'ai géré toute la partie SEO, tout d'abbord
                     la gestion des titres, conversion et compression des images,
@@ -35,14 +40,24 @@ function NinaCarducci() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={nina2} alt="Nina-Carducci" />
+                <img
+                    className="pageImg"
+                    src={nina2}
+                    alt="Nina-Carducci"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     J'ai ajouté des richSnippet nécessaire pour le réferencement
                     sur google, ainsi que pour les résaux sociaux.
                 </div>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={nina3} alt="Nina-Carducci" />
+                <img
+                    className="pageImg"
+                    src={nina3}
+                    alt="Nina-Carducci"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Afin d'atteindre le meilleurs score possible, j'ai utiliser
                     des outils tel que{' '}

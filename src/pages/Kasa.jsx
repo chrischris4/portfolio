@@ -25,7 +25,7 @@ function Kasa() {
                 </button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={kasa} alt="kasa" />
+                <img className="pageImg" src={kasa} alt="kasa" loading="lazy" />
                 <div className="imgInfo">
                     Sur ce projet j'ai du mettre en place une application React,
                     je me suis occuper de toute la partie Frontend. J'ai fais en
@@ -34,7 +34,12 @@ function Kasa() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={kasa2} alt="kasa" />
+                <img
+                    className="pageImg"
+                    src={kasa2}
+                    alt="kasa"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Ensuite j'ai crée une page logement qui s'affiche au clique
                     sur une card, qui contient toute les infos présente sur

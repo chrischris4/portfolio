@@ -26,7 +26,12 @@ function SophieBluel() {
                 </button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={sophie} alt="Sophie-Bluel" />
+                <img
+                    className="pageImg"
+                    src={sophie}
+                    alt="Sophie-Bluel"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Sur ce site j'ai gérer la partie Frontend du site, j'ai
                     géneré la galerie de la page d'accueil à partir d'un fichier
@@ -34,7 +39,12 @@ function SophieBluel() {
                 </div>
             </div>
             <div className="pageInfoReverse">
-                <img className="pageImg" src={sophie2} alt="Sophie-Bluel" />
+                <img
+                    className="pageImg"
+                    src={sophie2}
+                    alt="Sophie-Bluel"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Le site contient une page d'authentification, pour qu'une
                     fois identifier, le propriétaire du site puisse accéder à un
@@ -42,7 +52,12 @@ function SophieBluel() {
                 </div>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={sophie3} alt="Sophie-Bluel" />
+                <img
+                    className="pageImg"
+                    src={sophie3}
+                    alt="Sophie-Bluel"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Une fois le mode édition activé, le propriétaire du site
                     pourra, grâce à une modale, ajouter, modifier ou supprimer

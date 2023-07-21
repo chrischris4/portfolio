@@ -24,7 +24,12 @@ function Booki() {
                 </button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={booki} alt="booki" />
+                <img
+                    className="pageImg"
+                    src={booki}
+                    alt="booki"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Sur ce projet j'ai effectuer l'intégration du site en
                     html/css, j'ai du gérer le responsive, un format desktop,
