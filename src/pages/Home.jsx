@@ -28,9 +28,9 @@ function Home() {
                     <div className="adrarP">
                         <h3>Formation Adrar</h3>
                         <h3>10/2021 - 06/2022</h3>
-                        En suivant cette formation j'ai pu en savoir plus sur le
-                        métier de Developpeur ainsi qu'approfondir mes bases en
-                        coding.
+                        En suivant cette formation, j'ai pu en savoir plus sur
+                        le métier de Developpeur ainsi qu'approfondir mes bases
+                        en coding.
                     </div>
                     <a
                         className="parcoursLink"
