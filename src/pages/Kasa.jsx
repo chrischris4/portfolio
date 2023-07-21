@@ -1,4 +1,4 @@
-import '../styles/Page.css';
+import '../styles/PageMin.css';
 import kasa from '../assets/kasa.webp';
 import kasa2 from '../assets/kasa2.webp';
 import { useEffect } from 'react';

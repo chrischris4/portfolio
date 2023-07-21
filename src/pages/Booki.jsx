@@ -1,4 +1,4 @@
-import '../styles/Page.css';
+import '../styles/PageMin.css';
 import booki from '../assets/Booki.webp';
 import { useEffect } from 'react';
 

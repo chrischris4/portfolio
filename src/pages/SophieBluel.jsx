@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styles/Page.css';
+import '../styles/PageMin.css';
 import sophie from '../assets/sophiebluel.webp';
 import sophie2 from '../assets/sophiebluel3.webp';
 import sophie3 from '../assets/sophiebluel2.webp';

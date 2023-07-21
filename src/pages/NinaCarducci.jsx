@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styles/Page.css';
+import '../styles/PageMin.css';
 import nina from '../assets/nina.webp';
 import nina2 from '../assets/nina2.webp';
 import nina3 from '../assets/nina3.webp';

@@ -1,4 +1,4 @@
-import '../styles/Banner.css';
+import '../styles/BannerMin.css';
 import { useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 

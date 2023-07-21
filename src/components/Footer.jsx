@@ -1,4 +1,4 @@
-import '../styles/Footer.css';
+import '../styles/FooterMin.css';
 import git from '../assets/gitFooter.webp';
 import linkedin from '../assets/linkedinfooter.webp';
 

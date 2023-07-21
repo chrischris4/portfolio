@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styles/Page.css';
+import '../styles/PageMin.css';
 import mvg from '../assets/mvg.webp';
 import mvg2 from '../assets/mvg3.webp';
 import mvg3 from '../assets/mvg2.webp';

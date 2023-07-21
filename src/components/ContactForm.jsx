@@ -1,4 +1,4 @@
-import '../styles/ContactForm.css';
+import '../styles/ContactFormMin.css';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 emailjs.init('uFF5qZzQCkElWuX8Q');

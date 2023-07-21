@@ -1,5 +1,5 @@
 import { Link as RouterLink } from 'react-router-dom';
-import '../styles/Project.css';
+import '../styles/ProjectMin.css';
 
 function Project(props) {
     return (

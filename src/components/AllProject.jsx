@@ -3,8 +3,7 @@ import MVG from '../assets/mvg.webp';
 import SophieBluel from '../assets/sophiebluel.webp';
 import nina from '../assets/nina.webp';
 import booki from '../assets/Booki.webp';
-import '../styles/AllProject.css';
-import '../styles/Project.css';
+import '../styles/AllProjectMin.css';
 import { useEffect, useState } from 'react';
 import Project from './Project';
 

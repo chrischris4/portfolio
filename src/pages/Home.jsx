@@ -1,5 +1,5 @@
 import Banner from '../components/Banner';
-import '../styles/Home.css';
+import '../styles/HomeMin.css';
 import adrarImg from '../assets/adrar.webp';
 import openImg from '../assets/open.webp';
 import frontendImage from '../assets/frontend.webp';
