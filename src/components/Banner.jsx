@@ -40,12 +40,12 @@ function Banner() {
 
         const borderTimeout = setTimeout(() => {
             bannerAbout.classList.add('show-border');
-        }, 3600); // Définissez le délai pour l'affichage de la bordure (1,5 seconde dans cet exemple)
+        }, 3700); // Définissez le délai pour l'affichage de la bordure (1,5 seconde dans cet exemple)
 
         const linkTimeout = setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
             bannerLink.classList.add('show-link');
-        }, 3600);
+        }, 3700);
 
         bannerAbout.classList.add('fade-in');
 

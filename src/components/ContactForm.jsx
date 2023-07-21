@@ -1,10 +1,12 @@
 import '../styles/ContactForm.css';
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
     const myEmail = 'jostchristopher44@gmail.com';
 
-    const [email, setEmail] = useState('');
+    const [name, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
     const handleEmailChange = (e) => {
@@ -17,9 +19,16 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setEmail('');
-        setMessage('');
-        alert('Votre message a été envoyé avec succès.');
+        emailjs
+            .sendForm('pzjldt7', 'ozffzkd', e.target, 'uFF5qZzQCkElWuX8Q')
+            .then(
+                (result) => {
+                    console.log('E-mail sent successfully!', result.text);
+                },
+                (error) => {
+                    console.log('Failed to send e-mail!', error.text);
+                }
+            );
     };
 
     return (
@@ -27,17 +36,17 @@ function ContactForm() {
             <div className="contactP">
                 <p>
                     Pour plus d'informations, n'hésitez pas à me contacter via
-                    ce formulaire :{' '}
+                    ce formulaire :
                 </p>
             </div>
             <div className="contactForm">
                 <form onSubmit={handleSubmit}>
                     <div className="contactMail">
-                        <label htmlFor="email">Email :</label>
+                        <label htmlFor="name">Email :</label>
                         <input
                             placeholder="JohnDoe@gmail.com"
-                            type="email"
-                            value={email}
+                            type="name"
+                            value={name}
                             onChange={handleEmailChange}
                             required
                         />

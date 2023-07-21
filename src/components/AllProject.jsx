@@ -18,7 +18,7 @@ function AllProject() {
 
         filterButtons.forEach((filterButton) => {
             filterButton.addEventListener('click', function () {
-                const filterValue = this.getAttribute('dataFilter');
+                const filterValue = this.getAttribute('data-filter');
 
                 setShowProjects(false);
 
@@ -49,7 +49,7 @@ function AllProject() {
                     className={`buttonFilter ${
                         activeFilter === 'tout' ? 'filterActive' : ''
                     }`}
-                    dataFilter="tout"
+                    data-filter="tout"
                 >
                     Tout
                 </button>
@@ -57,7 +57,7 @@ function AllProject() {
                     className={`buttonFilter ${
                         activeFilter === 'front' ? 'filterActive' : ''
                     }`}
-                    dataFilter="front"
+                    data-filter="front"
                 >
                     Frontend
                 </button>
@@ -65,7 +65,7 @@ function AllProject() {
                     className={`buttonFilter ${
                         activeFilter === 'back' ? 'filterActive' : ''
                     }`}
-                    dataFilter="back"
+                    data-filter="back"
                 >
                     Backend
                 </button>
@@ -73,7 +73,7 @@ function AllProject() {
                     className={`buttonFilter ${
                         activeFilter === 'seo' ? 'filterActive' : ''
                     }`}
-                    dataFilter="seo"
+                    data-filter="seo"
                 >
                     SEO
                 </button>

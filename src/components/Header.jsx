@@ -6,6 +6,7 @@ import backHome from '../assets/backHome.webp';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+// import { useState } from 'react';
 
 function Header() {
     const scrollToTop = () => {
@@ -36,6 +37,12 @@ function Header() {
             topPage.classList.remove('show');
         }
     });
+
+    // const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    // const toggleMenu = () => {
+    //     setIsMenuOpen(!isMenuOpen);
+    // };
 
     return (
         <div className="header">
@@ -110,6 +117,11 @@ function Header() {
                     />
                 </a>
             </nav>
+            {/* <div className="menuBurger" onClick={toggleMenu}>
+                <div className={isMenuOpen ? 'line line1' : 'line'}></div>
+                <div className={isMenuOpen ? 'line line2' : 'line'}></div>
+                <div className={isMenuOpen ? 'line line3' : 'line'}></div>
+            </div> */}
         </div>
     );
 }

@@ -92,7 +92,7 @@ textarea {
     color: white;
     margin: auto;
     font-size: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     transition: transform 0.3s ease;
 }
 
