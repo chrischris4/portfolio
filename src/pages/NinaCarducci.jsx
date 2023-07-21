@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
-import nina from '../assets/nina.png';
-import nina2 from '../assets/nina2.png';
-import nina3 from '../assets/nina3.png';
+import nina from '../assets/nina.webp';
+import nina2 from '../assets/nina2.webp';
+import nina3 from '../assets/nina3.webp';
 
 function NinaCarducci() {
     useEffect(() => {
@@ -12,7 +12,7 @@ function NinaCarducci() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Nina Carducci - Site de Photographe</h1>
+                <h1>Nina Carducci - Photographe</h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

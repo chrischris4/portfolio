@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
-import sophie from '../assets/SophieBluel.png';
-import sophie2 from '../assets/SophieBluel3.png';
-import sophie3 from '../assets/SophieBluel2.png';
+import sophie from '../assets/sophiebluel.webp';
+import sophie2 from '../assets/sophiebluel3.webp';
+import sophie3 from '../assets/sophiebluel2.webp';
 
 function SophieBluel() {
     useEffect(() => {
@@ -12,7 +12,7 @@ function SophieBluel() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Sophie Bluel - Site de Designer</h1>
+                <h1>Sophie Bluel - Designer</h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

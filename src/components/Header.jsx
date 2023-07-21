@@ -1,7 +1,7 @@
 import '../styles/Header.css';
-import linkedin from '../assets/linkedin.png';
+import linkedin from '../assets/linkedin.webp';
 import git from '../assets/git.webp';
-import vectorUp from '../assets/vectorUp.jpg';
+import vectorUp from '../assets/vectorup.webp';
 import backHome from '../assets/backHome.webp';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
@@ -69,6 +69,15 @@ function Header() {
             <nav>
                 {linksHome && (
                     <>
+                        <ScrollLink
+                            to="parcoursLien"
+                            className="link"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                        >
+                            Parcours
+                        </ScrollLink>
                         <ScrollLink
                             to="competenceLien"
                             className="link"

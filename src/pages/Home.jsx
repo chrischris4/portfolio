@@ -1,10 +1,10 @@
 import Banner from '../components/Banner';
 import '../styles/Home.css';
 import adrarImg from '../assets/adrar.webp';
-import openImg from '../assets/open.png';
+import openImg from '../assets/open.webp';
 import frontendImage from '../assets/frontend.webp';
 import backendImage from '../assets/backend.webp';
-import outilImage from '../assets/outil.png';
+import outilImage from '../assets/outil.webp';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
 
@@ -18,7 +18,7 @@ function Home() {
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
-            <div id="parcourLien"></div>
+            <div id="parcoursLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Parcours</h2>

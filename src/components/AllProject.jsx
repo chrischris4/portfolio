@@ -1,7 +1,7 @@
-import kasa from '../assets/kasa.png';
-import MVG from '../assets/MVG.png';
-import SophieBluel from '../assets/SophieBluel.png';
-import nina from '../assets/nina.png';
+import kasa from '../assets/kasa.webp';
+import MVG from '../assets/mvg.webp';
+import SophieBluel from '../assets/sophiebluel.webp';
+import nina from '../assets/nina.webp';
 import booki from '../assets/Booki.webp';
 import '../styles/AllProject.css';
 import '../styles/Project.css';
@@ -83,7 +83,7 @@ function AllProject() {
             >
                 <div className="projectContent tout front">
                     <Project
-                        title="Kasa - Agence Immobilier"
+                        title="Kasa - Agence Immobilière"
                         cover={kasa}
                         link={`/Kasa`}
                     />
@@ -104,7 +104,7 @@ function AllProject() {
                 </div>
                 <div className="projectContent tout seo">
                     <Project
-                        title="Nina Carducci - Portfolio d'Une Photographe"
+                        title="Nina Carducci - Photographe"
                         cover={nina}
                         link={`/NinaCarducci`}
                     />

@@ -1,6 +1,6 @@
 import '../styles/Page.css';
-import kasa from '../assets/kasa.png';
-import kasa2 from '../assets/kasa2.png';
+import kasa from '../assets/kasa.webp';
+import kasa2 from '../assets/kasa2.webp';
 import { useEffect } from 'react';
 
 function Kasa() {
