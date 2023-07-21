@@ -36,17 +36,17 @@ function SophieBluel() {
             <div className="pageInfoReverse">
                 <img className="pageImg" src={sophie2} alt="Sophie-Bluel" />
                 <div className="imgInfo">
-                    Une fois le mode édition activé, le propriétaire du site
-                    pourra, grâce à une modale, ajouter, modifier ou supprimer
-                    des images présentes dans la galerie.
+                    Le site contient une page d'authentification, pour qu'une
+                    fois identifier, le propriétaire du site puisse accéder à un
+                    mode édition.
                 </div>
             </div>
             <div className="pageInfo">
                 <img className="pageImg" src={sophie3} alt="Sophie-Bluel" />
                 <div className="imgInfo">
-                    Le site contient une page d'authentification, pour qu'une
-                    fois identifier, le propriétaire du site puisse accéder à un
-                    mode édition.
+                    Une fois le mode édition activé, le propriétaire du site
+                    pourra, grâce à une modale, ajouter, modifier ou supprimer
+                    des images présentes dans la galerie.
                 </div>
             </div>
             <div className="sectionTitle">
