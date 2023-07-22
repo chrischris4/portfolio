@@ -73,8 +73,7 @@ function Header() {
         </>
       )}
 
-      {/* Show navigation for screen width above 635px */}
-      {windowWidth > 635 && (
+      {windowWidth >= 635 && (
         <nav>
           {linksHome && (
             <>
@@ -92,17 +91,16 @@ function Header() {
         </nav>
       )}
 
-      {/* Show burger menu for screen width below or equal to 635px */}
       {windowWidth <= 635 && (
         <>
+
+        
           <div className={`menuBurger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="line line1"></div>
             <div className="line line2"></div>
             <div className="line line3"></div>
           </div>
-          {/* Show overlay when the menu is open */}
           {isMenuOpen && <div className="overlayBurger" onClick={closeMenu}></div>}
-          {/* Show navigation items when the menu is open */}
           {isMenuOpen && (
             <nav className="burgerMenu">
               {linksHome && (
@@ -118,6 +116,7 @@ function Header() {
                   </ScrollLink>
                 </>
               )}
+          
             </nav>
           )}
         </>

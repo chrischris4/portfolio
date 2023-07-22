@@ -33,13 +33,13 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    padding: 40px 0px 10px 0px;
+    padding: 20px 0px 10px 0px;
 }
 
 .contactLinkLinkedin{
     padding: 10px 10px;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
     background-color: #0e76a8 ;
     color: black;
 }
@@ -55,7 +55,7 @@
     border-radius: 5px;
     background: red;
     display: flex;
-    width: 200px;
+    width: 250px;
     margin: auto;
     transition: transform 0.3s ease;
 }
@@ -72,7 +72,7 @@ form {
 }
 
 .contactMail {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 input {
@@ -140,4 +140,14 @@ textarea {
         margin: auto;
         width: 80%;
     }
+
+    .contactP{
+        font-size: 25px;
+    }
+
+    .contactForm p {
+        font-size: 25px}
+
+        .contactButton {
+font-size: 15px};
 }

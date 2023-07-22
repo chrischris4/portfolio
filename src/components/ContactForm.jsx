@@ -37,7 +37,7 @@ function ContactForm() {
                     Contactez moi sur :
                 </p>
             <div className='contactLinkedin'>
-                    <a className='contactLinkLinkedin' href="https://www.linkedin.com/in/christopher-jost-888b75195/">Linkedin</a>
+                    <a className='contactLinkLinkedin' href="https://www.linkedin.com/in/christopher-jost-888b75195/">Linkedin </a>
                 </div>
                 <div className="myEmail">
                 <a className="myEmailLink" href={`mailto:${myEmail}`}>
