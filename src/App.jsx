@@ -16,16 +16,16 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path="https://chrischris4.github.io/p8/" element={<Home />} />
-                <Route path="https://chrischris4.github.io/p8/Booki" element={<Booki />} />
-                <Route path="https://chrischris4.github.io/p8/Kasa" element={<Kasa />} />
-                <Route path="https://chrischris4.github.io/p8/SophieBluel" element={<SophieBluel />} />
-                <Route path="https://chrischris4.github.io/p8/NinaCarducci" element={<NinaCarducci />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/Booki" element={<Booki />} />
+                <Route path="/Kasa" element={<Kasa />} />
+                <Route path="/SophieBluel" element={<SophieBluel />} />
+                <Route path="/NinaCarducci" element={<NinaCarducci />} />
                 <Route
-                    path="https://chrischris4.github.io/p8/MonVieuxGrimoire"
+                    path="/MonVieuxGrimoire"
                     element={<MonVieuxGrimoire />}
                 />
-                <Route path="https://chrischris4.github.io/p8/*" element={<Error404 />} />
+                <Route path="/*" element={<Error404 />} />
             </Routes>
             <ContactForm />
             <Footer />
