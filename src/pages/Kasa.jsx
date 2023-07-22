@@ -11,7 +11,7 @@ function Kasa() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Kasa - Site Agence Immobilière </h1>
+                <h1>Kasa - Agence Immobilière </h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">
