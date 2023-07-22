@@ -77,13 +77,13 @@ function Header() {
         <nav>
           {linksHome && (
             <>
-              <ScrollLink to="parcoursLien" className="link" spy={true} smooth={true} duration={1000}>
+              <ScrollLink href='parcoursLien' to="parcoursLien" className="link" spy={true} smooth={true} duration={1000}>
                 Parcours
               </ScrollLink>
-              <ScrollLink to="competenceLien" className="link" spy={true} smooth={true} duration={1000}>
+              <ScrollLink href='competenceLien' to="competenceLien" className="link" spy={true} smooth={true} duration={1000}>
                 Compétences
               </ScrollLink>
-              <ScrollLink to="projectLien" className="link" spy={true} smooth={true} duration={1000}>
+              <ScrollLink href='projectLien' to="projectLien" className="link" spy={true} smooth={true} duration={1000}>
                 Projets
               </ScrollLink>
             </>
