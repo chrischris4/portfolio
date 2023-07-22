@@ -13,7 +13,7 @@ import ContactForm from './components/ContactForm';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/p8">
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
