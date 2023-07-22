@@ -1,8 +1,8 @@
-import kasa from '../assets/kasa.webp';
-import MVG from '../assets/mvg.webp';
-import SophieBluel from '../assets/sophiebluel.webp';
-import nina from '../assets/nina.webp';
-import booki from '../assets/Booki.webp';
+import kasa from '../assets/kasa-min.webp';
+import MVG from '../assets/mvg-min.webp';
+import SophieBluel from '../assets/sophiebluel-min.webp';
+import nina from '../assets/nina-min.webp';
+import booki from '../assets/Booki-min.webp';
 import '../styles/AllProjectMin.css';
 import { useEffect, useState } from 'react';
 import Project from './Project';

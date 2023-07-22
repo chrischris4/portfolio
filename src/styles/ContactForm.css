@@ -41,7 +41,7 @@
     border-radius: 5px;
     width: 250px;
     background-color: #0e76a8 ;
-    color: black;
+    color: white
 }
 
 .contactLinkLinkedin:hover{
@@ -53,7 +53,7 @@
     color: white;
     padding: 10px 10px;
     border-radius: 5px;
-    background: red;
+    background: rgb(109, 6, 6);
     display: flex;
     width: 250px;
     margin: auto;
@@ -62,7 +62,6 @@
 
 .myEmailLink:hover {
     color: white;
-
     transform: scale(1.1);
 }
 

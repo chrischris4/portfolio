@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Header.css';
-import vectorUp from '../assets/vectorup.webp';
-import backHome from '../assets/backHome.webp';
+import vectorUp from '../assets/vectorup-min.webp';
+import backHome from '../assets/backHome-min.webp';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
@@ -84,7 +84,7 @@ function Header() {
                 Compétences
               </ScrollLink>
               <ScrollLink to="projectLien" className="link" spy={true} smooth={true} duration={1000}>
-                Mes projets
+                Projets
               </ScrollLink>
             </>
           )}
@@ -105,14 +105,14 @@ function Header() {
             <nav className="burgerMenu">
               {linksHome && (
                 <>
-                  <ScrollLink to="parcoursLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
+                  <ScrollLink href='parcoursLien' to="parcoursLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
                     Parcours
                   </ScrollLink>
-                  <ScrollLink to="competenceLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
+                  <ScrollLink href='competenceLien' to="competenceLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
                     Compétences
                   </ScrollLink>
-                  <ScrollLink to="projectLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
-                    Mes projets
+                  <ScrollLink href='projectLien' to="projectLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
+                    Projets
                   </ScrollLink>
                 </>
               )}

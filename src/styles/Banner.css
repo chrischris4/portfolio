@@ -6,7 +6,7 @@
 }
 
 .bannerColor {
-    background-image: url('../assets/mimifleur.webp');
+    background-image: url('../assets/mimifleur-min.webp');
     background-position: 30% 70%;
     background-size: cover;
     padding-top: 100px;
@@ -153,6 +153,7 @@
     }
 
     .banner {
+        padding-bottom: 25px;
         padding-top: 0px;
         display: flex;
         flex-direction: column;
@@ -164,6 +165,10 @@
 @media screen and (max-width: 635px) {
     .bannerAll {
         margin-top: 20px;
+    }
+
+    .banner {
+        padding-bottom: 10px;
     }
 
     .bannerLastName {
@@ -188,6 +193,7 @@
     }
 
     .bannerContent {
+        padding-bottom: 25px;
         height: fit-content;
         padding-right: 20px;
     }

@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import '../styles/PageMin.css';
-import sophie from '../assets/sophiebluel.webp';
-import sophie2 from '../assets/sophiebluel3.webp';
-import sophie3 from '../assets/sophiebluel2.webp';
+import sophie from '../assets/sophiebluel-min.webp';
+import sophie2 from '../assets/sophiebluel3-min.webp';
+import sophie3 from '../assets/sophiebluel2-min.webp';
 
 function SophieBluel() {
     useEffect(() => {

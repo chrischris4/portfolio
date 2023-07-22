@@ -1,10 +1,10 @@
 import Banner from '../components/Banner';
 import '../styles/HomeMin.css';
-import adrarImg from '../assets/adrar.webp';
-import openImg from '../assets/open.webp';
-import frontendImage from '../assets/frontend.webp';
-import backendImage from '../assets/backend.webp';
-import outilImage from '../assets/outil.webp';
+import adrarImg from '../assets/adrar-min.webp';
+import openImg from '../assets/open-min.webp';
+import frontendImage from '../assets/frontend-min.webp';
+import backendImage from '../assets/backend-min.webp';
+import outilImage from '../assets/outil-min.webp';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
 
@@ -139,7 +139,7 @@ function Home() {
             <div id="projectLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Mes projets</h2>
+                <h2>Projets</h2>
             </div>
             <AllProject />
             <div className="sectionTitle">

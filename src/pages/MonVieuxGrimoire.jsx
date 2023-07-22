@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import '../styles/PageMin.css';
-import mvg from '../assets/mvg.webp';
-import mvg2 from '../assets/mvg3.webp';
-import mvg3 from '../assets/mvg2.webp';
+import mvg from '../assets/mvg-min.webp';
+import mvg2 from '../assets/mvg3-min.webp';
+import mvg3 from '../assets/mvg2-min.webp';
 
 function LeVieuxGrimoire() {
     useEffect(() => {

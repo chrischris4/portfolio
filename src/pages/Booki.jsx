@@ -1,5 +1,5 @@
 import '../styles/PageMin.css';
-import booki from '../assets/Booki.webp';
+import booki from '../assets/Booki-min.webp';
 import { useEffect } from 'react';
 
 function Booki() {

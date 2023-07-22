@@ -1,4 +1,4 @@
-import '../styles/BannerMin.css';
+import '../styles/Banner.css';
 import { useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -76,6 +76,7 @@ function Banner() {
                         dynamiques. Prêt à contribuer à des projets innovants !
                     </div>
                     <ScrollLink
+                    href='contactLien'
                         to="contactLien"
                         className="bannerLink"
                         spy={true}

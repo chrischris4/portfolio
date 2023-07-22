@@ -1,6 +1,6 @@
 import '../styles/PageMin.css';
-import kasa from '../assets/kasa.webp';
-import kasa2 from '../assets/kasa2.webp';
+import kasa from '../assets/kasa-min.webp';
+import kasa2 from '../assets/kasa2-min.webp';
 import { useEffect } from 'react';
 
 function Kasa() {

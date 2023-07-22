@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import '../styles/PageMin.css';
-import nina from '../assets/nina.webp';
-import nina2 from '../assets/nina2.webp';
-import nina3 from '../assets/nina3.webp';
+import nina from '../assets/nina-min.webp';
+import nina2 from '../assets/nina2-min.webp';
+import nina3 from '../assets/nina3-min.webp';
 
 function NinaCarducci() {
     useEffect(() => {
