@@ -8,11 +8,14 @@
 }
 
 .contactP {
+    margin-bottom: 0px;
+    padding: 20px 0px;
     width: 100%;
     background-color: #a3f5f9;
 }
 
 .contactForm {
+    flex-direction: column;
     margin: auto;
     display: flex;
     width: 100%;
@@ -20,7 +23,51 @@
     background-color: black;
 }
 
+.contactForm p {
+    margin-bottom: 0px;
+    color: white;
+}
+
+.contactLinkedin{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 10px 0px;
+}
+
+.contactLinkLinkedin{
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #0e76a8 ;
+    color: black;
+}
+
+.contactLinkLinkedin:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.myEmailLink {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: red;
+    display: flex;
+    width: 200px;
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.myEmailLink:hover {
+    color: white;
+
+    transform: scale(1.1);
+}
+
 form {
+    margin: auto;
     width: 500px;
 }
 
@@ -78,29 +125,9 @@ textarea {
 .myEmail {
     width: 100%;
     background-color: black;
-    color: white;
 }
 
-.myEmailP {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
 
-.myEmailLink {
-    display: flex;
-    width: fit-content;
-    color: white;
-    margin: auto;
-    font-size: 20px;
-    border-bottom: 2px solid white;
-    transition: transform 0.3s ease;
-}
-
-.myEmailLink:hover {
-    transform: scale(1.1);
-    color: white;
-    border-bottom: #a3f5f9 2px solid;
-}
 
 @media screen and (max-width: 991px) {
     form {

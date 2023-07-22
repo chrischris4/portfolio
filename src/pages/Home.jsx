@@ -50,8 +50,8 @@ function Home() {
                         />
                     </a>
                 </div>
-                <div className="open">
-                    <div className="openP">
+                <div className="openClass">
+                    <div className="openClassP">
                         <h3>Formation OpenClassrooms</h3>
                         <h3>12/2022 - 08/2023</h3>
                         Durant cette formation je me suis professionaliser et
@@ -70,7 +70,7 @@ function Home() {
                         </div>
 
                         <img
-                            className="openImg"
+                            className="openClassImg"
                             src={openImg}
                             alt="openclassrooms"
                             loading="lazy"
@@ -78,7 +78,6 @@ function Home() {
                     </a>
                 </div>
                 <div className="cv">
-                    <button className="buttonCv">Voir CV</button>
                     <button className="buttonCv">Télécharger CV</button>
                 </div>
             </div>

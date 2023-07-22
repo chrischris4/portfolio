@@ -1,4 +1,4 @@
-import '../styles/ContactFormMin.css';
+import '../styles/ContactForm.css';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 emailjs.init('uFF5qZzQCkElWuX8Q');
@@ -33,13 +33,19 @@ function ContactForm() {
 
     return (
         <div className="contact">
-            <div className="contactP">
-                <p>
-                    Pour plus d'informations, n'hésitez pas à me contacter via
-                    ce formulaire :
+                <p className="contactP">
+                    Contactez moi sur :
                 </p>
+            <div className='contactLinkedin'>
+                    <a className='contactLinkLinkedin' href="https://www.linkedin.com/in/christopher-jost-888b75195/">Linkedin</a>
+                </div>
+                <div className="myEmail">
+                <a className="myEmailLink" href={`mailto:${myEmail}`}>
+                    {myEmail}
+                </a>
             </div>
             <div className="contactForm">
+            <p>Ou via ce formulaire :</p>
                 <form onSubmit={handleSubmit}>
                     <div className="contactMail">
                         <label htmlFor="name">Email :</label>
@@ -65,12 +71,7 @@ function ContactForm() {
                     </button>
                 </form>
             </div>
-            <div className="myEmail">
-                <p className="myEmailP">Ou en cliquant sur ce lien :</p>
-                <a className="myEmailLink" href={`mailto:${myEmail}`}>
-                    {myEmail}
-                </a>
-            </div>
+
         </div>
     );
 }

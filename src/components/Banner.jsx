@@ -47,11 +47,18 @@ function Banner() {
             bannerLink.classList.add('show-link');
         }, 3700);
 
+        const githubLinkTimeout = setTimeout(() => {
+            const githubLink = document.querySelector('.githubLink');
+            githubLink.classList.add('show-link');
+        }, 3700);
+
         bannerAbout.classList.add('fade-in');
 
         return () => {
             clearTimeout(borderTimeout);
             clearTimeout(linkTimeout);
+            clearTimeout(githubLinkTimeout);
+
         };
     }, []);
 
@@ -77,6 +84,13 @@ function Banner() {
                     >
                         Contact
                     </ScrollLink>
+                    <a                       className="bannerLink githubLink"
+                    href="https://github.com/chrischris4"
+                    target="_blank"
+                    rel="noreferrer">
+                        Github
+                    </a>
+
                 </div>
             </div>
         </div>

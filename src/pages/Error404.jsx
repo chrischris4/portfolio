@@ -10,7 +10,7 @@ function Error404() {
         <div className="page-container">
             <div id="error-main">
                 <h2 className="error-404">404</h2>
-                <p>La page que vous demandez n'existe pas.</p>
+                <p className='errorP'>La page que vous demandez n'existe pas.</p>
                 <nav className="nav-error">
                     <Link to="/" className="error-link">
                         Retourner sur la page d'Accueil

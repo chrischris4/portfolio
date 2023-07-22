@@ -1,10 +1,11 @@
 .header {
+    height: 50px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     z-index: 1;
     font-weight: 500;
-    margin: auto;
     width: 100%;
     color: black;
     background-color: white;
@@ -12,40 +13,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border-bottom: 1px solid black;
     padding: 15px 0px;
-}
-
-.profil {
-    padding-left: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-}
-
-.linkedin {
-    animation: fade-in 2s ease forwards;
-    margin-top: 1px;
-    width: 45px;
-    height: 45px;
-    background-color: white;
-    transition: transform 0.3s ease;
-}
-
-.linkedin:hover {
-    transform: scale(1.1);
-}
-
-.github {
-    animation: fade-in 2s ease forwards;
-    cursor: pointer;
-    padding-left: 13px;
-    width: 52px;
-    transition: transform 0.3s ease;
-}
-
-.github:hover {
-    transform: scale(1.1);
 }
 
 .backHomeImg {
@@ -70,7 +38,7 @@ nav {
 
 .link {
     cursor: pointer;
-    margin: 0px 20px;
+    margin-right: 50px;
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -90,16 +58,16 @@ nav {
 }
 
 .topPage {
-    display: none;
     opacity: 0;
     transition: opacity ease;
-    padding: 0px 20px;
+    padding: 0px 50px;
     text-decoration: none;
     color: black;
     transition: transform 0.9s ease;
 }
 
 .topPage.show {
+    animation: fade-in 2s ease forwards;
     display: flex;
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -109,69 +77,43 @@ nav {
 .topPage.show:hover {
     transform: scale(1.1);
 }
-/* 
+
 .menuBurger {
-    display: none;
+    animation: fade-in 2s ease forwards;
+
+    z-index: 1;
+    padding-right: 20px;
     cursor: pointer;
-}
+    display: none;
+  }
 
-.line {
-    width: 25px;
+  .menuBurger .line {
+    transition: transform 0.3s ease;
+    width: 30px;
     height: 3px;
-    background-color: #000;
-    margin: 5px 0;
-    transition: transform 0.2s ease;
-}
+    background-color: #333;
+    margin: 3px 0;
+  }
 
-.open .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
+  .overlayBurger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; 
+  }
 
-.open .line2 {
-    opacity: 0;
-}
 
-.open .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-} */
 
 @media screen and (max-width: 635px) {
-    /* .menuBurger {
-        display: block;
-    }
 
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #f9f9f9;
-        width: 100%;
-        overflow: hidden;
-        transition: 0.2s ease;
-    }
-
-    .nav.open {
-        height: calc(100vh - 70px);
-    } */
     .header {
+        height: 46px;
         padding: 5px 0px;
     }
 
-    .profil {
-        padding-left: 10px;
-    }
-    .linkedin {
-        width: 35px;
-        height: 35px;
-    }
-
-    .github {
-        padding-left: 5px;
-        width: 41px;
-    }
 
     .backHomeImg {
         margin: -14px 0px 0px -17px;
@@ -188,9 +130,58 @@ nav {
     }
 
     .topPage {
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
     .link {
         font-size: 14px;
     }
+
+    nav {
+        display: none; 
+      }
+
+      .menuBurger{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+      }
+
+    
+      .burgerMenu {
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 70px;
+        align-items: center;
+      }
+      
+      .burgerMenu .link {
+        z-index: 3;
+        margin: 18px;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    
+      .menuBurger.open .line1 {
+        transform: rotate(-45deg) translate(-4px, 8px);
+      }
+    
+      .menuBurger.open .line2 {
+        opacity: 0;
+      }
+    
+      .menuBurger.open .line3 {
+        transform: rotate(45deg) translate(-4px, -8px);
+      }
+
+      .overlayBurger {
+        display: block;
+      }
 }

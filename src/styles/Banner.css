@@ -110,6 +110,7 @@
 }
 
 .bannerLink {
+    margin-right: 20px;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.9s ease;

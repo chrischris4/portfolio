@@ -1,130 +1,129 @@
+import React, { useState, useEffect } from 'react';
 import '../styles/Header.css';
-import linkedin from '../assets/linkedin.webp';
-import git from '../assets/git.webp';
 import vectorUp from '../assets/vectorup.webp';
 import backHome from '../assets/backHome.webp';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-// import { useState } from 'react';
 
 function Header() {
-    const scrollToTop = () => {
-        scroll.scrollToTop({
-            duration: 1000,
-            smooth: true,
-        });
-    };
-    const location = useLocation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const allLinksPages = [
+    '/Kasa',
+    '/MonVieuxGrimoire',
+    '/NinaCarducci',
+    '/SophieBluel',
+    '/Booki',
+    '/*',
+  ];
+  const linksPage = allLinksPages.includes(location.pathname);
+  const linksHome = location.pathname === '/';
 
-    const allLinksPages = [
-        '/Kasa',
-        '/MonVieuxGrimoire',
-        '/NinaCarducci',
-        '/SophieBluel',
-        '/Booki',
-        '/*',
-    ];
-    const linksPage = allLinksPages.includes(location.pathname);
-
-    const linksHome = location.pathname === '/';
-
-    window.addEventListener('scroll', function () {
-        var topPage = document.querySelector('.topPage');
-
-        if (window.scrollY > 0) {
-            topPage.classList.add('show');
-        } else {
-            topPage.classList.remove('show');
-        }
+  const scrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 1000,
+      smooth: true,
     });
+  };
 
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
 
-    // const toggleMenu = () => {
-    //     setIsMenuOpen(!isMenuOpen);
-    // };
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
-    return (
-        <div className="header">
-            <div className="profil">
-                <a
-                    href="https://www.linkedin.com/in/christopher-jost-888b75195/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <img className="linkedin" src={linkedin} alt="linkedin" />
-                </a>
-                <a
-                    href="https://github.com/chrischris4"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <img className="github" src={git} alt="github" />
-                </a>
-            </div>
-            {linksPage && (
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.add('header-mounted');
+    return () => {
+      document.body.classList.remove('header-mounted');
+    };
+  }, []);
+
+  window.addEventListener('scroll', function () {
+    var topPage = document.querySelector('.topPage');
+
+    if (window.scrollY > 0) {
+      topPage.classList.add('show');
+    } else {
+      topPage.classList.remove('show');
+    }
+  });
+
+  return (
+    <div className="header">
+      <a href="#topPageLink" className="topPage" onClick={scrollToTop}>
+        <img className="vectorUp" src={vectorUp} alt="haut-de-page" />
+      </a>
+
+      {linksPage && (
+        <>
+          <RouterLink className="backHomeLink" to={`/`}>
+            <img className="backHomeImg" src={backHome} alt="accueil" />
+          </RouterLink>
+        </>
+      )}
+
+      {/* Show navigation for screen width above 635px */}
+      {windowWidth > 635 && (
+        <nav>
+          {linksHome && (
+            <>
+              <ScrollLink to="parcoursLien" className="link" spy={true} smooth={true} duration={1000}>
+                Parcours
+              </ScrollLink>
+              <ScrollLink to="competenceLien" className="link" spy={true} smooth={true} duration={1000}>
+                Compétences
+              </ScrollLink>
+              <ScrollLink to="projectLien" className="link" spy={true} smooth={true} duration={1000}>
+                Mes projets
+              </ScrollLink>
+            </>
+          )}
+        </nav>
+      )}
+
+      {/* Show burger menu for screen width below or equal to 635px */}
+      {windowWidth <= 635 && (
+        <>
+          <div className={`menuBurger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <div className="line line1"></div>
+            <div className="line line2"></div>
+            <div className="line line3"></div>
+          </div>
+          {/* Show overlay when the menu is open */}
+          {isMenuOpen && <div className="overlayBurger" onClick={closeMenu}></div>}
+          {/* Show navigation items when the menu is open */}
+          {isMenuOpen && (
+            <nav className="burgerMenu">
+              {linksHome && (
                 <>
-                    <RouterLink className="backHomeLink" to={`/`}>
-                        <img
-                            className="backHomeImg"
-                            src={backHome}
-                            alt="accueil"
-                        />
-                    </RouterLink>
+                  <ScrollLink to="parcoursLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
+                    Parcours
+                  </ScrollLink>
+                  <ScrollLink to="competenceLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
+                    Compétences
+                  </ScrollLink>
+                  <ScrollLink to="projectLien" className="link" spy={true} smooth={true} duration={1000} onClick={closeMenu}>
+                    Mes projets
+                  </ScrollLink>
                 </>
-            )}
-            <nav>
-                {linksHome && (
-                    <>
-                        <ScrollLink
-                            to="parcoursLien"
-                            className="link"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            Parcours
-                        </ScrollLink>
-                        <ScrollLink
-                            to="competenceLien"
-                            className="link"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            Compétences
-                        </ScrollLink>
-                        <ScrollLink
-                            to="projectLien"
-                            className="link"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            Mes projets
-                        </ScrollLink>
-                    </>
-                )}
-                <a
-                    href="#topPageLink"
-                    className="topPage"
-                    onClick={scrollToTop}
-                >
-                    <img
-                        className="vectorUp"
-                        src={vectorUp}
-                        alt="haut-de-page"
-                    />
-                </a>
+              )}
             </nav>
-            {/* <div className="menuBurger" onClick={toggleMenu}>
-                <div className={isMenuOpen ? 'line line1' : 'line'}></div>
-                <div className={isMenuOpen ? 'line line2' : 'line'}></div>
-                <div className={isMenuOpen ? 'line line3' : 'line'}></div>
-            </div> */}
-        </div>
-    );
+          )}
+        </>
+      )}
+    </div>
+  );
 }
 
 export default Header;
