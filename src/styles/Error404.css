@@ -9,7 +9,7 @@
 
 .error-404 {
     margin-top: 66px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     height: auto;
     font-size: 288px;
 }
@@ -29,16 +29,22 @@ p {
 }
 
 .error-link {
+    text-align: center;
     font-size: 24px;
     color: black;
     font-weight: 500;
-    margin-top: 200px;
+    margin-top: 70px;
+    margin-bottom: 30px;
     text-decoration: none;
     border-bottom: solid 2px white;
+    transition: transform 0.3s ease;
+
 }
 
 .error-link:hover {
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #a3f5f9;
+    transform: scale(1.1);
+
 }
 
 @media screen and (max-width: 991px) {

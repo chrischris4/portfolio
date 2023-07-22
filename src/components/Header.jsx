@@ -23,6 +23,7 @@ function Header() {
         '/NinaCarducci',
         '/SophieBluel',
         '/Booki',
+        '/*',
     ];
     const linksPage = allLinksPages.includes(location.pathname);
 
