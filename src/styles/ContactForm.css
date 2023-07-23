@@ -45,6 +45,7 @@
 }
 
 .contactLinkLinkedin:hover{
+    color: white;
     transition: transform 0.3s ease;
     transform: scale(1.1);
 }
