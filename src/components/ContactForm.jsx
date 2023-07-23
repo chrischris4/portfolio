@@ -1,6 +1,8 @@
 import '../styles/ContactForm.css';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import skype from '../assets/skype.webp';
+import linkedin from '../assets/linkedin.webp';
 emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
@@ -38,6 +40,7 @@ function ContactForm() {
                     href={`mailto:jostchristopher44@gmail.com`}
                 >
                     Jostchristopher44@gmail.com
+                    <span class="material-symbols-outlined">mail</span>
                 </a>
                 <a
                     className="linkedinLink"
@@ -46,14 +49,20 @@ function ContactForm() {
                     rel="noreferrer"
                 >
                     Linkedin
+                    <img
+                        className="linkedinImg"
+                        src={linkedin}
+                        alt="linkedin"
+                    />
                 </a>
                 <a
                     className="skypeLink"
-                    href="https://www.linkedin.com/in/christopher-jost-888b75195/"
+                    href="https://join.skype.com/invite/Cec2SWhMcalN"
                     target="_blank"
                     rel="noreferrer"
                 >
                     Skype
+                    <img className="skypeImg" src={skype} alt="linkedin" />
                 </a>
             </div>
 
