@@ -4,8 +4,6 @@ import emailjs from 'emailjs-com';
 emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
-    const myEmail = 'jostchristopher44@gmail.com';
-
     const [name, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
@@ -33,20 +31,26 @@ function ContactForm() {
 
     return (
         <div className="contact">
-                <p className="contactP">
-                    Contactez moi sur :
-                </p>
-            <div className='contactLinkedin'>
-                    <a className='contactLinkLinkedin' href="https://www.linkedin.com/in/christopher-jost-888b75195/"                     target="_blank"
-                    rel="noreferrer">Linkedin </a>
-                </div>
-                <div className="myEmail">
-                <a className="myEmailLink" href={`mailto:${myEmail}`}>
-                    {myEmail}
+            <p className="contactP">Contactez moi sur :</p>
+            <div className="contactLinks">
+                <a
+                    className="myEmailLink"
+                    href={`mailto:jostchristopher44@gmail.com`}
+                >
+                    jostchristopher44@gmail.com
+                </a>
+                <a
+                    className="linkedinLink"
+                    href="https://www.linkedin.com/in/christopher-jost-888b75195/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Linkedin
                 </a>
             </div>
+
             <div className="contactForm">
-            <p>Ou via ce formulaire :</p>
+                <p>Ou via ce formulaire :</p>
                 <form onSubmit={handleSubmit}>
                     <div className="contactMail">
                         <label htmlFor="name">Email :</label>
@@ -72,7 +76,6 @@ function ContactForm() {
                     </button>
                 </form>
             </div>
-
         </div>
     );
 }

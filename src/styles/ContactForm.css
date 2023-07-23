@@ -28,23 +28,26 @@
     color: white;
 }
 
-.contactLinkedin{
+.contactLinks {
     width: 100%;
     background-color: black;
     display: flex;
-    justify-content: center;
-    padding: 20px 0px 10px 0px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
 }
 
-.contactLinkLinkedin{
+.linkedinLink {
+    font-size: 25px;
+    width: 40%;
+    margin-top: 20px;
     padding: 10px 10px;
     border-radius: 5px;
-    width: 250px;
-    background-color: #0e76a8 ;
-    color: white
+    background-color: #0e76a8;
+    color: white;
 }
 
-.contactLinkLinkedin:hover{
+.linkedinLink:hover {
     color: white;
     transition: transform 0.3s ease;
     transform: scale(1.1);
@@ -56,8 +59,8 @@
     border-radius: 5px;
     background: rgb(109, 6, 6);
     display: flex;
-    width: 250px;
-    margin: auto;
+    font-size: 25px;
+    width: 40%;
     transition: transform 0.3s ease;
 }
 
@@ -127,8 +130,6 @@ textarea {
     background-color: black;
 }
 
-
-
 @media screen and (max-width: 991px) {
     form {
         width: 400px;
@@ -141,13 +142,15 @@ textarea {
         width: 80%;
     }
 
-    .contactP{
+    .contactP {
         font-size: 25px;
     }
 
     .contactForm p {
-        font-size: 25px}
+        font-size: 25px;
+    }
 
-        .contactButton {
-font-size: 15px};
+    .contactButton {
+        font-size: 15px;
+    }
 }
