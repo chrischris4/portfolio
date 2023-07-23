@@ -40,7 +40,7 @@ function ContactForm() {
                     href={`mailto:jostchristopher44@gmail.com`}
                 >
                     Jostchristopher44@gmail.com
-                    <span class="material-symbols-outlined">mail</span>
+                    <span className="material-symbols-outlined">mail</span>
                 </a>
                 <a
                     className="linkedinLink"

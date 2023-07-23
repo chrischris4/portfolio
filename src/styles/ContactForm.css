@@ -25,11 +25,12 @@
 }
 
 .contactForm p {
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     color: white;
 }
 
 .contactLinks {
+    padding-top: 30px;
     width: 100%;
     background-color: black;
     display: flex;
@@ -108,10 +109,6 @@ form {
     width: 500px;
 }
 
-.contactMail {
-    margin-top: 10px;
-}
-
 input {
     height: 30px;
     border-radius: 5px;
@@ -126,6 +123,7 @@ label {
 }
 
 textarea {
+    resize: none;
     height: 60px;
     border-radius: 5px;
     border: 2px solid;
@@ -167,6 +165,13 @@ textarea {
 @media screen and (max-width: 991px) {
     form {
         width: 400px;
+    }
+    .contactP {
+        font-size: 30px;
+    }
+
+    .contactForm p {
+        font-size: 30px;
     }
 }
 

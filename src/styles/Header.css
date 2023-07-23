@@ -87,6 +87,7 @@ nav {
 }
 
 .menuBurger .line {
+    border-radius: 2px;
     transition: transform 0.3s ease;
     width: 30px;
     height: 3px;
