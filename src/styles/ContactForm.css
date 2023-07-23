@@ -39,7 +39,7 @@
 
 .linkedinLink {
     font-size: 25px;
-    width: 40%;
+    width: 350px;
     margin-top: 20px;
     padding: 10px 10px;
     border-radius: 5px;
@@ -60,11 +60,28 @@
     background: rgb(109, 6, 6);
     display: flex;
     font-size: 25px;
-    width: 40%;
+    width: 350px;
     transition: transform 0.3s ease;
 }
 
 .myEmailLink:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.skypeLink {
+    margin-top: 20px;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #00aff0;
+    display: flex;
+    font-size: 25px;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.skypeLink:hover {
     color: white;
     transform: scale(1.1);
 }
@@ -109,7 +126,7 @@ textarea {
     font-family: 'Oswald';
     display: flex;
     margin: auto;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid white;
     background-color: black;
@@ -151,6 +168,13 @@ textarea {
     }
 
     .contactButton {
+        font-size: 15px;
+    }
+
+    .linkedinLink,
+    .myEmailLink,
+    .skypeLink {
+        width: 250px;
         font-size: 15px;
     }
 }

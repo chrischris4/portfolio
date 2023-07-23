@@ -31,13 +31,13 @@ function ContactForm() {
 
     return (
         <div className="contact">
-            <p className="contactP">Contactez moi sur :</p>
+            <p className="contactP">Retrouvez moi sur :</p>
             <div className="contactLinks">
                 <a
                     className="myEmailLink"
                     href={`mailto:jostchristopher44@gmail.com`}
                 >
-                    jostchristopher44@gmail.com
+                    Jostchristopher44@gmail.com
                 </a>
                 <a
                     className="linkedinLink"
@@ -47,10 +47,18 @@ function ContactForm() {
                 >
                     Linkedin
                 </a>
+                <a
+                    className="skypeLink"
+                    href="https://www.linkedin.com/in/christopher-jost-888b75195/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Skype
+                </a>
             </div>
 
             <div className="contactForm">
-                <p>Ou via ce formulaire :</p>
+                <p>Ou contactez moi via ce formulaire :</p>
                 <form onSubmit={handleSubmit}>
                     <div className="contactMail">
                         <label htmlFor="name">Email :</label>

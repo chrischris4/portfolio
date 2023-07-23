@@ -78,7 +78,13 @@ function Home() {
                     </a>
                 </div>
                 <div className="cv">
-                    <button className="buttonCv">Télécharger CV</button>
+                    <a
+                        className="buttonCv"
+                        href="https://chrischris4.github.io/P8/public/CV-JOST_Christopher.pdf"
+                        download
+                    >
+                        Télécharger CV
+                    </a>
                 </div>
             </div>
             <div id="competenceLien"></div>
