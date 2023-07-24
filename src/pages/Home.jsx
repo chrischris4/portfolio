@@ -1,10 +1,5 @@
 import Banner from '../components/Banner';
 import '../styles/Home.css';
-import adrarImg from '../assets/adrar-min.webp';
-import openImg from '../assets/open-min.webp';
-import frontendImage from '../assets/frontend-min.webp';
-import backendImage from '../assets/backend-min.webp';
-import outilImage from '../assets/outil-min.webp';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
 
@@ -44,7 +39,7 @@ function Home() {
                         </div>
                         <img
                             className="adrarImg"
-                            src={adrarImg}
+                            src="https://i.ibb.co/Q6PbSS4/adrar-min.webp"
                             alt="adrar"
                             loading="lazy"
                         />
@@ -71,7 +66,7 @@ function Home() {
 
                         <img
                             className="openClassImg"
-                            src={openImg}
+                            src="https://i.ibb.co/ZzwdcZF/open-min.webp"
                             alt="openclassrooms"
                             loading="lazy"
                         />
@@ -80,7 +75,7 @@ function Home() {
                 <div className="cv">
                     <a
                         className="buttonCv"
-                        href="https://chrischris4.github.io/P8/public/CV-JOST_Christopher.pdf"
+                        href="https://i.ibb.co/NCDQbLT/CV-JOST-Christopher.jpg"
                         download
                     >
                         Télécharger CV
@@ -96,7 +91,7 @@ function Home() {
                 <div className="frontend">
                     <img
                         className="frontendImg"
-                        src={frontendImage}
+                        src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
                         alt="frontend"
                         loading="lazy"
                     />
@@ -111,7 +106,7 @@ function Home() {
                 <div className="backend">
                     <img
                         className="backendImg"
-                        src={backendImage}
+                        src="https://i.ibb.co/kyyvCVN/backend-min.webp"
                         alt="backend"
                         loading="lazy"
                     />
@@ -127,7 +122,7 @@ function Home() {
                 <div className="outil">
                     <img
                         className="outilImg"
-                        src={outilImage}
+                        src="https://i.ibb.co/CsV5Cdq/outil-min.webp"
                         alt="outils"
                         loading="lazy"
                     />

@@ -1,8 +1,5 @@
 import { useEffect } from 'react';
 import '../styles/PageMin.css';
-import mvg from '../assets/mvg-min.webp';
-import mvg2 from '../assets/mvg3-min.webp';
-import mvg3 from '../assets/mvg2-min.webp';
 
 function LeVieuxGrimoire() {
     useEffect(() => {
@@ -28,7 +25,7 @@ function LeVieuxGrimoire() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src={mvg}
+                    src="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
@@ -43,7 +40,7 @@ function LeVieuxGrimoire() {
             <div className="pageInfoReverse">
                 <img
                     className="pageImg"
-                    src={mvg2}
+                    src="https://i.ibb.co/B3M0qkX/mvg3-min.webp"
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
@@ -58,7 +55,7 @@ function LeVieuxGrimoire() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src={mvg3}
+                    src="https://i.ibb.co/FhGNntW/mvg2-min.webp"
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Header.css';
-import vectorUp from '../assets/vectorup-min.webp';
-import backHome from '../assets/backHome-min.webp';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
@@ -62,7 +60,11 @@ function Header() {
     return (
         <div className="header">
             <a href="#topPageLink" className="topPage" onClick={scrollToTop}>
-                <img className="vectorUp" src={vectorUp} alt="haut-de-page" />
+                <img
+                    className="vectorUp"
+                    src="https://i.ibb.co/d5hxgrQ/vectorup-min.webp"
+                    alt="haut-de-page"
+                />
             </a>
 
             {linksPage && (
@@ -70,7 +72,7 @@ function Header() {
                     <RouterLink className="backHomeLink" to={`/`}>
                         <img
                             className="backHomeImg"
-                            src={backHome}
+                            src="https://i.ibb.co/Fhcrwnd/back-Home-min.webp"
                             alt="accueil"
                         />
                     </RouterLink>

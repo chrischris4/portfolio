@@ -1,8 +1,3 @@
-import kasa from '../assets/kasa-min.webp';
-import MVG from '../assets/mvg-min.webp';
-import SophieBluel from '../assets/sophiebluel-min.webp';
-import nina from '../assets/nina-min.webp';
-import booki from '../assets/Booki-min.webp';
 import '../styles/AllProjectMin.css';
 import { useEffect, useState } from 'react';
 import Project from './Project';
@@ -83,7 +78,7 @@ function AllProject() {
                 <div className="projectContent tout front">
                     <Project
                         title="Kasa - Agence Immobilière"
-                        cover={kasa}
+                        cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
                         link={`/Kasa`}
                         loading="lazy"
                     />
@@ -91,7 +86,7 @@ function AllProject() {
                 <div className="projectContent tout front">
                     <Project
                         title="Sophie Bluel - Designer"
-                        cover={SophieBluel}
+                        cover="https://i.ibb.co/8PCjj8K/sophiebluel-min.webp"
                         link={`/SophieBluel`}
                         loading="lazy"
                     />
@@ -99,7 +94,7 @@ function AllProject() {
                 <div className="projectContent tout back">
                     <Project
                         title="Mon Vieux Grimoire - Notation de Livres"
-                        cover={MVG}
+                        cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                         link={`/MonVieuxGrimoire`}
                         loading="lazy"
                     />
@@ -107,7 +102,7 @@ function AllProject() {
                 <div className="projectContent tout seo">
                     <Project
                         title="Nina Carducci - Photographe"
-                        cover={nina}
+                        cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                         link={`/NinaCarducci`}
                         loading="lazy"
                     />
@@ -115,7 +110,7 @@ function AllProject() {
                 <div className="projectContent tout front">
                     <Project
                         title="Booki - Agence de Location"
-                        cover={booki}
+                        cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                         link={`/Booki`}
                         loading="lazy"
                     />

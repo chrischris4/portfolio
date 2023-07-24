@@ -1,8 +1,5 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
-import nina from '../assets/nina-min.webp';
-import nina2 from '../assets/nina2-min.webp';
-import nina3 from '../assets/nina3-min.webp';
 
 function NinaCarducci() {
     useEffect(() => {
@@ -28,7 +25,7 @@ function NinaCarducci() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src={nina}
+                    src="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                     alt="Nina-Carducci"
                     loading="lazy"
                 />
@@ -42,7 +39,7 @@ function NinaCarducci() {
             <div className="pageInfoReverse">
                 <img
                     className="pageImg"
-                    src={nina2}
+                    src="https://i.ibb.co/qsNbWqj/nina2-min.webp"
                     alt="Nina-Carducci"
                     loading="lazy"
                 />
@@ -54,7 +51,7 @@ function NinaCarducci() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src={nina3}
+                    src="https://i.ibb.co/dMHMXYn/nina3-min.webp"
                     alt="Nina-Carducci"
                     loading="lazy"
                 />

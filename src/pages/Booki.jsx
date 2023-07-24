@@ -1,5 +1,4 @@
 import '../styles/PageMin.css';
-import booki from '../assets/Booki-min.webp';
 import { useEffect } from 'react';
 
 function Booki() {
@@ -26,7 +25,7 @@ function Booki() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src={booki}
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                     alt="booki"
                     loading="lazy"
                 />

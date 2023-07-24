@@ -1,8 +1,5 @@
 import { useEffect } from 'react';
 import '../styles/PageMin.css';
-import sophie from '../assets/sophiebluel-min.webp';
-import sophie2 from '../assets/sophiebluel3-min.webp';
-import sophie3 from '../assets/sophiebluel2-min.webp';
 
 function SophieBluel() {
     useEffect(() => {
@@ -28,7 +25,7 @@ function SophieBluel() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src={sophie}
+                    src="https://i.ibb.co/8PCjj8K/sophiebluel-min.webp"
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
@@ -41,7 +38,7 @@ function SophieBluel() {
             <div className="pageInfoReverse">
                 <img
                     className="pageImg"
-                    src={sophie2}
+                    src="https://i.ibb.co/GM9CK94/sophiebluel3-min.webp"
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
@@ -54,7 +51,7 @@ function SophieBluel() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src={sophie3}
+                    src="https://i.ibb.co/nsQVpXN/sophiebluel2-min.webp"
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />

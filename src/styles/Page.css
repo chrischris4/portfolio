@@ -19,7 +19,7 @@ a:hover {
 }
 
 .pageProjectTitle {
-    background-image: url('../assets/mimifleur-min.webp');
+    background-image: url('https://i.ibb.co/Z2jg7sR/mimifleur-min.webp');
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -125,7 +125,6 @@ a:hover {
 
     .pageInfoReverse {
         font-size: 15px;
-
         width: 90%;
         justify-content: space-between;
     }

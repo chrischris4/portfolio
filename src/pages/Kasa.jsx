@@ -1,6 +1,4 @@
 import '../styles/PageMin.css';
-import kasa from '../assets/kasa-min.webp';
-import kasa2 from '../assets/kasa2-min.webp';
 import { useEffect } from 'react';
 
 function Kasa() {
@@ -25,7 +23,12 @@ function Kasa() {
                 </button>
             </div>
             <div className="pageInfo">
-                <img className="pageImg" src={kasa} alt="kasa" loading="lazy" />
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/znVrBcm/kasa-min.webp"
+                    alt="kasa"
+                    loading="lazy"
+                />
                 <div className="imgInfo">
                     Sur ce projet j'ai du mettre en place une application React,
                     je me suis occuper de toute la partie Frontend. J'ai fais en
@@ -36,7 +39,7 @@ function Kasa() {
             <div className="pageInfoReverse">
                 <img
                     className="pageImg"
-                    src={kasa2}
+                    src="https://i.ibb.co/vvft8b9/kasa2-min.webp"
                     alt="kasa"
                     loading="lazy"
                 />
