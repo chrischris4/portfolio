@@ -79,7 +79,7 @@
 }
 
 .material-symbols-outlined {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .skypeLink {
@@ -112,7 +112,7 @@ form {
 input {
     height: 30px;
     border-radius: 5px;
-    border: 2px solid;
+    border: 0px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -164,7 +164,7 @@ textarea {
 
 @media screen and (max-width: 991px) {
     form {
-        width: 400px;
+        width: 420px;
     }
     .contactP {
         font-size: 30px;
@@ -177,8 +177,7 @@ textarea {
 
 @media screen and (max-width: 635px) {
     form {
-        margin: auto;
-        width: 80%;
+        width: 70%;
     }
 
     .contactP {
@@ -207,5 +206,9 @@ textarea {
     }
     .material-symbols-outlined {
         font-size: 21px;
+    }
+
+    label {
+        font-size: 15px;
     }
 }

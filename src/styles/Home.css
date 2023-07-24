@@ -4,12 +4,10 @@
     margin: auto;
     width: 100%;
 }
-
 #topPageLink {
     position: absolute;
     top: 0;
 }
-
 .sectionTitle {
     width: 90%;
     display: flex;
@@ -19,7 +17,6 @@
     margin: auto;
     margin-top: 80px;
 }
-
 .styleTitle {
     margin-top: 3px;
     margin-right: 5px;
@@ -27,43 +24,37 @@
     height: 27px;
     background-color: #a3f5f9;
 }
-
 .parcours {
-    padding: 40px 0px 20px 0px;
-    background-color: black;
+    padding: 40px 0 20px 0;
+    background-color: #000;
     border-radius: 10px;
     margin: auto;
     width: 90%;
     display: flex;
     flex-direction: column;
 }
-
 .adrarP,
-.openP {
+.openClassP {
     width: 45%;
 }
-
-.openImg,
+.openClassImg,
 .adrarImg {
     border-radius: 10px;
     width: 100%;
 }
-
-.openImg:hover,
+.openClassImg:hover,
 .adrarImg:hover {
     transform: scale(1.02);
 }
-
 .overlayParcours h3 {
-    margin: 0px;
+    font-weight: 400;
+    margin: 0;
 }
-
 .overlayParcours p {
-    margin-top: 0px;
-    font-size: 20px;
+    margin-top: 0;
+    font-size: 15px;
     border-bottom: 1px #a3f5f9 solid;
 }
-
 .overlayParcours {
     opacity: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -72,14 +63,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #fff;
     height: 100%;
     width: 100%;
     position: absolute;
     font-size: 20px;
     transition: transform 0.3s ease;
 }
-
 .overlayParcours:hover {
     animation: fade-in 0.5s ease forwards;
     opacity: 1;
@@ -90,18 +80,16 @@
     transition: transform 0.3s ease;
     width: 45%;
 }
-
 .parcoursLink:hover {
     transform: scale(1.02);
 }
-
-.open,
+.openClass,
 .adrar {
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid #000;
     width: 90%;
     margin: auto;
-    color: white;
+    color: #fff;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -110,44 +98,54 @@
     transition: 0.5s ease;
 }
 
-.open:hover,
-.adrar:hover {
-    border: 2px solid #a3f5f9;
+.openClass,
+.adrar h4 {
+    font-weight: 400;
+}
+
+.openClass h3 {
+    padding-top: 5px;
+    margin-top: 0px;
+    border-top: 10px solid #a3f5f9;
+    width: fit-content;
+}
+
+.adrar h3 {
+    margin-top: 0px;
+    padding-top: 5px;
+    border-top: 10px solid #a3f5f9;
+    width: fit-content;
 }
 
 .cv {
-    padding: 20px 0px;
+    padding: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 .buttonCv {
     cursor: pointer;
     font-family: 'Oswald';
-    margin: 0px 10px;
-    border: 1px solid white;
+    margin: 0 10px;
+    border: 1px solid #fff;
     font-size: 20px;
     padding: 10px 15px;
     text-decoration: none;
-    color: white;
+    color: #fff;
     transition: 0.5s ease;
-    background-color: black;
+    background-color: #000;
 }
-
 .buttonCv:hover {
     border: #a3f5f9 solid 1px;
-    color: black;
+    color: #000;
     background-color: #a3f5f9;
 }
-
 .frontendImg,
 .backendImg,
 .outilImg {
     width: 100px;
     height: 100px;
 }
-
 #competence {
     width: 90%;
     align-items: center;
@@ -155,24 +153,23 @@
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    color: black;
+    color: #000;
     margin: auto;
 }
-
 ul,
 ol {
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
     list-style: none;
+    border-left: 10px solid black;
 }
-
 .frontend,
 .backend,
 .outil {
     height: 250px;
-    border: 2px solid white;
+    border: 2px solid #fff;
     border-radius: 10px;
-    padding: 30px 0px;
+    padding: 30px 0;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -180,51 +177,43 @@ ol {
     list-style: none;
     background: linear-gradient(
         360deg,
-        rgba(129, 229, 246, 0.338) 0%,
+        rgba(129, 229, 246, 0.201) 0%,
         rgb(255, 255, 255) 100%
     );
     transition: 0.5s ease;
 }
-
 .frontend:hover,
 .backend:hover,
 .outil:hover {
     border: 2px solid #a3f5f9;
 }
-
 @media screen and (max-width: 991px) {
-    .open,
+    .openClass,
     .adrar {
-        padding: 0px 0px 20px 0px;
+        padding: 0 0 20px 0;
         width: 80%;
         flex-direction: column;
     }
-
     .adrar {
         margin-bottom: 20px;
     }
-
-    .openP,
+    .openClassP,
     .adrarP {
         width: 90%;
         margin-bottom: 20px;
     }
-
     .parcoursLink {
         width: 90%;
     }
-
     #competence {
         justify-content: center;
         flex-wrap: wrap;
     }
-
     .frontend,
     .backend,
     .outil {
         width: 40%;
     }
-
     .frontend {
         margin-right: 10px;
         margin-bottom: 20px;
@@ -233,66 +222,54 @@ ol {
         margin-left: 10px;
         margin-bottom: 20px;
     }
-
     .sectionTitle {
         margin-top: 75px;
     }
 }
-
 @media screen and (max-width: 635px) {
     .sectionTitle {
         margin-top: 50px;
         font-size: 15px;
     }
-
     .parcour {
-        border-radius: 0px;
+        border-radius: 0;
         width: 100%;
     }
-
-    .open,
+    .openClass,
     .adrar {
         width: 90%;
     }
-
     .overlayParcours h3 {
         font-size: 20px;
     }
 
-    .overlayParcours p {
+    .buttonCv {
         font-size: 15px;
     }
-
     #competence {
         flex-direction: column;
     }
-
     .competenceMedia {
         margin: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
-
     .frontend,
     .backend,
     .outil {
         flex-direction: row;
         justify-content: space-around;
         height: fit-content;
-        padding: 30px 0px 30px 0px;
+        padding: 30px 0 30px 0;
         width: 100%;
     }
-
     .frontend {
-        margin-right: 0px;
+        margin-right: 0;
     }
     .backend {
-        margin-left: 0px;
+        margin-left: 0;
     }
-
-    .buttonCv {
-font-size: 15px};
 }

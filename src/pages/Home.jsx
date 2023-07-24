@@ -1,5 +1,5 @@
 import Banner from '../components/Banner';
-import '../styles/HomeMin.css';
+import '../styles/Home.css';
 import adrarImg from '../assets/adrar-min.webp';
 import openImg from '../assets/open-min.webp';
 import frontendImage from '../assets/frontend-min.webp';
@@ -27,7 +27,7 @@ function Home() {
                 <div className="adrar">
                     <div className="adrarP">
                         <h3>Formation Adrar</h3>
-                        <h3>10/2021 - 06/2022</h3>
+                        <h4>10/2021 - 06/2022</h4>
                         En suivant cette formation, j'ai pu en savoir plus sur
                         le métier de Developpeur ainsi qu'approfondir mes bases
                         en coding.
@@ -53,7 +53,7 @@ function Home() {
                 <div className="openClass">
                     <div className="openClassP">
                         <h3>Formation OpenClassrooms</h3>
-                        <h3>12/2022 - 08/2023</h3>
+                        <h4>12/2022 - 08/2023</h4>
                         Durant cette formation je me suis professionaliser et
                         ait apronfondit mes connaissances en SEO, Frontend et
                         Backend.

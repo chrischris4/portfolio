@@ -116,7 +116,7 @@ function Header() {
                 </nav>
             )}
 
-            {windowWidth <= 635 && (
+            {windowWidth <= 635 && linksHome && (
                 <>
                     <div
                         className={`menuBurger ${isMenuOpen ? 'open' : ''}`}
@@ -136,17 +136,6 @@ function Header() {
                         <nav className="burgerMenu">
                             {linksHome && (
                                 <>
-                                    <ScrollLink
-                                        href="contactLien"
-                                        to="contactLien"
-                                        className="link"
-                                        spy={true}
-                                        smooth={true}
-                                        duration={1000}
-                                        onClick={closeMenu}
-                                    >
-                                        Contact
-                                    </ScrollLink>
                                     <ScrollLink
                                         href="parcoursLien"
                                         to="parcoursLien"
@@ -179,6 +168,17 @@ function Header() {
                                         onClick={closeMenu}
                                     >
                                         Projets
+                                    </ScrollLink>
+                                    <ScrollLink
+                                        href="contactLien"
+                                        to="contactLien"
+                                        className="link"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={1000}
+                                        onClick={closeMenu}
+                                    >
+                                        Contact
                                     </ScrollLink>
                                 </>
                             )}

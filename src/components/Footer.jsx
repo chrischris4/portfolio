@@ -1,6 +1,5 @@
 import '../styles/FooterMin.css';
 
-
 function Footer() {
     return (
         <div className="footer">

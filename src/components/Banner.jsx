@@ -58,7 +58,6 @@ function Banner() {
             clearTimeout(borderTimeout);
             clearTimeout(linkTimeout);
             clearTimeout(githubLinkTimeout);
-
         };
     }, []);
 
@@ -76,7 +75,7 @@ function Banner() {
                         dynamiques. Prêt à contribuer à des projets innovants !
                     </div>
                     <ScrollLink
-                    href='contactLien'
+                        href="contactLien"
                         to="contactLien"
                         className="bannerLink"
                         spy={true}
@@ -85,13 +84,14 @@ function Banner() {
                     >
                         Contact
                     </ScrollLink>
-                    <a                       className="bannerLink githubLink"
-                    href="https://github.com/chrischris4"
-                    target="_blank"
-                    rel="noreferrer">
+                    <a
+                        className="bannerLink githubLink"
+                        href="https://github.com/chrischris4"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         Github
                     </a>
-
                 </div>
             </div>
         </div>
