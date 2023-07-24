@@ -75,7 +75,8 @@ function Home() {
                 <div className="cv">
                     <a
                         className="buttonCv"
-                        href="https://i.ibb.co/NCDQbLT/CV-JOST-Christopher.jpg"
+                        href="https://drive.google.com/uc?export=download&id=1t0t0aTNPikjLhMdfdGAI-9ZTnyJmzdtO
+                        "
                         download
                     >
                         Télécharger CV
