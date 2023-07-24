@@ -50,7 +50,7 @@ function ContactForm() {
                     <img
                         className="linkedinImg"
                         src="https://i.ibb.co/SQVK6tV/linkedin.webp"
-                        alt="linkedinimage"
+                        alt="logo linkedin"
                     />
                 </a>
                 <a
@@ -63,7 +63,7 @@ function ContactForm() {
                     <img
                         className="skypeImg"
                         src="https://i.ibb.co/XkqgcnJ/skype.webp"
-                        alt="linkedin"
+                        alt="logo skype"
                     />
                 </a>
             </div>
@@ -74,6 +74,7 @@ function ContactForm() {
                     <div className="contactMail">
                         <label for="email">Email :</label>
                         <input
+                            id="email"
                             name="email"
                             placeholder="JohnDoe@gmail.com"
                             type="email"
@@ -85,6 +86,7 @@ function ContactForm() {
                     <div className="contactMsg">
                         <label for="message">Message :</label>
                         <textarea
+                            id="message"
                             name="message"
                             placeholder="Votre message"
                             value={message}

@@ -93,7 +93,7 @@ function Home() {
                     <img
                         className="frontendImg"
                         src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
-                        alt="frontendimage"
+                        alt="illustration frontend"
                         loading="lazy"
                     />
                     <div className="competenceRow">
@@ -108,7 +108,7 @@ function Home() {
                     <img
                         className="backendImg"
                         src="https://i.ibb.co/kyyvCVN/backend-min.webp"
-                        alt="backendimage"
+                        alt="illustration backend"
                         loading="lazy"
                     />
                     <div className="competenceRow">
@@ -124,7 +124,7 @@ function Home() {
                     <img
                         className="outilImg"
                         src="https://i.ibb.co/CsV5Cdq/outil-min.webp"
-                        alt="outilsimage"
+                        alt="illustration outil"
                         loading="lazy"
                     />
                     <div className="competenceRow">
