@@ -8,6 +8,9 @@
 }
 
 .contactP {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 20px 0px;
@@ -24,7 +27,11 @@
     background-color: black;
 }
 
-.contactForm p {
+.contactForm h3 {
+    font-size: 30px;
+    margin: auto;
+    font-weight: 400;
+    margin-top: 15px;
     margin-bottom: 15px;
     color: white;
 }
@@ -166,9 +173,6 @@ textarea {
     form {
         width: 420px;
     }
-    .contactP {
-        font-size: 30px;
-    }
 
     .contactForm p {
         font-size: 30px;
@@ -184,7 +188,7 @@ textarea {
         font-size: 20px;
     }
 
-    .contactForm p {
+    .contactForm h3 {
         font-size: 20px;
     }
 

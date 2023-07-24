@@ -40,7 +40,7 @@ function Home() {
                         <img
                             className="adrarImg"
                             src="https://i.ibb.co/Q6PbSS4/adrar-min.webp"
-                            alt="adrar"
+                            alt="adrarhomepage"
                             loading="lazy"
                         />
                     </a>
@@ -67,7 +67,7 @@ function Home() {
                         <img
                             className="openClassImg"
                             src="https://i.ibb.co/ZzwdcZF/open-min.webp"
-                            alt="openclassrooms"
+                            alt="openclassroomshomepage"
                             loading="lazy"
                         />
                     </a>
@@ -93,7 +93,7 @@ function Home() {
                     <img
                         className="frontendImg"
                         src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
-                        alt="frontend"
+                        alt="frontendimage"
                         loading="lazy"
                     />
                     <div className="competenceRow">
@@ -108,7 +108,7 @@ function Home() {
                     <img
                         className="backendImg"
                         src="https://i.ibb.co/kyyvCVN/backend-min.webp"
-                        alt="backend"
+                        alt="backendimage"
                         loading="lazy"
                     />
                     <div className="competenceRow">
@@ -124,7 +124,7 @@ function Home() {
                     <img
                         className="outilImg"
                         src="https://i.ibb.co/CsV5Cdq/outil-min.webp"
-                        alt="outils"
+                        alt="outilsimage"
                         loading="lazy"
                     />
                     <div className="competenceRow">

@@ -69,7 +69,9 @@ function Banner() {
             <div className="banner">
                 <div className="bannerContent">
                     <div className="bannerFirstName">CHRISTOPHER</div>
-                    <div className="bannerP"> Développeur FullStack</div>
+                    <div className="bannerP">
+                        <h1>Développeur FullStack</h1>
+                    </div>
                     <div className="bannerAbout">
                         Spécialisé dans la création d'applications web
                         dynamiques. Prêt à contribuer à des projets innovants !

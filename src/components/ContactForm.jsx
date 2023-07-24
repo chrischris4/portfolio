@@ -31,7 +31,7 @@ function ContactForm() {
 
     return (
         <div className="contact">
-            <p className="contactP">Retrouvez moi sur :</p>
+            <h3 className="contactP">Retrouvez moi sur :</h3>
             <div className="contactLinks">
                 <a
                     className="myEmailLink"
@@ -50,7 +50,7 @@ function ContactForm() {
                     <img
                         className="linkedinImg"
                         src="https://i.ibb.co/SQVK6tV/linkedin.webp"
-                        alt="linkedin"
+                        alt="linkedinimage"
                     />
                 </a>
                 <a
@@ -69,10 +69,10 @@ function ContactForm() {
             </div>
 
             <div className="contactForm">
-                <p>Ou contactez moi via ce formulaire :</p>
+                <h3>Ou contactez moi via ce formulaire :</h3>
                 <form onSubmit={handleSubmit}>
                     <div className="contactMail">
-                        <label htmlFor="email">Email :</label>
+                        <label for="email">Email :</label>
                         <input
                             name="email"
                             placeholder="JohnDoe@gmail.com"
@@ -83,7 +83,7 @@ function ContactForm() {
                         />
                     </div>
                     <div className="contactMsg">
-                        <label htmlFor="message">Message :</label>
+                        <label for="message">Message :</label>
                         <textarea
                             name="message"
                             placeholder="Votre message"
