@@ -1,21 +1,10 @@
 import '../styles/ContactForm.css';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
-
-    const handleMessageChange = (e) => {
-        setMessage(e.target.value);
-    };
-
-    const handleSubmit = (e) => {
+    function sendEmail(e) {
         e.preventDefault();
         emailjs
             .sendForm('pzjldt7', 'ozffzkd', e.target, 'uFF5qZzQCkElWuX8Q')
@@ -27,7 +16,8 @@ function ContactForm() {
                     console.log('Failed to send e-mail!', error.text);
                 }
             );
-    };
+        e.target.reset();
+    }
 
     return (
         <div className="contact">
@@ -70,16 +60,14 @@ function ContactForm() {
 
             <div className="contactForm">
                 <h3>Ou contactez moi via ce formulaire :</h3>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={sendEmail}>
                     <div className="contactMail">
                         <label for="email">Email :</label>
                         <input
                             id="email"
                             name="email"
                             placeholder="JohnDoe@gmail.com"
-                            type="email"
-                            value={email}
-                            onChange={handleEmailChange}
+                            type="text"
                             required
                         />
                     </div>
@@ -89,12 +77,14 @@ function ContactForm() {
                             id="message"
                             name="message"
                             placeholder="Votre message"
-                            value={message}
-                            onChange={handleMessageChange}
                             required
                         />
                     </div>
-                    <button className="contactButton" type="submit" async defer>
+                    <button
+                        className="contactButton"
+                        type="submit"
+                        value="send message"
+                    >
                         Envoyer
                     </button>
                 </form>
