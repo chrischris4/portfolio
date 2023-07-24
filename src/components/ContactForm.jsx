@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
-    const [name, setEmail] = useState('');
+    const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
     const handleEmailChange = (e) => {
@@ -72,11 +72,12 @@ function ContactForm() {
                 <p>Ou contactez moi via ce formulaire :</p>
                 <form onSubmit={handleSubmit}>
                     <div className="contactMail">
-                        <label htmlFor="name">Email :</label>
+                        <label htmlFor="email">Email :</label>
                         <input
+                            name="email"
                             placeholder="JohnDoe@gmail.com"
-                            type="name"
-                            value={name}
+                            type="email"
+                            value={email}
                             onChange={handleEmailChange}
                             required
                         />
@@ -84,13 +85,14 @@ function ContactForm() {
                     <div className="contactMsg">
                         <label htmlFor="message">Message :</label>
                         <textarea
+                            name="message"
                             placeholder="Votre message"
                             value={message}
                             onChange={handleMessageChange}
                             required
                         />
                     </div>
-                    <button className="contactButton" type="submit">
+                    <button className="contactButton" type="submit" async defer>
                         Envoyer
                     </button>
                 </form>
