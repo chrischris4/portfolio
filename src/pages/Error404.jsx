@@ -1,4 +1,4 @@
-import '../styles/Error404Min.css';
+import '../styles/Error404.css';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 

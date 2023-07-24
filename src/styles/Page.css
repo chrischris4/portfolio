@@ -19,19 +19,25 @@ a:hover {
 }
 
 .pageProjectTitle {
-    background-image: url('https://i.ibb.co/Z2jg7sR/mimifleur-min.webp');
+    padding: 0px 30px;
+    background-image: url(https://i.ibb.co/Z2jg7sR/mimifleur-min.webp);
     background-position: center;
     background-size: cover;
-    align-items: center;
     display: flex;
     color: black;
-    margin: auto;
-    font-size: 30px;
+    justify-content: center;
+}
+
+.pageH1 {
+    padding: 30px 0px;
+    font-weight: 500;
+    font-size: 70px;
 }
 
 .pageProjectButton {
     background-color: black;
     padding: 20px 0px;
+    margin-bottom: 60px;
 }
 
 .pageButton {
@@ -134,8 +140,14 @@ a:hover {
     .pageProject {
         margin-top: 50px;
     }
+
     .pageProjectTitle {
-        font-size: 15px;
+        padding: 0px 20px;
+    }
+
+    .pageH1 {
+        padding: 20px 0px;
+        font-size: 40px;
     }
 
     .pageButton {

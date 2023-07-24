@@ -9,7 +9,7 @@ function NinaCarducci() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Nina Carducci - Photographe</h1>
+                <h1 className="pageH1">Nina Carducci - Photographe</h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

@@ -1,4 +1,4 @@
-import '../styles/PageMin.css';
+import '../styles/Page.css';
 import { useEffect } from 'react';
 
 function Kasa() {
@@ -9,7 +9,7 @@ function Kasa() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Kasa - Agence Immobilière </h1>
+                <h1 className="pageH1">Kasa - Agence Immobilière </h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

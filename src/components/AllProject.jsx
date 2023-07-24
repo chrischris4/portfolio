@@ -1,4 +1,4 @@
-import '../styles/AllProjectMin.css';
+import '../styles/AllProject.css';
 import { useEffect, useState } from 'react';
 import Project from './Project';
 

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styles/PageMin.css';
+import '../styles/Page.css';
 
 function SophieBluel() {
     useEffect(() => {
@@ -9,7 +9,7 @@ function SophieBluel() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Sophie Bluel - Designer</h1>
+                <h1 className="pageH1">Sophie Bluel - Designer</h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styles/PageMin.css';
+import '../styles/Page.css';
 
 function LeVieuxGrimoire() {
     useEffect(() => {
@@ -9,7 +9,9 @@ function LeVieuxGrimoire() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Mon Vieux Grimoire - Notation de Livre</h1>
+                <h1 className="pageH1">
+                    Mon Vieux Grimoire - Notation de Livre
+                </h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

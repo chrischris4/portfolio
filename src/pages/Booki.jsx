@@ -1,4 +1,4 @@
-import '../styles/PageMin.css';
+import '../styles/Page.css';
 import { useEffect } from 'react';
 
 function Booki() {
@@ -9,7 +9,7 @@ function Booki() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Booki - Agence de Location </h1>
+                <h1 className="pageH1">Booki - Agence de Location </h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

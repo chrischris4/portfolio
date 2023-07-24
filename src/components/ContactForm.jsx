@@ -1,21 +1,21 @@
 import '../styles/ContactForm.css';
-// import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
     function sendEmail(e) {
         e.preventDefault();
-        emailjs
-            .sendForm('pzjldt7', 'ozffzkd', e.target, 'uFF5qZzQCkElWuX8Q')
-            .then(
-                (result) => {
-                    console.log('E-mail sent successfully!', result.text);
-                },
-                (error) => {
-                    console.log('Failed to send e-mail!', error.text);
-                }
-            );
+        const serviceId = 'service_pzjldt7';
+        const templateId = 'template_ozffzkd';
+        const publicKey = 'uFF5qZzQCkElWuX8Q';
+        emailjs.sendForm(serviceId, templateId, e.target, publicKey).then(
+            (result) => {
+                console.log('E-mail sent successfully!', result.text);
+            },
+            (error) => {
+                console.log('Failed to send e-mail!', error.text);
+            }
+        );
         e.target.reset();
     }
 
@@ -56,13 +56,26 @@ function ContactForm() {
                         alt="logo skype"
                     />
                 </a>
+                <a
+                    className="githubLinkContact"
+                    href="https://github.com/chrischris4"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Github
+                    <img
+                        className="githubImgContact"
+                        src="https://i.ibb.co/6ZxjDxV/github.webp"
+                        alt="logo github"
+                    />
+                </a>
             </div>
 
             <div className="contactForm">
                 <h3>Ou contactez moi via ce formulaire :</h3>
                 <form onSubmit={sendEmail}>
                     <div className="contactMail">
-                        <label for="email">Email :</label>
+                        <label htmlFor="email">Email :</label>
                         <input
                             id="email"
                             name="email"
@@ -72,7 +85,7 @@ function ContactForm() {
                         />
                     </div>
                     <div className="contactMsg">
-                        <label for="message">Message :</label>
+                        <label htmlFor="message">Message :</label>
                         <textarea
                             id="message"
                             name="message"
