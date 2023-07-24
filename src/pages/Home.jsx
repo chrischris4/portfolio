@@ -39,7 +39,7 @@ function Home() {
                         rel="noreferrer"
                     >
                         <div className="overlayParcours">
-                            <h3> Visiter leur site :</h3>
+                            <h4> Visiter leur site :</h4>
                             <p> adrar-formation.com</p>
                         </div>
                         <img
@@ -65,7 +65,7 @@ function Home() {
                         rel="noreferrer"
                     >
                         <div className="overlayParcours">
-                            <h3> Visiter leur site :</h3>
+                            <h4> Visiter leur site :</h4>
                             <p> openclassrooms.com</p>
                         </div>
 

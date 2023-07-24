@@ -46,7 +46,8 @@
 .adrarImg:hover {
     transform: scale(1.02);
 }
-.overlayParcours h3 {
+.overlayParcours h4 {
+    border-top: none;
     font-weight: 400;
     margin: 0;
 }

@@ -12,7 +12,7 @@ function LeVieuxGrimoire() {
         <div className="pageProject">
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
-                <h1>Le Vieux Grimoire - Notation de Livre</h1>
+                <h1>Mon Vieux Grimoire - Notation de Livre</h1>
             </div>
             <div className="pageProjectButton">
                 <button className="pageButton">

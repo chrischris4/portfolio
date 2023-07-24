@@ -58,6 +58,8 @@ nav {
 }
 
 .topPage {
+    transition: transform 0.5s ease;
+
     opacity: 0;
     margin: 0px 50px;
     text-decoration: none;
