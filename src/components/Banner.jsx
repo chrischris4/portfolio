@@ -76,24 +76,26 @@ function Banner() {
                         Spécialisé dans la création d'applications web
                         dynamiques. Prêt à contribuer à des projets innovants !
                     </div>
-                    <ScrollLink
-                        href="contactLien"
-                        to="contactLien"
-                        className="bannerLink"
-                        spy={true}
-                        smooth={true}
-                        duration={1000}
-                    >
-                        Contact
-                    </ScrollLink>
-                    <a
-                        className="bannerLink githubLink"
-                        href="https://github.com/chrischris4"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Github
-                    </a>
+                    <div className="bannerLinks">
+                        <ScrollLink
+                            href="contactLien"
+                            to="contactLien"
+                            className="bannerLink"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                        >
+                            Contact
+                        </ScrollLink>
+                        <a
+                            className="bannerLink githubLink"
+                            href="https://github.com/chrischris4"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

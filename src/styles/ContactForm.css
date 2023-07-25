@@ -46,6 +46,7 @@
 }
 
 .linkedinLink {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
@@ -68,6 +69,7 @@
 }
 
 .myEmailLink {
+    align-items: center;
     margin-top: 20px;
     color: white;
     padding: 10px 10px;
@@ -75,7 +77,7 @@
     background: rgb(109, 6, 6);
     display: flex;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 19px;
     width: 350px;
     transition: transform 0.3s ease;
 }
@@ -90,6 +92,7 @@
 }
 
 .skypeLink {
+    align-items: center;
     margin-top: 20px;
     color: white;
     padding: 10px 10px;
@@ -112,6 +115,7 @@
 }
 
 .githubLinkContact {
+    align-items: center;
     margin-top: 20px;
     color: white;
     padding: 10px 10px;
@@ -225,7 +229,7 @@ textarea {
     .githubLinkContact {
         margin-top: 10px;
         width: 250px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .skypeImg,

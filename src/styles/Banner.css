@@ -28,6 +28,8 @@
 }
 
 .bannerLastName {
+    font-family: 'Oswald', sans-serif;
+
     color: black;
     font-size: 100px;
     font-weight: 500;
@@ -35,6 +37,8 @@
 }
 
 .bannerFirstName {
+    font-family: 'Oswald', sans-serif;
+
     color: white;
     font-size: 100px;
     font-weight: 500;
@@ -113,6 +117,7 @@ h1 {
 }
 
 .bannerLink {
+    font-family: 'Oswald', sans-serif;
     margin-right: 15px;
     cursor: pointer;
     opacity: 0;
@@ -189,10 +194,13 @@ h1 {
     }
 
     .bannerP {
+        margin-top: 20px;
+        text-align: center;
         font-size: 20px;
     }
 
     .bannerAbout {
+        margin: auto;
         margin-top: 20px;
         width: 80%;
         font-size: 15px;
@@ -208,5 +216,10 @@ h1 {
     .bannerLink {
         margin-right: 12px;
         font-size: 15px;
+    }
+
+    .bannerLinks {
+        display: flex;
+        justify-content: center;
     }
 }
