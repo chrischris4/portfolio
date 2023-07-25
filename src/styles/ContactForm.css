@@ -8,6 +8,7 @@
 }
 
 .contactP {
+    font-weight: 400;
     font-size: 30px;
     display: flex;
     justify-content: center;
