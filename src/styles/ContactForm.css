@@ -32,8 +32,8 @@
     font-size: 30px;
     margin: auto;
     font-weight: 400;
-    margin-top: 35px;
-    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -217,6 +217,7 @@ textarea {
     }
 
     .contactForm h3 {
+        margin-top: 30px;
         font-size: 20px;
     }
 
