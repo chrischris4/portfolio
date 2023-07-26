@@ -58,16 +58,17 @@ nav {
 }
 
 .topPage {
-    transition: transform 0.5s ease;
-
     opacity: 0;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    transform: translateY(-100%);
     margin: 0px 50px;
     text-decoration: none;
     color: black;
 }
 
 .topPage.show {
-    animation: fade-in 2s ease forwards;
+    transform: translateY(0);
     display: flex;
     opacity: 1;
 }
@@ -148,12 +149,16 @@ nav {
         display: flex;
         flex-direction: column;
         background-color: white;
-        position: absolute;
+        position: fixed;
         top: 0px;
         right: 0px;
         padding: 50px 0px;
         align-items: flex-start;
     }
+
+    /* .burgerMenu.open {
+        transform: translateX(0);
+    } */
 
     .burgerMenu .link {
         animation: fade-in 0s ease;

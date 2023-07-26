@@ -135,7 +135,9 @@ function Header() {
                         ></div>
                     )}
                     {isMenuOpen && (
-                        <nav className="burgerMenu">
+                        <nav
+                            className={`burgerMenu ${isMenuOpen ? 'open' : ''}`}
+                        >
                             {linksHome && (
                                 <>
                                     <ScrollLink

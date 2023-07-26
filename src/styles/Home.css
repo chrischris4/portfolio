@@ -225,9 +225,6 @@ ol {
         margin-left: 10px;
         margin-bottom: 20px;
     }
-    .sectionTitle {
-        margin-top: 75px;
-    }
 }
 @media screen and (max-width: 635px) {
     .sectionTitle {
