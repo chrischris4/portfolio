@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: row;
     margin-top: 65px;
-    height: 650px;
+    height: 600px;
 }
 
 .bannerColor {
     background-image: url('../assets/floral.jpg');
     background-position: right;
-    background-size: 140%;
+    background-size: cover;
     padding-top: 100px;
     display: flex;
     justify-content: flex-end;
@@ -148,7 +148,9 @@ h1 {
     }
 
     .bannerColor {
-        background-position: 5% 95%;
+        background-image: url('../assets/floral1.jpg');
+        background-position: bottom;
+        background-size: cover;
         padding-right: 0px;
         padding-top: 30px;
         justify-content: flex-start;
