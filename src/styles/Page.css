@@ -157,7 +157,7 @@ a:hover {
     .pageInfo {
         background: linear-gradient(
             360deg,
-            rgba(129, 229, 246, 0.279) 0%,
+            rgba(129, 176, 246, 0.201) 0%,
             rgb(255, 255, 255) 100%
         );
         flex-direction: column;
@@ -169,7 +169,7 @@ a:hover {
     .pageInfoReverse {
         background: linear-gradient(
             360deg,
-            rgba(129, 229, 246, 0.279) 0%,
+            rgba(129, 176, 246, 0.201) 0%,
             rgb(255, 255, 255) 100%
         );
         flex-direction: column;
