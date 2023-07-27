@@ -7,8 +7,8 @@
 
 .bannerColor {
     background-image: url('../assets/floral.jpg');
-    background-position: 95% 5%;
-    background-size: cover;
+    background-position: right;
+    background-size: 140%;
     padding-top: 100px;
     display: flex;
     justify-content: flex-end;

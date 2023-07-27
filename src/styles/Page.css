@@ -21,8 +21,9 @@ a:hover {
 .pageProjectTitle {
     font-family: 'Oswald', sans-serif;
     padding: 0px 30px;
-    background-image: url('../assets/floral.jpg');
-    background-size: cover;
+    background-image: url('../assets/floral1.jpg');
+    background-size: 140%;
+    background-position: bottom;
     display: flex;
     color: black;
     justify-content: center;
