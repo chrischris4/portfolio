@@ -17,10 +17,12 @@ function Home() {
                 <div className="contentAbout">
                     <h2 className="titleAbout">A propos de moi</h2>
                     <p className="pAbout">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Molestias ipsam debitis cupiditate dignissimos magni
-                        nulla quasi facere totam eaque numquam, cumque
-                        recusandae ratione nam tenetur asperiores voluptates!
+                        Je vous souhaite la bienvenue sur mon portfolio ! Jeune
+                        développeur de 28 ans, je vous invite à en découvrir
+                        d'avantage sur moi et mon travail, vous retrouverez ici
+                        mon parcours, mes compétences ainsi que mes projets.
+                        Ambitieux à l'idée de perfectionner mes aqcuis à travers
+                        de nouvelles éxperiences.
                     </p>
                     <h3> Bonne visite !</h3>
                 </div>
