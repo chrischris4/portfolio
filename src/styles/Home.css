@@ -8,6 +8,45 @@
     position: absolute;
     top: 0;
 }
+
+.about {
+    background-color: #000;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentAbout {
+    margin: 70px 0px 70px 70px;
+    display: flex;
+    background-color: #fff;
+    width: 50%;
+    flex-direction: column;
+}
+.contentAbout h3 {
+    padding-right: 20px;
+    font-weight: 400;
+    text-align: end;
+}
+
+.titleAbout {
+    font-size: 30px;
+    padding-left: 20px;
+    color: black;
+    width: 100%;
+}
+
+.pAbout {
+    margin-left: 20px;
+    border-left: 5px solid black;
+    text-align: left;
+    padding: 0px 20px 0px 10px;
+    color: black;
+    width: 85%;
+}
+
 .sectionTitle {
     width: 90%;
     display: flex;
@@ -18,11 +57,10 @@
     margin-top: 80px;
 }
 .styleTitle {
-    margin-top: 3px;
     margin-right: 5px;
-    width: 15px;
-    height: 27px;
-    background-color: #a3f5f9;
+    width: 20px;
+    height: 20px;
+    background-color: black;
 }
 .parcours {
     padding: 40px 0 20px 0;
@@ -191,6 +229,12 @@ ol {
     border: 2px solid #a3f5f9;
 }
 @media screen and (max-width: 991px) {
+    .about {
+        width: 90%;
+    }
+    .contentAbout {
+        width: 60%;
+    }
     .openClass,
     .adrar {
         padding: 0 0 20px 0;
@@ -227,6 +271,31 @@ ol {
     }
 }
 @media screen and (max-width: 635px) {
+    .about {
+        width: 100%;
+        background-color: white;
+        margin-top: 35px;
+    }
+    .contentAbout {
+        margin: auto;
+        width: 90%;
+    }
+
+    .contentAbout h3 {
+        text-align: end;
+    }
+
+    .titleAbout {
+        font-size: 22.5px;
+        padding-left: 0;
+    }
+
+    .pAbout {
+        font-size: 15px;
+        margin-left: 0;
+        padding: 0px 0px 0px 10px;
+    }
+
     .sectionTitle {
         margin-top: 50px;
         font-size: 15px;

@@ -13,6 +13,18 @@ function Home() {
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
+            <div className="about">
+                <div className="contentAbout">
+                    <h2 className="titleAbout">A propos de moi</h2>
+                    <p className="pAbout">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias ipsam debitis cupiditate dignissimos magni
+                        nulla quasi facere totam eaque numquam, cumque
+                        recusandae ratione nam tenetur asperiores voluptates!
+                    </p>
+                    <h3> Bonne visite !</h3>
+                </div>
+            </div>
             <div id="parcoursLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
