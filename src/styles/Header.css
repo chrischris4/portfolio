@@ -49,7 +49,7 @@ nav {
 }
 
 .link:hover {
-    border-bottom: solid 2px #a3f5f9;
+    border-bottom: solid 2px #6baefa;
     transform: scale(1.1);
 }
 

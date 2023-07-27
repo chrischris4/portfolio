@@ -147,14 +147,14 @@
 .openClass h3 {
     padding-top: 5px;
     margin-top: 0px;
-    border-top: 10px solid #a3f5f9;
+    border-top: 10px solid #6baefa;
     width: fit-content;
 }
 
 .adrar h3 {
     margin-top: 0px;
     padding-top: 5px;
-    border-top: 10px solid #a3f5f9;
+    border-top: 10px solid #6baefa;
     width: fit-content;
 }
 
@@ -177,9 +177,9 @@
     background-color: #000;
 }
 .buttonCv:hover {
-    border: #a3f5f9 solid 1px;
+    border: #6baefa solid 1px;
     color: #000;
-    background-color: #a3f5f9;
+    background-color: #6baefa;
 }
 .frontendImg,
 .backendImg,
@@ -218,7 +218,7 @@ ol {
     list-style: none;
     background: linear-gradient(
         360deg,
-        rgba(129, 229, 246, 0.201) 0%,
+        rgba(129, 176, 246, 0.201) 0%,
         rgb(255, 255, 255) 100%
     );
     transition: 0.5s ease;
@@ -226,7 +226,7 @@ ol {
 .frontend:hover,
 .backend:hover,
 .outil:hover {
-    border: 2px solid #a3f5f9;
+    border: 2px solid #6baefa;
 }
 @media screen and (max-width: 991px) {
     .about {

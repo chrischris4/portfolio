@@ -16,7 +16,7 @@
     margin-bottom: 0px;
     padding: 20px 0px;
     width: 100%;
-    background-color: #a3f5f9;
+    background-color: #6baefa;
 }
 
 .contactForm {
@@ -188,8 +188,8 @@ textarea {
 }
 
 .contactButton:hover {
-    border: 1px solid #a3f5f9;
-    background-color: #a3f5f9;
+    border: 1px solid #6baefa;
+    background-color: #6baefa;
     color: black;
 }
 
