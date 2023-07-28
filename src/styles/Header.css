@@ -29,14 +29,6 @@
     transform: scale(1.1);
 }
 
-nav {
-    font-weight: 400;
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    color: black;
-}
-
 .vectorUp {
     width: 40px;
 }
@@ -91,9 +83,11 @@ nav {
 }
 
 .burgerMenu {
+    overflow-y: auto;
     font-weight: 400;
-    height: fit-content;
-    width: 30%;
+    max-height: calc(100vh - 50px);
+    transform: translateX(100%);
+    width: 300px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -101,12 +95,16 @@ nav {
     position: fixed;
     top: 0px;
     right: 0px;
-    padding: 80px 0px;
+    padding: 80px 0px 40px 0px;
     align-items: center;
 }
 
+.burgerMenu.open {
+    transform: translateX(0);
+}
+
 .burgerMenu .link {
-    margin: 25px 0px;
+    margin: 10px 0px;
     animation: fade-in 0s ease;
     z-index: 3;
     font-size: 30px;
@@ -133,12 +131,6 @@ nav {
     transform: rotate(45deg) translate(-4px, -8px);
 }
 
-@media screen and (max-width: 991px) {
-    .burgerMenu {
-        width: 45%;
-    }
-}
-
 @media screen and (max-width: 635px) {
     .header {
         height: 46px;
@@ -151,8 +143,7 @@ nav {
     }
 
     .link {
-        margin: 0px 10px 0px 0px;
-        padding: 0px 0px;
+        font-size: 14px;
     }
 
     .vectorUp {
@@ -162,15 +153,12 @@ nav {
     .topPage {
         margin: 0px 20px;
     }
-    .link {
-        font-size: 14px;
-    }
 
     .menuBurger {
         margin-right: 20px;
     }
 
     .burgerMenu {
-        width: 70%;
+        padding: 60px 0px 30px 0px;
     }
 }
