@@ -166,9 +166,12 @@ nav {
         font-size: 14px;
     }
 
-    .burgerMenu {
+    .menuBurger {
         margin-right: 20px;
-        height: 400px;
+    }
+
+    .burgerMenu {
+        padding-right: 20px;
         width: 70%;
     }
 }

@@ -122,6 +122,17 @@ function Header() {
                     {linksHome && (
                         <>
                             <ScrollLink
+                                href="aboutLien"
+                                to="aboutLien"
+                                className="link"
+                                spy={true}
+                                smooth={true}
+                                duration={1000}
+                                onClick={closeMenu}
+                            >
+                                A propos
+                            </ScrollLink>
+                            <ScrollLink
                                 href="parcoursLien"
                                 to="parcoursLien"
                                 className="link"

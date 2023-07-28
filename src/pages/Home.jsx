@@ -15,6 +15,7 @@ function Home() {
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
+            <div id="aboutLien"></div>
             <div className="about">
                 <div className="contentAbout">
                     <h2 className="titleAbout">A propos de moi</h2>
