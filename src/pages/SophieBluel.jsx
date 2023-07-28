@@ -61,6 +61,7 @@ function SophieBluel() {
                     des images présentes dans la galerie.
                 </div>
             </div>
+            <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>

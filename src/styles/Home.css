@@ -305,8 +305,11 @@ ol {
     .adrar {
         width: 90%;
     }
-    .overlayParcours h3 {
-        font-size: 20px;
+    .overlayParcours h4 {
+        font-size: 15px;
+    }
+    .overlayParcours p {
+        font-size: 10px;
     }
 
     .buttonCv {

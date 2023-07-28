@@ -69,6 +69,7 @@ function LeVieuxGrimoire() {
                     automatiquement convertie au format webp, et redimensionner.
                 </div>
             </div>
+            <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
