@@ -3,7 +3,6 @@ import '../styles/Header.css';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import arrow from '../assets/arrow.png';
 
 function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -54,7 +53,11 @@ function Header() {
     return (
         <div className="header">
             <a href="#topPageLink" className="topPage" onClick={scrollToTop}>
-                <img className="vectorUp" src={arrow} alt="haut-de-page" />
+                <img
+                    className="vectorUp"
+                    src="https://i.ibb.co/FsfJ4mw/arrow.webp"
+                    alt="haut-de-page"
+                />
             </a>
 
             {linksPage && (

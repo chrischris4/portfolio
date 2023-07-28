@@ -6,7 +6,7 @@
 }
 
 .bannerColor {
-    background-image: url('../assets/floral.jpg');
+    background-image: url('https://i.ibb.co/vh4FBcD/floral.webp');
     background-position: right;
     background-size: cover;
     padding-top: 100px;
@@ -148,7 +148,7 @@ h1 {
     }
 
     .bannerColor {
-        background-image: url('../assets/floral1.jpg');
+        background-image: url('https://i.ibb.co/QY00nj3/floral1.webp');
         background-position: bottom;
         background-size: cover;
         padding-right: 0px;

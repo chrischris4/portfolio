@@ -21,7 +21,7 @@ a:hover {
 .pageProjectTitle {
     font-family: 'Oswald', sans-serif;
     padding: 0px 30px;
-    background-image: url('../assets/floral1.jpg');
+    background-image: url('https://i.ibb.co/QY00nj3/floral1.webp');
     background-size: 140%;
     background-position: bottom;
     display: flex;
