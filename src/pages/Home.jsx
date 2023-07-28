@@ -2,6 +2,7 @@ import Banner from '../components/Banner';
 import '../styles/Home.css';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
+import { MetaTags } from 'react-meta-tags';
 
 function Home() {
     useEffect(() => {
@@ -10,6 +11,7 @@ function Home() {
 
     return (
         <div className="page-container">
+            <MetaTags />
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
@@ -89,7 +91,7 @@ function Home() {
                 <div className="cv">
                     <a
                         className="buttonCv"
-                        href="https://drive.google.com/uc?export=download&id=1t0t0aTNPikjLhMdfdGAI-9ZTnyJmzdtO
+                        href="https://drive.google.com/uc?export=download&id=1Q58OtjTQIS_NQPGQffVipOhbFtZKKtak
                         "
                         download
                     >
