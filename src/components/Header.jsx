@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Header.css';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -17,13 +17,6 @@ function Header() {
     ];
     const linksPage = allLinksPages.includes(location.pathname);
     const linksHome = location.pathname === '/';
-
-    const scrollToTop = () => {
-        scroll.scrollToTop({
-            duration: 1000,
-            smooth: true,
-        });
-    };
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
@@ -53,14 +46,20 @@ function Header() {
 
     return (
         <div className="header">
-            <a href="#topPageLink" className="topPage" onClick={scrollToTop}>
+            <ScrollLink
+                href="parcoursLien"
+                to="topPageLink"
+                className="topPage"
+                spy={true}
+                smooth={true}
+                duration={1000}
+            >
                 <img
                     className="vectorUp"
                     src="https://i.ibb.co/FsfJ4mw/arrow.webp"
                     alt="haut-de-page"
                 />
-            </a>
-
+            </ScrollLink>
             {linksPage && (
                 <>
                     <RouterLink className="backHomeLink" to={`/`}>

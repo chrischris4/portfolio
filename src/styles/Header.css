@@ -110,6 +110,7 @@
 }
 
 .burgerMenu .link {
+    transition: 0.5s ease;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -122,6 +123,7 @@
 }
 
 .lastLink {
+    transition: 0.5s ease;
     width: 100%;
     display: flex;
     justify-content: center;
