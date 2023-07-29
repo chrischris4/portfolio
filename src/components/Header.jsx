@@ -134,7 +134,7 @@ function Header() {
                                 duration={1000}
                                 onClick={closeMenu}
                             >
-                                A propos
+                                À propos
                             </ScrollLink>
                             <ScrollLink
                                 href="parcoursLien"

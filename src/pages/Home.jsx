@@ -19,7 +19,7 @@ function Home() {
             <div id="aboutLien"></div>
             <div className="about">
                 <div className="contentAbout">
-                    <h2 className="titleAbout">A propos de moi</h2>
+                    <h2 className="titleAbout">À propos de moi</h2>
                     <p className="pAbout">
                         Je vous souhaite la bienvenue sur mon portfolio ! Jeune
                         développeur de 28 ans, je vous invite à en découvrir
