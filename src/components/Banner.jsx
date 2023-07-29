@@ -23,7 +23,7 @@ function Banner() {
             });
 
             if (index > 0) {
-                const space = document.createTextNode(' '); // Ajoute un espace entre les mots
+                const space = document.createTextNode(' ');
                 bannerAbout.appendChild(space);
             }
 
@@ -35,12 +35,12 @@ function Banner() {
 
         wordSpans.forEach((span, index) => {
             span.style.animationDelay = `${delay}s`;
-            delay += index % 2 === 0 ? 0.25 : 0.15; // Ajustez les délais pour une apparence plus fluide
+            delay += index % 2 === 0 ? 0.25 : 0.15;
         });
 
         const borderTimeout = setTimeout(() => {
             bannerAbout.classList.add('show-border');
-        }, 3700); // Définissez le délai pour l'affichage de la bordure (1,5 seconde dans cet exemple)
+        }, 3700);
 
         const linkTimeout = setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
