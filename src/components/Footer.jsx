@@ -14,7 +14,7 @@ function Footer() {
                 >
                     GitHub
                 </a>
-                . Merci de votre interêt.
+                . Merci pour votre interêt.
             </p>
             <p className="pFooter">© 2023 by JOST Christopher</p>
         </div>

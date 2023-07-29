@@ -1,4 +1,5 @@
 import '../styles/Page.css';
+import ContactForm from '../components/ContactForm';
 import { useEffect } from 'react';
 
 function Kasa() {
@@ -18,7 +19,7 @@ function Kasa() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Github
+                        Code du Projet
                     </a>
                 </button>
             </div>
@@ -30,10 +31,10 @@ function Kasa() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Sur ce projet j'ai du mettre en place une application React,
-                    je me suis occuper de toute la partie Frontend. J'ai fais en
-                    sorte de génerer des cards pour chaque logement, contenant
-                    chacune toute les infos provenant du fichier .json.
+                    Sur ce projet j'ai mis en place une application React, je me
+                    suis occupé de toute la partie Frontend. J'ai fais en sorte
+                    de génerer des cards pour chaque logements, contenant
+                    chacune toutes les infos provenant du fichier .json.
                 </div>
             </div>
             <div className="pageInfoReverse">
@@ -45,7 +46,7 @@ function Kasa() {
                 />
                 <div className="imgInfo">
                     Ensuite j'ai crée une page logement qui s'affiche au clique
-                    sur une card, qui contient toute les infos présente sur
+                    sur une card, qui contient toutes les infos présentes sur
                     celle-ci.
                 </div>
             </div>
@@ -54,6 +55,7 @@ function Kasa() {
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
             </div>
+            <ContactForm />
         </div>
     );
 }

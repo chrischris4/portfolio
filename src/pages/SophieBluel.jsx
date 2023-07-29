@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
+import ContactForm from '../components/ContactForm';
 
 function SophieBluel() {
     useEffect(() => {
@@ -18,7 +19,7 @@ function SophieBluel() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Github
+                        Code du Projet
                     </a>
                 </button>
             </div>
@@ -30,9 +31,9 @@ function SophieBluel() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Sur ce site j'ai gérer la partie Frontend du site, j'ai
-                    géneré la galerie de la page d'accueil à partir d'un fichier
-                    .json en effectuant des requêtes via une API.
+                    Sur ce site j'ai géré la partie Frontend, j'ai géneré la
+                    galerie de la page d'accueil à partir d'un fichier .json en
+                    effectuant des requêtes via une API.
                 </div>
             </div>
             <div className="pageInfoReverse">
@@ -44,7 +45,7 @@ function SophieBluel() {
                 />
                 <div className="imgInfo">
                     Le site contient une page d'authentification, pour qu'une
-                    fois identifier, le propriétaire du site puisse accéder à un
+                    fois identifié, le propriétaire du site puisse accéder à un
                     mode édition.
                 </div>
             </div>
@@ -58,7 +59,7 @@ function SophieBluel() {
                 <div className="imgInfo">
                     Une fois le mode édition activé, le propriétaire du site
                     pourra, grâce à une modale, ajouter, modifier ou supprimer
-                    des images présentes dans la galerie.
+                    des images dans la galerie.
                 </div>
             </div>
             <div id="contactLien"></div>
@@ -66,6 +67,7 @@ function SophieBluel() {
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
             </div>
+            <ContactForm />
         </div>
     );
 }

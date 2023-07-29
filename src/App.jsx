@@ -9,7 +9,6 @@ import Kasa from './pages/Kasa';
 import MonVieuxGrimoire from './pages/MonVieuxGrimoire';
 import NinaCarducci from './pages/NinaCarducci';
 import SophieBluel from './pages/SophieBluel';
-import ContactForm from './components/ContactForm';
 
 function App() {
     return (
@@ -27,7 +26,6 @@ function App() {
                 />
                 <Route path="/*" element={<Error404 />} />
             </Routes>
-            <ContactForm />
             <Footer />
         </Router>
     );

@@ -21,23 +21,13 @@
     align-items: center;
 }
 
-.nav-error {
-    width: 50%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
 .error-link {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 24px;
     color: black;
     font-weight: 500;
     margin-top: 70px;
-    margin-bottom: 30px;
-    text-decoration: none;
-    transition: transform 0.3s ease;
+    margin-bottom: 70px;
 }
 
 .error-link:hover {
@@ -51,14 +41,6 @@
     }
 
     p {
-        text-align: center;
         font-size: 18px;
-    }
-    .nav-error {
-        width: 100%;
-    }
-
-    .error-link {
-        margin-top: 110px;
     }
 }

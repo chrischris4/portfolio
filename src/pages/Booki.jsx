@@ -18,7 +18,7 @@ function Booki() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Github
+                        Code du Projet
                     </a>
                 </button>
             </div>
@@ -30,7 +30,7 @@ function Booki() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Sur ce projet j'ai effectuer l'intégration du site en
+                    Sur ce projet j'ai effectué l'intégration du site en
                     html/css, j'ai du gérer le responsive, un format desktop,
                     tablette et téléphone.
                 </div>

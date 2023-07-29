@@ -13,11 +13,9 @@ function Error404() {
                 <p className="errorP">
                     La page que vous demandez n'existe pas.
                 </p>
-                <nav className="nav-error">
-                    <Link to="/" className="error-link">
-                        Retourner sur la page d'Accueil
-                    </Link>
-                </nav>
+                <Link to="/" className="error-link">
+                    Retourner sur la page d'Accueil
+                </Link>
             </div>
         </div>
     );

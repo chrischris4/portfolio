@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
+import ContactForm from '../components/ContactForm';
 
 function LeVieuxGrimoire() {
     useEffect(() => {
@@ -20,7 +21,7 @@ function LeVieuxGrimoire() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Github
+                        Code du Projet
                     </a>
                 </button>
             </div>
@@ -32,8 +33,8 @@ function LeVieuxGrimoire() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Je me suis occuper de toute la partie Backend de ce projet,
-                    une application express en React, avec une base de donnés
+                    Je me suis occupé de toute la partie Backend de ce projet,
+                    une application express en React, avec une base de données
                     MongoDB. Sur ce site nous pouvons créer un compte afin d'y
                     ajouter les livres de notre choix, avec en plus un systeme
                     de notation.
@@ -47,10 +48,10 @@ function LeVieuxGrimoire() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    J'ai créer un systeme d'authentification, afin que
+                    J'ai crée un systeme d'authentification, afin que
                     l'utilisateur puisse s'inscrire et se connecter à son compte
-                    personnel, un token est génerer avec jsonwebtoken, et un
-                    middleware à été créer pour verifier l'authentification de
+                    personnel, un token est géneré avec jsonwebtoken, et un
+                    middleware à été crée pour verifier l'authentification de
                     l'utilisateur.
                 </div>
             </div>
@@ -62,11 +63,11 @@ function LeVieuxGrimoire() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    J'ai créer un model pour les livres contenant leur infos,
+                    J'ai crée un model pour les livres contenant leur infos,
                     ainsi qu'un controller afin que l'on puisse ajouter,
-                    modifier, supprimer ou noter ces livres. J'ai aussi ajouter
+                    modifier, supprimer ou noter ces livres. J'ai aussi ajouté
                     un middleware afin qu'à l'ajout d'une image, celle-ci soit
-                    automatiquement convertie au format webp, et redimensionner.
+                    automatiquement convertie au format webp, et redimensionnée.
                 </div>
             </div>
             <div id="contactLien"></div>
@@ -74,6 +75,7 @@ function LeVieuxGrimoire() {
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
             </div>
+            <ContactForm />
         </div>
     );
 }

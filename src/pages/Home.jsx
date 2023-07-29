@@ -2,6 +2,7 @@ import Banner from '../components/Banner';
 import '../styles/Home.css';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
+import ContactForm from '../components/ContactForm';
 import { MetaTags } from 'react-meta-tags';
 
 function Home() {
@@ -165,6 +166,7 @@ function Home() {
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
             </div>
+            <ContactForm />
         </div>
     );
 }

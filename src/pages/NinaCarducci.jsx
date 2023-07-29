@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
+import ContactForm from '../components/ContactForm';
 
 function NinaCarducci() {
     useEffect(() => {
@@ -18,7 +19,7 @@ function NinaCarducci() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Github
+                        Code du Projet
                     </a>
                 </button>
             </div>
@@ -30,10 +31,9 @@ function NinaCarducci() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Sur ce projet j'ai géré toute la partie SEO, tout d'abbord
-                    la gestion des titres, conversion et compression des images,
-                    minification du code et optimisation du html pour le
-                    réferencement.
+                    Sur ce projet j'ai géré toute la partie SEO, conversion et
+                    compression des images, minification du code pour les
+                    performances et optimisation du html pour le réferencement.
                 </div>
             </div>
             <div className="pageInfoReverse">
@@ -45,7 +45,7 @@ function NinaCarducci() {
                 />
                 <div className="imgInfo">
                     J'ai ajouté des richSnippet nécessaire pour le réferencement
-                    sur google, ainsi que pour les résaux sociaux.
+                    sur google, ainsi que des meta og pour les résaux sociaux.
                 </div>
             </div>
             <div className="pageInfo">
@@ -75,6 +75,7 @@ function NinaCarducci() {
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
             </div>
+            <ContactForm />
         </div>
     );
 }
