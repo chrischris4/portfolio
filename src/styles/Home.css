@@ -92,7 +92,6 @@
 .overlayParcours p {
     margin-top: 0;
     font-size: 15px;
-    border-bottom: 1px #a3f5f9 solid;
 }
 .overlayParcours {
     opacity: 0;
@@ -202,7 +201,7 @@ ol {
     margin: 0;
     padding-left: 10px;
     list-style: none;
-    border-left: 10px solid black;
+    border-left: 5px solid black;
 }
 .frontend,
 .backend,

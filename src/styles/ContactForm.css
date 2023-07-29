@@ -42,8 +42,9 @@
     width: 100%;
     background-color: black;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .linkedinLink {
@@ -51,9 +52,9 @@
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    width: 350px;
-    margin-top: 20px;
-    padding: 10px 10px;
+    width: 35%;
+    margin: 20px;
+    padding: 15px 15px;
     border-radius: 5px;
     background-color: #0084b1;
     color: white;
@@ -62,7 +63,7 @@
 
 .linkedinLink:hover {
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .linkedinImg {
@@ -71,21 +72,21 @@
 
 .myEmailLink {
     align-items: center;
-    margin-top: 20px;
+    margin: 20px;
     color: white;
-    padding: 10px 10px;
+    padding: 15px 15px;
     border-radius: 5px;
     background: rgb(109, 6, 6);
     display: flex;
     justify-content: space-between;
     font-size: 19px;
-    width: 350px;
+    width: 35%;
     transition: transform 0.3s ease;
 }
 
 .myEmailLink:hover {
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .material-symbols-outlined {
@@ -94,21 +95,21 @@
 
 .skypeLink {
     align-items: center;
-    margin-top: 20px;
+    margin: 20px;
     color: white;
-    padding: 10px 10px;
+    padding: 15px 15px;
     border-radius: 5px;
     background: #00aff0;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    width: 350px;
+    width: 35%;
     transition: transform 0.3s ease;
 }
 
 .skypeLink:hover {
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .skypeImg {
@@ -117,22 +118,22 @@
 
 .githubLinkContact {
     align-items: center;
-    margin-top: 20px;
+    margin: 20px;
     color: white;
-    padding: 10px 10px;
+    padding: 14px 14px;
     border: solid 1px white;
     border-radius: 5px;
     background: #1b1f23;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    width: 350px;
+    width: 35%;
     transition: transform 0.3s ease;
 }
 
 .githubLinkContact:hover {
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .githubImgContact {
@@ -141,11 +142,13 @@
 
 form {
     margin: auto;
-    width: 500px;
+    width: 535px;
 }
 
 input {
-    height: 30px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    height: 40px;
     border-radius: 5px;
     border: 0px;
     margin-bottom: 20px;
@@ -158,11 +161,17 @@ label {
 }
 
 textarea {
+    font-size: 15px;
+    font-family: 'Poppins';
     resize: none;
-    height: 60px;
+    height: 110px;
     border-radius: 5px;
     border: 2px solid;
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.contactMail {
     width: 100%;
 }
 
@@ -199,18 +208,22 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
-    form {
-        width: 420px;
-    }
-
     .contactForm p {
         font-size: 30px;
+    }
+
+    .linkedinLink,
+    .myEmailLink,
+    .skypeLink,
+    .githubLinkContact {
+        width: 505px;
+        margin: 10px;
     }
 }
 
 @media screen and (max-width: 635px) {
     form {
-        width: 70%;
+        width: 80%;
     }
 
     .contactP {
@@ -218,6 +231,8 @@ textarea {
     }
 
     .contactForm h3 {
+        text-align: center;
+        width: 80%;
         margin-top: 30px;
         font-size: 16px;
     }
@@ -226,22 +241,26 @@ textarea {
         font-size: 15px;
     }
 
+    .contactLinks {
+        padding-top: 10px;
+    }
+
     .linkedinLink,
     .myEmailLink,
     .skypeLink,
     .githubLinkContact {
         margin-top: 10px;
-        width: 250px;
+        width: 75%;
         font-size: 14px;
     }
 
     .skypeImg,
     .linkedinImg,
     .githubImgContact {
-        width: 21px;
+        width: 29px;
     }
     .material-symbols-outlined {
-        font-size: 21px;
+        font-size: 26px;
     }
 
     label {

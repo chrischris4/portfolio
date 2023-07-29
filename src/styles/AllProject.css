@@ -68,11 +68,12 @@
     }
     .filter {
         border-radius: 0px;
-        padding-bottom: 2px;
+        padding-bottom: 15px;
         margin-bottom: 0px;
     }
 
     .allProject {
+        padding-bottom: 20px;
         padding-top: 0px;
         border-radius: 0px;
         background-color: black;
@@ -82,10 +83,6 @@
 }
 
 @media screen and (max-width: 635px) {
-    .filter {
-        border-radius: 0px;
-    }
-
     .allProject {
         border-radius: 0px;
     }

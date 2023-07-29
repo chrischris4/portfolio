@@ -34,11 +34,12 @@ function Header() {
     };
 
     useEffect(() => {
-        document.body.classList.add('header-mounted');
-        return () => {
-            document.body.classList.remove('header-mounted');
-        };
-    }, []);
+        if (isMenuOpen) {
+            document.body.classList.add('disable-scroll');
+        } else {
+            document.body.classList.remove('disable-scroll');
+        }
+    }, [isMenuOpen]);
 
     window.addEventListener('scroll', function () {
         var topPage = document.querySelector('.topPage');
@@ -181,15 +182,6 @@ function Header() {
                             </RouterLink>
                         </>
                     )}
-                    <RouterLink
-                        className="link"
-                        to={`https://github.com/chrischris4/`}
-                        target="_blank"
-                        rel="noreferrer"
-                        onClick={closeMenu}
-                    >
-                        Github
-                    </RouterLink>
                     <ScrollLink
                         href="contactLien"
                         to="contactLien"
@@ -201,6 +193,15 @@ function Header() {
                     >
                         Contact
                     </ScrollLink>
+                    <RouterLink
+                        className="lastLink"
+                        to={`https://github.com/chrischris4/`}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={closeMenu}
+                    >
+                        Github
+                    </RouterLink>
                 </nav>
             )}
         </div>

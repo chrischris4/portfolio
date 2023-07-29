@@ -29,22 +29,19 @@
 }
 
 .error-link {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 24px;
     color: black;
     font-weight: 500;
     margin-top: 70px;
     margin-bottom: 30px;
     text-decoration: none;
-    border-bottom: solid 2px white;
     transition: transform 0.3s ease;
-
 }
 
 .error-link:hover {
-    border-bottom: solid 2px #a3f5f9;
-    transform: scale(1.1);
-
+    color: #6baefa;
 }
 
 @media screen and (max-width: 991px) {

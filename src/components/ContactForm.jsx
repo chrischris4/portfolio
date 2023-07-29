@@ -79,7 +79,7 @@ function ContactForm() {
                         <input
                             id="email"
                             name="email"
-                            placeholder="JohnDoe@gmail.com"
+                            placeholder="John@Doe.com"
                             type="text"
                             required
                         />
