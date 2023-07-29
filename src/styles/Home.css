@@ -164,6 +164,7 @@
     justify-content: center;
 }
 .buttonCv {
+    border-radius: 10px;
     cursor: pointer;
     font-family: 'Oswald';
     margin: 0 10px;

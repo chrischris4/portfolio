@@ -79,9 +79,10 @@ function ContactForm() {
                         <input
                             id="email"
                             name="email"
-                            placeholder="John@Doe.com"
-                            type="text"
+                            placeholder="John.doe@exemple.com"
+                            type="email"
                             required
+                            title="Entrez une adresse e-mail valide (ex: john.doe@example.com)"
                         />
                     </div>
                     <div className="contactMsg">

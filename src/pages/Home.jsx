@@ -3,8 +3,8 @@ import '../styles/Home.css';
 import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
 import ContactForm from '../components/ContactForm';
-import { MetaTags } from 'react-meta-tags';
-import RichSnippetAuthor from '../components/RichSnippetAuthor';
+// import { MetaTags } from 'react-meta-tags';
+// import RichSnippetAuthor from '../components/RichSnippetAuthor';
 
 function Home() {
     useEffect(() => {
@@ -13,8 +13,8 @@ function Home() {
 
     return (
         <div className="page-container">
-            <RichSnippetAuthor />
-            <MetaTags />
+            {/* <RichSnippetAuthor />
+            <MetaTags /> */}
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
