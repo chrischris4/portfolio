@@ -32,7 +32,7 @@ function SophieBluel() {
                 />
                 <div className="imgInfo">
                     Sur ce site j'ai géré la partie Frontend, j'ai géneré la
-                    galerie de la page d'accueil à partir d'un fichier .json en
+                    galerie de la page d'accueil à partir d'un fichier json en
                     effectuant des requêtes via une API.
                 </div>
             </div>
