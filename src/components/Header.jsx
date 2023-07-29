@@ -199,7 +199,7 @@ function Header() {
                         rel="noreferrer"
                         onClick={closeMenu}
                     >
-                        Github
+                        GitHub
                     </RouterLink>
                 </nav>
             )}
