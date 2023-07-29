@@ -63,7 +63,7 @@
 
 .linkedinLink:hover {
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .linkedinImg {
@@ -86,7 +86,7 @@
 
 .myEmailLink:hover {
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .material-symbols-outlined {
@@ -109,7 +109,7 @@
 
 .skypeLink:hover {
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .skypeImg {
@@ -133,7 +133,7 @@
 
 .githubLinkContact:hover {
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .githubImgContact {
