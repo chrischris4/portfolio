@@ -26,11 +26,6 @@ function ContactForm() {
 
     return (
         <div className="contact">
-            {isMessageSent && (
-                <div className="alertMessage">
-                    Le message a été envoyé avec succès !
-                </div>
-            )}
             <h3 className="contactP">Retrouvez moi sur :</h3>
             <div className="contactLinks">
                 <a
@@ -111,6 +106,9 @@ function ContactForm() {
                     >
                         Envoyer
                     </button>
+                    {isMessageSent && (
+                        <div className="alertMessage">Message envoyé !</div>
+                    )}
                 </form>
             </div>
         </div>
