@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
 import ContactForm from '../components/ContactForm';
 // import { MetaTags } from 'react-meta-tags';
-import RichSnippetAuthor from '../components/RichSnippetAuthor';
+// import RichSnippetAuthor from '../components/RichSnippetAuthor';
 
 function Home() {
     useEffect(() => {
@@ -13,7 +13,7 @@ function Home() {
 
     return (
         <div className="page-container">
-            <RichSnippetAuthor />
+            {/* <RichSnippetAuthor /> */}
             {/* <MetaTags />   */}
             <div id="topPageLink"></div>
             <div id="backHome"></div>
@@ -95,7 +95,7 @@ function Home() {
                 <div className="cv">
                     <a
                         className="buttonCv"
-                        href="https://drive.google.com/uc?export=download&id=1Q58OtjTQIS_NQPGQffVipOhbFtZKKtak
+                        href="https://drive.google.com/uc?export=download&id=1BpIdVawO7mGZ9Se-SI3CienXT6EoHjeU
                         "
                         download
                     >

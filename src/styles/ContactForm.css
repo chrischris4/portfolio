@@ -8,11 +8,12 @@
 }
 
 .alertMessage {
+    font-size: 15px;
     width: fit-content;
     margin: auto;
     background-color: #4caf50;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     animation: fadeInOut 0.5s ease-in-out;
