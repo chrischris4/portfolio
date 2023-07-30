@@ -69,8 +69,8 @@ function Home() {
                     <div className="openClassP">
                         <h3>Formation OpenClassrooms</h3>
                         <h4>12/2022 - 08/2023</h4>
-                        Durant cette formation je me suis professionaliser et
-                        ait apronfondit mes connaissances en SEO, Frontend et
+                        Durant cette formation je me suis professionalisé et ai
+                        apronfondi mes connaissances en SEO, Frontend et
                         Backend.
                     </div>
                     <a
