@@ -1,5 +1,6 @@
 import '../styles/Page.css';
 import { useEffect } from 'react';
+import ContactForm from '../components/ContactForm';
 
 function Booki() {
     useEffect(() => {
@@ -40,6 +41,7 @@ function Booki() {
                 <div className="styleTitle"></div>
                 <h2>Me contacter</h2>
             </div>
+            <ContactForm />
         </div>
     );
 }
