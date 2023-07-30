@@ -1,8 +1,11 @@
 import '../styles/ContactForm.css';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
+    const [isMessageSent, setMessageSent] = useState(false);
+
     function sendEmail(e) {
         e.preventDefault();
         const serviceId = 'service_pzjldt7';
@@ -10,7 +13,9 @@ function ContactForm() {
         const publicKey = 'uFF5qZzQCkElWuX8Q';
         emailjs.sendForm(serviceId, templateId, e.target, publicKey).then(
             (result) => {
-                console.log('E-mail sent successfully!', result.text);
+                console.log('Message envoyé !', result.text);
+                setMessageSent(true);
+                setTimeout(() => setMessageSent(false), 3000);
             },
             (error) => {
                 console.log('Failed to send e-mail!', error.text);
@@ -21,6 +26,11 @@ function ContactForm() {
 
     return (
         <div className="contact">
+            {isMessageSent && (
+                <div className="alertMessage">
+                    Le message a été envoyé avec succès !
+                </div>
+            )}
             <h3 className="contactP">Retrouvez moi sur :</h3>
             <div className="contactLinks">
                 <a

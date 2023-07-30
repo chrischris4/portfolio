@@ -14,7 +14,7 @@ function Home() {
     return (
         <div className="page-container">
             {/* <RichSnippetAuthor />
-            <MetaTags /> */}
+            <MetaTags />  */}
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
