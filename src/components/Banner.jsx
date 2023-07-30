@@ -6,7 +6,6 @@ function Banner() {
     useEffect(() => {
         const bannerAbout = document.querySelector('.bannerAbout');
         const words = bannerAbout.textContent.trim().split(' ');
-
         bannerAbout.innerHTML = '';
 
         words.forEach((word, index) => {
