@@ -1,5 +1,6 @@
 import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
+import MetaTagsComponent from '../components/MetaTags';
 import { useEffect } from 'react';
 
 function Kasa() {
@@ -8,6 +9,17 @@ function Kasa() {
     }, []);
     return (
         <div className="pageProject">
+            <MetaTagsComponent
+	            title="Kasa - JOST Christopher"
+	            description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
+	            keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+	            author="Jost Christopher"
+	            og_title="Portfolio - JOST Christopher"
+	            og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+	            og_image="https://chrischris4.github.io/p8/JC.ico"
+	            og_url="https://chrischris4.github.io/p8/"
+	            og_type="website"
+            />
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
                 <h1 className="pageH1">Kasa - Agence Immobilière </h1>

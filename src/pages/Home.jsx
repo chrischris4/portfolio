@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import AllProject from '../components/AllProject';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
-// import { MetaTags } from 'react-meta-tags';
 import RichSnippetAuthor from '../components/RichSnippetAuthor';
 
 function Home() {
@@ -14,8 +13,18 @@ function Home() {
 
     return (
         <div className="page-container">
+            <MetaTagsComponent
+	            title="Portfolio - JOST Christopher"
+	            description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
+	            keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+	            author="Jost Christopher"
+	            og_title="Portfolio - JOST Christopher"
+	            og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+	            og_image="https://chrischris4.github.io/p8/JC.ico"
+	            og_url="https://chrischris4.github.io/p8/"
+	            og_type="website"
+            />
             <RichSnippetAuthor />
-            <MetaTagsComponent />
             <div id="topPageLink"></div>
             <div id="backHome"></div>
             <Banner />
