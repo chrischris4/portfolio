@@ -8,7 +8,7 @@ function Footer() {
                 code sur
                 <a
                     className="linkFooter"
-                    href="https://github.com/chrischris4/p8"
+                    href="https://github.com/chrischris4/portfolio"
                     target="_blank"
                     rel="noreferrer"
                 >

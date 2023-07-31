@@ -14,15 +14,15 @@ function Home() {
     return (
         <div className="page-container">
             <MetaTagsComponent
-	            title="Portfolio - JOST Christopher"
-	            description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
-	            keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
-	            author="Jost Christopher"
-	            og_title="Portfolio - JOST Christopher"
-	            og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
-	            og_image="https://chrischris4.github.io/p8/JC.ico"
-	            og_url="https://chrischris4.github.io/p8/"
-	            og_type="website"
+                title="Portfolio - JOST Christopher"
+                description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
+                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+                author="Jost Christopher"
+                og_title="Portfolio - JOST Christopher"
+                og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+                og_image="https://chrischris4.github.io/p8/JC.ico"
+                og_url="https://chrischris4.github.io/p8/"
+                og_type="website"
             />
             <RichSnippetAuthor />
             <div id="topPageLink"></div>
@@ -80,7 +80,7 @@ function Home() {
                         <h3>Formation OpenClassrooms</h3>
                         <h4>12/2022 - 08/2023</h4>
                         Durant cette formation je me suis professionalisé et ai
-                        apronfondi mes connaissances en SEO, Frontend et
+                        appronfondi mes connaissances en SEO, Frontend et
                         Backend.
                     </div>
                     <a
