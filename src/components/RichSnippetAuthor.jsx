@@ -6,8 +6,8 @@ function RichSnippetAuthor() {
         '@context': 'http://schema.org',
         '@type': 'Person',
         name: 'Jost Christopher',
-        url: 'https://chrischris4.github.io/p8/',
-        image: 'https://chrischris4.github.io/p8/JC.ico',
+        url: 'https://chrischris4.github.io/portfolio/',
+        image: 'https://chrischris4.github.io/portfolio/JC.ico',
         sameAs: [
             'https://www.linkedin.com/in/christopher-jost-888b75195/',
             'https://github.com/chrischris4',
