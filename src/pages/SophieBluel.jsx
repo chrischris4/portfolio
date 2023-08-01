@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
+import MetaTagsComponent from '../components/MetaTags';
 
 function SophieBluel() {
     useEffect(() => {
@@ -8,6 +9,17 @@ function SophieBluel() {
     }, []);
     return (
         <div className="pageProject">
+            <MetaTagsComponent
+                title="Sophie Bluel - Designer"
+                description="Projet frontend, requête via API, javaScript"
+                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+                author="Jost Christopher"
+                og_title="Portfolio - JOST Christopher"
+                og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+                og_image="https://chrischris4.github.io/p8/JC.ico"
+                og_url="https://chrischris4.github.io/p8/"
+                og_type="website"
+            />
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
                 <h1 className="pageH1">Sophie Bluel - Designer</h1>
@@ -31,7 +43,7 @@ function SophieBluel() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Sur ce site j'ai géré la partie Frontend, j'ai géneré la
+                    Sur ce projet j'ai géré la partie Frontend, j'ai géneré la
                     galerie de la page d'accueil à partir d'un fichier json en
                     effectuant des requêtes via une API.
                 </div>

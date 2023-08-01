@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
+import MetaTagsComponent from '../components/MetaTags';
 
 function LeVieuxGrimoire() {
     useEffect(() => {
@@ -8,6 +9,17 @@ function LeVieuxGrimoire() {
     }, []);
     return (
         <div className="pageProject">
+            <MetaTagsComponent
+                title="Mon Vieux Grimoire - Notation de Livre"
+                description="Projet backend, app react, express, base de données MongoDB"
+                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+                author="Jost Christopher"
+                og_title="Portfolio - JOST Christopher"
+                og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+                og_image="https://chrischris4.github.io/p8/JC.ico"
+                og_url="https://chrischris4.github.io/p8/"
+                og_type="website"
+            />
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
                 <h1 className="pageH1">
@@ -34,9 +46,9 @@ function LeVieuxGrimoire() {
                 />
                 <div className="imgInfo">
                     Je me suis occupé de toute la partie Backend de ce projet,
-                    une application express en React, avec une base de données
+                    une application React avec express et une base de données
                     MongoDB. Sur ce site nous pouvons créer un compte afin d'y
-                    ajouter les livres de notre choix, avec en plus un systeme
+                    ajouter les livres de notre choix, avec en plus un système
                     de notation.
                 </div>
             </div>
@@ -50,8 +62,8 @@ function LeVieuxGrimoire() {
                 <div className="imgInfo">
                     J'ai crée un systeme d'authentification, afin que
                     l'utilisateur puisse s'inscrire et se connecter à son compte
-                    personnel, un token est géneré avec jsonwebtoken, et un
-                    middleware à été crée pour verifier l'authentification de
+                    personnel, un token est géneré avec jsonwebtoken, un
+                    middleware à été crée pour vérifier l'authentification de
                     l'utilisateur.
                 </div>
             </div>

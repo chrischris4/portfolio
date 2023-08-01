@@ -10,15 +10,15 @@ function Kasa() {
     return (
         <div className="pageProject">
             <MetaTagsComponent
-	            title="Kasa - JOST Christopher"
-	            description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
-	            keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
-	            author="Jost Christopher"
-	            og_title="Portfolio - JOST Christopher"
-	            og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
-	            og_image="https://chrischris4.github.io/p8/JC.ico"
-	            og_url="https://chrischris4.github.io/p8/"
-	            og_type="website"
+                title="Kasa - Agence Immobilière"
+                description="Kasa, agence immobilière, application react, projet frontend"
+                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+                author="Jost Christopher"
+                og_title="Portfolio - JOST Christopher"
+                og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+                og_image="https://chrischris4.github.io/p8/JC.ico"
+                og_url="https://chrischris4.github.io/p8/"
+                og_type="website"
             />
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
@@ -45,8 +45,9 @@ function Kasa() {
                 <div className="imgInfo">
                     Sur ce projet j'ai mis en place une application React, je me
                     suis occupé de toute la partie Frontend. J'ai fais en sorte
-                    de génerer des cards pour chaque logements, contenant
-                    chacune toutes les infos provenant du fichier .json.
+                    de génerer des cards pour chaque logements sur la page
+                    d'accueil, contenant toutes les infos provenant d'un fichier
+                    json.
                 </div>
             </div>
             <div className="pageInfoReverse">
@@ -57,9 +58,9 @@ function Kasa() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Ensuite j'ai crée une page logement qui s'affiche au clique
-                    sur une card, qui contient toutes les infos présentes sur
-                    celle-ci.
+                    Au clique sur une card, nous sommes redirigé vers une page
+                    logements qui contient toutes les infos présentes sur
+                    celle-ci, titre, photos, propriétaire..
                 </div>
             </div>
             <div id="contactLien"></div>

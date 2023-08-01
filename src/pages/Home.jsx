@@ -34,7 +34,7 @@ function Home() {
                     <h2 className="titleAbout">À propos de moi</h2>
                     <p className="pAbout">
                         Je vous souhaite la bienvenue sur mon portfolio ! Jeune
-                        développeur de 28 ans, je vous invite à en découvrir
+                        Développeur de 28 ans, je vous invite à en découvrir
                         d'avantage sur moi et mon travail, vous retrouverez ici
                         mon parcours, mes compétences ainsi que mes projets.
                         Ambitieux à l'idée de perfectionner mes aqcuis à travers
@@ -46,6 +46,7 @@ function Home() {
             <div id="parcoursLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
+
                 <h2>Parcours</h2>
             </div>
             <div className="parcours">
@@ -53,9 +54,9 @@ function Home() {
                     <div className="adrarP">
                         <h3>Formation Adrar</h3>
                         <h4>10/2021 - 06/2022</h4>
-                        En suivant cette formation, j'ai pu en savoir plus sur
-                        le métier de Developpeur ainsi qu'approfondir mes bases
-                        en coding.
+                        Durant cette formation, j'ai pu en savoir plus sur ce
+                        qu'est le métier de Développeur ainsi qu'approfondir mes
+                        bases en coding.
                     </div>
                     <a
                         className="parcoursLink"
@@ -116,6 +117,7 @@ function Home() {
             <div id="competenceLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
+
                 <h2>Compétences</h2>
             </div>
             <div id="competence">
@@ -161,7 +163,7 @@ function Home() {
                         <h3>Outils</h3>
                         <ul>
                             <li>VsCode</li>
-                            <li>Github</li>
+                            <li>Git</li>
                             <li>Postman</li>
                             <li>npm</li>
                         </ul>
@@ -171,11 +173,13 @@ function Home() {
             <div id="projectLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
+
                 <h2>Projets</h2>
             </div>
             <AllProject />
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
+
                 <h2>Me contacter</h2>
             </div>
             <ContactForm />

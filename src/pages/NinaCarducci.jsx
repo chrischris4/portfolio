@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
+import MetaTagsComponent from '../components/MetaTags';
 
 function NinaCarducci() {
     useEffect(() => {
@@ -8,6 +9,17 @@ function NinaCarducci() {
     }, []);
     return (
         <div className="pageProject">
+            <MetaTagsComponent
+                title="Nina Carducci - Photographe"
+                description="Projet seo, réferencement, optimisation, performance"
+                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+                author="Jost Christopher"
+                og_title="Portfolio - JOST Christopher"
+                og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+                og_image="https://chrischris4.github.io/p8/JC.ico"
+                og_url="https://chrischris4.github.io/p8/"
+                og_type="website"
+            />
             <div id="topPageLink"></div>
             <div className="pageProjectTitle">
                 <h1 className="pageH1">Nina Carducci - Photographe</h1>
