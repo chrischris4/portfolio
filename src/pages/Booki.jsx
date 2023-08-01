@@ -25,15 +25,13 @@ function Booki() {
                 <h1 className="pageH1">Booki - Agence de Location </h1>
             </div>
             <div className="pageProjectButton">
-                <button className="pageButton">
-                    <a
-                        href="https://github.com/chrischris4/Booki_agence_de_location"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Code du Projet
-                    </a>
-                </button>
+                <a
+                    href="https://github.com/chrischris4/Booki_agence_de_location"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <button className="pageButton">Code du Projet </button>
+                </a>
             </div>
             <div className="pageInfo">
                 <img
