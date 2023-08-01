@@ -112,7 +112,6 @@ function ContactForm() {
                     {isMessageSent && (
                         <div className="alertMessage">Message envoyé !</div>
                     )}
-                    <div className="alertMessageFake">Message envoyé !</div>
                 </form>
             </div>
         </div>

@@ -8,9 +8,6 @@
 }
 
 .alertMessage {
-    position: relative;
-    right: 0%;
-    z-index: 1;
     font-size: 15px;
     width: fit-content;
     margin: auto;
@@ -21,16 +18,17 @@
     animation: fadeInOut 0.5s ease-in-out;
 }
 
-.alertMessageFake {
+/* .alertMessageFake {
     position: relative;
     right: 0%;
+    top: -43px;
     z-index: 0;
     font-size: 15px;
     width: fit-content;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
-}
+} */
 
 .contactP {
     font-weight: 400;
@@ -63,7 +61,7 @@
 }
 
 .contactLinks {
-    padding-top: 30px;
+    padding-top: 20px;
     width: 100%;
     background-color: black;
     display: flex;
@@ -171,6 +169,7 @@ form {
 }
 
 input {
+    padding: inherit;
     font-size: 15px;
     font-family: 'Poppins';
     height: 40px;
@@ -186,6 +185,7 @@ label {
 }
 
 textarea {
+    padding: inherit;
     font-size: 15px;
     font-family: 'Poppins';
     resize: none;
@@ -238,6 +238,10 @@ textarea {
         font-size: 30px;
     }
 
+    .contactLinks {
+        padding-top: 10px;
+    }
+
     .linkedinLink,
     .myEmailLink,
     .skypeLink,
@@ -268,14 +272,14 @@ textarea {
     }
 
     .contactLinks {
-        padding-top: 10px;
+        padding-top: 5px;
     }
 
     .linkedinLink,
     .myEmailLink,
     .skypeLink,
     .githubLinkContact {
-        margin-top: 10px;
+        margin: 5px;
         width: 75%;
         font-size: 14px;
     }
