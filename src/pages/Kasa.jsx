@@ -75,11 +75,12 @@ function Kasa() {
                     composant enfant.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
-                <p className="pProjetAbout">
-                    A la fin de ce projet, j'ai appris à utiliser différent
-                    package, le systeme de routage, ainsi que manipuler les
-                    composants, leur valeurs et leur états
-                </p>
+                <ul>
+                    <li>Npm</li>
+                    <li>React.js</li>
+                    <li>Hooks</li>
+                    <li>Props</li>
+                </ul>
             </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">

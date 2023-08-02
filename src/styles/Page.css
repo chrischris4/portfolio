@@ -48,7 +48,7 @@ a:hover {
     font-family: 'Oswald';
     display: flex;
     margin: auto;
-    padding: 10px;
+    padding: 5px 10px;
     border: 1px solid white;
     background-color: black;
     font-size: 20px;
@@ -125,23 +125,39 @@ a:hover {
     color: black;
     margin: auto;
     margin-top: 35px;
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.projetAbout ul {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    border: none;
 }
 
 .projetTitleAbout {
     padding-left: 5px;
     width: fit-content;
-    border-left: 5px solid #00aff0;
+    border-left: 5px solid #6baefa;
     margin-bottom: -10px;
     display: flex;
 }
 
 .pProjetAbout {
-    width: 75%;
     padding-left: 0px;
+}
+
+.projetAbout li {
+    margin-bottom: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: solid 2px black;
 }
 
 @media screen and (max-width: 991px) {
@@ -155,6 +171,10 @@ a:hover {
         font-size: 15px;
         width: 90%;
         justify-content: space-between;
+    }
+
+    .pProjetAbout {
+        width: 100%;
     }
 }
 
@@ -204,5 +224,18 @@ a:hover {
 
     .imgInfo {
         width: 100%;
+    }
+
+    .projetTitleAbout,
+    .pProjetAbout {
+        font-size: 15px;
+    }
+
+    .projetAbout li {
+        font-size: 15px;
+    }
+
+    .projetAbout {
+        width: 80%;
     }
 }

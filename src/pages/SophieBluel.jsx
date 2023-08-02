@@ -86,10 +86,11 @@ function SophieBluel() {
                     supprimer des données.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
-                <p className="pProjetAbout">
-                    A la fin de ce projet, j'ai appris à communiquer via une
-                    API, afin de manipuler les données présentes sur un site.
-                </p>
+                <ul>
+                    <li>API</li>
+                    <li>Requête</li>
+                    <li>JSON</li>
+                </ul>
             </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">

@@ -56,11 +56,10 @@ function Booki() {
                     avec le display flex.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
-                <p className="pProjetAbout">
-                    A la fin de ce projet, j'ai appris à intégrer entièrement la
-                    partie frontend d'un site, et à l'adapter au différents
-                    format d'ecrans.
-                </p>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>Media queries</li>
+                </ul>
             </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">

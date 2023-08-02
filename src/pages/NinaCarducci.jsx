@@ -94,11 +94,12 @@ function NinaCarducci() {
                     référencement.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
-                <p className="pProjetAbout">
-                    A la fin de ce projet, j'ai appris à optimiser un site, ses
-                    perfomances, son accésibilité, son utilisation et son
-                    référencement.
-                </p>
+                <ul>
+                    <li>Optimisation</li>
+                    <li>Performance</li>
+                    <li>SEO</li>
+                    <li>RichSnippets</li>
+                </ul>
             </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">

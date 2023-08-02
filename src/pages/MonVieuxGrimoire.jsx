@@ -94,10 +94,12 @@ function LeVieuxGrimoire() {
                     fonctionnement du site.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
-                <p className="pProjetAbout">
-                    A la fin de ce projet, j'ai appris à utiliser une base de
-                    données.
-                </p>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>Models</li>
+                    <li>Controller</li>
+                    <li>Middleware</li>
+                </ul>
             </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">
