@@ -72,6 +72,25 @@ function SophieBluel() {
                     des images dans la galerie.
                 </div>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'utilisation d'une API, les différentes requêtes et
+                    l'authentification d'un utilisateur.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à utiliser les requêtes avec fetch, afin de
+                    manipuler des données présentes sur un fichier JSON, les
+                    methodes : POST, GET, DELETE, afin de poster, récupérer ou
+                    supprimer des données.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <p className="pProjetAbout">
+                    A la fin de ce projet, j'ai appris à communiquer via une
+                    API, afin de manipuler les données présentes sur un site.
+                </p>
+            </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

@@ -61,6 +61,26 @@ function Kasa() {
                     celle-ci, titre, photos, propriétaire..
                 </div>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'utilisation des composants, apprendre à géré leur états et
+                    transmettre des informations d'un composant à un autre.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à utiliser les hooks et les props, les hooks
+                    pour changer l'état des composants, et les props pour
+                    transmettre des informations d'un composant parents à un
+                    composant enfant.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <p className="pProjetAbout">
+                    A la fin de ce projet, j'ai appris à utiliser différent
+                    package, le systeme de routage, ainsi que manipuler les
+                    composants, leur valeurs et leur états
+                </p>
+            </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

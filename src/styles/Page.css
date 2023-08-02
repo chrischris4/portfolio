@@ -119,6 +119,31 @@ a:hover {
     color: black;
 }
 
+.projetAbout {
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    margin: auto;
+    margin-top: 35px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projetTitleAbout {
+    padding-left: 5px;
+    width: fit-content;
+    border-left: 5px solid #00aff0;
+    margin-bottom: -10px;
+    display: flex;
+}
+
+.pProjetAbout {
+    width: 75%;
+    padding-left: 0px;
+}
+
 @media screen and (max-width: 991px) {
     .pageInfo {
         font-size: 15px;

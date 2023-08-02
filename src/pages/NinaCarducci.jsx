@@ -80,6 +80,26 @@ function NinaCarducci() {
                     d'optimisation.
                 </div>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'optimisation des performances, et du réferencement.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à utiliser des outils comme pagespeed, afin
+                    d'analyser les problèmes, j'ai fais le nécessaire au niveau
+                    des images et du code pour l'alléger le plus possible, puis
+                    j'ai mis en place les meta, et richsnippet pour le
+                    référencement.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <p className="pProjetAbout">
+                    A la fin de ce projet, j'ai appris à optimiser un site, ses
+                    perfomances, son accésibilité, son utilisation et son
+                    référencement.
+                </p>
+            </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

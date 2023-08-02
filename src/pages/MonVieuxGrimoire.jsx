@@ -80,6 +80,25 @@ function LeVieuxGrimoire() {
                     automatiquement convertie au format webp, et redimensionnée.
                 </div>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'utilisation d'une base de données, la création de models,
+                    de controller et de middleware.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à crée une base de données mongoDB grâce à un
+                    cours et des recherches, puis utiliser un controller pour
+                    mettre en place les fonction dont ont a besoin pour le bon
+                    fonctionnement du site.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <p className="pProjetAbout">
+                    A la fin de ce projet, j'ai appris à utiliser une base de
+                    données.
+                </p>
+            </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

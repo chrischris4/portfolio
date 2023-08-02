@@ -46,6 +46,22 @@ function Booki() {
                     tablette et téléphone.
                 </div>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">La mise en place du responsive.</p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à modifier les différentes sections qui
+                    composent le site, suivant le format de l'ecran, notemment
+                    avec le display flex.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <p className="pProjetAbout">
+                    A la fin de ce projet, j'ai appris à intégrer entièrement la
+                    partie frontend d'un site, et à l'adapter au différents
+                    format d'ecrans.
+                </p>
+            </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
