@@ -99,12 +99,17 @@
 }
 
 @media screen and (max-width: 635px) {
+    .projectImg {
+        border-radius: 5px;
+    }
     .overlayTitle {
+        border-radius: 5px;
         font-size: 15px;
         padding-right: 10px;
     }
 
     .overlay {
+        border-radius: 5px;
         font-size: 15px;
     }
 }

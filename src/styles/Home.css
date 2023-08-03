@@ -311,14 +311,27 @@ ol {
         margin-top: 50px;
         font-size: 15px;
     }
-    .parcour {
-        border-radius: 0;
+    .parcours {
+        border-radius: 0px;
         width: 100%;
+    }
+
+    .parcoursLink {
+        border-radius: 5px;
     }
     .openClass,
     .adrar {
         width: 90%;
     }
+
+    .openClassImg,
+    .adrarImg {
+        border-radius: 5px;
+    }
+    .overlayParcours {
+        border-radius: 5px;
+    }
+
     .overlayParcours h4 {
         font-size: 15px;
     }

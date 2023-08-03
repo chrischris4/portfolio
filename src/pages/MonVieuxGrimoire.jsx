@@ -113,7 +113,7 @@ function LeVieuxGrimoire() {
             </div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Autres Projects</h2>
+                <h2>Autres Projets</h2>
             </div>
             <div className="others">
                 <div className="othersMini">

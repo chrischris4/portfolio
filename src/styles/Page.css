@@ -210,7 +210,6 @@ strong {
     }
     .pageInfo {
         flex-direction: column;
-        width: 80%;
     }
     .pageInfo p {
         border-left: 0;
@@ -218,6 +217,7 @@ strong {
     }
 
     .pageImg {
+        border-radius: 5px;
         width: 100%;
     }
 
@@ -234,6 +234,7 @@ strong {
     }
 
     .projetAbout {
+        border-radius: 5px;
         width: 80%;
     }
 
