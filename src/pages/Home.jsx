@@ -110,7 +110,7 @@ function Home() {
                         "
                         download
                     >
-                        Télécharger CV
+                        Mon CV
                     </a>
                 </div>
             </div>

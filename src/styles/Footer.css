@@ -5,10 +5,11 @@
 }
 
 .pFooter {
+    font-weight: 300;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 10px;
-    width: 320px;
+    width: 280px;
     color: white;
     font-size: 14px;
 }

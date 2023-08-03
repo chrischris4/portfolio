@@ -5,6 +5,15 @@
     width: 100%;
 }
 
+h2 {
+    font-weight: 400;
+}
+
+h4,
+h3 {
+    font-weight: 300;
+}
+
 #topPageLink {
     position: absolute;
     top: 0;
@@ -29,7 +38,6 @@
 }
 .contentAbout h3 {
     padding-right: 20px;
-    font-weight: 400;
     text-align: end;
 }
 
@@ -67,6 +75,7 @@
     background-color: black;
 }
 .parcours {
+    font-weight: 300;
     padding: 40px 0 20px 0;
     background-color: #000;
     border-radius: 10px;
@@ -90,7 +99,6 @@
 }
 .overlayParcours h4 {
     border-top: none;
-    font-weight: 400;
     margin: 0;
 }
 .overlayParcours p {
@@ -140,14 +148,9 @@
     transition: 0.5s ease;
 }
 
-.openClass h4 {
-    font-weight: 400;
-}
-.adrar h4 {
-    font-weight: 400;
-}
-
 .openClass h3 {
+    font-weight: 300;
+
     padding-top: 5px;
     margin-top: 0px;
     border-top: 5px solid #6baefa;
@@ -155,6 +158,8 @@
 }
 
 .adrar h3 {
+    font-weight: 300;
+
     margin-top: 0px;
     padding-top: 5px;
     border-top: 5px solid #6baefa;
@@ -168,13 +173,13 @@
     justify-content: center;
 }
 .buttonCv {
-    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
     cursor: pointer;
-    font-family: 'Oswald';
     margin: 0 10px;
     border: 1px solid #fff;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 5px 10px;
     text-decoration: none;
     color: #fff;
     transition: 0.5s ease;
@@ -211,6 +216,7 @@ ol {
 .frontend,
 .backend,
 .outil {
+    font-weight: 300;
     height: 250px;
     border: 2px solid #fff;
     border-radius: 10px;

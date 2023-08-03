@@ -92,7 +92,7 @@ function Banner() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            GitHub
+                            Github
                         </a>
                     </div>
                 </div>
