@@ -40,11 +40,12 @@ function Booki() {
                     alt="booki"
                     loading="lazy"
                 />
-                <div className="imgInfo">
+                <p>
                     Sur ce projet j'ai effectué l'intégration du site en
-                    html/css, j'ai du gérer le responsive, un format desktop,
-                    tablette et téléphone.
-                </div>
+                    <strong> HTML/CSS</strong>, j'ai du gérer le
+                    <strong> responsive</strong>, un format desktop, tablette et
+                    téléphone.
+                </p>
             </div>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">Difficulté</h2>
@@ -52,8 +53,8 @@ function Booki() {
                 <h2 className="projetTitleAbout">Solution</h2>
                 <p className="pProjetAbout">
                     J'ai appris à modifier les différentes sections qui
-                    composent le site, suivant le format de l'ecran, notemment
-                    avec le display flex.
+                    composent le site, suivant le format de l'écran, notamment
+                    avec le <strong>display flex</strong>.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>

@@ -42,28 +42,31 @@ function LeVieuxGrimoire() {
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    Je me suis occupé de toute la partie Backend de ce projet,
-                    une application React avec express et une base de données
-                    MongoDB. Sur ce site nous pouvons créer un compte afin d'y
-                    ajouter les livres de notre choix, avec en plus un système
-                    de notation.
-                </div>
+                <p>
+                    Je me suis occupé de toute la partie
+                    <strong> Backend</strong> de ce projet; une application
+                    <strong> React</strong> avec <strong>express</strong> et une
+                    base de données
+                    <strong> MongoDB</strong>. Sur ce site nous pouvons créer un
+                    compte afin d'y ajouter les livres de notre choix, avec en
+                    plus un système de notation.
+                </p>
             </div>
-            <div className="pageInfoReverse">
+            <div className="pageInfo">
                 <img
                     className="pageImg"
                     src="https://i.ibb.co/B3M0qkX/mvg3-min.webp"
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    J'ai crée un systeme d'authentification, afin que
+                <p>
+                    J'ai créé un système d'authentification, afin que
                     l'utilisateur puisse s'inscrire et se connecter à son compte
-                    personnel, un token est géneré avec jsonwebtoken, un
-                    middleware à été crée pour vérifier l'authentification de
-                    l'utilisateur.
-                </div>
+                    personnel, un <strong>token</strong> est généré avec
+                    <strong> jsonwebtoken</strong>, un
+                    <strong> middleware</strong> a été créé pour vérifier
+                    l'authentification de l'utilisateur.
+                </p>
             </div>
             <div className="pageInfo">
                 <img
@@ -72,26 +75,32 @@ function LeVieuxGrimoire() {
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    J'ai crée un model pour les livres contenant leur infos,
-                    ainsi qu'un controller afin que l'on puisse ajouter,
+                <p>
+                    J'ai créé un <strong>model</strong> pour les livres
+                    contenant leurs informations; ainsi qu'un
+                    <strong> controller</strong> afin que l'on puisse ajouter,
                     modifier, supprimer ou noter ces livres. J'ai aussi ajouté
-                    un middleware afin qu'à l'ajout d'une image, celle-ci soit
-                    automatiquement convertie au format webp, et redimensionnée.
-                </div>
+                    un
+                    <strong> middleware</strong> afin qu'a l'ajout d'une image,
+                    celle-ci soit automatiquement convertit au format webp, et
+                    redimensionnée.
+                </p>
             </div>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">Difficulté</h2>
                 <p className="pProjetAbout">
-                    L'utilisation d'une base de données, la création de models,
-                    de controller et de middleware.
+                    L'utilisation d'une base de données, la création de
+                    <strong> model</strong>, de <strong>controller</strong> et
+                    de
+                    <strong> middleware</strong>.
                 </p>
                 <h2 className="projetTitleAbout">Solution</h2>
                 <p className="pProjetAbout">
-                    J'ai appris à crée une base de données mongoDB grâce à un
-                    cours et des recherches, puis utiliser un controller pour
-                    mettre en place les fonction dont ont a besoin pour le bon
-                    fonctionnement du site.
+                    J'ai appris à créer une base de données
+                    <strong> MongoDB</strong> grâce à des cours et des
+                    recherches, puis utiliser un <strong>controller </strong>
+                    pour mettre en place les fonctions dont on a besoin pour le
+                    bon fonctionnement du site.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>

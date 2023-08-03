@@ -40,24 +40,26 @@ function SophieBluel() {
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    Sur ce projet j'ai géré la partie Frontend, j'ai géneré la
-                    galerie de la page d'accueil à partir d'un fichier json en
-                    effectuant des requêtes via une API.
-                </div>
+                <p>
+                    Sur ce projet j'ai géré la partie <strong>Frontend</strong>,
+                    j'ai généré la galerie de la page d'accueil à partir d'un
+                    fichier <strong>JSON</strong> en effectuant des{' '}
+                    <strong>requêtes</strong> via une <strong>API</strong>.
+                </p>
             </div>
-            <div className="pageInfoReverse">
+            <div className="pageInfo">
                 <img
                     className="pageImg"
                     src="https://i.ibb.co/GM9CK94/sophiebluel3-min.webp"
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    Le site contient une page d'authentification, pour qu'une
-                    fois identifié, le propriétaire du site puisse accéder à un
-                    mode édition.
-                </div>
+                <p>
+                    Le site contient une page d'
+                    <strong>authentification</strong>, pour qu'une fois
+                    identifié, le propriétaire du site puisse accéder à un mode
+                    édition.
+                </p>
             </div>
             <div className="pageInfo">
                 <img
@@ -66,29 +68,32 @@ function SophieBluel() {
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <div className="imgInfo">
+                <p>
                     Une fois le mode édition activé, le propriétaire du site
-                    pourra, grâce à une modale, ajouter, modifier ou supprimer
-                    des images dans la galerie.
-                </div>
+                    pourra, grâce à une <strong>modale</strong>, ajouter,
+                    modifier ou supprimer des images dans la galerie.
+                </p>
             </div>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">Difficulté</h2>
                 <p className="pProjetAbout">
-                    L'utilisation d'une API, les différentes requêtes et
-                    l'authentification d'un utilisateur.
+                    L'utilisation d'une <strong>API</strong>, les différentes{' '}
+                    <strong>requêtes</strong> et l'
+                    <strong>authentification</strong> de l'utilisateur.
                 </p>
                 <h2 className="projetTitleAbout">Solution</h2>
                 <p className="pProjetAbout">
-                    J'ai appris à utiliser les requêtes avec fetch, afin de
-                    manipuler des données présentes sur un fichier JSON, les
-                    methodes : POST, GET, DELETE, afin de poster, récupérer ou
+                    J'ai appris à effectuer des <strong>requêtes</strong> avec{' '}
+                    <strong>fetch</strong>, afin de manipuler des données
+                    présentes sur un fichier <strong>JSON</strong>, les Méthodes
+                    : <strong>POST</strong>, <strong>GET</strong>,{' '}
+                    <strong>DELETE</strong>, afin de poster, récupérer ou
                     supprimer des données.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>
                     <li>API</li>
-                    <li>Requête</li>
+                    <li>Requêtes</li>
                     <li>JSON</li>
                 </ul>
             </div>

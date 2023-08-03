@@ -38,7 +38,6 @@ a:hover {
 .pageProjectButton {
     background-color: black;
     padding: 20px 0px;
-    margin-bottom: 60px;
 }
 
 .pageButton {
@@ -64,49 +63,26 @@ a:hover {
 }
 
 .pageInfo {
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 18px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 50px;
     width: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row-reverse;
     align-items: center;
-    padding: 20px 20px;
-    background: linear-gradient(
-        270deg,
-        rgba(129, 176, 246, 0.201) 0%,
-        rgb(255, 255, 255) 100%
-    );
+    justify-content: space-between;
+}
+
+.pageInfo p {
+    width: 45%;
+    border-left: 5px solid black;
+    padding-left: 10px;
 }
 
 .pageImg {
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid black;
     width: 45%;
-}
-
-.imgInfo {
-    width: 45%;
-}
-
-.pageInfoReverse {
-    font-size: 20px;
-    border-radius: 10px;
-    background: linear-gradient(
-        90deg,
-        rgba(129, 176, 246, 0.201) 0%,
-        rgb(255, 255, 255) 100%
-    );
-    margin: auto;
-    margin-top: 40px;
-    width: 90%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 20px;
 }
 
 .sectionTitle {
@@ -120,11 +96,12 @@ a:hover {
 }
 
 .projetAbout {
+    background-color: #6baefa27;
     padding: 20px;
     border-radius: 10px;
     color: black;
     margin: auto;
-    margin-top: 35px;
+    margin-top: 70px;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -151,6 +128,7 @@ a:hover {
 }
 
 .projetAbout li {
+    background-color: white;
     margin-bottom: 5px;
     margin-right: 10px;
     text-decoration: none;
@@ -162,12 +140,6 @@ a:hover {
 
 @media screen and (max-width: 991px) {
     .pageInfo {
-        font-size: 15px;
-        width: 90%;
-        justify-content: space-between;
-    }
-
-    .pageInfoReverse {
         font-size: 15px;
         width: 90%;
         justify-content: space-between;
@@ -196,33 +168,14 @@ a:hover {
         font-size: 15px;
     }
     .pageInfo {
-        background: linear-gradient(
-            360deg,
-            rgba(129, 176, 246, 0.201) 0%,
-            rgb(255, 255, 255) 100%
-        );
         flex-direction: column;
-        padding-bottom: 25px;
-        padding-top: 25px;
         width: 80%;
     }
-
-    .pageInfoReverse {
-        background: linear-gradient(
-            360deg,
-            rgba(129, 176, 246, 0.201) 0%,
-            rgb(255, 255, 255) 100%
-        );
-        flex-direction: column;
-        width: 80%;
+    .pageInfo p {
+        width: 95%;
     }
 
     .pageImg {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .imgInfo {
         width: 100%;
     }
 

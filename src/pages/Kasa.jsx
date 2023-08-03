@@ -40,39 +40,43 @@ function Kasa() {
                     alt="kasa"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    Sur ce projet j'ai mis en place une application React, je me
-                    suis occupé de toute la partie Frontend. J'ai fais en sorte
-                    de génerer des cards pour chaque logements sur la page
-                    d'accueil, contenant toutes les infos provenant d'un fichier
-                    json.
-                </div>
+                <p>
+                    Sur ce projet j'ai mis en place une application
+                    <strong> react</strong>, je me suis occupé de toute la
+                    partie
+                    <strong> Frontend</strong>. J'ai faits en sorte de générer
+                    des cards pour chaque logement sur la page d'accueil,
+                    contenant toutes les infomations provenant d'un fichier
+                    <strong> JSON</strong>.
+                </p>
             </div>
-            <div className="pageInfoReverse">
+            <div className="pageInfo">
                 <img
                     className="pageImg"
                     src="https://i.ibb.co/vvft8b9/kasa2-min.webp"
                     alt="kasa"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    Au clique sur une card, nous sommes redirigé vers une page
-                    logements qui contient toutes les infos présentes sur
-                    celle-ci, titre, photos, propriétaire..
-                </div>
+                <p>
+                    Aux cliques sur une card, nous sommes redirigés vers une
+                    page logements qui contient toutes les informations
+                    présentes sur celle-ci, titre, photos, propriétaire...
+                </p>
             </div>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">Difficulté</h2>
                 <p className="pProjetAbout">
-                    L'utilisation des composants, apprendre à géré leur états et
-                    transmettre des informations d'un composant à un autre.
+                    L'utilisation des <strong>composants</strong>, apprendre à
+                    gérer leur état et transmettre des informations d'un
+                    <strong> composants</strong> à un autre.
                 </p>
                 <h2 className="projetTitleAbout">Solution</h2>
                 <p className="pProjetAbout">
-                    J'ai appris à utiliser les hooks et les props, les hooks
-                    pour changer l'état des composants, et les props pour
-                    transmettre des informations d'un composant parents à un
-                    composant enfant.
+                    J'ai appris à utiliser les <strong>hooks</strong> et les
+                    <strong> props</strong>, les <strong> hooks </strong>
+                    pour changer l'état des <strong>composants</strong>, et les
+                    <strong> props</strong> pour transmettre des informations
+                    d'un <strong>composants</strong> à un autre.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>

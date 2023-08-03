@@ -40,23 +40,30 @@ function NinaCarducci() {
                     alt="Nina-Carducci"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    Sur ce projet j'ai géré toute la partie SEO, conversion et
-                    compression des images, minification du code pour les
-                    performances et optimisation du html pour le réferencement.
-                </div>
+
+                <p>
+                    Sur ce projet j'ai géré toute la partie <strong>SEO</strong>
+                    , conversion et compression des images, minification du code
+                    pour les
+                    <strong> performances</strong> et
+                    <strong> optimisation</strong> du HTML pour le
+                    <strong> référencement</strong>.
+                </p>
             </div>
-            <div className="pageInfoReverse">
+            <div className="pageInfo">
                 <img
                     className="pageImg"
                     src="https://i.ibb.co/qsNbWqj/nina2-min.webp"
                     alt="Nina-Carducci"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    J'ai ajouté des richSnippet nécessaire pour le réferencement
-                    sur google, ainsi que des meta og pour les résaux sociaux.
-                </div>
+                <p>
+                    J'ai ajouté des <strong>Richsnippet</strong> nécessaires
+                    pour le
+                    <strong> référencement</strong> sur google, ainsi que des
+                    <strong> meta og</strong> pour les partages sur les réseaux
+                    sociaux.
+                </p>
             </div>
             <div className="pageInfo">
                 <img
@@ -66,32 +73,28 @@ function NinaCarducci() {
                     loading="lazy"
                 />
                 <div className="imgInfo">
-                    Afin d'atteindre le meilleurs score possible, j'ai utiliser
-                    des outils tel que
-                    <a
-                        className="lienInfo"
-                        href="https://pagespeed.web.dev/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Pagespeed
-                    </a>
-                    et l'extension Wave afin d'identifier au mieux les problèmes
-                    d'optimisation.
+                    <p>
+                        Afin d'atteindre le meilleur score possible, j'ai
+                        utiliser des outils tels que <strong>Pagespeed </strong>
+                        et l'extension
+                        <strong> Wave</strong> afin d'identifier au mieux les
+                        problèmes d'optimisation.
+                    </p>
                 </div>
             </div>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">Difficulté</h2>
                 <p className="pProjetAbout">
-                    L'optimisation des performances, et du réferencement.
+                    L'optimisation des <strong>performances</strong>.
                 </p>
                 <h2 className="projetTitleAbout">Solution</h2>
                 <p className="pProjetAbout">
-                    J'ai appris à utiliser des outils comme pagespeed, afin
-                    d'analyser les problèmes, j'ai fais le nécessaire au niveau
-                    des images et du code pour l'alléger le plus possible, puis
-                    j'ai mis en place les meta, et richsnippet pour le
-                    référencement.
+                    J'ai appris à utiliser des outils comme
+                    <strong> Pagespeed</strong>, afin d'analyser les problèmes,
+                    j'ai faits le nécessaire au niveau des images et du
+                    <strong> HTML/CSS</strong> pour l'alléger le plus possible,
+                    puis j'ai mis en place les <strong>metas</strong> et
+                    <strong> Richsnippet</strong>.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>
