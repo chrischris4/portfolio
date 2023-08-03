@@ -1,0 +1,113 @@
+.projectContentMini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 48%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.overlayMini h3 {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.overlayMini {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 20px;
+}
+
+.overlayMini:hover {
+    animation: fade-in 1s ease forwards;
+    opacity: 1;
+}
+
+.overlayTitleMini {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 70%,
+        rgba(0, 0, 0, 0.7) 94%
+    );
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.projectTitleMini {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.projectLinkMini {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.projectImgMini {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.projectLinkMini:hover {
+    border-radius: 5px;
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 991px) {
+    .projectContentMini {
+        width: 100%;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .projectLinkMini {
+        width: 90%;
+    }
+
+    .overlayTitleMini {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 65%,
+            rgba(0, 0, 0, 0.7) 94%
+        );
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .projectLinkMini {
+        width: 100%;
+    }
+    .overlayTitleMini {
+        font-size: 11px;
+    }
+
+    .projectTitleMini {
+        font-size: 16px;
+    }
+
+    .overlayMini {
+        font-size: 16px;
+    }
+}

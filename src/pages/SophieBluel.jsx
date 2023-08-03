@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
+import ProjectMini from '../components/ProjectMini';
 
 function SophieBluel() {
     useEffect(() => {
@@ -96,6 +97,44 @@ function SophieBluel() {
                     <li>Requêtes</li>
                     <li>JSON</li>
                 </ul>
+            </div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>Autres Projects</h2>
+            </div>
+            <div className="others">
+                <div className="othersMini">
+                    <ProjectMini
+                        title="Booki - Agence de Location"
+                        cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                        link={`/Booki`}
+                        loading="lazy"
+                    />
+                </div>
+                <div className="othersMini">
+                    <ProjectMini
+                        title="Kasa - Agence Immobilière"
+                        cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
+                        link={`/Kasa`}
+                        loading="lazy"
+                    />
+                </div>
+                <div className="othersMini">
+                    <ProjectMini
+                        title="Mon Vieux Grimoire - Notation de Livres"
+                        cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
+                        link={`/MonVieuxGrimoire`}
+                        loading="lazy"
+                    />
+                </div>
+                <div className="othersMini">
+                    <ProjectMini
+                        title="Nina Carducci - Photographe"
+                        cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
+                        link={`/NinaCarducci`}
+                        loading="lazy"
+                    />
+                </div>
             </div>
             <div id="contactLien"></div>
             <div className="sectionTitle">

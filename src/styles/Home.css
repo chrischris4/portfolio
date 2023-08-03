@@ -74,6 +74,12 @@ h3 {
     height: 22px;
     background-color: black;
 }
+
+.parcours h4 {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
 .parcours {
     font-weight: 300;
     padding: 40px 0 20px 0;
@@ -150,18 +156,16 @@ h3 {
 
 .openClass h3 {
     font-weight: 300;
-
-    padding-top: 5px;
-    margin-top: 0px;
+    padding-top: 2px;
+    margin: 0px;
     border-top: 5px solid #6baefa;
     width: fit-content;
 }
 
 .adrar h3 {
     font-weight: 300;
-
-    margin-top: 0px;
-    padding-top: 5px;
+    margin: 0px;
+    padding-top: 2px;
     border-top: 5px solid #6baefa;
     width: fit-content;
 }
@@ -177,7 +181,7 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     margin: 0 10px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     font-size: 20px;
     padding: 5px 10px;
     text-decoration: none;
@@ -186,7 +190,7 @@ h3 {
     background-color: #000;
 }
 .buttonCv:hover {
-    border: #6baefa solid 1px;
+    border: #6baefa solid 2px;
     color: #000;
     background-color: #6baefa;
 }
@@ -228,7 +232,7 @@ ol {
     list-style: none;
     background: linear-gradient(
         360deg,
-        rgba(129, 176, 246, 0.201) 0%,
+        rgba(129, 176, 246, 0.151) 0%,
         rgb(255, 255, 255) 100%
     );
     transition: 0.5s ease;

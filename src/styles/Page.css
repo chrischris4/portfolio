@@ -53,7 +53,7 @@ strong {
     display: flex;
     margin: auto;
     padding: 5px 10px;
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: black;
     font-size: 20px;
     text-decoration: none;
@@ -62,7 +62,7 @@ strong {
 }
 
 .pageButton:hover {
-    border: 1px solid #6baefa;
+    border: 2px solid #6baefa;
     background-color: #6baefa;
     color: black;
 }
@@ -129,7 +129,11 @@ strong {
 }
 
 .pProjetAbout {
-    padding-left: 0px;
+    padding-left: 10px;
+}
+
+.projetAbout ul {
+    padding-left: 10px;
 }
 
 .projetAbout li {
@@ -143,6 +147,28 @@ strong {
     border: solid 2px black;
 }
 
+.others {
+    padding-bottom: 20px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.othersMini {
+    margin-bottom: 20px;
+    width: 31%;
+}
+
+.othersProject {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: solid 1px;
+    width: 30%;
+}
+
 @media screen and (max-width: 991px) {
     .pageInfo {
         font-size: 15px;
@@ -152,6 +178,16 @@ strong {
 
     .pProjetAbout {
         width: 100%;
+    }
+
+    .others {
+        width: 95%;
+    }
+    .othersMini {
+        display: flex;
+        margin-bottom: 20px;
+        width: 50%;
+        justify-content: center;
     }
 }
 
@@ -177,7 +213,8 @@ strong {
         width: 80%;
     }
     .pageInfo p {
-        width: 95%;
+        border-left: 0;
+        width: 100%;
     }
 
     .pageImg {
@@ -189,7 +226,7 @@ strong {
     }
 
     .projetTitleAbout {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .projetAbout li {
@@ -198,5 +235,14 @@ strong {
 
     .projetAbout {
         width: 80%;
+    }
+
+    .others {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .othersMini {
+        width: 100%;
     }
 }
