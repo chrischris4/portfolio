@@ -22,49 +22,43 @@ strong {
     font-weight: 500;
 }
 
-.pageProjectTitle {
-    font-family: 'Oswald', sans-serif;
-    padding: 0px 30px;
-    background-image: url('https://i.ibb.co/QY00nj3/floral1.webp');
-    background-size: 140%;
-    background-position: bottom;
-    display: flex;
-    color: black;
-    justify-content: center;
+.imgGithub {
+    transition: transform 0.5s ease;
+    margin-left: 20px;
+    width: 60px;
+}
+.imgGithub:hover {
+    transform: scale(1.1);
 }
 
-.pageH1 {
-    padding: 30px 0px;
-    font-weight: 500;
-    font-size: 70px;
-}
-
-.pageProjectButton {
-    background-color: black;
-    padding: 20px 0px;
-}
-
-.pageButton {
-    font-weight: 300;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Oswald';
-    display: flex;
-    margin: auto;
-    padding: 5px 10px;
-    border: 2px solid white;
-    background-color: black;
+.pageGithub {
     font-size: 20px;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.pageTitle {
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    width: 75%;
     color: white;
-    transition: 0.5s ease;
+    background-color: black;
 }
 
-.pageButton:hover {
-    border: 2px solid #6baefa;
-    background-color: #6baefa;
-    color: black;
+.pageh1 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.pageh2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.pGithub {
+    margin: 0px;
 }
 
 .pageInfo {
@@ -111,7 +105,7 @@ strong {
     border-radius: 10px;
     color: black;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 75%;
     display: flex;
     justify-content: center;
@@ -214,18 +208,31 @@ strong {
         margin-top: 50px;
     }
 
+    .imgGithub {
+        width: 50px;
+    }
+
+    .pageGithub {
+        font-size: 15px;
+    }
+    .pageTitle {
+        margin-top: 80px;
+        border-radius: 5px;
+        width: 80%;
+    }
+
+    .pageh1 {
+        font-size: 40px;
+    }
+
+    .pageh2 {
+        font-size: 20px;
+    }
+
     .pageProjectTitle {
         padding: 0px 20px;
     }
 
-    .pageH1 {
-        padding: 20px 0px;
-        font-size: 40px;
-    }
-
-    .pageButton {
-        font-size: 15px;
-    }
     .pageInfo {
         width: 80%;
         margin-top: 30px;
@@ -257,7 +264,6 @@ strong {
     }
 
     .projetAbout {
-        margin-top: 30px;
         border-radius: 5px;
         width: 80%;
     }

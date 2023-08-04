@@ -22,19 +22,27 @@ function LeVieuxGrimoire() {
                 og_type="website"
             />
             <div id="topPageLink"></div>
-            <div className="pageProjectTitle">
-                <h1 className="pageH1">
+            <div className="pageTitle">
+                <h1 className="pageh1">
                     Mon Vieux Grimoire - Notation de Livre
                 </h1>
-            </div>
-            <div className="pageProjectButton">
-                <a
-                    href="https://github.com/chrischris4/Mon_vieux_grimoire_site_notation_de_livre"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <button className="pageButton">Code du Projet </button>
-                </a>
+                <h2 className="pageh2">Frontend</h2>
+                <div className="pageGithub">
+                    <p className="pGithub">
+                        Retrouvez le code du projet sur Github{' '}
+                    </p>
+                    <a
+                        href="https://github.com/chrischris4/Mon_vieux_grimoire_site_notation_de_livre"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img
+                            className="imgGithub"
+                            src="https://i.ibb.co/dD4Q3xW/git.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
             </div>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">Langages utilisés </h2>
