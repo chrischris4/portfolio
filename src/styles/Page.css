@@ -32,9 +32,11 @@ strong {
 }
 
 .pageGithub {
+    margin-top: 20px;
     font-size: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .pageTitle {
     border-radius: 10px;
@@ -55,10 +57,6 @@ strong {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     margin: 0;
-}
-
-.pGithub {
-    margin: 0px;
 }
 
 .pageInfo {

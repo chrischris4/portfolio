@@ -26,11 +26,9 @@ function LeVieuxGrimoire() {
                 <h1 className="pageh1">
                     Mon Vieux Grimoire - Notation de Livre
                 </h1>
-                <h2 className="pageh2">Frontend</h2>
                 <div className="pageGithub">
-                    <p className="pGithub">
-                        Retrouvez le code du projet sur Github{' '}
-                    </p>
+                    <h2 className="pageh2">Frontend</h2>
+
                     <a
                         href="https://github.com/chrischris4/Mon_vieux_grimoire_site_notation_de_livre"
                         target="_blank"
