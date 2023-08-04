@@ -19,14 +19,16 @@
 }
 
 .contactP {
+    color: white;
+    border-radius: 10px;
+    width: 90%;
     font-size: 30px;
     display: flex;
     justify-content: center;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 20px 0px;
-    width: 100%;
-    background-color: #6baefa;
+    background-color: black;
 }
 
 .contactForm {
@@ -41,16 +43,15 @@
 .contactForm h3 {
     font-size: 30px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 20px;
     color: white;
 }
 
 .contactLinks {
+    margin: 10px 0px;
     font-weight: 300;
-    padding-top: 20px;
     width: 100%;
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -58,12 +59,13 @@
 }
 
 .linkedinLink {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
     width: 35%;
-    margin: 20px;
+    margin: 10px;
     padding: 15px 15px;
     border-radius: 5px;
     background-color: #0084b1;
@@ -81,8 +83,9 @@
 }
 
 .myEmailLink {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
-    margin: 20px;
+    margin: 10px;
     color: white;
     padding: 15px 15px;
     border-radius: 5px;
@@ -104,8 +107,9 @@
 }
 
 .skypeLink {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
-    margin: 20px;
+    margin: 10px;
     color: white;
     padding: 15px 15px;
     border-radius: 5px;
@@ -127,11 +131,11 @@
 }
 
 .githubLinkContact {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
-    margin: 20px;
+    margin: 10px;
     color: white;
-    padding: 14px 14px;
-    border: solid 1px white;
+    padding: 15px 15px;
     border-radius: 5px;
     background: #1b1f23;
     display: flex;
@@ -156,6 +160,7 @@ form {
 }
 
 input {
+    outline-color: #6baefa;
     padding: inherit;
     font-size: 15px;
     font-family: 'Poppins';
@@ -172,6 +177,7 @@ label {
 }
 
 textarea {
+    outline-color: #6baefa;
     padding: inherit;
     font-size: 15px;
     font-family: 'Poppins';
@@ -225,16 +231,12 @@ textarea {
         font-size: 30px;
     }
 
-    .contactLinks {
-        padding-top: 10px;
-    }
-
     .linkedinLink,
     .myEmailLink,
     .skypeLink,
     .githubLinkContact {
         width: 505px;
-        margin: 10px;
+        margin: 5px;
     }
 }
 
@@ -244,6 +246,7 @@ textarea {
     }
 
     .contactP {
+        border-radius: 5px;
         font-size: 20px;
     }
 
@@ -256,10 +259,6 @@ textarea {
 
     .contactButton {
         font-size: 15px;
-    }
-
-    .contactLinks {
-        padding-top: 5px;
     }
 
     .linkedinLink,
