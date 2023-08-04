@@ -34,6 +34,34 @@ function SophieBluel() {
                     <button className="pageButton">Code du Projet </button>
                 </a>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Langages utilisés </h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'utilisation d'une <strong>API</strong>, les différentes{' '}
+                    <strong>requêtes</strong> et l'
+                    <strong>authentification</strong> de l'utilisateur.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à effectuer des <strong>requêtes</strong> avec{' '}
+                    <strong>fetch</strong>, afin de manipuler des données
+                    présentes sur un fichier <strong>JSON</strong>, les Méthodes
+                    : <strong>POST</strong>, <strong>GET</strong>,{' '}
+                    <strong>DELETE</strong>, afin de poster, récupérer ou
+                    supprimer des données.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <ul>
+                    <li>API</li>
+                    <li>Requêtes</li>
+                    <li>JSON</li>
+                </ul>
+            </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
@@ -74,29 +102,6 @@ function SophieBluel() {
                     pourra, grâce à une <strong>modale</strong>, ajouter,
                     modifier ou supprimer des images dans la galerie.
                 </p>
-            </div>
-            <div className="projetAbout">
-                <h2 className="projetTitleAbout">Difficulté</h2>
-                <p className="pProjetAbout">
-                    L'utilisation d'une <strong>API</strong>, les différentes{' '}
-                    <strong>requêtes</strong> et l'
-                    <strong>authentification</strong> de l'utilisateur.
-                </p>
-                <h2 className="projetTitleAbout">Solution</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à effectuer des <strong>requêtes</strong> avec{' '}
-                    <strong>fetch</strong>, afin de manipuler des données
-                    présentes sur un fichier <strong>JSON</strong>, les Méthodes
-                    : <strong>POST</strong>, <strong>GET</strong>,{' '}
-                    <strong>DELETE</strong>, afin de poster, récupérer ou
-                    supprimer des données.
-                </p>
-                <h2 className="projetTitleAbout">Aqcuis</h2>
-                <ul>
-                    <li>API</li>
-                    <li>Requêtes</li>
-                    <li>JSON</li>
-                </ul>
             </div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

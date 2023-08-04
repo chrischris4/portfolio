@@ -34,6 +34,35 @@ function Kasa() {
                     <button className="pageButton">Code du Projet </button>
                 </a>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Langages utilisés </h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>React</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'utilisation des <strong>composants</strong>, apprendre à
+                    gérer leur état et transmettre des informations d'un
+                    <strong> composants</strong> à un autre.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à utiliser les <strong>hooks</strong> et les
+                    <strong> props</strong>, les <strong> hooks </strong>
+                    pour changer l'état des <strong>composants</strong>, et les
+                    <strong> props</strong> pour transmettre des informations
+                    d'un <strong>composants</strong> à un autre.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <ul>
+                    <li>Npm</li>
+                    <li>React.js</li>
+                    <li>Hooks</li>
+                    <li>Props</li>
+                </ul>
+            </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
@@ -64,29 +93,7 @@ function Kasa() {
                     présentes sur celle-ci, titre, photos, propriétaire...
                 </p>
             </div>
-            <div className="projetAbout">
-                <h2 className="projetTitleAbout">Difficulté</h2>
-                <p className="pProjetAbout">
-                    L'utilisation des <strong>composants</strong>, apprendre à
-                    gérer leur état et transmettre des informations d'un
-                    <strong> composants</strong> à un autre.
-                </p>
-                <h2 className="projetTitleAbout">Solution</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à utiliser les <strong>hooks</strong> et les
-                    <strong> props</strong>, les <strong> hooks </strong>
-                    pour changer l'état des <strong>composants</strong>, et les
-                    <strong> props</strong> pour transmettre des informations
-                    d'un <strong>composants</strong> à un autre.
-                </p>
-                <h2 className="projetTitleAbout">Aqcuis</h2>
-                <ul>
-                    <li>Npm</li>
-                    <li>React.js</li>
-                    <li>Hooks</li>
-                    <li>Props</li>
-                </ul>
-            </div>
+
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Autres Projets</h2>

@@ -34,6 +34,33 @@ function NinaCarducci() {
                     <button className="pageButton">Code du Projet </button>
                 </a>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Langages utilisés </h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'optimisation des <strong>performances</strong>.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à utiliser des outils comme
+                    <strong> Pagespeed</strong>, afin d'analyser les problèmes,
+                    j'ai faits le nécessaire au niveau des images et du
+                    <strong> HTML/CSS</strong> pour l'alléger le plus possible,
+                    puis j'ai mis en place les <strong>metas</strong> et
+                    <strong> Richsnippet</strong>.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <ul>
+                    <li>Optimisation</li>
+                    <li>Performance</li>
+                    <li>SEO</li>
+                    <li>RichSnippets</li>
+                </ul>
+            </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
@@ -73,37 +100,14 @@ function NinaCarducci() {
                     alt="Nina-Carducci"
                     loading="lazy"
                 />
-                <div className="imgInfo">
-                    <p>
-                        Afin d'atteindre le meilleur score possible, j'ai
-                        utiliser des outils tels que <strong>Pagespeed </strong>
-                        et l'extension
-                        <strong> Wave</strong> afin d'identifier au mieux les
-                        problèmes d'optimisation.
-                    </p>
-                </div>
-            </div>
-            <div className="projetAbout">
-                <h2 className="projetTitleAbout">Difficulté</h2>
-                <p className="pProjetAbout">
-                    L'optimisation des <strong>performances</strong>.
+                <p>
+                    Afin d'atteindre le meilleur score possible, j'ai utilisé
+                    des outils tels que
+                    <strong> Pagespeed </strong>
+                    et l'extension
+                    <strong> Wave</strong> afin d'identifier au mieux les
+                    problèmes d'optimisation.
                 </p>
-                <h2 className="projetTitleAbout">Solution</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à utiliser des outils comme
-                    <strong> Pagespeed</strong>, afin d'analyser les problèmes,
-                    j'ai faits le nécessaire au niveau des images et du
-                    <strong> HTML/CSS</strong> pour l'alléger le plus possible,
-                    puis j'ai mis en place les <strong>metas</strong> et
-                    <strong> Richsnippet</strong>.
-                </p>
-                <h2 className="projetTitleAbout">Aqcuis</h2>
-                <ul>
-                    <li>Optimisation</li>
-                    <li>Performance</li>
-                    <li>SEO</li>
-                    <li>RichSnippets</li>
-                </ul>
             </div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

@@ -36,6 +36,37 @@ function LeVieuxGrimoire() {
                     <button className="pageButton">Code du Projet </button>
                 </a>
             </div>
+            <div className="projetAbout">
+                <h2 className="projetTitleAbout">Langages utilisés </h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>React</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h2 className="projetTitleAbout">Difficulté</h2>
+                <p className="pProjetAbout">
+                    L'utilisation d'une base de données, la création de
+                    <strong> model</strong>, de <strong>controller</strong> et
+                    de
+                    <strong> middleware</strong>.
+                </p>
+                <h2 className="projetTitleAbout">Solution</h2>
+                <p className="pProjetAbout">
+                    J'ai appris à créer une base de données
+                    <strong> MongoDB</strong> grâce à des cours et des
+                    recherches, puis utiliser un <strong>controller </strong>
+                    pour mettre en place les fonctions dont on a besoin pour le
+                    bon fonctionnement du site.
+                </p>
+                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>Models</li>
+                    <li>Controller</li>
+                    <li>Middleware</li>
+                    <li>BDD</li>
+                </ul>
+            </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
@@ -45,7 +76,7 @@ function LeVieuxGrimoire() {
                 />
                 <p>
                     Je me suis occupé de toute la partie
-                    <strong> Backend</strong> de ce projet; une application
+                    <strong> Backend</strong> de ce projet, une application
                     <strong> React</strong> avec <strong>express</strong> et une
                     base de données
                     <strong> MongoDB</strong>. Sur ce site nous pouvons créer un
@@ -86,30 +117,6 @@ function LeVieuxGrimoire() {
                     celle-ci soit automatiquement convertit au format webp, et
                     redimensionnée.
                 </p>
-            </div>
-            <div className="projetAbout">
-                <h2 className="projetTitleAbout">Difficulté</h2>
-                <p className="pProjetAbout">
-                    L'utilisation d'une base de données, la création de
-                    <strong> model</strong>, de <strong>controller</strong> et
-                    de
-                    <strong> middleware</strong>.
-                </p>
-                <h2 className="projetTitleAbout">Solution</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à créer une base de données
-                    <strong> MongoDB</strong> grâce à des cours et des
-                    recherches, puis utiliser un <strong>controller </strong>
-                    pour mettre en place les fonctions dont on a besoin pour le
-                    bon fonctionnement du site.
-                </p>
-                <h2 className="projetTitleAbout">Aqcuis</h2>
-                <ul>
-                    <li>MongoDB</li>
-                    <li>Models</li>
-                    <li>Controller</li>
-                    <li>Middleware</li>
-                </ul>
             </div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
