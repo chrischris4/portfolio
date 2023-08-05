@@ -60,8 +60,10 @@ function LeVieuxGrimoire() {
                 <p className="pProjetAbout">
                     J'ai appris à créer une base de données
                     <strong> MongoDB</strong> grâce à des cours et des
-                    recherches, puis utiliser un <strong>controller </strong>
-                    pour mettre en place les fonctions dont on a besoin pour le
+                    recherches, puis j'ai utilisé les{' '}
+                    <strong>controller</strong>, <strong>model</strong> et{' '}
+                    <strong>root </strong>
+                    pour mettre en place les paramêtres dont on a besoin pour le
                     bon fonctionnement du site.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
