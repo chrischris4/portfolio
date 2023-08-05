@@ -116,7 +116,6 @@ function AllProject() {
                     />
                 </div>
             </div>
-            <div id="contactLien"></div>
         </div>
     );
 }

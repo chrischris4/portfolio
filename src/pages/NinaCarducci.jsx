@@ -3,6 +3,7 @@ import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
+import Reseaux from '../components/Reseaux';
 
 function NinaCarducci() {
     useEffect(() => {
@@ -25,7 +26,7 @@ function NinaCarducci() {
             <div className="pageTitle">
                 <h1 className="pageh1">Nina Carducci - Photographe</h1>
                 <div className="pageGithub">
-                    <h2 className="pageh2">Frontend</h2>
+                    <h2 className="pageh2">SEO</h2>
 
                     <a
                         href="https://github.com/chrischris4/Nina_carducci_site_de_photographe"
@@ -115,6 +116,7 @@ function NinaCarducci() {
                     problèmes d'optimisation.
                 </p>
             </div>
+            <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Autres Projets</h2>
@@ -153,10 +155,16 @@ function NinaCarducci() {
                     />
                 </div>
             </div>
+            <div id="reseauxLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>Réseaux</h2>
+            </div>
+            <Reseaux />
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Me contacter</h2>
+                <h2>Contact</h2>
             </div>
             <ContactForm />
         </div>

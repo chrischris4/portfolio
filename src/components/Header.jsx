@@ -47,7 +47,7 @@ function Header() {
     return (
         <div className="header">
             <ScrollLink
-                href="parcoursLien"
+                href="topPageLien"
                 to="topPageLink"
                 className="topPage"
                 spy={true}
@@ -179,8 +179,30 @@ function Header() {
                             >
                                 Accueil
                             </RouterLink>
+                            <ScrollLink
+                                href="othersLien"
+                                to="othersLien"
+                                className="link"
+                                spy={true}
+                                smooth={true}
+                                duration={1000}
+                                onClick={closeMenu}
+                            >
+                                Autres Projets
+                            </ScrollLink>
                         </>
                     )}
+                    <ScrollLink
+                        href="reseauxLien"
+                        to="reseauxLien"
+                        className="link"
+                        spy={true}
+                        smooth={true}
+                        duration={1000}
+                        onClick={closeMenu}
+                    >
+                        Réseaux
+                    </ScrollLink>
                     <ScrollLink
                         href="contactLien"
                         to="contactLien"

@@ -3,6 +3,7 @@ import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
+import Reseaux from '../components/Reseaux';
 
 function LeVieuxGrimoire() {
     useEffect(() => {
@@ -27,8 +28,7 @@ function LeVieuxGrimoire() {
                     Mon Vieux Grimoire - Notation de Livre
                 </h1>
                 <div className="pageGithub">
-                    <h2 className="pageh2">Frontend</h2>
-
+                    <h2 className="pageh2">Backend</h2>
                     <a
                         href="https://github.com/chrischris4/Mon_vieux_grimoire_site_notation_de_livre"
                         target="_blank"
@@ -124,6 +124,7 @@ function LeVieuxGrimoire() {
                     redimensionnée.
                 </p>
             </div>
+            <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Autres Projets</h2>
@@ -162,10 +163,16 @@ function LeVieuxGrimoire() {
                     />
                 </div>
             </div>
+            <div id="reseauxLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>Réseaux</h2>
+            </div>
+            <Reseaux />
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Me contacter</h2>
+                <h2>Contact</h2>
             </div>
             <ContactForm />
         </div>

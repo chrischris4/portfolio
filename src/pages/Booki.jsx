@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
+import Reseaux from '../components/Reseaux';
 
 function Booki() {
     useEffect(() => {
@@ -72,7 +73,7 @@ function Booki() {
                     téléphone.
                 </p>
             </div>
-
+            <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
                 <h2>Autres Projets</h2>
@@ -111,10 +112,16 @@ function Booki() {
                     />
                 </div>
             </div>
+            <div id="reseauxLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>Réseaux</h2>
+            </div>
+            <Reseaux />
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Me contacter</h2>
+                <h2>Contact</h2>
             </div>
             <ContactForm />
         </div>

@@ -1,0 +1,179 @@
+.reseaux {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactP {
+    color: black;
+    border-radius: 10px;
+    width: 90%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.contactLinks {
+    height: 220px;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.linkedinLink {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 35%;
+    margin: 10px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background-color: #0084b1;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.linkedinLink:hover {
+    color: white;
+    transform: scale(1.03);
+}
+
+.linkedinImg {
+    width: 40px;
+}
+
+.myEmailLink {
+    height: 80px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin: 10px;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background: rgb(109, 6, 6);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 35%;
+    transition: transform 0.3s ease;
+}
+
+.myEmailLink:hover {
+    color: white;
+    transform: scale(1.03);
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+}
+
+.skypeLink {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin: 10px;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background: #00aff0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 35%;
+    transition: transform 0.3s ease;
+}
+
+.skypeLink:hover {
+    color: white;
+    transform: scale(1.03);
+}
+
+.skypeImg {
+    width: 40px;
+}
+
+.githubLinkContact {
+    height: 80px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin: 10px;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background: #1b1f23;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 35%;
+    transition: transform 0.3s ease;
+}
+
+.githubLinkContact:hover {
+    color: white;
+    transform: scale(1.03);
+}
+
+.githubImgContact {
+    width: 55px;
+}
+
+@media screen and (max-width: 991px) {
+    .contactForm p {
+        font-size: 30px;
+    }
+
+    .linkedinLink,
+    .myEmailLink,
+    .skypeLink,
+    .githubLinkContact {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .contactP {
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .linkedinLink,
+    .myEmailLink,
+    .skypeLink,
+    .githubLinkContact {
+        margin: 5px;
+        width: 75%;
+        font-size: 14px;
+    }
+
+    .skypeImg,
+    .linkedinImg,
+    .githubImgContact {
+        width: 29px;
+    }
+    .material-symbols-outlined {
+        font-size: 26px;
+    }
+
+    .contactLinks {
+        height: fit-content;
+    }
+
+    .githubLinkContact {
+        height: inherit;
+    }
+
+    .myEmailLink {
+        height: inherit;
+    }
+}
