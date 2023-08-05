@@ -51,12 +51,14 @@ function Booki() {
                 <p className="pProjetAbout">
                     J'ai appris à modifier les différentes sections qui
                     composent le site, suivant le format de l'écran, notamment
-                    avec le <strong>display flex</strong>.
+                    avec le <strong>display flex</strong>. J'ai aussi appris à
+                    utiliser <strong>Git</strong> durant ce projet.
                 </p>
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>
                     <li>HTML/CSS</li>
                     <li>Media queries</li>
+                    <li>Git</li>
                 </ul>
             </div>
             <div className="pageInfo">

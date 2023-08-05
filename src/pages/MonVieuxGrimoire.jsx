@@ -52,8 +52,8 @@ function LeVieuxGrimoire() {
                 <h2 className="projetTitleAbout">Difficulté</h2>
                 <p className="pProjetAbout">
                     L'utilisation d'une base de données, la création de
-                    <strong> model</strong>, de <strong>controller</strong> et
-                    de
+                    <strong> model</strong>, de <strong>controller</strong>, de
+                    <strong> root</strong> et de
                     <strong> middleware</strong>.
                 </p>
                 <h2 className="projetTitleAbout">Solution</h2>
@@ -67,8 +67,9 @@ function LeVieuxGrimoire() {
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>
                     <li>MongoDB</li>
-                    <li>Models</li>
+                    <li>Model</li>
                     <li>Controller</li>
+                    <li>Root</li>
                     <li>Middleware</li>
                     <li>BDD</li>
                 </ul>
@@ -115,10 +116,10 @@ function LeVieuxGrimoire() {
                 />
                 <p>
                     J'ai créé un <strong>model</strong> pour les livres
-                    contenant leurs informations; ainsi qu'un
-                    <strong> controller</strong> afin que l'on puisse ajouter,
-                    modifier, supprimer ou noter ces livres. J'ai aussi ajouté
-                    un
+                    contenant leurs informations, un
+                    <strong> controller</strong> et un <strong>root </strong>
+                    afin que l'on puisse ajouter, modifier, supprimer ou noter
+                    ces livres. J'ai aussi ajouté un
                     <strong> middleware</strong> afin qu'a l'ajout d'une image,
                     celle-ci soit automatiquement convertit au format webp, et
                     redimensionnée.

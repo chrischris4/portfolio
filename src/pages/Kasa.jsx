@@ -49,14 +49,18 @@ function Kasa() {
                 </ul>
                 <h2 className="projetTitleAbout">Difficulté</h2>
                 <p className="pProjetAbout">
-                    L'utilisation des <strong>composants</strong>, apprendre à
-                    gérer leur état et transmettre des informations d'un
+                    La mise en place de l'application, l'utilisation des
+                    <strong> composants</strong>, apprendre à gérer leur état et
+                    transmettre des informations d'un
                     <strong> composants</strong> à un autre.
                 </p>
                 <h2 className="projetTitleAbout">Solution</h2>
                 <p className="pProjetAbout">
-                    J'ai appris à utiliser les <strong>hooks</strong> et les
-                    <strong> props</strong>, les <strong> hooks </strong>
+                    J'ai appris à mettre en place une{' '}
+                    <strong>application React</strong>, avec son système de
+                    routes et ses différents <strong>packages</strong>. J'ai
+                    appris à utiliser des <strong>hooks</strong> comme{' '}
+                    <strong>UseState</strong> et <strong>UseEffect</strong>,
                     pour changer l'état des <strong>composants</strong>, et les
                     <strong> props</strong> pour transmettre des informations
                     d'un <strong>composants</strong> à un autre.
@@ -64,7 +68,7 @@ function Kasa() {
                 <h2 className="projetTitleAbout">Aqcuis</h2>
                 <ul>
                     <li>Npm</li>
-                    <li>React.js</li>
+                    <li>React</li>
                     <li>Hooks</li>
                     <li>Props</li>
                 </ul>

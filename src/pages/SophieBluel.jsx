@@ -67,6 +67,7 @@ function SophieBluel() {
                     <li>API</li>
                     <li>Requêtes</li>
                     <li>JSON</li>
+                    <li>JavaScript</li>
                 </ul>
             </div>
             <div className="pageInfo">
