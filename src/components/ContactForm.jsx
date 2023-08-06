@@ -29,8 +29,19 @@ function ContactForm() {
 
     return (
         <div className="contact">
+            <h3>
+                Pour plus d'informations, n'hésitez pas à me contacter par mail
+                :
+            </h3>
+            <a
+                className="myEmailLink"
+                href={`mailto:jostchristopher44@gmail.com`}
+            >
+                Mail
+                <span className="material-symbols-outlined">mail</span>
+            </a>
             <div className="contactForm">
-                <h3>Contactez moi via ce formulaire :</h3>
+                <h3>Ou directement via ce formulaire :</h3>
                 <form onSubmit={sendEmail}>
                     <div className="contactMail">
                         <label htmlFor="email">Email :</label>

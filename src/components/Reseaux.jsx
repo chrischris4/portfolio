@@ -3,15 +3,10 @@ import '../styles/Reseaux.css';
 function Reseaux(props) {
     return (
         <div className="reseaux">
-            <h3 className="contactP">Retrouvez moi sur ces plateformes :</h3>
+            <h3 className="contactP">
+                Vous pouvez me retrouver sur ces plateformes :
+            </h3>
             <div className="contactLinks">
-                <a
-                    className="myEmailLink"
-                    href={`mailto:jostchristopher44@gmail.com`}
-                >
-                    Mail
-                    <span className="material-symbols-outlined">mail</span>
-                </a>
                 <a
                     className="linkedinLink"
                     href="https://www.linkedin.com/in/christopher-jost-888b75195/"

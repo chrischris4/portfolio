@@ -20,6 +20,7 @@ h3 {
 }
 
 .about {
+    border-radius: 10px;
     background-color: #000;
     width: 90%;
     margin: auto;

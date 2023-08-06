@@ -54,31 +54,6 @@
     width: 40px;
 }
 
-.myEmailLink {
-    height: 80px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    margin: 10px;
-    color: white;
-    padding: 15px 15px;
-    border-radius: 5px;
-    background: rgb(109, 6, 6);
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-    width: 35%;
-    transition: transform 0.3s ease;
-}
-
-.myEmailLink:hover {
-    color: white;
-    transform: scale(1.03);
-}
-
-.material-symbols-outlined {
-    font-size: 40px;
-}
-
 .skypeLink {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
@@ -104,7 +79,7 @@
 }
 
 .githubLinkContact {
-    height: 80px;
+    height: 130px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
     margin: 10px;
@@ -134,7 +109,6 @@
     }
 
     .linkedinLink,
-    .myEmailLink,
     .skypeLink,
     .githubLinkContact {
         width: 40%;
@@ -143,12 +117,12 @@
 
 @media screen and (max-width: 635px) {
     .contactP {
+        width: 80%;
         border-radius: 5px;
         font-size: 15px;
     }
 
     .linkedinLink,
-    .myEmailLink,
     .skypeLink,
     .githubLinkContact {
         margin: 5px;
@@ -161,19 +135,12 @@
     .githubImgContact {
         width: 29px;
     }
-    .material-symbols-outlined {
-        font-size: 26px;
-    }
 
     .contactLinks {
         height: fit-content;
     }
 
     .githubLinkContact {
-        height: inherit;
-    }
-
-    .myEmailLink {
         height: inherit;
     }
 }

@@ -1,10 +1,32 @@
 .contact {
+    color: white;
+    background-color: black;
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.myEmailLink {
+    font-weight: 300;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgb(109, 6, 6);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 495px;
+    transition: transform 0.3s ease;
+}
+
+.myEmailLink:hover {
+    color: white;
+    transform: scale(1.03);
 }
 
 .alertMessage {
@@ -27,11 +49,13 @@
     background-color: black;
 }
 
-.contactForm h3 {
+.contact h3 {
+    text-align: center;
+    width: 50%;
     font-size: 25px;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: white;
 }
 
@@ -109,11 +133,20 @@ textarea {
 }
 
 @media screen and (max-width: 635px) {
+    .myEmailLink {
+        font-size: 22px;
+        padding: 15px;
+        width: 70%;
+    }
+
+    .material-symbols-outlined {
+        font-size: 30px;
+    }
     form {
         width: 80%;
     }
 
-    .contactForm h3 {
+    .contact h3 {
         text-align: center;
         width: 80%;
         margin-top: 30px;

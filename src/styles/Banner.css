@@ -1,70 +1,145 @@
 .bannerAll {
+    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 65px;
-    height: 600px;
+    margin-top: 150px;
+    align-items: center;
 }
 
 .bannerColor {
-    background-image: url('https://i.ibb.co/vh4FBcD/floral.webp');
-    background-position: right;
-    background-size: cover;
-    padding-top: 100px;
-    display: flex;
-    justify-content: flex-end;
-    width: 25%;
-}
-.banner {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    background-color: #000000;
-    width: 75%;
+    padding-right: 20px;
+    height: 600px;
+    display: block;
+    width: 23%;
+    background-color: #6baefa;
+    border-radius: 0px 10px 10px 0px;
 }
 
-.bannerContent {
-    padding-bottom: 30px;
+.banner {
+    margin-left: 50px;
+    border-radius: 10px 0px 0px 10px;
+    height: 600px;
+    color: white;
+    background-color: black;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: -moz-fit-content;
+    width: 100%;
+}
+
+.bannerName {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .bannerLastName {
+    text-align: end;
     font-family: 'Oswald', sans-serif;
-    color: black;
-    font-size: 100px;
-    font-weight: 500;
-    padding-right: 20px;
+    font-size: 95px;
+    font-weight: 400;
 }
 
 .bannerFirstName {
     font-family: 'Oswald', sans-serif;
-    color: white;
-    font-size: 100px;
-    font-weight: 500;
+    font-size: 95px;
+    font-weight: 400;
 }
 
-.bannerP {
-    color: white;
+.bannerFirstName {
+    margin-left: -4px;
 }
 
 h1 {
+    width: fit-content;
+    color: white;
+    font-size: 25px;
     font-weight: 300;
-    margin: 0px;
+    margin: auto;
+}
+
+.bannerPLinks {
+    margin-top: 10px;
+    padding: 25px;
+    width: fit-content;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+}
+
+.bannerLinks {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannerLink {
+    border-radius: 5px;
+    text-align: center;
+    width: 37%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    border: 2px solid white;
+    font-size: 25px;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.bannerLink:hover {
+    border: 2px solid #6baefa;
+    color: black;
+    background-color: #6baefa;
 }
 
 .bannerAbout {
     font-weight: 300;
-    margin-bottom: 25px;
-    margin-top: 35px;
-    padding: 15px;
-    background-color: black;
+    padding-left: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     width: 426px;
     opacity: 0;
     animation: fade-in 0.9s ease forwards;
-    border: 2px black solid;
+    border-left: 5px white solid;
     border-color: transparent;
     transition: border-width 0.5s ease, border-color 0.5s ease;
+}
+
+.bannerAboutSwitch {
+    display: none;
+    margin-left: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+    color: black;
+    font-size: 25px;
+    width: 426px;
+    opacity: 0;
+    animation: fade-in 0.9s ease forwards;
+    border-left: 5px solid;
+    border-color: transparent;
+    transition: border-width 0.5s ease, border-color 0.5s ease;
+}
+
+.bannerSwitch {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.show-border {
+    border-left: 5px solid white;
+}
+
+.show-link {
+    opacity: 1;
 }
 
 .word {
@@ -110,83 +185,36 @@ h1 {
     }
 }
 
-.show-border {
-    border: 2px solid white;
-}
-
-.bannerLink {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    margin-right: 20px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.9s ease;
-    border: 2px solid white;
-    font-size: 20px;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: white;
-    transition: 0.5s ease;
-}
-
-.bannerLink:hover {
-    border: 2px solid #6baefa;
-    color: black;
-    background-color: #6baefa;
-}
-
-.show-link {
-    opacity: 1;
-}
+/* @media screen and (max-width: 1400px) {
+    .bannerAboutSwitch {
+        display: block;
+    }
+    .bannerAbout {
+        display: none;
+    }
+} */
 
 @media screen and (max-width: 991px) {
-    .bannerAll {
-        flex-direction: column;
-        margin-top: 50px;
-        height: fit-content;
-    }
-
-    .bannerColor {
-        background-image: url('https://i.ibb.co/QY00nj3/floral1.webp');
-        background-position: bottom;
-        background-size: cover;
-        padding-right: 0px;
-        padding-top: 30px;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .bannerLastName {
-        padding-left: 20px;
-        padding-right: 0px;
-    }
-
-    .banner {
-        padding-bottom: 25px;
-        padding-top: 0px;
-        display: flex;
-        flex-direction: column;
-        background-color: #000000;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 635px) {
-    h1 {
-        font-size: 20px;
-        margin: 0px;
-    }
     .bannerAll {
-        margin-top: 20px;
+        margin-top: 100px;
+        width: 90%;
     }
 
     .banner {
-        padding-bottom: 10px;
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    h1 {
+        font-size: 15px;
     }
 
     .bannerLastName {
-        padding-left: 20px;
-        padding-right: 0px;
+        margin-top: -22px;
+        margin-bottom: -22px;
         font-size: 60px;
     }
 
@@ -195,32 +223,24 @@ h1 {
     }
 
     .bannerP {
-        margin-top: 20px;
-        text-align: center;
         font-size: 20px;
     }
 
     .bannerAbout {
-        margin: auto;
-        margin-top: 20px;
-        width: 80%;
         font-size: 15px;
-        margin-bottom: 10px;
     }
 
-    .bannerContent {
-        padding-bottom: 25px;
-        height: fit-content;
-        padding-right: 20px;
-    }
-
-    .bannerLink {
-        margin-right: 12px;
-        font-size: 15px;
+    .bannerPLinks {
+        border-radius: 5px;
+        padding: 10px;
     }
 
     .bannerLinks {
-        display: flex;
-        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .bannerLink {
+        padding: 5px;
+        font-size: 15px;
     }
 }
