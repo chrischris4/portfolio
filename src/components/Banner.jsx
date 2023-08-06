@@ -44,12 +44,12 @@ function Banner() {
         const linkTimeout = setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
             bannerLink.classList.add('show-link');
-        }, 3700);
+        }, 2000);
 
         const githubLinkTimeout = setTimeout(() => {
             const githubLink = document.querySelector('.githubLink');
             githubLink.classList.add('show-link');
-        }, 3700);
+        }, 2000);
 
         return () => {
             clearTimeout(linkTimeout);
