@@ -39,7 +39,6 @@ function Banner() {
 
         const borderTimeout = setTimeout(() => {
             bannerAbout.classList.add('show-border');
-            // bannerAboutSwitch.classList.add('show-border');
         }, 3700);
 
         const linkTimeout = setTimeout(() => {
@@ -62,20 +61,19 @@ function Banner() {
     }, []);
 
     return (
-        <div className="bannerAll">
-            <div className="bannerColor">
-                <div className="bannerLastName">JOST</div>
-            </div>
-            <div className="banner">
-                <div className="bannerName">
+        <div className="All">
+            <div className="bannerAll">
+                <div className="bannerColor">
+                    <div className="bannerLastName">JOST</div>
+                </div>
+                <div className="banner">
                     <div className="bannerFirstName">CHRISTOPHER</div>
-                </div>
-                <div className="bannerAbout">
-                    Spécialisé dans la création d'applications web dynamiques.
-                    Prêt à contribuer à des projets innovants.
-                </div>
-                <div className="bannerPLinks">
                     <h1>Développeur FullStack</h1>
+
+                    <div className="bannerAbout">
+                        Spécialisé dans la création d'applications web
+                        dynamiques. Prêt à contribuer à des projets innovants.
+                    </div>
                     <div className="bannerLinks">
                         <ScrollLink
                             href="contactLien"

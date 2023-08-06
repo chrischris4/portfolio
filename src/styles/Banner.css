@@ -3,47 +3,62 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 150px;
+    margin-top: 100px;
     align-items: center;
 }
 
+.All {
+    display: flex;
+    width: 100%;
+}
+
 .bannerColor {
+    padding-top: 140px;
     padding-right: 20px;
-    height: 600px;
-    display: block;
-    width: 23%;
+    height: 460px;
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
     background-color: #6baefa;
     border-radius: 0px 10px 10px 0px;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 3.7s ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 .banner {
-    margin-left: 50px;
+    margin-left: 20px;
     border-radius: 10px 0px 0px 10px;
     height: 600px;
     color: white;
     background-color: black;
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: -moz-fit-content;
+    justify-content: center;
     width: 100%;
 }
 
-.bannerName {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
 .bannerLastName {
-    text-align: end;
+    margin-top: -20px;
     font-family: 'Oswald', sans-serif;
     font-size: 95px;
     font-weight: 400;
 }
 
 .bannerFirstName {
+    padding-left: 20px;
+    margin-top: -20px;
     font-family: 'Oswald', sans-serif;
     font-size: 95px;
     font-weight: 400;
@@ -54,41 +69,31 @@
 }
 
 h1 {
+    padding-left: 20px;
+    margin-top: 0px;
     width: fit-content;
-    color: white;
     font-size: 25px;
     font-weight: 300;
-    margin: auto;
-}
-
-.bannerPLinks {
-    margin-top: 10px;
-    padding: 25px;
-    width: fit-content;
-    border-radius: 10px;
-    flex-direction: column;
-    display: flex;
-    background-color: black;
 }
 
 .bannerLinks {
+    padding-left: 20px;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
 }
 
 .bannerLink {
+    margin-right: 20px;
     border-radius: 5px;
     text-align: center;
-    width: 37%;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.9s ease;
     border: 2px solid white;
-    font-size: 25px;
-    padding: 15px 10px;
+    font-size: 18px;
+    padding: 5px 10px;
     text-decoration: none;
     color: white;
     transition: 0.5s ease;
@@ -101,37 +106,16 @@ h1 {
 }
 
 .bannerAbout {
+    margin-left: 20px;
     font-weight: 300;
     padding-left: 10px;
-    color: white;
-    font-size: 25px;
+    font-size: 18px;
     width: 426px;
     opacity: 0;
     animation: fade-in 0.9s ease forwards;
     border-left: 5px white solid;
     border-color: transparent;
     transition: border-width 0.5s ease, border-color 0.5s ease;
-}
-
-.bannerAboutSwitch {
-    display: none;
-    margin-left: 20px;
-    font-weight: 300;
-    padding-left: 10px;
-    color: black;
-    font-size: 25px;
-    width: 426px;
-    opacity: 0;
-    animation: fade-in 0.9s ease forwards;
-    border-left: 5px solid;
-    border-color: transparent;
-    transition: border-width 0.5s ease, border-color 0.5s ease;
-}
-
-.bannerSwitch {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
 }
 
 .show-border {
@@ -185,62 +169,116 @@ h1 {
     }
 }
 
-/* @media screen and (max-width: 1400px) {
-    .bannerAboutSwitch {
-        display: block;
-    }
-    .bannerAbout {
-        display: none;
-    }
-} */
-
 @media screen and (max-width: 991px) {
+    .bannerAll {
+        padding-left: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerColor {
+        justify-content: flex-start;
+        border-radius: 10px 0px 0px 10px;
+        align-self: baseline;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        height: fit-content;
+        width: 100%;
+    }
+
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+    .bannerFirstName {
+        margin-top: -30;
+        margin-bottom: -20px;
+    }
+
+    .bannerLastName {
+        padding-left: 20px;
+        margin-bottom: -20px;
+        margin-top: -30px;
+        text-align: start;
+    }
+
+    .banner {
+        align-self: baseline;
+        margin-left: 0px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        height: fit-content;
+    }
 }
 
 @media screen and (max-width: 635px) {
     .bannerAll {
-        margin-top: 100px;
-        width: 90%;
+        padding-left: 10px;
+        margin-top: 65px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .banner {
-        padding-left: 0;
-        border-left: 0;
-    }
-
-    h1 {
-        font-size: 15px;
-    }
-
-    .bannerLastName {
-        margin-top: -22px;
-        margin-bottom: -22px;
-        font-size: 60px;
+    .bannerColor {
+        border-radius: 5px 0px 0px 5px;
+        padding-left: 10px;
+        padding-right: 0;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: fit-content;
     }
 
     .bannerFirstName {
+        padding-left: 0px;
         font-size: 60px;
+        margin-top: -15px;
+        margin-bottom: -10px;
     }
 
-    .bannerP {
-        font-size: 20px;
+    .bannerLastName {
+        padding-left: 0;
+        font-size: 60px;
+        margin-bottom: -20px;
+        margin-top: -30px;
+        text-align: start;
+    }
+
+    .banner {
+        border-radius: 5px 0px 0px 5px;
+        padding-left: 10px;
+        margin-left: 0px;
     }
 
     .bannerAbout {
-        font-size: 15px;
+        margin-left: 0px;
+        width: 209px;
+        font-size: 13px;
     }
 
-    .bannerPLinks {
-        border-radius: 5px;
-        padding: 10px;
+    h1 {
+        padding-left: 20px;
+
+        font-size: 20px;
     }
 
     .bannerLinks {
-        margin-top: 10px;
+        padding-left: 0px;
     }
 
     .bannerLink {
-        padding: 5px;
+        margin-right: 10px;
         font-size: 15px;
     }
 }
