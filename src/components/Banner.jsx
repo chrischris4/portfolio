@@ -4,42 +4,42 @@ import { Link as ScrollLink } from 'react-scroll';
 
 function Banner() {
     useEffect(() => {
-        const bannerAbout = document.querySelector('.bannerAbout');
-        const words = bannerAbout.textContent.trim().split(' ');
-        bannerAbout.innerHTML = '';
+        //     const bannerAbout = document.querySelector('.bannerAbout');
+        //     const words = bannerAbout.textContent.trim().split(' ');
+        //     bannerAbout.innerHTML = '';
 
-        words.forEach((word, index) => {
-            const wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
+        //     words.forEach((word, index) => {
+        //         const wordSpan = document.createElement('span');
+        //         wordSpan.classList.add('word');
 
-            const letters = word.split('');
+        //         const letters = word.split('');
 
-            letters.forEach((letter) => {
-                const letterSpan = document.createElement('span');
-                letterSpan.textContent = letter;
-                letterSpan.classList.add('letter');
-                wordSpan.appendChild(letterSpan);
-            });
+        //         letters.forEach((letter) => {
+        //             const letterSpan = document.createElement('span');
+        //             letterSpan.textContent = letter;
+        //             letterSpan.classList.add('letter');
+        //             wordSpan.appendChild(letterSpan);
+        //         });
 
-            if (index > 0) {
-                const space = document.createTextNode(' ');
-                bannerAbout.appendChild(space);
-            }
+        //         if (index > 0) {
+        //             const space = document.createTextNode(' ');
+        //             bannerAbout.appendChild(space);
+        //         }
 
-            bannerAbout.appendChild(wordSpan);
-        });
+        //         bannerAbout.appendChild(wordSpan);
+        //     });
 
-        const wordSpans = bannerAbout.querySelectorAll('.word');
-        let delay = 0;
+        //     const wordSpans = bannerAbout.querySelectorAll('.word');
+        //     let delay = 0;
 
-        wordSpans.forEach((span, index) => {
-            span.style.animationDelay = `${delay}s`;
-            delay += index % 2 === 0 ? 0.25 : 0.15;
-        });
+        //     wordSpans.forEach((span, index) => {
+        //         span.style.animationDelay = `${delay}s`;
+        //         delay += index % 2 === 0 ? 0.25 : 0.15;
+        //     });
 
-        const borderTimeout = setTimeout(() => {
-            bannerAbout.classList.add('show-border');
-        }, 3700);
+        //     const borderTimeout = setTimeout(() => {
+        //         bannerAbout.classList.add('show-border');
+        //     }, 3700);
 
         const linkTimeout = setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
@@ -51,10 +51,7 @@ function Banner() {
             githubLink.classList.add('show-link');
         }, 3700);
 
-        bannerAbout.classList.add('fade-in');
-
         return () => {
-            clearTimeout(borderTimeout);
             clearTimeout(linkTimeout);
             clearTimeout(githubLinkTimeout);
         };
