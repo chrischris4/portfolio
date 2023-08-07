@@ -29,6 +29,10 @@
     transform: scale(1.03);
 }
 
+.material-symbols-outlined {
+    font-size: 35px;
+}
+
 .alertMessage {
     font-size: 15px;
     width: fit-content;
@@ -51,7 +55,7 @@
 
 .contact h3 {
     text-align: center;
-    width: 50%;
+    width: 80%;
     font-size: 25px;
     margin: auto;
     margin-top: 30px;
@@ -65,15 +69,22 @@ form {
 }
 
 input {
-    outline-color: #6baefa;
-    padding: inherit;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
     font-size: 15px;
     font-family: 'Poppins';
-    height: 40px;
-    border-radius: 5px;
-    border: 0px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid black;
     margin-bottom: 20px;
     width: 100%;
+}
+
+input:focus {
+    border: solid #6baefa;
+    border-width: 4px;
+    outline: none;
 }
 
 label {
@@ -82,16 +93,23 @@ label {
 }
 
 textarea {
-    outline-color: #6baefa;
-    padding: inherit;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
     font-size: 15px;
     font-family: 'Poppins';
     resize: none;
     height: 110px;
-    border-radius: 5px;
-    border: 2px solid;
+    border-radius: 10px;
+    border: 4px solid black;
     margin-bottom: 20px;
     width: 100%;
+}
+
+textarea:focus {
+    border: solid #6baefa;
+    border-width: 4px;
+    outline: none;
 }
 
 .contactMail {

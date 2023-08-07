@@ -3,10 +3,10 @@ import '../styles/Reseaux.css';
 function Reseaux(props) {
     return (
         <div className="reseaux">
-            <h3 className="contactP">
+            <h3 className="reseauxP">
                 Vous pouvez me retrouver sur ces plateformes :
             </h3>
-            <div className="contactLinks">
+            <div className="reseauxLinks">
                 <a
                     className="linkedinLink"
                     href="https://www.linkedin.com/in/christopher-jost-888b75195/"
@@ -34,14 +34,14 @@ function Reseaux(props) {
                     />
                 </a>
                 <a
-                    className="githubLinkContact"
+                    className="githubLinkReseaux"
                     href="https://github.com/chrischris4"
                     target="_blank"
                     rel="noreferrer"
                 >
                     Github
                     <img
-                        className="githubImgContact"
+                        className="githubImgReseaux"
                         src="https://i.ibb.co/6ZxjDxV/github.webp"
                         alt="logo github"
                     />

@@ -44,12 +44,17 @@
 
 .topPage {
     opacity: 0;
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease;
     cursor: pointer;
     transform: translateY(-100%);
-    margin: 0px 50px;
+    margin: 0px 40px;
     text-decoration: none;
     color: black;
+}
+
+.topPage.hide {
+    transform: translateY(-120%);
+    opacity: 1;
 }
 
 .topPage.show {
@@ -178,6 +183,22 @@
     .header {
         height: 46px;
         padding: 5px 0px;
+    }
+
+    .menuBurger .line {
+        border-radius: 2px;
+        transition: transform 0.3s ease;
+        width: 27px;
+        height: 3px;
+        background-color: #333;
+        margin: 2px 0;
+    }
+
+    .menuBurger.open .line1 {
+        transform: rotate(-45deg) translate(-3px, 7px);
+    }
+    .menuBurger.open .line3 {
+        transform: rotate(45deg) translate(-3px, -7px);
     }
 
     .backHomeImg {

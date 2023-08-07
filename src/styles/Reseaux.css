@@ -7,19 +7,18 @@
     align-items: center;
 }
 
-.contactP {
+.reseauxP {
+    text-align: center;
     color: black;
     border-radius: 10px;
     width: 90%;
     font-size: 25px;
-    display: flex;
-    justify-content: center;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 10px;
 }
 
-.contactLinks {
+.reseauxLinks {
     height: 220px;
     font-weight: 300;
     width: 100%;
@@ -78,7 +77,7 @@
     width: 40px;
 }
 
-.githubLinkContact {
+.githubLinkReseaux {
     height: 130px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
@@ -94,17 +93,17 @@
     transition: transform 0.3s ease;
 }
 
-.githubLinkContact:hover {
+.githubLinkReseaux:hover {
     color: white;
     transform: scale(1.03);
 }
 
-.githubImgContact {
+.githubImgReseaux {
     width: 55px;
 }
 
 @media screen and (max-width: 991px) {
-    .contactForm p {
+    .reseauxForm p {
         font-size: 30px;
     }
 
@@ -116,7 +115,7 @@
 }
 
 @media screen and (max-width: 635px) {
-    .contactP {
+    .reseauxP {
         width: 80%;
         border-radius: 5px;
         font-size: 15px;
@@ -124,7 +123,7 @@
 
     .linkedinLink,
     .skypeLink,
-    .githubLinkContact {
+    .githubLinkReseaux {
         margin: 5px;
         width: 75%;
         font-size: 14px;
@@ -132,15 +131,15 @@
 
     .skypeImg,
     .linkedinImg,
-    .githubImgContact {
+    .githubImgReseaux {
         width: 29px;
     }
 
-    .contactLinks {
+    .reseauxLinks {
         height: fit-content;
     }
 
-    .githubLinkContact {
+    .githubLinkReseaux {
         height: inherit;
     }
 }

@@ -45,6 +45,16 @@ function Header() {
     });
 
     window.addEventListener('scroll', function () {
+        var topPage = document.querySelector('.topPage');
+
+        if (window.scrollY <= 0) {
+            topPage.classList.add('hide');
+        } else {
+            topPage.classList.remove('hide');
+        }
+    });
+
+    window.addEventListener('scroll', function () {
         var header = document.querySelector('.header');
 
         if (window.scrollY > 0) {
