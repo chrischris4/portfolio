@@ -48,7 +48,7 @@ function ContactForm() {
                         <input
                             id="email"
                             name="email"
-                            placeholder="John.doe@exemple.com"
+                            placeholder="Votre.email@exemple.com"
                             type="email"
                             required
                             title="Entrez une adresse e-mail valide (ex: john.doe@example.com)"

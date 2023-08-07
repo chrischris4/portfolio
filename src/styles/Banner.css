@@ -13,9 +13,9 @@
 }
 
 .bannerColor {
-    padding-top: 145px;
+    padding-top: 132px;
     padding-right: 20px;
-    height: 455px;
+    height: 468px;
     display: flex;
     justify-content: flex-end;
     width: 25%;
@@ -109,7 +109,7 @@ h1 {
     margin-left: 20px;
     font-weight: 300;
     font-size: 16px;
-    width: 426px;
+    width: 257px;
 }
 
 .show-link {
@@ -169,10 +169,6 @@ h1 {
 
     h1 {
         margin-top: 10px;
-    }
-
-    .bannerAbout {
-        width: 257px;
     }
 }
 

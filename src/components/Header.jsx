@@ -82,7 +82,7 @@ function Header() {
             </ScrollLink>
             {linksPage && (
                 <>
-                    <RouterLink className="backHomeLink" to={`/`}>
+                    <RouterLink className="backHomeLink.show" to={`/`}>
                         <img
                             className="backHomeImg"
                             src="https://i.ibb.co/Fhcrwnd/back-Home-min.webp"
