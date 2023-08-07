@@ -107,7 +107,9 @@ h3 {
 .overlayParcours h4 {
     border-top: none;
     margin: 0;
+    font-size: 20px;
 }
+
 .overlayParcours p {
     margin-top: 0;
     font-size: 15px;
