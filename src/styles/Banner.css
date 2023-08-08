@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
+    margin-top: 85px;
     align-items: center;
 }
 
@@ -13,9 +13,8 @@
 }
 
 .bannerColor {
-    padding-top: 130px;
     padding-right: 20px;
-    height: 470px;
+    height: 600px;
     display: flex;
     justify-content: flex-end;
     width: 25%;
@@ -45,11 +44,11 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
 }
 
 .bannerLastName {
+    padding-top: 120px;
     margin-top: -20px;
     font-family: 'Oswald', sans-serif;
     font-size: 100px;
@@ -57,6 +56,7 @@
 }
 
 .bannerFirstName {
+    padding-top: 120px;
     padding-left: 20px;
     margin-top: -20px;
     font-family: 'Oswald', sans-serif;
@@ -148,11 +148,13 @@ h1 {
     }
 
     .bannerFirstName {
+        padding-top: 0px;
         margin-top: -30;
         margin-bottom: -20px;
     }
 
     .bannerLastName {
+        padding-top: 0px;
         padding-left: 20px;
         margin-bottom: -20px;
         margin-top: -30px;
@@ -175,7 +177,7 @@ h1 {
 @media screen and (max-width: 635px) {
     .bannerAll {
         padding-left: 10px;
-        margin-top: 56px;
+        margin-top: 61px;
     }
 
     .bannerColor {

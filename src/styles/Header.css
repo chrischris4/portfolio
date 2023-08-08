@@ -121,6 +121,7 @@
     right: 0px;
     padding-top: 80px;
     transform: translateX(100%);
+    align-items: center;
 }
 
 @keyframes slideInMenu {
@@ -139,37 +140,44 @@
 }
 
 .burgerMenu .link {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    text-align: center;
     transition: 0.5s ease;
-    width: 100%;
+    width: 170px;
     display: flex;
-    justify-content: center;
-    padding: 10px 0px;
+    margin: 10px 0px;
     z-index: 3;
     font-size: 20px;
     color: #333;
     text-decoration: none;
     cursor: pointer;
+    justify-content: center;
 }
 
 .lastLink {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
     transition: 0.5s ease;
-    width: 100%;
+    width: 170px;
     display: flex;
     justify-content: center;
-    padding: 10px 0px;
+    margin: 10px 0px;
     z-index: 3;
     font-size: 20px;
     color: #333;
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .lastLink:hover {
+    border-left: 5px solid #6baefa;
     color: #6baefa;
 }
 
 .burgerMenu .link:hover {
+    border-left: 5px solid #6baefa;
     color: #6baefa;
 }
 
@@ -230,5 +238,9 @@
 
     .burgerMenu {
         padding-top: 60px;
+    }
+
+    .lastLink {
+        margin-bottom: 56px;
     }
 }

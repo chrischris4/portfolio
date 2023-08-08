@@ -1,6 +1,6 @@
 .pageProject {
     margin: auto;
-    margin-top: 65px;
+    margin-top: 85px;
     width: 100%;
 }
 
@@ -42,7 +42,6 @@ strong {
     border-radius: 10px;
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
     width: 75%;
     color: white;
     background-color: black;
@@ -208,7 +207,7 @@ strong {
 
 @media screen and (max-width: 635px) {
     .pageProject {
-        margin-top: 50px;
+        margin-top: 61px;
     }
 
     .imgGithub {
@@ -219,7 +218,6 @@ strong {
         font-size: 15px;
     }
     .pageTitle {
-        margin-top: 80px;
         border-radius: 5px;
         width: 80%;
     }

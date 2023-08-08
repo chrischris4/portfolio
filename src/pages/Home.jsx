@@ -135,7 +135,7 @@ function Home() {
                     <div className="competenceRow">
                         <h3>Frontend</h3>
                         <ul>
-                            <li>Html/Css</li>
+                            <li>HTML/CSS</li>
                             <li>React.JS</li>
                         </ul>
                     </div>

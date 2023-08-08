@@ -11,7 +11,7 @@
     padding-bottom: 10px;
     width: 280px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .linkFooter {
@@ -21,10 +21,4 @@
 
 .linkFooter:hover {
     color: #6baefa;
-}
-
-@media screen and (max-width: 991px) {
-    .pfooter {
-        font-size: 12px;
-    }
 }
