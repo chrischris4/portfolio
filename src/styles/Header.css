@@ -7,7 +7,6 @@
     overflow: hidden;
     font-weight: 500;
     width: 100%;
-    color: black;
     background-color: white;
     align-items: center;
     display: flex;
@@ -21,15 +20,16 @@
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.link {
-    display: none;
+.night {
+    background-color: #383e42;
+    color: white;
 }
 
-.backHomeImg {
-    margin: -16px 0px 0px -22px;
+.home {
+    margin: -20px 0px 0px -21px;
     position: absolute;
     left: 50%;
-    width: 40px;
+    font-size: 40px;
     opacity: 0;
     animation: fade-in 1.5s ease forwards;
     transition: transform 0.4s ease;
@@ -44,12 +44,12 @@
     }
 }
 
-.backHomeImg:hover {
+.home:hover {
     transform: scale(1.1);
 }
 
-.vectorUp {
-    width: 40px;
+.arrow {
+    font-size: 70px;
 }
 
 .topPage {
@@ -57,9 +57,8 @@
     transition: transform 0.4s ease;
     cursor: pointer;
     transform: translateY(-100%);
-    margin: 0px 40px;
+    margin: 0px 20px;
     text-decoration: none;
-    color: black;
 }
 
 .topPage.hide {
@@ -77,6 +76,47 @@
     transform: scale(1.1);
 }
 
+.nightShift {
+    margin-bottom: 30px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nightShiftDisplay {
+    margin-top: 9px;
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nightShiftBtn {
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 1.5px 2px;
+    border-radius: 12px;
+    width: 47px;
+    border: solid black 2px;
+    background-color: white;
+    transition: transform 0.5s ease;
+}
+
+.nightShiftVector.on {
+    transform: translateX(120%);
+}
+
+.nightShiftVector {
+    transition: transform 0.5s ease;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: black;
+}
+
 .menuBurger {
     overflow: hidden;
     z-index: 2;
@@ -84,16 +124,31 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    background-color: white;
 }
 
 .menuBurger .line {
     border-radius: 2px;
     transition: transform 0.3s ease;
+    background-color: black;
     width: 30px;
     height: 3px;
-    background-color: #333;
     margin: 3px 0;
+}
+
+.line.night {
+    background-color: white;
+}
+
+.menuBurger.open .line1 {
+    transform: rotate(-45deg) translate(-4.5px, 8px);
+}
+
+.menuBurger.open .line2 {
+    opacity: 0;
+}
+
+.menuBurger.open .line3 {
+    transform: rotate(45deg) translate(-4.5px, -8px);
 }
 
 .overlayBurger {
@@ -124,6 +179,10 @@
     align-items: center;
 }
 
+.burgerMenu.night {
+    background-color: #383e42;
+}
+
 @keyframes slideInMenu {
     0% {
         transform: translateX(100%);
@@ -139,62 +198,42 @@
     transform: translateX(0);
 }
 
-.burgerMenu .link {
-    border-left: 5px solid white;
-    border-right: 5px solid white;
+.link {
     text-align: center;
-    transition: 0.5s ease;
+    transition: color 0.5s ease;
     width: 170px;
     display: flex;
     margin: 10px 0px;
     z-index: 3;
     font-size: 20px;
-    color: #333;
     text-decoration: none;
     cursor: pointer;
     justify-content: center;
 }
 
+.burgerMenu .link:hover {
+    color: #6baefa;
+}
+
 .lastLink {
-    border-left: 5px solid white;
-    border-right: 5px solid white;
-    transition: 0.5s ease;
+    transition: color 0.5s ease;
     width: 170px;
     display: flex;
     justify-content: center;
     margin: 10px 0px;
     z-index: 3;
     font-size: 20px;
-    color: #333;
     text-decoration: none;
     cursor: pointer;
     margin-bottom: 80px;
 }
 
 .lastLink:hover {
-    border-left: 5px solid #6baefa;
-    color: #6baefa;
-}
-
-.burgerMenu .link:hover {
-    border-left: 5px solid #6baefa;
     color: #6baefa;
 }
 
 .disable-scroll {
     overflow: hidden;
-}
-
-.menuBurger.open .line1 {
-    transform: rotate(-45deg) translate(-4px, 8px);
-}
-
-.menuBurger.open .line2 {
-    opacity: 0;
-}
-
-.menuBurger.open .line3 {
-    transform: rotate(45deg) translate(-4px, -8px);
 }
 
 @media screen and (max-width: 635px) {
@@ -208,28 +247,27 @@
         transition: transform 0.3s ease;
         width: 27px;
         height: 3px;
-        background-color: #333;
         margin: 2px 0;
     }
 
     .menuBurger.open .line1 {
-        transform: rotate(-45deg) translate(-3px, 7px);
+        transform: rotate(-45deg) translate(-3.3px, 7px);
     }
     .menuBurger.open .line3 {
         transform: rotate(45deg) translate(-3px, -7px);
     }
 
-    .backHomeImg {
-        margin: -13px 0px 0px -17px;
-        width: 30px;
+    .home {
+        margin: -18px 0px 0px -18px;
+        font-size: 35px;
     }
 
-    .vectorUp {
-        width: 30px;
+    .arrow {
+        font-size: 50px;
     }
 
     .topPage {
-        margin: 0px 20px;
+        margin: 0px 5px;
     }
 
     .menuBurger {

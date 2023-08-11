@@ -84,13 +84,11 @@
 @media screen and (max-width: 991px) {
     .projectContent {
         width: 100%;
-        margin-bottom: 0px;
         border-radius: 0px;
     }
 
     .projectLink {
         width: 90%;
-        margin: 20px 0px;
     }
 
     .overlayTitle {
@@ -99,13 +97,15 @@
 }
 
 @media screen and (max-width: 635px) {
+    .projectContent {
+        margin-bottom: 20px;
+    }
     .projectImg {
         border-radius: 5px;
     }
     .overlayTitle {
         border-radius: 5px;
         font-size: 15px;
-        padding-right: 10px;
     }
 
     .overlay {

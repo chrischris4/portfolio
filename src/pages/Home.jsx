@@ -30,8 +30,8 @@ function Home() {
             <div id="backHome"></div>
             <Banner />
             <div id="aboutLien"></div>
-            <div className="about">
-                <div className="contentAbout">
+            <div className="aboutAll">
+                <div className="about">
                     <h2 className="titleAbout">À propos de moi</h2>
                     <p className="pAbout">
                         Je vous souhaite la bienvenue sur mon

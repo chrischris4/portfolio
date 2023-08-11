@@ -39,13 +39,12 @@
     border-radius: 0px 0px 10px 10px;
     margin: auto;
     width: 80%;
-    padding-top: 35px;
+    padding-top: 30px;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    color: black;
     margin: auto;
 }
 
@@ -68,23 +67,25 @@
         width: 100%;
     }
     .filter {
-        border-radius: 0px;
-        padding-bottom: 15px;
-        margin-bottom: 0px;
+        margin: auto;
+        width: 90%;
+        border-radius: 10px;
     }
 
     .allProject {
         padding-bottom: 20px;
-        padding-top: 0px;
         border-radius: 0px;
-        background-color: black;
         width: 100%;
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 635px) {
+    .filter {
+        border-radius: 5px;
+    }
     .allProject {
+        padding-top: 20px;
         border-radius: 0px;
     }
 }

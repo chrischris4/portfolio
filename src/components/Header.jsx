@@ -64,8 +64,33 @@ function Header() {
         }
     });
 
+    const [nightMode, setNightMode] = useState(false);
+
+    function NightTheme() {
+        const vector = document.querySelector('.nightShiftVector');
+        const header = document.querySelector('.header');
+        const menu = document.querySelector('.burgerMenu');
+        const links = document.querySelectorAll('.link');
+        const lines = document.querySelectorAll('.line');
+
+        vector.classList.toggle('on');
+        header.classList.toggle('night');
+        menu.classList.toggle('night');
+
+        links.forEach((link) => {
+            link.classList.toggle('night');
+        });
+        lines.forEach((line) => {
+            line.classList.toggle('night');
+        });
+
+        document.body.classList.toggle('night');
+        setNightMode((currentNightMode) => !currentNightMode);
+        sessionStorage.setItem('nightMode', !nightMode);
+    }
+
     return (
-        <div className="header">
+        <div className={`header ${nightMode ? 'night' : ''}`}>
             <ScrollLink
                 href="topPageLien"
                 to="topPageLink"
@@ -74,60 +99,19 @@ function Header() {
                 smooth={true}
                 duration={1000}
             >
-                <img
-                    className="vectorUp"
-                    src="https://i.ibb.co/FsfJ4mw/arrow.webp"
-                    alt="haut-de-page"
-                />
+                <span className="material-symbols-rounded arrow">
+                    keyboard_arrow_up
+                </span>
             </ScrollLink>
             {linksPage && (
                 <>
                     <RouterLink className="backHomeLink.show" to={`/`}>
-                        <img
-                            className="backHomeImg"
-                            src="https://i.ibb.co/Fhcrwnd/back-Home-min.webp"
-                            alt="accueil"
-                        />
+                        <span className="material-symbols-rounded home">
+                            home
+                        </span>
                     </RouterLink>
                 </>
             )}
-
-            <nav>
-                {linksHome && (
-                    <>
-                        <ScrollLink
-                            href="parcoursLien"
-                            to="parcoursLien"
-                            className="link"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            Parcours
-                        </ScrollLink>
-                        <ScrollLink
-                            href="competenceLien"
-                            to="competenceLien"
-                            className="link"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            Compétences
-                        </ScrollLink>
-                        <ScrollLink
-                            href="projectLien"
-                            to="projectLien"
-                            className="link"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            Projets
-                        </ScrollLink>
-                    </>
-                )}
-            </nav>
 
             <div
                 className={`menuBurger ${isMenuOpen ? 'open' : ''}`}
@@ -141,13 +125,38 @@ function Header() {
                 <div className="overlayBurger" onClick={closeMenu}></div>
             )}
             {isMenuOpen && (
-                <nav className={`burgerMenu ${isMenuOpen ? 'open' : ''}`}>
+                <nav
+                    className={`burgerMenu ${isMenuOpen ? 'open' : ''} ${
+                        nightMode ? 'night' : ''
+                    }`}
+                >
+                    <div className="nightShift">
+                        Night shift
+                        <div className="nightShiftDisplay">
+                            <span className="material-symbols-rounded">
+                                light_mode
+                            </span>
+                            <button
+                                className="nightShiftBtn"
+                                onClick={NightTheme}
+                            >
+                                <div
+                                    className={` nightShiftVector ${
+                                        nightMode ? 'on' : ''
+                                    }`}
+                                ></div>
+                            </button>
+                            <span className="material-symbols-rounded">
+                                dark_mode
+                            </span>
+                        </div>
+                    </div>
                     {linksHome && (
                         <>
                             <ScrollLink
                                 href="aboutLien"
                                 to="aboutLien"
-                                className="link"
+                                className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
                                 duration={1000}
@@ -158,7 +167,7 @@ function Header() {
                             <ScrollLink
                                 href="parcoursLien"
                                 to="parcoursLien"
-                                className="link"
+                                className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
                                 duration={1000}
@@ -169,7 +178,7 @@ function Header() {
                             <ScrollLink
                                 href="competenceLien"
                                 to="competenceLien"
-                                className="link"
+                                className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
                                 duration={1000}
@@ -180,7 +189,7 @@ function Header() {
                             <ScrollLink
                                 href="projectLien"
                                 to="projectLien"
-                                className="link"
+                                className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
                                 duration={1000}
@@ -194,7 +203,7 @@ function Header() {
                         <>
                             <RouterLink
                                 to={`/`}
-                                className="link"
+                                className={`link ${nightMode ? 'night' : ''}`}
                                 onClick={closeMenu}
                             >
                                 Accueil
@@ -202,7 +211,7 @@ function Header() {
                             <ScrollLink
                                 href="othersLien"
                                 to="othersLien"
-                                className="link"
+                                className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
                                 duration={1000}
@@ -215,7 +224,7 @@ function Header() {
                     <ScrollLink
                         href="reseauxLien"
                         to="reseauxLien"
-                        className="link"
+                        className={`link ${nightMode ? 'night' : ''}`}
                         spy={true}
                         smooth={true}
                         duration={1000}
@@ -226,7 +235,7 @@ function Header() {
                     <ScrollLink
                         href="contactLien"
                         to="contactLien"
-                        className="link"
+                        className={`link ${nightMode ? 'night' : ''}`}
                         spy={true}
                         smooth={true}
                         duration={1000}
@@ -235,7 +244,7 @@ function Header() {
                         Contact
                     </ScrollLink>
                     <RouterLink
-                        className="lastLink"
+                        className={`lastLink ${nightMode ? 'night' : ''}`}
                         to={`https://github.com/chrischris4/`}
                         target="_blank"
                         rel="noreferrer"
