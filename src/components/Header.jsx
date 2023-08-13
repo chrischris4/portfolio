@@ -104,7 +104,7 @@ function Header() {
             </ScrollLink>
             {linksPage && (
                 <>
-                    <RouterLink className="backHomeLink.show" to={`/`}>
+                    <RouterLink className="backHomeLink" to={`/`}>
                         <span className="material-symbols-rounded home">
                             home
                         </span>
@@ -230,7 +230,7 @@ function Header() {
                     >
                         GitHub
                     </RouterLink>
-                    <div className="nightShift">
+                    <div className={`nightShift ${nightMode ? 'night' : ''}`}>
                         <span className="material-symbols-rounded">
                             light_mode
                         </span>

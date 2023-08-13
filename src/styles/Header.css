@@ -78,6 +78,7 @@
 }
 
 .nightShift {
+    color: black;
     margin-top: 10px;
     width: 100px;
     display: flex;
@@ -85,6 +86,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 80px;
+    transition: color 0.5s ease;
+}
+.nightShift.night {
+    color: white;
 }
 
 .nightShiftBtn {
@@ -196,6 +201,8 @@
 }
 
 .link {
+    color: black;
+    background-color: white;
     text-align: center;
     width: 170px;
     display: flex;
@@ -204,7 +211,11 @@
     text-decoration: none;
     cursor: pointer;
     justify-content: center;
-    transition: color 0.2s ease;
+    transition: color 0.5s ease;
+}
+
+.link.night {
+    color: white;
 }
 
 .burgerMenu .link:hover {
