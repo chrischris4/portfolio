@@ -8,13 +8,10 @@
 }
 
 .reseauxP {
-    text-align: center;
-    border-radius: 10px;
     width: 90%;
-    font-size: 25px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    margin: 0px;
 }
 
 .reseauxLinks {
@@ -29,18 +26,7 @@
 }
 
 .linkedinLink {
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-    width: 35%;
-    margin: 10px;
-    padding: 15px 15px;
-    border-radius: 5px;
     background-color: #0084b1;
-    color: white;
-    transition: transform 0.3s ease;
 }
 
 .linkedinLink:hover {
@@ -53,18 +39,7 @@
 }
 
 .skypeLink {
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    margin: 10px;
-    color: white;
-    padding: 15px 15px;
-    border-radius: 5px;
     background: #00aff0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-    width: 35%;
-    transition: transform 0.3s ease;
 }
 
 .skypeLink:hover {
@@ -77,14 +52,19 @@
 }
 
 .githubLinkReseaux {
+    background: #1b1f23;
     height: 130px;
+}
+
+.githubLinkReseaux,
+.skypeLink,
+.linkedinLink {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
     margin: 10px;
     color: white;
     padding: 15px 15px;
     border-radius: 5px;
-    background: #1b1f23;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
@@ -108,16 +88,15 @@
 
     .linkedinLink,
     .skypeLink,
-    .githubLinkContact {
+    .githubLinkReseaux {
         width: 40%;
     }
 }
 
 @media screen and (max-width: 635px) {
     .reseauxP {
-        width: 80%;
-        border-radius: 5px;
-        font-size: 15px;
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 
     .linkedinLink,

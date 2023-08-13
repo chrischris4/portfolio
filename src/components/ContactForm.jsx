@@ -42,10 +42,7 @@ function ContactForm() {
         <div className="contact">
             <div className="contactContent">
                 <div className="contactContentBorder">
-                    <h3>
-                        Pour plus d'informations, n'hésitez pas à me contacter
-                        par Email :
-                    </h3>
+                    <h3>Contactez moi par Email</h3>
                     <a
                         className="myEmailLink"
                         href={`mailto:jostchristopher44@gmail.com`}
@@ -54,10 +51,7 @@ function ContactForm() {
                         <span className="material-symbols-outlined">mail</span>
                     </a>
                     <div className="contactForm">
-                        <h3>
-                            Ou si vous préferez, écrivez moi directement via ce
-                            formulaire :
-                        </h3>
+                        <h3>Ou via ce formulaire</h3>
                     </div>
                 </div>
 

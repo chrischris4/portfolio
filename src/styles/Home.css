@@ -21,7 +21,7 @@ h3 {
 
 .aboutAll {
     margin: auto;
-    width: 75%;
+    width: 65%;
 }
 
 .about {
@@ -37,21 +37,18 @@ h3 {
     background-color: #383e42;
 }
 .about h3 {
+    width: 90%;
     margin-bottom: 0;
     text-align: end;
 }
 
 .titleAbout {
     font-size: 30px;
-    padding-left: 20px;
     width: 100%;
 }
 
 .pAbout {
-    margin-left: 20px;
-    border-left: 5px solid black;
     text-align: left;
-    padding: 0px 20px 0px 10px;
     width: 85%;
 }
 
@@ -74,13 +71,13 @@ h3 {
 }
 
 .parcours h4 {
-    margin-top: 5px;
-    font-size: 14px;
+    margin-top: 0px;
+    font-size: 13px;
 }
 
 .parcours {
     font-weight: 300;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 40px 0;
     background-color: #000;
     border-radius: 10px;
     margin: auto;
@@ -152,6 +149,11 @@ h3 {
     transition: 0.5s ease;
 }
 
+.openClass p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
 .openClass h3 {
     font-weight: 300;
     padding-top: 2px;
@@ -169,7 +171,7 @@ h3 {
 }
 
 .cv {
-    padding: 20px 0;
+    padding: 15px 0px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -231,6 +233,9 @@ ol {
 }
 
 @media screen and (max-width: 991px) {
+    .aboutAll {
+        width: 75%;
+    }
     .openClass,
     .adrar {
         padding: 0 0 20px 0;
@@ -283,8 +288,6 @@ ol {
     .about h3 {
         margin: auto;
         margin-top: 20px;
-        width: 90%;
-        padding-right: 0;
     }
 
     .titleAbout {
