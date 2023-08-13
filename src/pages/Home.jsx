@@ -40,9 +40,7 @@ function Home() {
                         à en découvrir d'avantage sur moi et mon travail, vous
                         retrouverez ici mon <strong>parcours</strong>, mes
                         <strong> compétences</strong> ainsi que mes
-                        <strong> projets</strong>. Ambitieux à l'idée de
-                        perfectionner mes aqcuis à travers de
-                        <strong> nouvelles éxperiences</strong>.
+                        <strong> projets</strong>.
                     </p>
                     <h3> Bonne visite !</h3>
                 </div>
@@ -58,9 +56,7 @@ function Home() {
                     <div className="adrarP">
                         <h3>Formation Adrar</h3>
                         <h4>10/2021 - 06/2022</h4>
-                        Durant cette formation, j'ai pu en savoir plus sur ce
-                        qu'est le métier de Développeur ainsi qu'approfondir mes
-                        bases en coding.
+                        Formation découverte sur le métier de Développeur web.
                     </div>
                     <a
                         className="parcoursLink"
@@ -84,9 +80,8 @@ function Home() {
                     <div className="openClassP">
                         <h3>Formation OpenClassrooms</h3>
                         <h4>12/2022 - 08/2023</h4>
-                        Durant cette formation je me suis professionalisé et ai
-                        appronfondi mes connaissances en SEO, Frontend et
-                        Backend.
+                        <p>Développeur / Intégrateur web</p>
+                        <p>Diplôme niveau bac +2</p>
                     </div>
                     <a
                         className="parcoursLink"
@@ -114,7 +109,7 @@ function Home() {
                         "
                         download
                     >
-                        Mon CV
+                        Télécharger mon CV
                     </a>
                 </div>
             </div>

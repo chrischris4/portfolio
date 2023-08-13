@@ -25,23 +25,42 @@ function ContactForm() {
                 }
             );
         e.target.reset();
+
+        const inputEmail = document.getElementById('email');
+        const inputMessage = document.getElementById('message');
+
+        inputEmail.addEventListener('blur', () => {
+            document.body.style.zoom = '0.8';
+        });
+
+        inputMessage.addEventListener('blur', () => {
+            document.body.style.zoom = '0.8';
+        });
     }
 
     return (
         <div className="contact">
-            <h3>
-                Pour plus d'informations, n'hésitez pas à me contacter par mail
-                :
-            </h3>
-            <a
-                className="myEmailLink"
-                href={`mailto:jostchristopher44@gmail.com`}
-            >
-                Mail
-                <span className="material-symbols-outlined">mail</span>
-            </a>
-            <div className="contactForm">
-                <h3>Ou directement via ce formulaire :</h3>
+            <div className="contactContent">
+                <div className="contactContentBorder">
+                    <h3>
+                        Pour plus d'informations, n'hésitez pas à me contacter
+                        par Email :
+                    </h3>
+                    <a
+                        className="myEmailLink"
+                        href={`mailto:jostchristopher44@gmail.com`}
+                    >
+                        <div className="linkName">Email</div>
+                        <span className="material-symbols-outlined">mail</span>
+                    </a>
+                    <div className="contactForm">
+                        <h3>
+                            Ou si vous préferez, écrivez moi directement via ce
+                            formulaire :
+                        </h3>
+                    </div>
+                </div>
+
                 <form onSubmit={sendEmail}>
                     <div className="contactMail">
                         <label htmlFor="email">Email :</label>

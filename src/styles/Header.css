@@ -14,6 +14,8 @@
     flex-direction: row;
     padding: 15px 0px;
     transition: box-shadow 0.5s ease;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 
 .header.show {
@@ -21,7 +23,7 @@
 }
 
 .night {
-    background-color: #383e42;
+    background-color: #282a2c;
     color: white;
 }
 
@@ -77,44 +79,41 @@
 }
 
 .nightShift {
-    margin-bottom: 30px;
-    font-size: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.nightShiftDisplay {
-    margin-top: 9px;
-    width: 110px;
+    margin-top: 10px;
+    width: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .nightShiftBtn {
-    display: flex;
-    justify-content: flex-start;
     cursor: pointer;
-    padding: 1.5px 2px;
+    padding: inherit;
     border-radius: 12px;
-    width: 47px;
+    height: 23px;
+    width: 40px;
     border: solid black 2px;
     background-color: white;
     transition: transform 0.5s ease;
 }
 
 .nightShiftVector.on {
-    transform: translateX(120%);
+    transform: translateX(110%);
 }
 
 .nightShiftVector {
     transition: transform 0.5s ease;
-    height: 18px;
-    width: 18px;
+    margin-left: 2px;
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
     background-color: black;
+}
+
+.darkMode {
+    font-size: 22px;
 }
 
 .menuBurger {
@@ -128,7 +127,7 @@
 
 .menuBurger .line {
     border-radius: 2px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.5s ease;
     background-color: black;
     width: 30px;
     height: 3px;
@@ -180,7 +179,7 @@
 }
 
 .burgerMenu.night {
-    background-color: #383e42;
+    background-color: #282a2c;
 }
 
 @keyframes slideInMenu {
@@ -200,7 +199,6 @@
 
 .link {
     text-align: center;
-    transition: color 0.5s ease;
     width: 170px;
     display: flex;
     margin: 10px 0px;
@@ -212,23 +210,6 @@
 }
 
 .burgerMenu .link:hover {
-    color: #6baefa;
-}
-
-.lastLink {
-    transition: color 0.5s ease;
-    width: 170px;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0px;
-    z-index: 3;
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    margin-bottom: 80px;
-}
-
-.lastLink:hover {
     color: #6baefa;
 }
 

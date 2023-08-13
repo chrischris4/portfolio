@@ -136,7 +136,7 @@ h3 {
     width: 45%;
 }
 .parcoursLink:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 .openClass,
 .adrar {
@@ -145,7 +145,6 @@ h3 {
     width: 90%;
     margin: auto;
     color: #fff;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -220,7 +219,6 @@ ol {
 .outil {
     font-weight: 300;
     height: 250px;
-    border: 2px solid #fff;
     border-radius: 10px;
     padding: 30px 0;
     width: 25%;
@@ -228,18 +226,10 @@ ol {
     flex-direction: column;
     align-items: center;
     list-style: none;
-    background: linear-gradient(
-        360deg,
-        rgba(129, 176, 246, 0.151) 0%,
-        rgb(255, 255, 255) 150%
-    );
+    background-color: #6baefa27;
     transition: 0.5s ease;
 }
-.frontend:hover,
-.backend:hover,
-.outil:hover {
-    border: 2px solid #6baefa;
-}
+
 @media screen and (max-width: 991px) {
     .openClass,
     .adrar {
@@ -283,7 +273,6 @@ ol {
 
     .about {
         width: 100%;
-        background-color: white;
         margin-top: 50px;
     }
     .contentAbout {

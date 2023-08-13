@@ -1,18 +1,25 @@
-import { useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
-function LocalStorage(key, initialValue) {
-    const storedValue = localStorage.getItem(key);
-    const initial =
-        storedValue !== null ? JSON.parse(storedValue) : initialValue;
+const NightModeContext = createContext();
 
-    const [value, setValue] = useState(initial);
+export const useNightMode = () => {
+    return useContext(NightModeContext);
+};
 
-    const setStoredValue = (newValue) => {
-        setValue(newValue);
-        localStorage.setItem(key, JSON.stringify(newValue));
+export const NightModeProvider = ({ children }) => {
+    const [nightMode, setNightMode] = useState(
+        localStorage.getItem('nightMode') === 'true'
+    );
+
+    const toggleNightMode = () => {
+        const newNightMode = !nightMode;
+        setNightMode(newNightMode);
+        localStorage.setItem('nightMode', newNightMode.toString());
     };
 
-    return [value, setStoredValue];
-}
-
-export default LocalStorage;
+    return (
+        <NightModeContext.Provider
+            value={{ nightMode, toggleNightMode }}
+        ></NightModeContext.Provider>
+    );
+};

@@ -65,7 +65,6 @@ function Header() {
     });
 
     const [nightMode, setNightMode] = useState(false);
-
     function NightTheme() {
         const vector = document.querySelector('.nightShiftVector');
         const header = document.querySelector('.header');
@@ -130,27 +129,6 @@ function Header() {
                         nightMode ? 'night' : ''
                     }`}
                 >
-                    <div className="nightShift">
-                        Night shift
-                        <div className="nightShiftDisplay">
-                            <span className="material-symbols-rounded">
-                                light_mode
-                            </span>
-                            <button
-                                className="nightShiftBtn"
-                                onClick={NightTheme}
-                            >
-                                <div
-                                    className={` nightShiftVector ${
-                                        nightMode ? 'on' : ''
-                                    }`}
-                                ></div>
-                            </button>
-                            <span className="material-symbols-rounded">
-                                dark_mode
-                            </span>
-                        </div>
-                    </div>
                     {linksHome && (
                         <>
                             <ScrollLink
@@ -244,7 +222,7 @@ function Header() {
                         Contact
                     </ScrollLink>
                     <RouterLink
-                        className={`lastLink ${nightMode ? 'night' : ''}`}
+                        className={`link ${nightMode ? 'night' : ''}`}
                         to={`https://github.com/chrischris4/`}
                         target="_blank"
                         rel="noreferrer"
@@ -252,6 +230,21 @@ function Header() {
                     >
                         GitHub
                     </RouterLink>
+                    <div className="nightShift">
+                        <span className="material-symbols-rounded">
+                            light_mode
+                        </span>
+                        <button className="nightShiftBtn" onClick={NightTheme}>
+                            <div
+                                className={` nightShiftVector ${
+                                    nightMode ? 'on' : ''
+                                }`}
+                            ></div>
+                        </button>
+                        <span className="material-symbols-rounded darkMode">
+                            dark_mode
+                        </span>
+                    </div>
                 </nav>
             )}
         </div>

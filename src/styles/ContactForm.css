@@ -9,27 +9,45 @@
     align-items: center;
 }
 
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+}
+
+.contactContentBorder {
+    box-sizing: border-box;
+    border-left: solid black 4px;
+    border-right: solid black 4px;
+}
+
 .myEmailLink {
+    box-sizing: border-box;
+    border-radius: 5px;
     font-weight: 300;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     align-items: center;
     color: white;
-    padding: 20px;
-    border-radius: 5px;
     background: rgb(109, 6, 6);
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    width: 495px;
+    width: 100%;
     transition: transform 0.3s ease;
 }
 
 .myEmailLink:hover {
     color: white;
-    transform: scale(1.03);
+    transform: scale(1.01);
+}
+
+.linkName {
+    margin: 20px;
 }
 
 .material-symbols-outlined {
+    margin: 20px;
     font-size: 35px;
 }
 
@@ -54,18 +72,17 @@
 }
 
 .contact h3 {
-    text-align: center;
-    width: 80%;
-    font-size: 25px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     color: white;
 }
 
 form {
     margin: auto;
-    width: 535px;
+    width: 100%;
 }
 
 input {
@@ -76,39 +93,42 @@ input {
     font-family: 'Poppins';
     height: 50px;
     border-radius: 10px;
-    border: 3px solid black;
-    margin-bottom: 20px;
+    border: 4px solid black;
+    margin-bottom: 10px;
     width: 100%;
+    transition: border 0.5s ease;
 }
 
 input:focus {
     border: solid #6baefa;
-    border-width: 3px;
+    border-width: 4px;
     outline: none;
 }
 
 label {
+    padding-left: 4px;
     font-size: 20px;
     color: white;
 }
 
 textarea {
+    transition: border 0.5s ease;
     box-sizing: border-box;
     padding: 10px;
     width: 100%;
     font-size: 15px;
     font-family: 'Poppins';
     resize: none;
-    height: 110px;
+    height: 140px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 4px solid black;
     margin-bottom: 20px;
     width: 100%;
 }
 
 textarea:focus {
     border: solid #6baefa;
-    border-width: 3px;
+    border-width: 4px;
     outline: none;
 }
 
@@ -151,23 +171,24 @@ textarea:focus {
 }
 
 @media screen and (max-width: 635px) {
+    .contactContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
     .myEmailLink {
         font-size: 22px;
-        padding: 15px;
-        width: 70%;
     }
 
     .material-symbols-outlined {
         font-size: 30px;
     }
-    form {
-        width: 80%;
-    }
 
     .contact h3 {
-        text-align: center;
-        width: 80%;
-        margin-top: 30px;
+        margin-top: 35px;
+        margin-bottom: 15px;
         font-size: 16px;
     }
 

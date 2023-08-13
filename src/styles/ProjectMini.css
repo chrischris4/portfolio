@@ -72,7 +72,7 @@
 
 .projectLinkMini:hover {
     border-radius: 5px;
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 @media screen and (max-width: 991px) {

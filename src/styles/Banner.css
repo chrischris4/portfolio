@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+.night {
+    background-color: #282a2c;
+    color: white;
+}
+
 .All {
     display: flex;
     width: 100%;

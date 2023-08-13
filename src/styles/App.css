@@ -5,6 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: black;
     background-color: white;
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 a {
@@ -13,6 +14,6 @@ a {
 }
 
 .night {
-    background-color: #383e42;
+    background-color: #282a2c;
     color: white;
 }

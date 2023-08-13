@@ -45,7 +45,7 @@
 
 .linkedinLink:hover {
     color: white;
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .linkedinImg {
@@ -69,7 +69,7 @@
 
 .skypeLink:hover {
     color: white;
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .skypeImg {
@@ -94,7 +94,7 @@
 
 .githubLinkReseaux:hover {
     color: white;
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .githubImgReseaux {
