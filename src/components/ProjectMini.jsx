@@ -5,7 +5,7 @@ function ProjectMini(props) {
     return (
         <RouterLink className="projectLinkMini " to={props.link}>
             <div className="overlayMini">
-                <h3>Voir plus..</h3>
+                <h3>Voir plus...</h3>
             </div>
             <img
                 className="projectImgMini"

@@ -5,7 +5,7 @@ function Project(props) {
     return (
         <RouterLink className="projectLink " to={props.link}>
             <div className="overlay">
-                <h3>Voir plus..</h3>
+                <h3>Voir plus...</h3>
             </div>
             <img
                 className="projectImg"

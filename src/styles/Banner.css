@@ -78,7 +78,7 @@ h1 {
     padding-left: 20px;
     margin-top: 0px;
     width: fit-content;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
 }
 
@@ -98,7 +98,7 @@ h1 {
     opacity: 0;
     transition: opacity 0.9s ease;
     border: 2px solid white;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px 10px;
     text-decoration: none;
     color: white;
@@ -114,8 +114,8 @@ h1 {
 .bannerAbout {
     margin-left: 20px;
     font-weight: 300;
-    font-size: 16px;
-    width: 257px;
+    font-size: 18px;
+    width: 290px;
 }
 
 .show-link {
