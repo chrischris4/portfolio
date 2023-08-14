@@ -6,30 +6,35 @@
 
 .services h3 {
     font-size: 24px;
-    margin: 0;
-    text-align: center;
+    margin-bottom: 0pc;
 }
 
 .services p {
-    padding-top: 20px;
-    margin: auto;
     width: 90%;
     font-size: 14px;
 }
 
 .servicesTop {
-    border: 2px solid;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     padding: 20px 0px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    margin-bottom: 20px;
+}
+
+.servicesTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicesImg {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 .collapse {
-    border: 2px solid;
     cursor: pointer;
-    background-color: black;
+    background-color: #4e65c5;
     color: white;
     border-radius: 10px;
     display: flex;
@@ -59,9 +64,8 @@
 }
 
 .collapseContent {
-    background-color: #6baefa27;
-
-    border: 1px solid;
+    background-color: #e8eefe6a;
+    border: 2px solid;
     margin: auto;
     width: 85%;
     position: relative;
@@ -70,7 +74,6 @@
     transition: transform 0.5s ease;
     transform: translateY(-100%);
     border-radius: 5px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .collapseContent.open {

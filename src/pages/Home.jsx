@@ -122,12 +122,14 @@ function Home() {
             </div>
             <div id="competence">
                 <div className="frontend">
-                    <img
-                        className="frontendImg"
-                        src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
-                        alt="illustration frontend"
-                        loading="lazy"
-                    />
+                    <div className="frontendBack">
+                        <img
+                            className="frontendImg"
+                            src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
+                            alt="illustration frontend"
+                            loading="lazy"
+                        />
+                    </div>
                     <div className="competenceRow">
                         <h3>Frontend</h3>
                         <ul>

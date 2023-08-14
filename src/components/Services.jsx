@@ -23,12 +23,20 @@ function Services() {
     return (
         <div className="services">
             <div className="servicesTop">
-                <h3>Site vitrine</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Officiis ex praesentium pariatur minima incidunt ab dolores
-                    similique?
-                </p>
+                <div className="servicesTitle">
+                    <h3>Site vitrine</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officiis ex praesentium pariatur minima incidunt
+                        ab dolores similique?
+                    </p>
+                </div>
+                <img
+                    className="servicesImg"
+                    src="https://i.ibb.co/ctdk50Z/Web-Development-Singgle-06-generated.jpg"
+                    alt="services"
+                    loading="lazy"
+                />
             </div>
             <div className="collapse" onClick={toggleCollapse}>
                 <p>Plus de détail</p>

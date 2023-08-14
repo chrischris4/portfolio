@@ -160,7 +160,7 @@ h3 {
     font-weight: 300;
     padding-top: 2px;
     margin: 0px;
-    border-top: 5px solid #6baefa;
+    border-top: 5px solid #4e65c5;
     width: fit-content;
 }
 
@@ -168,7 +168,7 @@ h3 {
     font-weight: 300;
     margin: 0px;
     padding-top: 2px;
-    border-top: 5px solid #6baefa;
+    border-top: 5px solid #4e65c5;
     width: fit-content;
 }
 
@@ -192,9 +192,9 @@ h3 {
     background-color: #000;
 }
 .buttonCv:hover {
-    border: #6baefa solid 2px;
+    border: #4e65c5 solid 2px;
     color: #000;
-    background-color: #6baefa;
+    background-color: #4e65c5;
 }
 .frontendImg,
 .backendImg,
@@ -211,6 +211,10 @@ h3 {
     flex-direction: row;
     margin: auto;
 }
+
+/* .frontendBack {
+    background-color: #4e65c5;
+} */
 ul,
 ol {
     margin: 0;
@@ -230,7 +234,7 @@ ol {
     flex-direction: column;
     align-items: center;
     list-style: none;
-    background-color: #6baefa27;
+    background-color: #e8eefe6a;
     transition: 0.5s ease;
 }
 
