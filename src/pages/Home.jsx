@@ -6,6 +6,7 @@ import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
 import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import Reseaux from '../components/Reseaux';
+import Services from '../components/Services';
 
 function Home() {
     useEffect(() => {
@@ -175,6 +176,16 @@ function Home() {
                 <h2>Projets</h2>
             </div>
             <AllProject />
+            <div id="servicesLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>Services</h2>
+            </div>
+            <div className="servicesContent">
+                <Services />
+                <Services />
+            </div>
+
             <div id="reseauxLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

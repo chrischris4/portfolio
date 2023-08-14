@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     overflow: hidden;
     font-weight: 500;
     width: 100%;
@@ -20,6 +20,10 @@
 .header.show {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* .headerContent {
+    display: flex;
+} */
 
 .night {
     background-color: #282a2c;

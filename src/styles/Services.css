@@ -1,0 +1,118 @@
+.services {
+    padding: 20px 0px;
+    background-color: #6baefa27;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    transition: max-height 0.5s ease;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.services.open {
+    max-height: 810px;
+}
+
+.services.close {
+    max-height: 190px;
+}
+
+.services h3 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.services p {
+    padding: 20px 0px;
+    margin: auto;
+    width: 90%;
+    font-size: 14px;
+}
+
+.collapse {
+    margin: auto;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapse p {
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.collapseContainer {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.collapseContent {
+    margin: auto;
+    width: 75%;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    transform: translateY(-100%);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.collapseContent.open {
+    transform: translateY(0);
+    display: flex;
+    opacity: 1;
+}
+
+.collapseContent.close {
+    transform: translateY(-120%);
+    opacity: 1;
+}
+
+.collapseContent h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.collapseContent p {
+    margin: 0;
+}
+
+.vectorDown {
+    font-size: 50px;
+    transition: transform 0.5s ease;
+}
+
+.vectorDown.rotate {
+    transform: rotate(180deg);
+    font-size: 50px;
+}
+
+@media screen and (max-width: 991px) {
+    .services {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 0;
+    }
+
+    .collapseContainer {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .services.close {
+        max-height: 225px;
+    }
+}

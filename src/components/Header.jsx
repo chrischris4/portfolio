@@ -90,6 +90,7 @@ function Header() {
 
     return (
         <div className={`header ${nightMode ? 'night' : ''}`}>
+            {/* <div className="headerContent"> */}
             <ScrollLink
                 href="topPageLien"
                 to="topPageLink"
@@ -175,6 +176,17 @@ function Header() {
                             >
                                 Projets
                             </ScrollLink>
+                            <ScrollLink
+                                href="servicesLien"
+                                to="servicesLien"
+                                className={`link ${nightMode ? 'night' : ''}`}
+                                spy={true}
+                                smooth={true}
+                                duration={1000}
+                                onClick={closeMenu}
+                            >
+                                Services
+                            </ScrollLink>
                         </>
                     )}
                     {linksPage && (
@@ -247,6 +259,7 @@ function Header() {
                     </div>
                 </nav>
             )}
+            {/* </div> */}
         </div>
     );
 }
