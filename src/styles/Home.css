@@ -235,9 +235,11 @@ ol {
 }
 
 .servicesContent {
+    margin: auto;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 991px) {
