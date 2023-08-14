@@ -1,21 +1,7 @@
 .services {
-    padding: 20px 0px;
-    background-color: #6baefa27;
-    border-radius: 10px;
-    border: 2px solid black;
     width: 48%;
     display: flex;
     flex-direction: column;
-    transition: max-height 0.5s ease;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.services.open {
-    max-height: 810px;
-}
-
-.services.close {
-    max-height: 190px;
 }
 
 .services h3 {
@@ -25,20 +11,27 @@
 }
 
 .services p {
-    padding: 20px 0px;
+    padding-top: 20px;
     margin: auto;
     width: 90%;
     font-size: 14px;
 }
 
+.servicesTop {
+    border: 2px solid;
+    padding: 20px 0px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .collapse {
-    margin: auto;
+    border: 2px solid;
     cursor: pointer;
     background-color: black;
     color: white;
-    border-radius: 5px;
-    border: 1px solid;
-    width: 90%;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,23 +47,34 @@
 .collapseContainer {
     overflow: hidden;
     position: relative;
-    z-index: 2;
+    transition: max-height 0.5s ease;
+}
+
+.collapseContainer.open {
+    max-height: 810px;
+}
+
+.collapseContainer.close {
+    max-height: 0px;
 }
 
 .collapseContent {
+    background-color: #6baefa27;
+
+    border: 1px solid;
     margin: auto;
-    width: 75%;
+    width: 85%;
     position: relative;
-    background-color: white;
     padding: 20px;
     flex-direction: column;
     transition: transform 0.5s ease;
     transform: translateY(-100%);
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .collapseContent.open {
-    transform: translateY(0);
+    transform: translateY(-5%);
     display: flex;
     opacity: 1;
 }
@@ -112,7 +116,7 @@
 }
 
 @media screen and (max-width: 635px) {
-    .services.close {
-        max-height: 225px;
+    .collapseContent {
+        width: 80%;
     }
 }

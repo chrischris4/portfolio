@@ -21,13 +21,15 @@ function Services() {
     };
 
     return (
-        <div className={`services ${CollapseOpen ? 'open' : 'close'}`}>
-            <h3>Site vitrine</h3>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officiis ex praesentium pariatur minima incidunt ab dolores
-                similique?
-            </p>
+        <div className="services">
+            <div className="servicesTop">
+                <h3>Site vitrine</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Officiis ex praesentium pariatur minima incidunt ab dolores
+                    similique?
+                </p>
+            </div>
             <div className="collapse" onClick={toggleCollapse}>
                 <p>Plus de détail</p>
                 <span
@@ -38,7 +40,11 @@ function Services() {
                     expand_more
                 </span>
             </div>
-            <div className="collapseContainer">
+            <div
+                className={`collapseContainer ${
+                    CollapseOpen ? 'open' : 'close'
+                }`}
+            >
                 <div
                     className={`collapseContent ${
                         CollapseOpen ? 'open' : 'close'
