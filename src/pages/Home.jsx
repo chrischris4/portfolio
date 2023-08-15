@@ -184,8 +184,19 @@ function Home() {
                 <h2>Services</h2>
             </div>
             <div className="servicesContent">
-                <Services />
-                <Services />
+                <Services
+                    title="Site Vitrine"
+                    description="Un site adapter à vos besoins, parfaitement ajuster afin de partager au mieux vos convictions à vos visiteurs."
+                    details="un site parfaitement adapter a vos besoins"
+                    cover="
+                    https://i.ibb.co/8gHf982/Web-Development-Singgle-06-generated.jpg"
+                />
+                <Services
+                    title="SEO"
+                    description="Optimisation, performance, accéssibilité, bonnes pratiques, des besoins indispensables pour améliorer votre réferencement."
+                    details="Optimisation des performance, n'hésitez pas a découvrir le projet SEO sur lequel j'ai travailler en cliquant sur."
+                    cover="https://i.ibb.co/xJjKS2s/Web-Development-Singgle-01-generated.jpg"
+                />
             </div>
 
             <div id="reseauxLien"></div>

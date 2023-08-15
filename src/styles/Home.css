@@ -379,6 +379,7 @@ ol {
         height: fit-content;
         padding: 30px 0 30px 0;
         width: 100%;
+        border-radius: 5px;
     }
     .frontend {
         margin-right: 0;

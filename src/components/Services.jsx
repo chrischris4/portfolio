@@ -1,7 +1,7 @@
 import '../styles/Services.css';
 import React, { useState } from 'react';
 
-function Services() {
+function Services(props) {
     const [CollapseOpen, setCollapseOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -24,16 +24,12 @@ function Services() {
         <div className="services">
             <div className="servicesTop">
                 <div className="servicesTitle">
-                    <h3>Site vitrine</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Officiis ex praesentium pariatur minima incidunt
-                        ab dolores similique?
-                    </p>
+                    <h3>{props.title}</h3>
+                    <p>{props.description}</p>
                 </div>
                 <img
                     className="servicesImg"
-                    src="https://i.ibb.co/ctdk50Z/Web-Development-Singgle-06-generated.jpg"
+                    src={props.cover}
                     alt="services"
                     loading="lazy"
                 />
@@ -58,13 +54,8 @@ function Services() {
                         CollapseOpen ? 'open' : 'close'
                     }`}
                 >
-                    <h4>description</h4>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Similique accusantium, sit eos atque excepturi
-                        numquam, esse eligendi impedit magni consequuntur a ad
-                        quo eius dignissimos officiis tempora. Sit, eos aperiam!
-                    </p>
+                    <h4>{props.title}</h4>
+                    <p>{props.details}</p>
                 </div>
             </div>
         </div>

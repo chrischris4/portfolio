@@ -5,20 +5,25 @@
 }
 
 .services h3 {
+    width: fit-content;
+    border-bottom: 5px solid #4e65c5;
+    font-weight: 400;
     font-size: 24px;
-    margin-bottom: 0pc;
+    margin: 0px;
 }
 
-.services p {
-    width: 90%;
+.servicesTitle p {
+    height: 75px;
+    padding-right: 20px;
     font-size: 14px;
+    margin-bottom: 0px;
 }
 
 .servicesTop {
+    justify-content: space-between;
     align-items: center;
     display: flex;
     flex-direction: row;
-    padding: 20px 0px;
 }
 
 .servicesTitle {
@@ -27,12 +32,12 @@
 }
 
 .servicesImg {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    border-radius: 10px;
+    width: 150px;
 }
 
 .collapse {
+    margin-top: 20px;
     cursor: pointer;
     background-color: #4e65c5;
     color: white;
@@ -44,6 +49,7 @@
 }
 
 .collapse p {
+    font-weight: 300;
     padding: 10px;
     margin: 0;
     font-size: 20px;
@@ -67,9 +73,8 @@
     background-color: #e8eefe6a;
     border: 2px solid;
     margin: auto;
-    width: 85%;
+    width: 95%;
     position: relative;
-    padding: 20px;
     flex-direction: column;
     transition: transform 0.5s ease;
     transform: translateY(-100%);
@@ -88,11 +93,14 @@
 }
 
 .collapseContent h4 {
-    margin: 0;
+    padding: 0px 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 18px;
 }
 
 .collapseContent p {
+    padding: 20px;
     margin: 0;
 }
 
@@ -103,7 +111,6 @@
 
 .vectorDown.rotate {
     transform: rotate(180deg);
-    font-size: 50px;
 }
 
 @media screen and (max-width: 991px) {
@@ -112,14 +119,77 @@
         margin-bottom: 30px;
         padding-bottom: 0;
     }
+    .servicesTop {
+        align-items: flex-end;
+        padding: 0px;
+    }
+
+    .servicesImg {
+        width: 250px;
+    }
 
     .collapseContainer {
         margin-bottom: 20px;
     }
+
+    .services h3 {
+        font-size: 26px;
+    }
+
+    .servicesTitle p {
+        height: auto;
+        font-size: 18px;
+    }
+
+    .collapse p {
+        padding: 15px;
+        font-size: 24px;
+    }
+
+    .collapseContent h4 {
+        font-size: 26px;
+    }
+
+    .vectorDown {
+        font-size: 55px;
+    }
 }
 
 @media screen and (max-width: 635px) {
-    .collapseContent {
-        width: 80%;
+    .services h3 {
+        font-size: 18px;
+    }
+
+    .servicesTitle p {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .collapse p {
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+
+    .servicesImg {
+        border-radius: 5px;
+        width: 140px;
+    }
+    .collapse {
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .collapseContent p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .collapseContent h4 {
+        padding: 0px 10px;
+        font-size: 18px;
+    }
+
+    .vectorDown {
+        font-size: 40px;
     }
 }
