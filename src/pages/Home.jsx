@@ -57,7 +57,11 @@ function Home() {
                     <div className="adrarP">
                         <h3>Formation Adrar</h3>
                         <h4>10/2021 - 06/2022</h4>
-                        Formation découverte sur le métier de Développeur web.
+                        <p>
+                            {' '}
+                            Formation découverte sur le métier de Développeur
+                            web.
+                        </p>
                     </div>
                     <a
                         className="parcoursLink"
@@ -193,7 +197,7 @@ function Home() {
                 />
                 <Services
                     title="SEO"
-                    description="Optimisation, performance, accéssibilité, bonnes pratiques, des besoins indispensables pour améliorer votre réferencement."
+                    description="Optimisation, performance, accéssibilité, les indispensables pour améliorer votre réferencement."
                     details="Optimisation des performance, n'hésitez pas a découvrir le projet SEO sur lequel j'ai travailler en cliquant sur."
                     cover="https://i.ibb.co/xJjKS2s/Web-Development-Singgle-01-generated.jpg"
                 />
