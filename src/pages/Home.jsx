@@ -1,6 +1,6 @@
 import Banner from '../components/Banner';
 import '../styles/Home.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AllProject from '../components/AllProject';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
@@ -12,6 +12,8 @@ function Home() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const [isUp, setIsUp] = useState(false);
 
     return (
         <div className="page-container">
@@ -53,8 +55,8 @@ function Home() {
                 <h2>Parcours</h2>
             </div>
             <div className="parcours">
-                <div className="adrar">
-                    <div className="adrarP">
+                <div className="parcoursContent">
+                    <div className="parcoursP">
                         <h3>Formation Adrar</h3>
                         <h4>10/2021 - 06/2022</h4>
                         <p>
@@ -74,18 +76,18 @@ function Home() {
                             <p> adrar-formation.com</p>
                         </div>
                         <img
-                            className="adrarImg"
+                            className="parcoursImg"
                             src="https://i.ibb.co/Q6PbSS4/adrar-min.webp"
                             alt="adrarhomepage"
                             loading="lazy"
                         />
                     </a>
                 </div>
-                <div className="openClass">
-                    <div className="openClassP">
+                <div className="parcoursContent">
+                    <div className="parcoursP">
                         <h3>Formation OpenClassrooms</h3>
                         <h4>12/2022 - 08/2023</h4>
-                        <p>Développeur / Intégrateur web</p>
+                        <p>Formation Développeur / Intégrateur web</p>
                         <p>Diplôme niveau bac +2</p>
                     </div>
                     <a
@@ -100,7 +102,7 @@ function Home() {
                         </div>
 
                         <img
-                            className="openClassImg"
+                            className="parcoursImg"
                             src="https://i.ibb.co/ZzwdcZF/open-min.webp"
                             alt="openclassroomshomepage"
                             loading="lazy"
@@ -124,33 +126,56 @@ function Home() {
 
                 <h2>Compétences</h2>
             </div>
-            <div id="competence">
-                <div className="frontend">
-                    <div className="frontendBack">
-                        <img
-                            className="frontendImg"
-                            src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
-                            alt="illustration frontend"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div className="competenceRow">
-                        <h3>Frontend</h3>
+            <div id="competences">
+                <div className="competence">
+                    <div className="competenceContent">
+                        <div className="competenceTop">
+                            <h3>Frontend</h3>
+                            <img
+                                className="competenceImg"
+                                src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
+                                alt="illustration frontend"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div className="competenceStyle">
+                            <div
+                                className={`competenceVector ${
+                                    isUp ? 'trailUp' : 'trailDown'
+                                }`}
+                                onAnimationIteration={() =>
+                                    setIsUp((prevIsUp) => !prevIsUp)
+                                }
+                            ></div>
+                        </div>
+
                         <ul>
                             <li>HTML/CSS</li>
                             <li>React.JS</li>
                         </ul>
                     </div>
                 </div>
-                <div className="backend">
-                    <img
-                        className="backendImg"
-                        src="https://i.ibb.co/kyyvCVN/backend-min.webp"
-                        alt="illustration backend"
-                        loading="lazy"
-                    />
-                    <div className="competenceRow">
-                        <h3>Backend</h3>
+                <div className="competence">
+                    <div className="competenceContent">
+                        <div className="competenceTop">
+                            <h3>Backend</h3>
+                            <img
+                                className="competenceImg"
+                                src="https://i.ibb.co/kyyvCVN/backend-min.webp"
+                                alt="illustration backend"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div className="competenceStyle">
+                            <div
+                                className={`competenceVector ${
+                                    isUp ? 'trailUp' : 'trailDown'
+                                }`}
+                                onAnimationIteration={() =>
+                                    setIsUp((prevIsUp) => !prevIsUp)
+                                }
+                            ></div>
+                        </div>
                         <ul>
                             <li>MongoDB</li>
                             <li>JavaScript</li>
@@ -158,15 +183,27 @@ function Home() {
                         </ul>
                     </div>
                 </div>
-                <div className="outil">
-                    <img
-                        className="outilImg"
-                        src="https://i.ibb.co/CsV5Cdq/outil-min.webp"
-                        alt="illustration outil"
-                        loading="lazy"
-                    />
-                    <div className="competenceRow">
-                        <h3>Outils</h3>
+                <div className="competence">
+                    <div className="competenceContent">
+                        <div className="competenceTop">
+                            <h3>Outils</h3>
+                            <img
+                                className="competenceImg"
+                                src="https://i.ibb.co/CsV5Cdq/outil-min.webp"
+                                alt="illustration outil"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div className="competenceStyle">
+                            <div
+                                className={`competenceVector ${
+                                    isUp ? 'trailUp' : 'trailDown'
+                                }`}
+                                onAnimationIteration={() =>
+                                    setIsUp((prevIsUp) => !prevIsUp)
+                                }
+                            ></div>
+                        </div>
                         <ul>
                             <li>VsCode</li>
                             <li>Git</li>
@@ -187,6 +224,11 @@ function Home() {
                 <div className="styleTitle"></div>
                 <h2>Services</h2>
             </div>
+            <h3 className="servicesPres">
+                Après avoir aqcuis de nombreuses compétences lors de mes
+                formations et mes différents projets, je suis en mesure de vous
+                proposez ces services
+            </h3>
             <div className="servicesContent">
                 <Services
                     title="Site Vitrine"

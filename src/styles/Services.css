@@ -38,7 +38,7 @@
     cursor: pointer;
     background-color: #4e65c5;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,9 +47,9 @@
 
 .collapse p {
     font-weight: 300;
-    padding: 10px;
+    padding: 8px;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .collapseContainer {
@@ -102,7 +102,7 @@
 }
 
 .vectorDown {
-    font-size: 50px;
+    font-size: 40px;
     transition: transform 0.5s ease;
 }
 
@@ -166,7 +166,6 @@
 
     .collapse {
         margin-top: 10px;
-        border-radius: 5px;
     }
 
     .collapseContent p {

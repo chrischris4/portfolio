@@ -73,8 +73,9 @@ h3 {
 }
 
 .parcours h4 {
-    margin-top: 0px;
-    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 12px;
 }
 
 .parcours {
@@ -87,28 +88,50 @@ h3 {
     display: flex;
     flex-direction: column;
 }
-.adrarP,
-.openClassP {
+
+.parcoursContent {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s ease;
+}
+
+.parcours h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0px;
+    border-top: 3px solid #4e65c5;
+    width: fit-content;
+}
+
+.parcoursP {
     width: 45%;
 }
-.openClassImg,
-.adrarImg {
+
+.parcoursP p {
+    margin: 0;
+}
+
+.parcoursImg {
     border-radius: 10px;
     width: 100%;
 }
-.openClassImg:hover,
-.adrarImg:hover {
+.parcoursImg:hover {
     transform: scale(1.02);
 }
 .overlayParcours h4 {
-    border-top: none;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .overlayParcours p {
-    margin-top: 0;
-    font-size: 15px;
+    margin: 0;
+    font-size: 12px;
 }
 .overlayParcours {
     opacity: 0;
@@ -118,11 +141,9 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     height: 100%;
     width: 100%;
     position: absolute;
-    font-size: 20px;
     transition: opacity 0.5s ease;
 }
 .overlayParcours:hover {
@@ -137,38 +158,8 @@ h3 {
 .parcoursLink:hover {
     transform: scale(1.01);
 }
-.openClass,
-.adrar {
-    padding: 20px;
-    border: 2px solid black;
-    width: 90%;
-    margin: auto;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: 0.5s ease;
-}
-
-.openClass h3 {
-    font-weight: 300;
-    padding-top: 2px;
-    margin: 0px;
-    border-top: 3px solid #4e65c5;
-    width: fit-content;
-}
-
-.adrar h3 {
-    font-weight: 300;
-    margin: 0px;
-    padding-top: 2px;
-    border-top: 3px solid #4e65c5;
-    width: fit-content;
-}
 
 .cv {
-    padding: 15px 0px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -177,7 +168,6 @@ h3 {
     font-family: 'Oswald', sans-serif;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 10px;
     border: 2px solid #fff;
     font-size: 20px;
     padding: 5px 10px;
@@ -191,15 +181,10 @@ h3 {
     color: #000;
     background-color: #4e65c5;
 }
-.frontendImg,
-.backendImg,
-.outilImg {
-    width: 100px;
-    height: 100px;
-}
-#competence {
+
+#competences {
     width: 90%;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 20px;
     justify-content: space-between;
     display: flex;
@@ -207,30 +192,108 @@ h3 {
     margin: auto;
 }
 
-/* .frontendBack {
-    background-color: #4e65c5;
-} */
-ul,
-ol {
-    margin: 0;
-    padding-left: 10px;
-    list-style: none;
-    border-left: 3px solid;
-}
-.frontend,
-.backend,
-.outil {
-    font-weight: 300;
-    height: 250px;
+.competence {
     border-radius: 10px;
-    padding: 30px 0;
-    width: 25%;
+    background-color: #e8eefe6a;
+    width: 30%;
+}
+
+.competenceContent {
+    height: 360px;
+    width: 100%;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.competenceImg {
+    width: 100px;
+    height: 100px;
+}
+
+#competences h3 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#competences ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#competences li {
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: #000;
+    color: white;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
     list-style: none;
-    background-color: #e8eefe6a;
-    transition: 0.5s ease;
+}
+.competenceStyle {
+    margin: 10px 0;
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.competenceVector {
+    opacity: 1;
+    position: absolute;
+    background-color: #000;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    animation: trail 1s linear infinite alternate;
+}
+
+.trailUp {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    animation: trailup 1s linear infinite alternate;
+}
+
+.trailDown {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    animation: traildown 1s linear infinite alternate;
+}
+
+@keyframes trailup {
+    from {
+        opacity: 0;
+        top: 0;
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    to {
+        opacity: 1;
+        top: 100%;
+        transform: scaleY(0.2);
+        transform-origin: top;
+    }
+}
+
+@keyframes traildown {
+    from {
+        opacity: 0;
+        top: 100%;
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+        transform: scaleY(0.2);
+        transform-origin: top;
+    }
 }
 
 .servicesContent {
@@ -241,42 +304,39 @@ ol {
     justify-content: space-between;
 }
 
+.servicesPres {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
 @media screen and (max-width: 991px) {
     .aboutAll {
         width: 75%;
     }
-    .openClass,
-    .adrar {
-        padding: 0 0 20px 0;
-        width: 80%;
+    .parcoursContent {
+        width: 100%;
         flex-direction: column;
     }
-    .adrar {
+    .parcours {
         margin-bottom: 20px;
     }
-    .openClassP,
-    .adrarP {
+    .parcoursP {
         width: 90%;
     }
     .parcoursLink {
+        margin-top: 20px;
         width: 90%;
     }
-    #competence {
+    #competences {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .frontend,
-    .backend,
-    .outil {
+    .competence {
+        margin: 0 10px 20px;
         width: 40%;
-    }
-    .frontend {
-        margin-right: 10px;
-        margin-bottom: 20px;
-    }
-    .backend {
-        margin-left: 10px;
-        margin-bottom: 20px;
     }
 
     .servicesContent {
@@ -331,18 +391,12 @@ ol {
     .parcoursLink {
         border-radius: 5px;
     }
-    .openClass,
-    .adrar {
-        width: 90%;
-    }
 
-    .openClassP,
-    .adrarP p {
+    .parcours p {
         font-size: 14px;
     }
 
-    .openClassImg,
-    .adrarImg {
+    .parcoursImg {
         border-radius: 5px;
     }
     .overlayParcours {
@@ -359,31 +413,59 @@ ol {
     .buttonCv {
         font-size: 15px;
     }
-    #competence {
+    #competences {
         flex-direction: column;
     }
-    .competenceMedia {
-        margin: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 0;
-    }
-    .frontend,
-    .backend,
-    .outil {
-        flex-direction: row;
-        justify-content: space-around;
-        height: fit-content;
-        padding: 30px 0 30px 0;
-        width: 100%;
+    .competence {
+        margin: 0;
+        margin-bottom: 20px;
         border-radius: 5px;
+        width: 100%;
     }
-    .frontend {
-        margin-right: 0;
+    .competenceContent {
+        height: fit-content;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        margin: auto;
+        width: 80%;
     }
-    .backend {
-        margin-left: 0;
+
+    .competenceStyle {
+        margin: 0px 10px;
+        height: 5px;
+        width: 30%;
+    }
+
+    @keyframes trailup {
+        from {
+            opacity: 0;
+            left: 0;
+            transform: scaleY(1);
+            transform-origin: bottom;
+        }
+        to {
+            opacity: 1;
+            left: 100%;
+            transform: scaleY(0.2);
+            transform-origin: top;
+        }
+    }
+
+    @keyframes traildown {
+        from {
+            opacity: 0;
+            left: 100%;
+            transform: scaleY(1);
+            transform-origin: bottom;
+        }
+        to {
+            opacity: 1;
+            left: 0;
+            transform: scaleY(0.2);
+            transform-origin: top;
+        }
     }
 }
