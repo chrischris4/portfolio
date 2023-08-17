@@ -37,7 +37,7 @@
 }
 
 .servicesTop p {
-    width: 66%;
+    width: 68%;
     text-align: center;
     padding-right: 20px;
     font-size: 14px;
@@ -144,6 +144,7 @@
     }
 
     .servicesTop p {
+        width: 80%;
         font-size: 18px;
     }
     .servicesImg {
