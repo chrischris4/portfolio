@@ -20,6 +20,16 @@ function Banner() {
         };
     }, []);
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const bannerColor = document.querySelector('.bannerColor');
+
+        bannerColor.addEventListener('animationend', () => {
+            document.body.style.overflow = 'auto';
+        });
+
+        document.body.style.overflow = 'hidden';
+    });
+
     return (
         <div className="All">
             <div className="bannerAll">

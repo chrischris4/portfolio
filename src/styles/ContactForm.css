@@ -44,11 +44,11 @@
 }
 
 .linkName {
-    margin: 20px;
+    margin: 15px;
 }
 
 .material-symbols-outlined {
-    margin: 20px;
+    margin: 15px;
     font-size: 35px;
 }
 
@@ -56,7 +56,7 @@
     font-size: 15px;
     width: fit-content;
     margin: auto;
-    background-color: #4caf50;
+    background-color: #65ac68;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -101,7 +101,7 @@ input {
 }
 
 input:focus {
-    border: solid #4e65c5;
+    border: solid #758cde55;
     border-width: 4px;
     outline: none;
 }
@@ -128,7 +128,7 @@ textarea {
 }
 
 textarea:focus {
-    border: solid #4e65c5;
+    border: solid #758cde55;
     border-width: 4px;
     outline: none;
 }
@@ -160,8 +160,8 @@ textarea:focus {
 }
 
 .contactButton:hover {
-    border: 2px solid #4e65c5;
-    background-color: #4e65c5;
+    border: 2px solid #758cde55;
+    background-color: #758cde55;
     color: black;
 }
 
@@ -180,7 +180,7 @@ textarea:focus {
     }
 
     .myEmailLink {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .linkName {

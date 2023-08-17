@@ -10,6 +10,8 @@
 }
 
 .overlayMini h3 {
+    transition: transform 0.5s ease;
+    transform: translateY(-80%);
     font-size: 15px;
     margin: 0px;
 }
@@ -32,6 +34,10 @@
 
 .overlayMini:hover {
     opacity: 1;
+}
+
+.overlayMini:hover h3 {
+    transform: translateY(0%);
 }
 
 .overlayTitleMini {

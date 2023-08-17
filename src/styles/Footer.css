@@ -16,11 +16,11 @@
 
 .linkFooter {
     padding-left: 4px;
-    color: #4e65c5;
+    color: #758cde55;
 }
 
 .linkFooter:hover {
-    color: #4e65c5;
+    color: #758cde55;
 }
 
 @media screen and (max-width: 635px) {

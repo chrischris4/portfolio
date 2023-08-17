@@ -8,7 +8,7 @@
 }
 
 .error-404 {
-    color: #6baefa;
+    color: #758cde55;
     margin-top: 66px;
     margin-bottom: 0px;
     height: auto;
@@ -36,7 +36,7 @@
 }
 
 .error-link:hover {
-    background-color: #6baefa;
+    background-color: #758cde55;
 }
 
 @media screen and (max-width: 991px) {

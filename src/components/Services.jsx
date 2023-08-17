@@ -22,15 +22,17 @@ function Services(props) {
 
     return (
         <div className="services">
-            <h3 className="servicesTitle">{props.title}</h3>
-            <div className="servicesTop">
-                <img
-                    className="servicesImg"
-                    src={props.cover}
-                    alt="services"
-                    loading="lazy"
-                />
-                <p>{props.description}</p>
+            <div className="servicesContainer">
+                <h3 className="servicesTitle">{props.title}</h3>
+                <div className="servicesTop">
+                    <img
+                        className="servicesImg"
+                        src={props.cover}
+                        alt="services"
+                        loading="lazy"
+                    />
+                    <p>{props.description}</p>
+                </div>
             </div>
             <div className="collapse" onClick={toggleCollapse}>
                 <p>Plus de détail</p>

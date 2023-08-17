@@ -1,43 +1,61 @@
 .services {
+    border-radius: 10px;
     width: 48%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.servicesTop p {
-    padding-right: 20px;
-    font-size: 14px;
-    margin: 0px;
+.servicesContainer {
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .servicesTop {
+    margin: auto;
+    width: 100%;
+    position: relative;
     display: flex;
     overflow: auto;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
 .servicesTitle {
-    width: fit-content;
-    border-bottom: 3px solid #4e65c5;
+    text-align: center;
+    width: 90%;
     font-weight: 400;
     font-size: 20px;
-    margin: 0px;
+    margin: auto;
     margin-bottom: 10px;
 }
 
+.servicesTop p {
+    width: 90%;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 14px;
+    margin: 0px;
+}
+
 .servicesImg {
+    margin: 10px 0;
     float: right;
     border-radius: 10px;
-    width: 150px;
+    width: 50%;
+    height: 150px;
 }
 
 .collapse {
-    margin-top: 20px;
+    width: 100%;
     cursor: pointer;
-    background-color: #4e65c5;
-    color: white;
+    background-color: #758cde55;
+    color: black;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -68,7 +86,7 @@
 
 .collapseContent {
     background-color: #e8eefe6a;
-    border: 2px solid;
+    border: 1px solid;
     margin: auto;
     width: 95%;
     position: relative;
@@ -117,10 +135,6 @@
         padding-bottom: 0;
     }
 
-    .servicesImg {
-        width: 170px;
-    }
-
     .collapseContainer {
         margin-bottom: 20px;
     }
@@ -132,6 +146,9 @@
     .servicesTop p {
         font-size: 18px;
     }
+    .servicesImg {
+        height: 100%;
+    }
 
     .collapseContent h4 {
         font-size: 26px;
@@ -139,24 +156,22 @@
 }
 
 @media screen and (max-width: 635px) {
+    .servicesContainer {
+        border-radius: 5px;
+    }
+
     .servicesTitle {
         font-size: 18px;
     }
 
     .servicesTop p {
-        font-size: 14px;
+        padding-left: 5px;
+        font-size: 12px;
         margin: 0px;
     }
 
-    .servicesTop {
-        display: block;
-        overflow: auto;
-    }
-
     .servicesImg {
-        float: right;
-        border-radius: 10px;
-        width: 120px;
+        border-radius: 5px;
     }
 
     .collapse p {
@@ -164,12 +179,8 @@
         font-size: 16px;
     }
 
-    .collapse {
-        margin-top: 10px;
-    }
-
     .collapseContent p {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px;
     }
 

@@ -56,7 +56,7 @@ strong {
 
 .pageInfo {
     border-radius: 10px;
-    background-color: #e8eefe;
+    background-color: #6781e069;
     padding: 20px;
     font-size: 18px;
     margin: auto;
@@ -92,7 +92,7 @@ strong {
 }
 
 .projetAbout {
-    background-color: #e8eefe;
+    background-color: #6781e069;
     padding: 20px;
     border-radius: 10px;
     margin: auto;
@@ -106,14 +106,14 @@ strong {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    padding-left: 10px;
     border: none;
 }
 
 .projetTitleAbout {
     padding-left: 5px;
     width: fit-content;
-    border-left: 5px solid #4e65c5;
+    border-left: 5px solid black;
     margin-bottom: -10px;
     display: flex;
 }
@@ -122,16 +122,12 @@ strong {
     padding-left: 10px;
 }
 
-.projetAbout ul {
-    padding-left: 10px;
-}
-
 .projetAbout li {
+    list-style: none;
     color: black;
     background-color: white;
     margin-bottom: 5px;
     margin-right: 10px;
-    text-decoration: none;
     width: fit-content;
     padding: 5px 10px;
     border-radius: 20px;

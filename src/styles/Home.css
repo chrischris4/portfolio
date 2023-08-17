@@ -105,7 +105,7 @@ h3 {
     font-size: 20px;
     font-weight: 300;
     margin: 0px;
-    border-top: 3px solid #4e65c5;
+    border-top: 3px solid #758cde55;
     width: fit-content;
 }
 
@@ -125,11 +125,15 @@ h3 {
     transform: scale(1.02);
 }
 .overlayParcours h4 {
+    transition: transform 0.5s ease;
+    transform: translateY(-80%);
     margin: 0;
     font-size: 18px;
 }
 
 .overlayParcours p {
+    transition: transform 0.5s ease;
+    transform: translateY(-80%);
     margin: 0;
     font-size: 12px;
 }
@@ -150,7 +154,13 @@ h3 {
     opacity: 1;
 }
 
+.overlayParcours:hover p,
+.overlayParcours:hover h4 {
+    transform: translateY(0%);
+}
+
 .parcoursLink {
+    display: flex;
     position: relative;
     transition: transform 0.3s ease;
     width: 45%;
@@ -177,9 +187,9 @@ h3 {
     background-color: #000;
 }
 .buttonCv:hover {
-    border: #4e65c5 solid 2px;
+    border: #758cde55 solid 2px;
     color: #000;
-    background-color: #4e65c5;
+    background-color: #758cde55;
 }
 
 #competences {
@@ -194,18 +204,22 @@ h3 {
 
 .competence {
     border-radius: 10px;
-    background-color: #e8eefe6a;
-    width: 30%;
+    background-color: #758cde55;
+    width: 25%;
 }
 
 .competenceContent {
-    height: 360px;
+    height: 335px;
     width: 100%;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.competenceTop {
+    margin-bottom: 10px;
 }
 
 .competenceImg {
@@ -221,6 +235,7 @@ h3 {
 
 #competences ul {
     margin: 0px;
+    margin-top: 10px;
     padding: 0px;
 }
 
@@ -233,66 +248,56 @@ h3 {
     padding: 5px 10px;
     border-radius: 20px;
     list-style: none;
+    font-size: 14px;
 }
 .competenceStyle {
-    margin: 10px 0;
     position: relative;
-    height: 100%;
+    overflow: hidden;
+    height: 60px;
     display: flex;
+}
+
+.vectorContainer {
+    width: 5px;
+    overflow: hidden;
+    height: 100%;
 }
 
 .competenceVector {
     opacity: 1;
     position: absolute;
+    top: 1px;
     background-color: #000;
-    border-radius: 50%;
+    border-radius: 2px;
     width: 5px;
-    height: 5px;
+    height: 20px;
     display: flex;
-    animation: trail 1s linear infinite alternate;
+    transform: translateY(-50%);
 }
 
-.trailUp {
-    position: absolute;
-    width: 5px;
-    height: 10px;
+.competenceVector.trailUp {
     animation: trailup 1s linear infinite alternate;
 }
 
-.trailDown {
-    position: absolute;
-    width: 5px;
-    height: 10px;
+.competenceVector.trailDown {
     animation: traildown 1s linear infinite alternate;
 }
 
 @keyframes trailup {
     from {
-        opacity: 0;
-        top: 0;
-        transform: scaleY(1);
-        transform-origin: bottom;
+        top: -70%;
     }
     to {
-        opacity: 1;
-        top: 100%;
-        transform: scaleY(0.2);
-        transform-origin: top;
+        top: 170%;
     }
 }
 
 @keyframes traildown {
     from {
-        opacity: 0;
-        top: 100%;
-        transform: scaleY(1);
-        transform-origin: bottom;
+        top: 170%;
     }
     to {
-        opacity: 1;
-        top: 0;
-        transform: scaleY(0.2);
-        transform-origin: top;
+        top: -70%;
     }
 }
 
@@ -302,14 +307,6 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.servicesPres {
-    margin: auto;
-    text-align: center;
-    width: 75%;
-    font-size: 20px;
-    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -396,6 +393,10 @@ h3 {
         font-size: 14px;
     }
 
+    .parcours h3 {
+        font-size: 18px;
+    }
+
     .parcoursImg {
         border-radius: 5px;
     }
@@ -424,7 +425,6 @@ h3 {
     }
     .competenceContent {
         height: fit-content;
-
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -433,39 +433,47 @@ h3 {
         width: 80%;
     }
 
+    .competenceVector.trailUp {
+        animation: trailup 1.5s linear infinite alternate;
+    }
+
+    .competenceVector.trailDown {
+        animation: traildown 1.5s linear infinite alternate;
+    }
+
     .competenceStyle {
         margin: 0px 10px;
         height: 5px;
-        width: 30%;
+        width: 100%;
+    }
+
+    .vectorContainer {
+        width: 100%;
+        overflow: hidden;
+        height: 5px;
+    }
+
+    .competenceVector {
+        width: 20px;
+        height: 5px;
+        transform: translateX(-20%);
     }
 
     @keyframes trailup {
         from {
-            opacity: 0;
-            left: 0;
-            transform: scaleY(1);
-            transform-origin: bottom;
+            left: -50%;
         }
         to {
-            opacity: 1;
-            left: 100%;
-            transform: scaleY(0.2);
-            transform-origin: top;
+            left: 150%;
         }
     }
 
     @keyframes traildown {
         from {
-            opacity: 0;
-            left: 100%;
-            transform: scaleY(1);
-            transform-origin: bottom;
+            left: 150%;
         }
         to {
-            opacity: 1;
-            left: 0;
-            transform: scaleY(0.2);
-            transform-origin: top;
+            left: -50%;
         }
     }
 }

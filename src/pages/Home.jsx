@@ -139,14 +139,16 @@ function Home() {
                             />
                         </div>
                         <div className="competenceStyle">
-                            <div
-                                className={`competenceVector ${
-                                    isUp ? 'trailUp' : 'trailDown'
-                                }`}
-                                onAnimationIteration={() =>
-                                    setIsUp((prevIsUp) => !prevIsUp)
-                                }
-                            ></div>
+                            <div className="vectorContainer">
+                                <div
+                                    className={`competenceVector ${
+                                        isUp ? 'trailUp' : 'trailDown'
+                                    }`}
+                                    onAnimationIteration={() =>
+                                        setIsUp((prevIsUp) => !prevIsUp)
+                                    }
+                                ></div>
+                            </div>
                         </div>
 
                         <ul>
@@ -167,14 +169,16 @@ function Home() {
                             />
                         </div>
                         <div className="competenceStyle">
-                            <div
-                                className={`competenceVector ${
-                                    isUp ? 'trailUp' : 'trailDown'
-                                }`}
-                                onAnimationIteration={() =>
-                                    setIsUp((prevIsUp) => !prevIsUp)
-                                }
-                            ></div>
+                            <div className="vectorContainer">
+                                <div
+                                    className={`competenceVector ${
+                                        isUp ? 'trailUp' : 'trailDown'
+                                    }`}
+                                    onAnimationIteration={() =>
+                                        setIsUp((prevIsUp) => !prevIsUp)
+                                    }
+                                ></div>
+                            </div>
                         </div>
                         <ul>
                             <li>MongoDB</li>
@@ -195,19 +199,20 @@ function Home() {
                             />
                         </div>
                         <div className="competenceStyle">
-                            <div
-                                className={`competenceVector ${
-                                    isUp ? 'trailUp' : 'trailDown'
-                                }`}
-                                onAnimationIteration={() =>
-                                    setIsUp((prevIsUp) => !prevIsUp)
-                                }
-                            ></div>
+                            <div className="vectorContainer">
+                                <div
+                                    className={`competenceVector ${
+                                        isUp ? 'trailUp' : 'trailDown'
+                                    }`}
+                                    onAnimationIteration={() =>
+                                        setIsUp((prevIsUp) => !prevIsUp)
+                                    }
+                                ></div>
+                            </div>
                         </div>
                         <ul>
                             <li>VsCode</li>
                             <li>Git</li>
-                            <li>Postman</li>
                             <li>npm</li>
                         </ul>
                     </div>
@@ -224,24 +229,21 @@ function Home() {
                 <div className="styleTitle"></div>
                 <h2>Services</h2>
             </div>
-            <h3 className="servicesPres">
-                Après avoir aqcuis de nombreuses compétences lors de mes
-                formations et mes différents projets, je suis en mesure de vous
-                proposez ces services
-            </h3>
             <div className="servicesContent">
                 <Services
-                    title="Site Vitrine"
-                    description="Un site adapter à vos besoins, parfaitement ajuster afin de partager au mieux vos convictions à vos visiteurs."
+                    title="Web Devellopement"
+                    description="Devellopement d'applications web Frontend & Backend, sites vitrines."
                     details="un site parfaitement adapter a vos besoins"
                     cover="
-                    https://i.ibb.co/8gHf982/Web-Development-Singgle-06-generated.jpg"
+                    
+"
                 />
                 <Services
                     title="SEO"
-                    description="Optimisation, performance, accéssibilité, les indispensables pour améliorer votre réferencement."
+                    description="Optimisation, performance, accéssibilité, améliorer votre réferencement."
                     details="Optimisation des performance, n'hésitez pas a découvrir le projet SEO sur lequel j'ai travailler en cliquant sur."
-                    cover="https://i.ibb.co/xJjKS2s/Web-Development-Singgle-01-generated.jpg"
+                    cover="
+                    "
                 />
             </div>
 

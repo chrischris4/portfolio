@@ -90,14 +90,13 @@ function Header() {
 
     return (
         <div className={`header ${nightMode ? 'night' : ''}`}>
-            {/* <div className="headerContent"> */}
             <ScrollLink
                 href="topPageLien"
                 to="topPageLink"
                 className="topPage"
                 spy={true}
                 smooth={true}
-                duration={1000}
+                duration={800}
             >
                 <span className="material-symbols-rounded arrow">
                     keyboard_arrow_up
@@ -138,7 +137,7 @@ function Header() {
                                 className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
-                                duration={1000}
+                                duration={800}
                                 onClick={closeMenu}
                             >
                                 À propos
@@ -149,7 +148,7 @@ function Header() {
                                 className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
-                                duration={1000}
+                                duration={800}
                                 onClick={closeMenu}
                             >
                                 Parcours
@@ -160,7 +159,7 @@ function Header() {
                                 className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
-                                duration={1000}
+                                duration={800}
                                 onClick={closeMenu}
                             >
                                 Compétences
@@ -171,7 +170,7 @@ function Header() {
                                 className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
-                                duration={1000}
+                                duration={800}
                                 onClick={closeMenu}
                             >
                                 Projets
@@ -182,7 +181,7 @@ function Header() {
                                 className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
-                                duration={1000}
+                                duration={800}
                                 onClick={closeMenu}
                             >
                                 Services
@@ -204,7 +203,7 @@ function Header() {
                                 className={`link ${nightMode ? 'night' : ''}`}
                                 spy={true}
                                 smooth={true}
-                                duration={1000}
+                                duration={800}
                                 onClick={closeMenu}
                             >
                                 Autres Projets
@@ -217,7 +216,7 @@ function Header() {
                         className={`link ${nightMode ? 'night' : ''}`}
                         spy={true}
                         smooth={true}
-                        duration={1000}
+                        duration={800}
                         onClick={closeMenu}
                     >
                         Réseaux
@@ -228,7 +227,7 @@ function Header() {
                         className={`link ${nightMode ? 'night' : ''}`}
                         spy={true}
                         smooth={true}
-                        duration={1000}
+                        duration={800}
                         onClick={closeMenu}
                     >
                         Contact
@@ -259,7 +258,6 @@ function Header() {
                     </div>
                 </nav>
             )}
-            {/* </div> */}
         </div>
     );
 }
