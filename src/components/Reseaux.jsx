@@ -13,7 +13,7 @@ function Reseaux(props) {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Linkedin
+                    <p>Linkedin</p>
                     <img
                         className="linkedinImg"
                         src="https://i.ibb.co/SQVK6tV/linkedin.webp"
@@ -26,7 +26,7 @@ function Reseaux(props) {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Skype
+                    <p>Skype</p>
                     <img
                         className="skypeImg"
                         src="https://i.ibb.co/XkqgcnJ/skype.webp"
@@ -39,7 +39,7 @@ function Reseaux(props) {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Github
+                    <p>Github</p>
                     <img
                         className="githubImgReseaux"
                         src="https://i.ibb.co/6ZxjDxV/github.webp"

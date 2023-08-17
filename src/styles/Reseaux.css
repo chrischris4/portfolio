@@ -25,6 +25,10 @@
     align-content: center;
 }
 
+.reseauxLinks p {
+    margin: 0px;
+}
+
 .linkedinLink {
     background-color: #0084b1;
 }
@@ -63,7 +67,7 @@
     align-items: center;
     margin: 10px;
     color: white;
-    padding: 15px 15px;
+    padding: 15px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -103,18 +107,24 @@
     .skypeLink,
     .githubLinkReseaux {
         margin: 5px;
-        width: 75%;
+        width: 90%;
         font-size: 20px;
+        padding: 0px;
     }
 
     .skypeImg,
     .linkedinImg,
     .githubImgReseaux {
-        width: 29px;
+        width: 35px;
+        margin-right: 15px;
     }
 
     .reseauxLinks {
         height: fit-content;
+    }
+
+    .reseauxLinks p {
+        margin: 15px;
     }
 
     .githubLinkReseaux {
