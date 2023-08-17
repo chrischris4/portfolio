@@ -86,8 +86,8 @@
 }
 
 @media screen and (max-width: 991px) {
-    .reseauxForm p {
-        font-size: 30px;
+    .reseauxP {
+        text-align: left;
     }
 
     .linkedinLink,
