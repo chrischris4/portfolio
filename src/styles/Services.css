@@ -36,7 +36,7 @@
 }
 
 .servicesTop p {
-    width: 90%;
+    width: 75%;
     text-align: center;
     padding-right: 20px;
     font-size: 14px;
@@ -47,8 +47,7 @@
     margin: 10px 0;
     float: right;
     border-radius: 10px;
-    width: 50%;
-    height: 150px;
+    width: 40%;
 }
 
 .collapse {
@@ -148,7 +147,7 @@
         font-size: 18px;
     }
     .servicesImg {
-        height: 100%;
+        width: 30%;
     }
 
     .collapseContent h4 {
@@ -169,10 +168,6 @@
         padding-left: 5px;
         font-size: 12px;
         margin: 0px;
-    }
-
-    .servicesImg {
-        border-radius: 5px;
     }
 
     .collapse p {

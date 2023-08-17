@@ -133,7 +133,7 @@ function Home() {
                             <h3>Frontend</h3>
                             <img
                                 className="competenceImg"
-                                src="https://i.ibb.co/DfSx4x0/frontend-min.webp"
+                                src="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
                                 alt="illustration frontend"
                                 loading="lazy"
                             />
@@ -163,7 +163,7 @@ function Home() {
                             <h3>Backend</h3>
                             <img
                                 className="competenceImg"
-                                src="https://i.ibb.co/kyyvCVN/backend-min.webp"
+                                src="https://i.ibb.co/427cG02/server-5993206.png"
                                 alt="illustration backend"
                                 loading="lazy"
                             />
@@ -193,7 +193,7 @@ function Home() {
                             <h3>Outils</h3>
                             <img
                                 className="competenceImg"
-                                src="https://i.ibb.co/CsV5Cdq/outil-min.webp"
+                                src="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
                                 alt="illustration outil"
                                 loading="lazy"
                             />
@@ -234,7 +234,7 @@ function Home() {
                     title="Web Devellopement"
                     description="Devellopement d'applications web Frontend & Backend, sites vitrines."
                     details="un site parfaitement adapter a vos besoins"
-                    cover="
+                    cover="https://i.ibb.co/xXvzsHp/application.png
                     
 "
                 />
@@ -242,7 +242,7 @@ function Home() {
                     title="SEO"
                     description="Optimisation, performance, accéssibilité, améliorer votre réferencement."
                     details="Optimisation des performance, n'hésitez pas a découvrir le projet SEO sur lequel j'ai travailler en cliquant sur."
-                    cover="
+                    cover="https://i.ibb.co/h9j9H7t/ux.png
                     "
                 />
             </div>
