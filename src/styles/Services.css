@@ -28,7 +28,8 @@
 
 .servicesTitle {
     text-align: center;
-    width: 90%;
+    border-top: 3px solid #dee0ed;
+    width: fit-content;
     font-weight: 400;
     font-size: 20px;
     margin: auto;
@@ -53,7 +54,7 @@
 .collapse {
     width: 100%;
     cursor: pointer;
-    background-color: #c0c0d9;
+    background-color: #dee0ed;
     color: black;
     border-radius: 5px;
     display: flex;
@@ -86,7 +87,6 @@
 .collapseContent {
     color: white;
     background-color: black;
-    border: 1px solid;
     margin: auto;
     width: 95%;
     position: relative;

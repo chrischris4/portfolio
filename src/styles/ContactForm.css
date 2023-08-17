@@ -111,6 +111,7 @@ input {
 }
 
 textarea {
+    resize: none;
     height: 140px;
     margin-bottom: 20px;
 }
