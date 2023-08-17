@@ -24,7 +24,7 @@
     display: flex;
     justify-content: flex-end;
     width: 25%;
-    background-color: #758cde55;
+    background-color: #c0c0d9;
     border-radius: 0px 10px 10px 0px;
     opacity: 0;
     transform: translateX(100%);
@@ -107,9 +107,9 @@ h1 {
 }
 
 .bannerLink:hover {
-    border: 2px solid #758cde55;
+    border: 2px solid #c0c0d9;
     color: black;
-    background-color: #758cde55;
+    background-color: #c0c0d9;
 }
 
 .bannerAbout {

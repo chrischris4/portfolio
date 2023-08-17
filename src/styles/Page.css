@@ -55,8 +55,9 @@ strong {
 }
 
 .pageInfo {
+    color: black;
     border-radius: 10px;
-    background-color: #6781e069;
+    background-color: #c0c0d9;
     padding: 20px;
     font-size: 18px;
     margin: auto;
@@ -92,7 +93,8 @@ strong {
 }
 
 .projetAbout {
-    background-color: #6781e069;
+    color: #000;
+    background-color: #c0c0d9;
     padding: 20px;
     border-radius: 10px;
     margin: auto;

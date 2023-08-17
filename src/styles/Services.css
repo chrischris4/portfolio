@@ -54,7 +54,7 @@
 .collapse {
     width: 100%;
     cursor: pointer;
-    background-color: #758cde55;
+    background-color: #c0c0d9;
     color: black;
     border-radius: 5px;
     display: flex;
@@ -85,7 +85,8 @@
 }
 
 .collapseContent {
-    background-color: #e8eefe6a;
+    color: white;
+    background-color: black;
     border: 1px solid;
     margin: auto;
     width: 95%;
