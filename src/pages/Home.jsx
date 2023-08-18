@@ -256,19 +256,35 @@ function Home() {
             </div>
             <div className="servicesContent">
                 <Services
-                    title="Web Devellopement"
-                    description="Devellopement d'applications web Frontend & Backend, sites vitrines."
-                    details="un site parfaitement adapter a vos besoins"
-                    cover="https://i.ibb.co/xXvzsHp/application.png
-                    
-"
+                    title="Web Dévellopement"
+                    description="Dévellopement d'applications web Frontend & Backend, sites vitrines."
+                    cover="https://i.ibb.co/0Kz4zHD/responsive-1055687.png"
+                    listTitle="Langages :"
+                    list={['HTML / CSS', 'React', 'JavaScript', 'MongoDB']}
+                    listTitle2="Dévellopement :"
+                    list2={[
+                        'Création dapplication avec React.js',
+                        'Mise en place / utilisation dune API',
+                        'Mise en place / utilisation dune base de données',
+                    ]}
+                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
+                    link={['/MonVieuxGrimoire', '/Kasa']}
                 />
                 <Services
                     title="SEO"
                     description="Optimisation, performance, accéssibilité, améliorer votre réferencement."
-                    details="Optimisation des performance, n'hésitez pas a découvrir le projet SEO sur lequel j'ai travailler en cliquant sur."
-                    cover="https://i.ibb.co/h9j9H7t/ux.png
-                    "
+                    cover="https://i.ibb.co/h9j9H7t/ux.png"
+                    listTitle="Outils :"
+                    list={['Pagespeed', 'Wave']}
+                    listTitle2="Améliorations :"
+                    list2={[
+                        'Optimisation des balises meta',
+                        'Minification du code',
+                        'Mise en place des Richsnippet',
+                        'Optimisation des images (format, dimensions)',
+                    ]}
+                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
+                    link={['/NinaCarducci']}
                 />
             </div>
 

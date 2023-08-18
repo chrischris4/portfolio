@@ -77,7 +77,7 @@
 }
 
 .collapseContainer.open {
-    max-height: 810px;
+    max-height: 395px;
 }
 
 .collapseContainer.close {
@@ -97,7 +97,8 @@
 }
 
 .collapseContent.open {
-    transform: translateY(-5%);
+    padding: 5px 0 20px 0;
+    transform: translateY(-2%);
     display: flex;
     opacity: 1;
 }
@@ -108,15 +109,75 @@
 }
 
 .collapseContent h4 {
+    font-weight: 400;
     padding: 0px 20px;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin: 10px 0;
     font-size: 18px;
 }
 
-.collapseContent p {
-    padding: 20px;
+.btnUl {
+    padding: 0px 20px;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.btnLi {
+    font-size: 14px;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0 5px 5px 0;
+}
+
+.normalUl {
+    padding: 0px 20px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.normalLi {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 300;
+    color: white;
+}
+
+.styleCollapseContent {
+    margin: auto;
+    margin-top: 20px;
+    height: 3px;
+    width: 50%;
+    border-radius: 2px;
+    background-color: #dee0ed;
+}
+
+.collapseContent p {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.linksCollapse {
+    justify-content: space-around;
+    display: flex;
+}
+
+.linkCollapse {
+    border-bottom: 3px solid #dee0ed;
+    transition: border-bottom 0.5s ease;
+}
+
+.linkCollapse:hover {
+    color: #dee0ed;
+    border-bottom: 3px solid black;
 }
 
 .vectorDown {
@@ -131,12 +192,20 @@
 @media screen and (max-width: 991px) {
     .services {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         padding-bottom: 0;
+    }
+
+    .collapse p {
+        font-size: 22px;
     }
 
     .collapseContainer {
         margin-bottom: 20px;
+    }
+
+    .collapseContainer.open {
+        max-height: 395px;
     }
 
     .servicesTitle {
@@ -176,6 +245,10 @@
         font-size: 16px;
     }
 
+    .collapseContainer.open {
+        max-height: 465px;
+    }
+
     .collapseContent p {
         font-size: 12px;
         padding: 10px;
@@ -184,6 +257,14 @@
     .collapseContent h4 {
         padding: 0px 10px;
         font-size: 18px;
+    }
+
+    .btnUl {
+        padding: 0 10px;
+    }
+
+    .normalUl {
+        margin: 0px 10px;
     }
 
     .vectorDown {
