@@ -179,7 +179,7 @@ function Home() {
 
                         <ul>
                             <li>HTML/CSS</li>
-                            <li>React.JS</li>
+                            <li>React.js</li>
                         </ul>
                     </div>
                 </div>
@@ -261,12 +261,13 @@ function Home() {
                     description="Développement d'applications web Frontend & Backend, sites vitrines."
                     cover="https://i.ibb.co/0Kz4zHD/responsive-1055687.png"
                     listTitle="Langages :"
-                    list={['HTML / CSS', 'React', 'JavaScript', 'MongoDB']}
+                    list={['HTML/CSS', 'React', 'JavaScript', 'MongoDB']}
                     listTitle2="Développement :"
                     list2={[
-                        'Création dapplication avec React.js',
-                        'Mise en place / utilisation dune API',
-                        'Mise en place / utilisation dune base de données',
+                        "Création d'application avec React.js",
+                        "Mise en place / utilisation d'une API",
+                        'Manipuler des données en format JSON',
+                        "Mise en place / utilisation d'une base de données",
                     ]}
                     p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
                     link={['/MonVieuxGrimoire', '/Kasa']}

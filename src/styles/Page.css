@@ -173,10 +173,6 @@ strong {
         width: 75%;
     }
 
-    .pProjetAbout {
-        width: 100%;
-    }
-
     .others {
         width: 95%;
     }
@@ -219,12 +215,13 @@ strong {
     }
 
     .pageInfo {
+        border-radius: 5px;
         width: 80%;
         margin-top: 30px;
         flex-direction: column;
     }
     .pageInfo p {
-        font-size: 15px;
+        font-size: 14px;
         padding: 0;
         margin-top: 10px;
         border-left: 0;
@@ -237,7 +234,7 @@ strong {
     }
 
     .pProjetAbout {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .projetTitleAbout {
@@ -246,7 +243,7 @@ strong {
 
     .projetAbout li {
         margin-right: 5px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .projetAbout {
