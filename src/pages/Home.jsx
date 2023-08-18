@@ -67,8 +67,9 @@ function Home() {
                         <strong> Développeur</strong> de 28 ans, je vous invite
                         à en découvrir d'avantage sur moi et mon travail, vous
                         retrouverez ici mon <strong>parcours</strong>, mes
-                        <strong> compétences</strong> ainsi que mes
-                        <strong> projets</strong>.
+                        <strong> compétences</strong>, mes
+                        <strong> projets</strong> ainsi que mes{' '}
+                        <strong>services</strong>.
                     </p>
                     <h3> Bonne visite !</h3>
                 </div>
@@ -283,7 +284,7 @@ function Home() {
                         'Mise en place des Richsnippet',
                         'Optimisation des images (format, dimensions)',
                     ]}
-                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
+                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ce projet :"
                     link={['/NinaCarducci']}
                 />
             </div>
