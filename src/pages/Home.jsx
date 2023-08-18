@@ -257,12 +257,12 @@ function Home() {
             </div>
             <div className="servicesContent">
                 <Services
-                    title="Web Dévellopement"
-                    description="Dévellopement d'applications web Frontend & Backend, sites vitrines."
+                    title="Web Développement"
+                    description="Développement d'applications web Frontend & Backend, sites vitrines."
                     cover="https://i.ibb.co/0Kz4zHD/responsive-1055687.png"
                     listTitle="Langages :"
                     list={['HTML / CSS', 'React', 'JavaScript', 'MongoDB']}
-                    listTitle2="Dévellopement :"
+                    listTitle2="Développement :"
                     list2={[
                         'Création dapplication avec React.js',
                         'Mise en place / utilisation dune API',
