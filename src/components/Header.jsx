@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import '../styles/Header.css';
 import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import { ThemeContext } from '../components/ThemeSombre';
 
 function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -64,32 +65,32 @@ function Header() {
         }
     });
 
-    const [nightMode, setNightMode] = useState(false);
-    function NightTheme() {
-        const vector = document.querySelector('.nightShiftVector');
-        const header = document.querySelector('.header');
-        const menu = document.querySelector('.burgerMenu');
-        const links = document.querySelectorAll('.link');
-        const lines = document.querySelectorAll('.line');
+    const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+    const [theme, setTheme] = useState(
+        localStorage.getItem('theme') || 'light'
+    );
 
-        vector.classList.toggle('on');
-        header.classList.toggle('night');
-        menu.classList.toggle('night');
+    useEffect(() => {
+        if (isDarkTheme) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }, [isDarkTheme]);
 
-        links.forEach((link) => {
-            link.classList.toggle('night');
-        });
-        lines.forEach((line) => {
-            line.classList.toggle('night');
-        });
+    useEffect(() => {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
+        }
+    }, []);
 
-        document.body.classList.toggle('night');
-        setNightMode((currentNightMode) => !currentNightMode);
-        sessionStorage.setItem('nightMode', !nightMode);
-    }
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
 
     return (
-        <div className={`header ${nightMode ? 'night' : ''}`}>
+        <div className={`header ${theme === 'dark' ? 'night' : ''}`}>
             <ScrollLink
                 href="topPageLien"
                 to="topPageLink"
@@ -113,7 +114,9 @@ function Header() {
             )}
 
             <div
-                className={`menuBurger ${isMenuOpen ? 'open' : ''}`}
+                className={`menuBurger ${isMenuOpen ? 'open ' : ''}${
+                    theme === 'dark' ? 'night' : ''
+                }`}
                 onClick={toggleMenu}
             >
                 <div className="line line1"></div>
@@ -126,7 +129,7 @@ function Header() {
             {isMenuOpen && (
                 <nav
                     className={`burgerMenu ${isMenuOpen ? 'open' : ''} ${
-                        nightMode ? 'night' : ''
+                        theme === 'dark' ? 'night' : ''
                     }`}
                 >
                     {linksHome && (
@@ -134,7 +137,9 @@ function Header() {
                             <ScrollLink
                                 href="aboutLien"
                                 to="aboutLien"
-                                className={`link ${nightMode ? 'night' : ''}`}
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
                                 spy={true}
                                 smooth={true}
                                 duration={800}
@@ -145,7 +150,9 @@ function Header() {
                             <ScrollLink
                                 href="parcoursLien"
                                 to="parcoursLien"
-                                className={`link ${nightMode ? 'night' : ''}`}
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
                                 spy={true}
                                 smooth={true}
                                 duration={800}
@@ -156,7 +163,9 @@ function Header() {
                             <ScrollLink
                                 href="competenceLien"
                                 to="competenceLien"
-                                className={`link ${nightMode ? 'night' : ''}`}
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
                                 spy={true}
                                 smooth={true}
                                 duration={800}
@@ -167,7 +176,9 @@ function Header() {
                             <ScrollLink
                                 href="projectLien"
                                 to="projectLien"
-                                className={`link ${nightMode ? 'night' : ''}`}
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
                                 spy={true}
                                 smooth={true}
                                 duration={800}
@@ -178,7 +189,9 @@ function Header() {
                             <ScrollLink
                                 href="servicesLien"
                                 to="servicesLien"
-                                className={`link ${nightMode ? 'night' : ''}`}
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
                                 spy={true}
                                 smooth={true}
                                 duration={800}
@@ -192,7 +205,9 @@ function Header() {
                         <>
                             <RouterLink
                                 to={`/`}
-                                className={`link ${nightMode ? 'night' : ''}`}
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
                                 onClick={closeMenu}
                             >
                                 Accueil
@@ -200,7 +215,9 @@ function Header() {
                             <ScrollLink
                                 href="othersLien"
                                 to="othersLien"
-                                className={`link ${nightMode ? 'night' : ''}`}
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
                                 spy={true}
                                 smooth={true}
                                 duration={800}
@@ -213,7 +230,7 @@ function Header() {
                     <ScrollLink
                         href="reseauxLien"
                         to="reseauxLien"
-                        className={`link ${nightMode ? 'night' : ''}`}
+                        className={`link ${theme === 'dark' ? 'night' : ''}`}
                         spy={true}
                         smooth={true}
                         duration={800}
@@ -224,7 +241,7 @@ function Header() {
                     <ScrollLink
                         href="contactLien"
                         to="contactLien"
-                        className={`link ${nightMode ? 'night' : ''}`}
+                        className={`link ${theme === 'dark' ? 'night' : ''}`}
                         spy={true}
                         smooth={true}
                         duration={800}
@@ -233,7 +250,7 @@ function Header() {
                         Contact
                     </ScrollLink>
                     <RouterLink
-                        className={`link ${nightMode ? 'night' : ''}`}
+                        className={`link ${theme === 'dark' ? 'night' : ''}`}
                         to={`https://github.com/chrischris4/`}
                         target="_blank"
                         rel="noreferrer"
@@ -241,14 +258,18 @@ function Header() {
                     >
                         GitHub
                     </RouterLink>
-                    <div className={`nightShift ${nightMode ? 'night' : ''}`}>
+                    <div
+                        className={`nightShift ${
+                            theme === 'dark' ? 'night' : ''
+                        }`}
+                    >
                         <span className="material-symbols-rounded">
                             light_mode
                         </span>
-                        <button className="nightShiftBtn" onClick={NightTheme}>
+                        <button className="nightShiftBtn" onClick={toggleTheme}>
                             <div
-                                className={` nightShiftVector ${
-                                    nightMode ? 'on' : ''
+                                className={`nightShiftVector ${
+                                    theme === 'dark' ? 'on' : ''
                                 }`}
                             ></div>
                         </button>

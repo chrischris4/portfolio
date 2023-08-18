@@ -3,6 +3,7 @@
     flex-direction: column;
     margin: auto;
     width: 100%;
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 h2 {
@@ -33,9 +34,6 @@ h3 {
     flex-direction: column;
 }
 
-.about.night {
-    background-color: #383e42;
-}
 .about h3 {
     width: 90%;
     margin-bottom: 0;

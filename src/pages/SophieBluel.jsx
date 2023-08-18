@@ -1,16 +1,42 @@
-import { useEffect } from 'react';
+import { useEffect, useContext, useState } from 'react';
 import '../styles/Page.css';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
 import Reseaux from '../components/Reseaux';
+import { ThemeContext } from '../components/ThemeSombre';
 
 function SophieBluel() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const { isDarkTheme } = useContext(ThemeContext);
+    const [theme, setTheme] = useState(
+        localStorage.getItem('theme') || 'light'
+    );
+
+    useEffect(() => {
+        if (isDarkTheme) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }, [isDarkTheme]);
+
+    useEffect(() => {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
     return (
-        <div className="pageProject">
+        <div className={`page-container ${theme === 'dark' ? 'night' : ''}`}>
             <MetaTagsComponent
                 title="Sophie Bluel - Designer"
                 description="Projet frontend, requête via API, javaScript"

@@ -10,27 +10,33 @@ import Kasa from './pages/Kasa';
 import MonVieuxGrimoire from './pages/MonVieuxGrimoire';
 import NinaCarducci from './pages/NinaCarducci';
 import SophieBluel from './pages/SophieBluel';
+import ThemeSombre from './components/ThemeSombre';
 
 function App() {
     return (
-        <HelmetProvider>
-	        <Router>
-	            <Header />
-	            <Routes>
-	                <Route path="/" element={<Home />} />
-	                <Route path="/Booki" element={<Booki />} />
-	                <Route path="/Kasa" element={<Kasa />} />
-	                <Route path="/SophieBluel" element={<SophieBluel />} />
-	                <Route path="/NinaCarducci" element={<NinaCarducci />} />
-	                <Route
-	                    path="/MonVieuxGrimoire"
-	                    element={<MonVieuxGrimoire />}
-	                />
-	                <Route path="/*" element={<Error404 />} />
-	            </Routes>
-	            <Footer />
-	        </Router>
-        </HelmetProvider>
+        <ThemeSombre>
+            <HelmetProvider>
+                <Router>
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/Booki" element={<Booki />} />
+                        <Route path="/Kasa" element={<Kasa />} />
+                        <Route path="/SophieBluel" element={<SophieBluel />} />
+                        <Route
+                            path="/NinaCarducci"
+                            element={<NinaCarducci />}
+                        />
+                        <Route
+                            path="/MonVieuxGrimoire"
+                            element={<MonVieuxGrimoire />}
+                        />
+                        <Route path="/*" element={<Error404 />} />
+                    </Routes>
+                    <Footer />
+                </Router>
+            </HelmetProvider>
+        </ThemeSombre>
     );
 }
 

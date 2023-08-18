@@ -21,10 +21,6 @@
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* .headerContent {
-    display: flex;
-} */
-
 .night {
     background-color: #282a2c;
     color: white;
@@ -133,7 +129,7 @@
     flex-direction: column;
 }
 
-.menuBurger .line {
+.line {
     border-radius: 2px;
     transition: transform 0.3s ease, background-color 0.5s ease;
     background-color: black;
@@ -142,19 +138,19 @@
     margin: 3px 0;
 }
 
-.line.night {
+.night .line {
     background-color: white;
 }
 
-.menuBurger.open .line1 {
+.open .line1 {
     transform: rotate(-45deg) translate(-5px, 7px);
 }
 
-.menuBurger.open .line2 {
+.open .line2 {
     opacity: 0;
 }
 
-.menuBurger.open .line3 {
+.open .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 

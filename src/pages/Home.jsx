@@ -1,12 +1,13 @@
 import Banner from '../components/Banner';
 import '../styles/Home.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import AllProject from '../components/AllProject';
 import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
 import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import Reseaux from '../components/Reseaux';
 import Services from '../components/Services';
+import { ThemeContext } from '../components/ThemeSombre';
 
 function Home() {
     useEffect(() => {
@@ -15,8 +16,32 @@ function Home() {
 
     const [isUp, setIsUp] = useState(false);
 
+    const { isDarkTheme } = useContext(ThemeContext);
+    const [theme, setTheme] = useState(
+        localStorage.getItem('theme') || 'light'
+    );
+
+    useEffect(() => {
+        if (isDarkTheme) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }, [isDarkTheme]);
+
+    useEffect(() => {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
     return (
-        <div className="page-container">
+        <div className={`page-container ${theme === 'dark' ? 'night' : ''}`}>
             <MetaTagsComponent
                 title="Portfolio - JOST Christopher"
                 description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
