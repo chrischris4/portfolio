@@ -103,7 +103,7 @@ h3 {
     font-size: 20px;
     font-weight: 300;
     margin: 0px;
-    border-top: 3px solid #c0c0d9;
+    border-top: 3px solid #aaacbe;
     width: fit-content;
 }
 
@@ -185,9 +185,9 @@ h3 {
     background-color: #000;
 }
 .buttonCv:hover {
-    border: #c0c0d9 solid 2px;
+    border: #aaacbe solid 2px;
     color: #000;
-    background-color: #c0c0d9;
+    background-color: #aaacbe;
 }
 
 #competences {
@@ -202,7 +202,7 @@ h3 {
 
 .competence {
     border-radius: 10px;
-    background-color: #c0c0d9;
+    background-color: #aaacbe;
     width: 25%;
 }
 

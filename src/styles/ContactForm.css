@@ -118,7 +118,7 @@ textarea {
 
 textarea:focus,
 input:focus {
-    border: solid #c0c0d9;
+    border: solid #aaacbe;
     border-width: 4px;
     outline: none;
 }
@@ -150,8 +150,8 @@ input:focus {
 }
 
 .contactButton:hover {
-    border: 2px solid #c0c0d9;
-    background-color: #c0c0d9;
+    border: 2px solid #aaacbe;
+    background-color: #aaacbe;
     color: black;
 }
 
