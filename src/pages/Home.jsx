@@ -88,7 +88,7 @@ function Home() {
                         <p>
                             {' '}
                             Formation découverte sur le métier de Développeur
-                            web.
+                            web
                         </p>
                     </div>
                     <a
