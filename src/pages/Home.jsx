@@ -154,16 +154,14 @@ function Home() {
             </div>
             <div id="competences">
                 <div className="competence">
+                    <h3>Frontend</h3>
                     <div className="competenceContent">
-                        <div className="competenceTop">
-                            <h3>Frontend</h3>
-                            <img
-                                className="competenceImg"
-                                src="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
-                                alt="illustration frontend"
-                                loading="lazy"
-                            />
-                        </div>
+                        <img
+                            className="competenceImg"
+                            src="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
+                            alt="illustration frontend"
+                            loading="lazy"
+                        />
                         <div className="competenceStyle">
                             <div className="vectorContainer">
                                 <div
@@ -176,7 +174,6 @@ function Home() {
                                 ></div>
                             </div>
                         </div>
-
                         <ul>
                             <li>HTML/CSS</li>
                             <li>React.js</li>
@@ -184,16 +181,14 @@ function Home() {
                     </div>
                 </div>
                 <div className="competence">
+                    <h3>Backend</h3>
                     <div className="competenceContent">
-                        <div className="competenceTop">
-                            <h3>Backend</h3>
-                            <img
-                                className="competenceImg"
-                                src="https://i.ibb.co/427cG02/server-5993206.png"
-                                alt="illustration backend"
-                                loading="lazy"
-                            />
-                        </div>
+                        <img
+                            className="competenceImg"
+                            src="https://i.ibb.co/427cG02/server-5993206.png"
+                            alt="illustration backend"
+                            loading="lazy"
+                        />
                         <div className="competenceStyle">
                             <div className="vectorContainer">
                                 <div
@@ -214,16 +209,14 @@ function Home() {
                     </div>
                 </div>
                 <div className="competence">
+                    <h3>Outils</h3>
                     <div className="competenceContent">
-                        <div className="competenceTop">
-                            <h3>Outils</h3>
-                            <img
-                                className="competenceImg"
-                                src="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
-                                alt="illustration outil"
-                                loading="lazy"
-                            />
-                        </div>
+                        <img
+                            className="competenceImg"
+                            src="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
+                            alt="illustration outil"
+                            loading="lazy"
+                        />
                         <div className="competenceStyle">
                             <div className="vectorContainer">
                                 <div
