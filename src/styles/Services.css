@@ -33,7 +33,6 @@
     font-weight: 400;
     font-size: 20px;
     margin: auto;
-    margin-bottom: 10px;
 }
 
 .servicesTop p {
@@ -45,7 +44,7 @@
 }
 
 .servicesImg {
-    margin: 10px 0;
+    margin: 5px 0;
     float: right;
     border-radius: 10px;
     width: 40%;
