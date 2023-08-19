@@ -422,11 +422,20 @@ h3 {
     #competences {
         flex-direction: column;
     }
+
+    #competences ul {
+        margin-top: 0px;
+    }
+
     .competence {
         margin: 0;
         margin-bottom: 20px;
         border-radius: 5px;
         width: 100%;
+    }
+
+    .competenceTop {
+        margin-bottom: 0;
     }
     .competenceContent {
         padding: 10px 0;

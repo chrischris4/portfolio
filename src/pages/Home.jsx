@@ -237,8 +237,8 @@ function Home() {
                             </div>
                         </div>
                         <ul>
-                            <li>VsCode</li>
                             <li>Git</li>
+                            <li>VsCode</li>
                             <li>npm</li>
                         </ul>
                     </div>
