@@ -47,64 +47,6 @@ h3 {
     width: 100%;
 }
 
-.animateRight {
-    animation: slideFromRight 1s ease forwards;
-}
-
-@keyframes slideFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.animateLeft {
-    animation: slideFromLeft 1s ease forwards;
-}
-
-@keyframes slideFromLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.animateUp {
-    animation: slideFromUp 1s ease forwards;
-}
-
-@keyframes slideFromUp {
-    0% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate {
-    animation: appear 0.2s ease forwards;
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .pAbout {
     padding-left: 10px;
     border-left: 3px solid;

@@ -17,3 +17,46 @@ a {
     background-color: #282a2c;
     color: white;
 }
+
+.animateRight {
+    animation: slideFromRight 1.5s ease forwards;
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animateLeft {
+    animation: slideFromLeft 1.5s ease forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate {
+    animation: appear 1s ease forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

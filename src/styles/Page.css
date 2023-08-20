@@ -33,6 +33,19 @@ strong {
     background-color: black;
 }
 
+.projetAbout {
+    color: #000;
+    background-color: #aaacbe;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .pageh1 {
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
@@ -50,6 +63,7 @@ strong {
 }
 
 .pageInfo {
+    opacity: 0;
     color: black;
     border-radius: 10px;
     background-color: #aaacbe;
@@ -87,18 +101,6 @@ strong {
     color: black;
 }
 
-.projetAbout {
-    color: #000;
-    background-color: #aaacbe;
-    padding: 20px;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 20px;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 .projetAbout ul {
     margin-top: 20px;
     display: flex;
@@ -142,6 +144,7 @@ strong {
 }
 
 .othersMini {
+    opacity: 0;
     margin-bottom: 20px;
     width: 31%;
 }

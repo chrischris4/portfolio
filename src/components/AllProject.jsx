@@ -1,5 +1,6 @@
 import '../styles/AllProject.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from '../components/ThemeSombre';
 import Project from './Project';
 
 function AllProject() {
@@ -36,8 +37,39 @@ function AllProject() {
         });
     }, []);
 
+    const { isDarkTheme } = useContext(ThemeContext);
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
+
+    useEffect(() => {
+        if (isDarkTheme) {
+            setTheme('dark');
+        } else {
+            setTheme('');
+        }
+    }, [isDarkTheme]);
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 1,
+        }
+    );
+
+    const elementsToAnimateRight = document.querySelectorAll('.filter');
+
+    elementsToAnimateRight.forEach((element) => {
+        observer.observe(element);
+    });
+
     return (
-        <div id="project">
+        <div id={`project${theme === ' dark' ? ' night' : ''}`}>
             <div className="filter">
                 <button
                     className={`buttonFilter ${

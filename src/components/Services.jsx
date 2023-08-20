@@ -1,6 +1,7 @@
 import '../styles/Services.css';
 import { Link as RouterLink } from 'react-router-dom';
-import React, { useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from '../components/ThemeSombre';
 
 function Services(props) {
     const [CollapseOpen, setCollapseOpen] = useState(false);
@@ -27,8 +28,39 @@ function Services(props) {
         '/NinaCarducci': 'Projet SEO',
     };
 
+    const { isDarkTheme } = useContext(ThemeContext);
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
+
+    useEffect(() => {
+        if (isDarkTheme) {
+            setTheme('dark');
+        } else {
+            setTheme('');
+        }
+    }, [isDarkTheme]);
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.3,
+        }
+    );
+
+    const elementsToAnimate = document.querySelectorAll('.services');
+
+    elementsToAnimate.forEach((element) => {
+        observer.observe(element);
+    });
+
     return (
-        <div className="services">
+        <div className={`services ${theme === 'dark' ? 'night' : ''}`}>
             <div className="servicesContainer">
                 <h3 className="servicesTitle">{props.title}</h3>
                 <div className="servicesTop">

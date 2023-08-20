@@ -1,6 +1,19 @@
 import '../styles/Reseaux.css';
+import { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from '../components/ThemeSombre';
 
 function Reseaux(props) {
+    const { isDarkTheme } = useContext(ThemeContext);
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
+
+    useEffect(() => {
+        if (isDarkTheme) {
+            setTheme('dark');
+        } else {
+            setTheme('');
+        }
+    }, [isDarkTheme]);
+
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach((entry) => {
@@ -11,19 +24,17 @@ function Reseaux(props) {
             });
         },
         {
-            threshold: 0.5,
+            threshold: 0.3,
         }
     );
 
-    const elementsToAnimate = document.querySelectorAll(
-        '.linkedinLink, .skypeLink, .githubLinkReseaux'
-    );
+    const elementsToAnimate = document.querySelectorAll('.reseauxLinks');
 
     elementsToAnimate.forEach((element) => {
         observer.observe(element);
     });
     return (
-        <div className="reseaux">
+        <div className={`reseaux ${theme === 'dark' ? 'night' : ''}`}>
             <h3 className="reseauxP">
                 Vous pouvez me retrouver sur ces plateformes :
             </h3>

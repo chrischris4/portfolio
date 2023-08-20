@@ -46,7 +46,7 @@ function Home() {
             });
         },
         {
-            threshold: 0.3,
+            threshold: 0.5,
         }
     );
 
@@ -66,7 +66,7 @@ function Home() {
             });
         },
         {
-            threshold: 0.3,
+            threshold: 0.2,
         }
     );
 

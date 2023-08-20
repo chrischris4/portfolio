@@ -12,15 +12,13 @@ function LeVieuxGrimoire() {
     }, []);
 
     const { isDarkTheme } = useContext(ThemeContext);
-    const [theme, setTheme] = useState(
-        localStorage.getItem('theme') || 'light'
-    );
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
 
     useEffect(() => {
         if (isDarkTheme) {
             setTheme('dark');
         } else {
-            setTheme('light');
+            setTheme('');
         }
     }, [isDarkTheme]);
 
@@ -34,6 +32,28 @@ function LeVieuxGrimoire() {
     useEffect(() => {
         localStorage.setItem('theme', theme);
     }, [theme]);
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.3,
+        }
+    );
+
+    const elementsToAnimate = document.querySelectorAll(
+        '.pageInfo, .othersMini'
+    );
+
+    elementsToAnimate.forEach((element) => {
+        observer.observe(element);
+    });
 
     return (
         <div className={`page-container ${theme === 'dark' ? 'night' : ''}`}>
