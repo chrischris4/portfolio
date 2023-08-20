@@ -66,15 +66,17 @@ function Header() {
     });
 
     const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
-    const [theme, setTheme] = useState(
-        localStorage.getItem('theme') || 'light'
-    );
+
+    const toggleAndSetTheme = () => {
+        toggleTheme();
+    };
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
 
     useEffect(() => {
         if (isDarkTheme) {
             setTheme('dark');
         } else {
-            setTheme('light');
+            setTheme('');
         }
     }, [isDarkTheme]);
 
@@ -266,7 +268,10 @@ function Header() {
                         <span className="material-symbols-rounded">
                             light_mode
                         </span>
-                        <button className="nightShiftBtn" onClick={toggleTheme}>
+                        <button
+                            className="nightShiftBtn"
+                            onClick={toggleAndSetTheme}
+                        >
                             <div
                                 className={`nightShiftVector ${
                                     theme === 'dark' ? 'on' : ''

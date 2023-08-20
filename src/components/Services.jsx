@@ -29,35 +29,45 @@ function Services(props) {
     };
 
     const { isDarkTheme } = useContext(ThemeContext);
+
     const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
 
     useEffect(() => {
-        if (isDarkTheme) {
-            setTheme('dark');
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
         } else {
-            setTheme('');
+            setTheme(isDarkTheme ? 'dark' : '');
         }
     }, [isDarkTheme]);
 
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.3,
-        }
-    );
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
 
-    const elementsToAnimate = document.querySelectorAll('.services');
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animate${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.2,
+            }
+        );
 
-    elementsToAnimate.forEach((element) => {
-        observer.observe(element);
-    });
+        const elementsToAnimate = document.querySelectorAll('.services');
+
+        elementsToAnimate.forEach((element) => {
+            observer.observe(element);
+        });
+    }, [theme]);
 
     return (
         <div className={`services ${theme === 'dark' ? 'night' : ''}`}>

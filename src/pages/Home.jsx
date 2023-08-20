@@ -15,6 +15,7 @@ function Home() {
     }, []);
 
     const { isDarkTheme } = useContext(ThemeContext);
+
     const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
 
     useEffect(() => {
@@ -26,57 +27,56 @@ function Home() {
     }, [isDarkTheme]);
 
     useEffect(() => {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme) {
-            setTheme(storedTheme);
-        }
-    }, []);
-
-    useEffect(() => {
         localStorage.setItem('theme', theme);
     }, [theme]);
 
-    const observerRight = new IntersectionObserver(
-        (entries, observerRight) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animateRight');
-                    observerRight.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.5,
-        }
-    );
+    useEffect(() => {
+        const observerRight = new IntersectionObserver(
+            (entries, observerRight) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animateRight${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observerRight.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
 
-    const elementsToAnimateRight = document.querySelectorAll('.about');
+        const elementsToAnimateRight = document.querySelectorAll('.about');
 
-    elementsToAnimateRight.forEach((element) => {
-        observerRight.observe(element);
-    });
+        elementsToAnimateRight.forEach((element) => {
+            observerRight.observe(element);
+        });
 
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.2,
-        }
-    );
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animate${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.2,
+            }
+        );
 
-    const elementsToAnimate = document.querySelectorAll(
-        '.competence, .parcours'
-    );
+        const elementsToAnimate = document.querySelectorAll(
+            '.competence, .parcours'
+        );
 
-    elementsToAnimate.forEach((element) => {
-        observer.observe(element);
-    });
+        elementsToAnimate.forEach((element) => {
+            observer.observe(element);
+        });
+    }, [theme]);
 
     return (
         <div className={`page-container ${theme === 'dark' ? 'night' : ''}`}>

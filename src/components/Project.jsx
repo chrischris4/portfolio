@@ -1,29 +1,56 @@
 import { Link as RouterLink } from 'react-router-dom';
+import { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from '../components/ThemeSombre';
+
 import '../styles/Project.css';
 
 function Project(props) {
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.2,
+    const { isDarkTheme } = useContext(ThemeContext);
+
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
+
+    useEffect(() => {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
+        } else {
+            setTheme(isDarkTheme ? 'dark' : '');
         }
-    );
+    }, [isDarkTheme]);
 
-    const elementsToAnimate = document.querySelectorAll('.projectLink');
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
 
-    elementsToAnimate.forEach((element) => {
-        observer.observe(element);
-    });
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animate${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.2,
+            }
+        );
+
+        const elementsToAnimate = document.querySelectorAll('.projectLink');
+
+        elementsToAnimate.forEach((element) => {
+            observer.observe(element);
+        });
+    }, [theme]);
 
     return (
-        <RouterLink className="projectLink " to={props.link}>
+        <RouterLink
+            className={`projectLink${theme === ' dark' ? ' night' : ''}`}
+            to={props.link}
+        >
             <div className="overlay">
                 <h3>Voir plus...</h3>
             </div>
