@@ -14,8 +14,6 @@ function Home() {
         window.scrollTo(0, 0);
     }, []);
 
-    const [isUp, setIsUp] = useState(false);
-
     const { isDarkTheme } = useContext(ThemeContext);
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') || 'light'
@@ -162,17 +160,9 @@ function Home() {
                             alt="illustration frontend"
                             loading="lazy"
                         />
-                        <div className="competenceStyle">
-                            <div className="vectorContainer">
-                                <div
-                                    className={`competenceVector ${
-                                        isUp ? 'trailUp' : 'trailDown'
-                                    }`}
-                                    onAnimationIteration={() =>
-                                        setIsUp((prevIsUp) => !prevIsUp)
-                                    }
-                                ></div>
-                            </div>
+                        <div className="vectorContainer">
+                            <div className="competenceVectorUp"></div>
+                            <div className="competenceVectorDown"></div>
                         </div>
                         <ul>
                             <li>HTML/CSS</li>
@@ -189,17 +179,9 @@ function Home() {
                             alt="illustration backend"
                             loading="lazy"
                         />
-                        <div className="competenceStyle">
-                            <div className="vectorContainer">
-                                <div
-                                    className={`competenceVector ${
-                                        isUp ? 'trailUp' : 'trailDown'
-                                    }`}
-                                    onAnimationIteration={() =>
-                                        setIsUp((prevIsUp) => !prevIsUp)
-                                    }
-                                ></div>
-                            </div>
+                        <div className="vectorContainer">
+                            <div className="competenceVectorUp"></div>
+                            <div className="competenceVectorDown"></div>
                         </div>
                         <ul>
                             <li>MongoDB</li>
@@ -217,17 +199,9 @@ function Home() {
                             alt="illustration outil"
                             loading="lazy"
                         />
-                        <div className="competenceStyle">
-                            <div className="vectorContainer">
-                                <div
-                                    className={`competenceVector ${
-                                        isUp ? 'trailUp' : 'trailDown'
-                                    }`}
-                                    onAnimationIteration={() =>
-                                        setIsUp((prevIsUp) => !prevIsUp)
-                                    }
-                                ></div>
-                            </div>
+                        <div className="vectorContainer">
+                            <div className="competenceVectorUp"></div>
+                            <div className="competenceVectorDown"></div>
                         </div>
                         <ul>
                             <li>VsCode</li>

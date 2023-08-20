@@ -207,7 +207,7 @@ h3 {
     border-radius: 10px;
     background-color: #aaacbe;
     width: 25%;
-    height: 330px;
+    height: 325px;
     padding: 20px 0;
 }
 
@@ -230,7 +230,7 @@ h3 {
 
 #competences ul {
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 0px;
 }
 
@@ -245,55 +245,57 @@ h3 {
     list-style: none;
     font-size: 14px;
 }
-.competenceStyle {
-    position: relative;
-    overflow: hidden;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-}
 
 .vectorContainer {
-    width: 5px;
+    margin: auto;
+    width: 20px;
     overflow: hidden;
-    height: 100%;
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.competenceVector {
-    opacity: 1;
-    position: absolute;
-    top: 1px;
+.competenceVectorUp {
+    position: relative;
     background-color: #000;
     border-radius: 2px;
     width: 5px;
     height: 20px;
     display: flex;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
+    animation: trailup 2s linear infinite;
 }
 
-.competenceVector.trailUp {
-    animation: trailup 1s linear infinite alternate;
-}
+/* alternate */
 
-.competenceVector.trailDown {
-    animation: traildown 1s linear infinite alternate;
+.competenceVectorDown {
+    position: relative;
+    background-color: #000;
+    border-radius: 2px;
+    width: 5px;
+    height: 20px;
+    display: flex;
+    transform: translateY(-100%);
+    animation: traildown 2s linear infinite;
+    animation-delay: 1.2s;
 }
 
 @keyframes trailup {
     from {
-        top: -70%;
+        top: -50%;
     }
     to {
-        top: 170%;
+        top: 250%;
     }
 }
 
 @keyframes traildown {
     from {
-        top: 170%;
+        bottom: -150%;
     }
     to {
-        top: -70%;
+        bottom: 150%;
     }
 }
 
@@ -443,36 +445,30 @@ h3 {
         margin-bottom: 0;
     }
 
-    .competenceVector.trailUp {
-        animation: trailup 1.5s linear infinite alternate;
-    }
-
-    .competenceVector.trailDown {
-        animation: traildown 1.5s linear infinite alternate;
-    }
-
-    .competenceStyle {
-        margin: 0px 10px;
-        height: 5px;
-        width: 100%;
-    }
-
     .vectorContainer {
+        margin: 0 10px;
         width: 100%;
         overflow: hidden;
-        height: 5px;
+        height: 20px;
+        flex-direction: column;
     }
 
-    .competenceVector {
-        border-radius: 0;
+    .competenceVectorUp {
         width: 20px;
         height: 5px;
-        transform: translateX(-20%);
+        transform: translateX(-50%);
+    }
+
+    .competenceVectorDown {
+        width: 20px;
+        height: 5px;
+        transform: translateX(-100%);
+        animation-delay: 1.7s;
     }
 
     @keyframes trailup {
         from {
-            left: -50%;
+            left: -150%;
         }
         to {
             left: 150%;
@@ -481,10 +477,10 @@ h3 {
 
     @keyframes traildown {
         from {
-            left: 170%;
+            left: 150%;
         }
         to {
-            left: -70%;
+            left: -150%;
         }
     }
 }
