@@ -31,27 +31,27 @@ function Home() {
     }, [theme]);
 
     useEffect(() => {
-        const observerRight = new IntersectionObserver(
-            (entries, observerRight) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            `animateRight${theme === 'dark' ? 'night' : ''}`
-                        );
-                        observerRight.unobserve(entry.target);
-                    }
-                });
-            },
-            {
-                threshold: 0.5,
-            }
-        );
+        //     const observerRight = new IntersectionObserver(
+        //         (entries, observerRight) => {
+        //             entries.forEach((entry) => {
+        //                 if (entry.isIntersecting) {
+        //                     entry.target.classList.add(
+        //                         `animateRight${theme === 'dark' ? 'night' : ''}`
+        //                     );
+        //                     observerRight.unobserve(entry.target);
+        //                 }
+        //             });
+        //         },
+        //         {
+        //             threshold: 0.5,
+        //         }
+        //     );
 
-        const elementsToAnimateRight = document.querySelectorAll('.about');
+        //     const elementsToAnimateRight = document.querySelectorAll('.about');
 
-        elementsToAnimateRight.forEach((element) => {
-            observerRight.observe(element);
-        });
+        //     elementsToAnimateRight.forEach((element) => {
+        //         observerRight.observe(element);
+        //     });
 
         const observer = new IntersectionObserver(
             (entries, observer) => {
@@ -70,7 +70,7 @@ function Home() {
         );
 
         const elementsToAnimate = document.querySelectorAll(
-            '.competence, .parcours'
+            '.competence, .parcours, .about'
         );
 
         elementsToAnimate.forEach((element) => {
