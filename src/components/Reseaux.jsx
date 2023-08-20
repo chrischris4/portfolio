@@ -1,6 +1,27 @@
 import '../styles/Reseaux.css';
 
 function Reseaux(props) {
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.5,
+        }
+    );
+
+    const elementsToAnimate = document.querySelectorAll(
+        '.linkedinLink, .skypeLink, .githubLinkReseaux'
+    );
+
+    elementsToAnimate.forEach((element) => {
+        observer.observe(element);
+    });
     return (
         <div className="reseaux">
             <h3 className="reseauxP">
