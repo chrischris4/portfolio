@@ -161,8 +161,7 @@ function Home() {
                             loading="lazy"
                         />
                         <div className="vectorContainer">
-                            <div className="competenceVectorUp"></div>
-                            <div className="competenceVectorDown"></div>
+                            <div className="competenceVector"></div>
                         </div>
                         <ul>
                             <li>HTML/CSS</li>
@@ -180,8 +179,7 @@ function Home() {
                             loading="lazy"
                         />
                         <div className="vectorContainer">
-                            <div className="competenceVectorUp"></div>
-                            <div className="competenceVectorDown"></div>
+                            <div className="competenceVector"></div>
                         </div>
                         <ul>
                             <li>MongoDB</li>
@@ -200,8 +198,7 @@ function Home() {
                             loading="lazy"
                         />
                         <div className="vectorContainer">
-                            <div className="competenceVectorUp"></div>
-                            <div className="competenceVectorDown"></div>
+                            <div className="competenceVector"></div>
                         </div>
                         <ul>
                             <li>VsCode</li>

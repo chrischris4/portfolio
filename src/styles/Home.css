@@ -256,46 +256,24 @@ h3 {
     justify-content: space-between;
 }
 
-.competenceVectorUp {
+.competenceVector {
+    margin: 0 auto;
     position: relative;
     background-color: #000;
     border-radius: 2px;
-    width: 5px;
+    width: 20%;
     height: 20px;
     display: flex;
-    transform: translateY(-100%);
-    animation: trailup 2s linear infinite;
+    transform: translateY(-20px);
+    animation: trail 1.5s linear infinite alternate;
 }
 
-/* alternate */
-
-.competenceVectorDown {
-    position: relative;
-    background-color: #000;
-    border-radius: 2px;
-    width: 5px;
-    height: 20px;
-    display: flex;
-    transform: translateY(-100%);
-    animation: traildown 2s linear infinite;
-    animation-delay: 1.2s;
-}
-
-@keyframes trailup {
+@keyframes trail {
     from {
-        top: -50%;
+        top: -20px;
     }
     to {
-        top: 250%;
-    }
-}
-
-@keyframes traildown {
-    from {
-        bottom: -150%;
-    }
-    to {
-        bottom: 150%;
+        top: calc(100% + 40px);
     }
 }
 
@@ -446,41 +424,27 @@ h3 {
     }
 
     .vectorContainer {
-        margin: 0 10px;
+        margin: 0 5px;
         width: 100%;
         overflow: hidden;
         height: 20px;
         flex-direction: column;
     }
 
-    .competenceVectorUp {
+    .competenceVector {
+        margin: auto 0;
         width: 20px;
-        height: 5px;
-        transform: translateX(-50%);
+        height: 20%;
+        transform: translateX(-40px);
+        animation: trail 1.5s linear infinite alternate;
     }
 
-    .competenceVectorDown {
-        width: 20px;
-        height: 5px;
-        transform: translateX(-100%);
-        animation-delay: 1.7s;
-    }
-
-    @keyframes trailup {
+    @keyframes trail {
         from {
-            left: -150%;
+            left: -20px;
         }
         to {
-            left: 150%;
-        }
-    }
-
-    @keyframes traildown {
-        from {
-            left: 150%;
-        }
-        to {
-            left: -150%;
+            left: calc(100% + 80px);
         }
     }
 }
