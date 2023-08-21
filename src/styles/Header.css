@@ -77,6 +77,23 @@
     transform: scale(1.1);
 }
 
+.translateBtn {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 40px;
+}
+
+.translateIcon {
+    font-size: 15px;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .nightShift {
     color: black;
     margin-top: 10px;

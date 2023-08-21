@@ -114,16 +114,24 @@ function Header() {
                     </RouterLink>
                 </>
             )}
+            <div className="headerRight">
+                <div className="translateBtn">
+                    <span className="material-symbols-rounded translateIcon">
+                        translate
+                    </span>{' '}
+                    Translate
+                </div>
 
-            <div
-                className={`menuBurger ${isMenuOpen ? 'open ' : ''}${
-                    theme === 'dark' ? 'night' : ''
-                }`}
-                onClick={toggleMenu}
-            >
-                <div className="line line1"></div>
-                <div className="line line2"></div>
-                <div className="line line3"></div>
+                <div
+                    className={`menuBurger ${isMenuOpen ? 'open ' : ''}${
+                        theme === 'dark' ? 'night' : ''
+                    }`}
+                    onClick={toggleMenu}
+                >
+                    <div className="line line1"></div>
+                    <div className="line line2"></div>
+                    <div className="line line3"></div>
+                </div>
             </div>
             {isMenuOpen && (
                 <div className="overlayBurger" onClick={closeMenu}></div>

@@ -126,14 +126,14 @@ h3 {
 }
 .overlayParcours h4 {
     transition: transform 0.5s ease;
-    transform: translateY(-80%);
+    transform: translateY(-150%);
     margin: 0;
     font-size: 18px;
 }
 
 .overlayParcours p {
     transition: transform 0.5s ease;
-    transform: translateY(-80%);
+    transform: translateY(-150%);
     margin: 0;
     font-size: 12px;
 }

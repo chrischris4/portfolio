@@ -271,7 +271,7 @@ function Home() {
                         "Création d'application avec React.js",
                         "Mise en place / utilisation d'une API",
                         'Manipuler des données en format JSON',
-                        "Mise en place / utilisation d'une base de données",
+                        'Mise en place / utilisation du Backend',
                     ]}
                     p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
                     link={['/MonVieuxGrimoire', '/Kasa']}
@@ -289,7 +289,7 @@ function Home() {
                         'Mise en place des Richsnippet',
                         'Optimisation des images (format, dimensions)',
                     ]}
-                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ce projet :"
+                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
                     link={['/NinaCarducci']}
                 />
             </div>

@@ -76,7 +76,7 @@
 }
 
 .collapseContainer.open {
-    max-height: 395px;
+    max-height: 500px;
 }
 
 .collapseContainer.close {
@@ -92,18 +92,17 @@
     flex-direction: column;
     transition: transform 0.5s ease;
     transform: translateY(-100%);
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .collapseContent.open {
-    padding: 5px 0 20px 0;
-    transform: translateY(-2%);
+    transform: translateY(0%);
     display: flex;
     opacity: 1;
 }
 
 .collapseContent.close {
-    transform: translateY(-120%);
+    transform: translateY(-100%);
     opacity: 1;
 }
 
@@ -170,6 +169,7 @@
 }
 
 .linkCollapse {
+    margin-bottom: 20px;
     border-bottom: 3px solid #aaacbe;
     transition: border-bottom 0.5s ease, color 0.5s ease;
 }
@@ -201,10 +201,6 @@
 
     .collapseContainer {
         margin-bottom: 20px;
-    }
-
-    .collapseContainer.open {
-        max-height: 395px;
     }
 
     .servicesTitle {
@@ -242,10 +238,6 @@
     .collapse p {
         padding: 5px 10px;
         font-size: 16px;
-    }
-
-    .collapseContainer.open {
-        max-height: 465px;
     }
 
     .collapseContent p {
