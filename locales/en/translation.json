@@ -3,6 +3,7 @@
     "bannerTitleTranslate": "FullStack Developper",
     "bannerTranslate": "Specialized in the creation of dynamic web applications. Ready to contribute to innovative projects.",
     "titleAboutTranslate": "About me",
+    "texteAbout": "Welcome to my<strong>portfolio</strong>! Young<strong>Developer</strong> aged 28, I invite you to discover more about me and my work, here you will find my <strong> background</strong>, my<strong> skills</strong>, my<strong> projects</strong> as well as my<strong> services</strong>.",
     "h3AboutTranslate": "Good visit !",
     "parcoursTitleTranslate": "Training",
     "adrarTitleTranslate": "ADRAR Training",
@@ -38,14 +39,30 @@
     "webDevDescriptionTranslate": "Development of Frontend & Backend web applications, showcase sites.",
     "webDevListTitleTranslate": "Languages :",
     "webDevListTitle2Translate": "Development :",
+    "listWebTranslate": [
+        "Application creation with React.js",
+        "Setting up / using an API",
+        "Handle data in JSON format",
+        "Setting up / using the Backend"
+    ],
     "servicesPTranslate": "For more information on my skills, I invite you to discover these projects :",
     "seoDescriptionTranslate": "Optimization, performance, accessibility, improve your referencing",
     "seoListTitleTranslate": "Tools :",
     "seoListTitle2Translate": "Improvements :",
+    "listSeoTranslate": [
+        "Meta tag optimization",
+        "Code minification",
+        "Setting up Richsnippets",
+        "Image optimization (format, dimensions)"
+    ],
     "collapseTranslate": "More details",
     "linkFrontend": "Frontend Project",
     "linkBackend": "Backend Project",
     "linkSEO": "SEO Project",
     "footerStartTranslate": "This site was created by me, you can find its code on ",
-    "footerEndTranslate": ". Thank you for your interest."
+    "footerEndTranslate": ". Thank you for your interest.",
+    "pageh2": "Languages used",
+    "pageh22": "Difficulties",
+    "pageh23": "Acquired",
+    "othersTranslate": "Other projects"
 }
