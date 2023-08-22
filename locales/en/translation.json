@@ -19,5 +19,10 @@
     "contacth3Translate": "Contact me by Email",
     "contacth3Translate2": "Or via this form",
     "sendTranslate": "Send",
-    "alertTranslate": "Message sent !"
+    "alertTranslate": "Message sent !",
+    "aboutLink": "About",
+    "parcoursLink": "Training",
+    "competenceLink": "Skills",
+    "projetLink": "Projects",
+    "reseauxLink": "Media"
 }
