@@ -41,7 +41,7 @@ function Banner() {
                 </div>
                 <div className="banner">
                     <div className="bannerFirstName">CHRISTOPHER</div>
-                    <h1>Développeur FullStack</h1>
+                    <h1>{t('bannerTitleTranslate')}</h1>
                     <div className="bannerAbout">{t('bannerTranslate')}</div>
                     <div className="bannerLinks">
                         <ScrollLink

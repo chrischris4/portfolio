@@ -84,11 +84,38 @@
 }
 
 .translateBtn {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     border: 2px solid;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 4px 8px;
     margin-right: 40px;
+    transition: background-color 0.5s ease, color 0.5s ease,
+        border-color 0.5s ease;
+}
+
+.translateBtn:hover {
+    color: black;
+    border-color: #aaacbe;
+    background-color: #aaacbe;
+}
+
+.translateBtn.hide {
+    display: none;
+}
+
+.translateBtnMobile {
+    transition: background-color 0.5s ease, color 0.5s ease,
+        border-color 0.5s ease;
+    display: none;
+}
+
+.translateBtnMobile:hover {
+    color: black;
+    border-color: #aaacbe;
+    background-color: #aaacbe;
 }
 
 .translateIcon {
@@ -258,6 +285,20 @@
     .header {
         height: 46px;
         padding: 5px 0px;
+    }
+
+    .translateBtnMobile {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 2px solid;
+        border-radius: 20px;
+        padding: 4px 8px;
+        margin: 10px 0px;
+    }
+    .translateBtn {
+        display: none;
     }
 
     .menuBurger .line {

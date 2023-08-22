@@ -10,8 +10,8 @@ function Header() {
     const { i18n, t } = useTranslation();
 
     const toggleLanguage = () => {
-        const newLang = i18n.language === 'fr' ? 'en' : 'fr'; // Alterne entre fr et en
-        i18n.changeLanguage(newLang); // Change la langue
+        const newLang = i18n.language === 'fr' ? 'en' : 'fr';
+        i18n.changeLanguage(newLang);
     };
     const [isMenuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
@@ -72,6 +72,20 @@ function Header() {
         }
     });
 
+    const [isMobileScreen, setIsMobileScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobileScreen(window.innerWidth <= 635);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
 
     const toggleAndSetTheme = () => {
@@ -122,7 +136,10 @@ function Header() {
                 </>
             )}
             <div className="headerRight">
-                <div className="translateBtn" onClick={toggleLanguage}>
+                <div
+                    className={`translateBtn ${isMobileScreen ? 'hide' : ''}`}
+                    onClick={toggleLanguage}
+                >
                     <span className="material-symbols-rounded translateIcon">
                         translate
                     </span>{' '}
@@ -150,6 +167,17 @@ function Header() {
                 >
                     {linksHome && (
                         <>
+                            <div
+                                className={`translateBtnMobile ${
+                                    isMobileScreen ? 'show' : ''
+                                }`}
+                                onClick={toggleLanguage}
+                            >
+                                <span className="material-symbols-rounded translateIcon">
+                                    translate
+                                </span>{' '}
+                                {t('buttonText')}
+                            </div>
                             <ScrollLink
                                 href="aboutLien"
                                 to="aboutLien"
