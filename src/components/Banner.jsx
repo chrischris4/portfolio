@@ -1,8 +1,11 @@
 import '../styles/Banner.css';
 import { useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 function Banner() {
+    const { t } = useTranslation();
+
     useEffect(() => {
         const linkTimeout = setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
@@ -39,11 +42,7 @@ function Banner() {
                 <div className="banner">
                     <div className="bannerFirstName">CHRISTOPHER</div>
                     <h1>Développeur FullStack</h1>
-
-                    <div className="bannerAbout">
-                        Spécialisé dans la création d'applications web
-                        dynamiques. Prêt à contribuer à des projets innovants.
-                    </div>
+                    <div className="bannerAbout">{t('bannerTranslate')}</div>
                     <div className="bannerLinks">
                         <ScrollLink
                             href="contactLien"

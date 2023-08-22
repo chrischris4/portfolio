@@ -4,8 +4,15 @@ import { useLocation } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { ThemeContext } from '../components/ThemeSombre';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+    const { i18n, t } = useTranslation();
+
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'fr' ? 'en' : 'fr'; // Alterne entre fr et en
+        i18n.changeLanguage(newLang); // Change la langue
+    };
     const [isMenuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
     const allLinksPages = [
@@ -115,13 +122,12 @@ function Header() {
                 </>
             )}
             <div className="headerRight">
-                <div className="translateBtn">
+                <div className="translateBtn" onClick={toggleLanguage}>
                     <span className="material-symbols-rounded translateIcon">
                         translate
                     </span>{' '}
-                    Translate
+                    {t('buttonText')}
                 </div>
-
                 <div
                     className={`menuBurger ${isMenuOpen ? 'open ' : ''}${
                         theme === 'dark' ? 'night' : ''
