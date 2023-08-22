@@ -26,9 +26,9 @@ function Services(props) {
     };
 
     const linkMap = {
-        '/MonVieuxGrimoire': 'Projet Backend',
-        '/Kasa': 'Projet Frontend',
-        '/NinaCarducci': 'Projet SEO',
+        '/MonVieuxGrimoire': t('linkBackend'),
+        '/Kasa': t('linkFrontend'),
+        '/NinaCarducci': t('linkSEO'),
     };
 
     const { isDarkTheme } = useContext(ThemeContext);

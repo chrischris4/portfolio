@@ -122,7 +122,7 @@ function AllProject() {
             >
                 <div className="projectContent tout front">
                     <Project
-                        title="Kasa - Agence Immobilière"
+                        title={t('KasaTitleTranslate')}
                         cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
                         link={`/Kasa`}
                         loading="lazy"
@@ -138,7 +138,7 @@ function AllProject() {
                 </div>
                 <div className="projectContent tout back">
                     <Project
-                        title="Mon Vieux Grimoire - Notation de Livres"
+                        title={t('MVGTitleTranslate')}
                         cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                         link={`/MonVieuxGrimoire`}
                         loading="lazy"
@@ -146,7 +146,7 @@ function AllProject() {
                 </div>
                 <div className="projectContent tout seo">
                     <Project
-                        title="Nina Carducci - Photographe"
+                        title={t('NinaTitleTranslate')}
                         cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                         link={`/NinaCarducci`}
                         loading="lazy"
@@ -154,7 +154,7 @@ function AllProject() {
                 </div>
                 <div className="projectContent tout front">
                     <Project
-                        title="Booki - Agence de Location"
+                        title={t('BookiTitleTranslate')}
                         cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                         link={`/Booki`}
                         loading="lazy"

@@ -64,7 +64,7 @@ function ContactForm() {
                         <input
                             id="email"
                             name="email"
-                            placeholder="Votre.email@exemple.com"
+                            placeholder={t('placeMailTranslate')}
                             type="email"
                             required
                             title="Entrez une adresse e-mail valide (ex: john.doe@example.com)"
@@ -77,7 +77,7 @@ function ContactForm() {
                         <textarea
                             id="message"
                             name="message"
-                            placeholder="Votre message"
+                            placeholder="Message"
                             required
                         />
                     </div>

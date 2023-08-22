@@ -276,7 +276,7 @@ function Home() {
                     link={['/MonVieuxGrimoire', '/Kasa']}
                 />
                 <Services
-                    title={t('seoTitleTranslate')}
+                    title="SEO"
                     description={t('seoDescriptionTranslate')}
                     cover="https://i.ibb.co/h9j9H7t/ux.png"
                     listTitle={t('seoListTitleTranslate')}

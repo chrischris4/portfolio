@@ -15,9 +15,14 @@
     "contactTitleTranslate": "Contact",
     "filterTranslate": "Tout",
     "overlayProjetTranslate": "Voir plus...",
+    "KasaTitleTranslate": "KASA - Agence immobilière",
+    "MVGTitleTranslate": "Mon Vieux Grimoire - Notation de livres",
+    "NinaTitleTranslate": "Nina Carducci - Photographe",
+    "BookiTitleTranslate": "Booki - Agence de location",
     "reseauxPTranslate": "Vous pouvez me retrouver sur ces plateformes :",
     "contacth3Translate": "Contactez moi par Email",
     "contacth3Translate2": "Ou via ce formulaire",
+    "placeMailTranslate": "Votre.email@exemple.com",
     "sendTranslate": "Envoyer",
     "alertTranslate": "Message envoyé !",
     "aboutLink": "À propos",
@@ -33,5 +38,8 @@
     "seoDescriptionTranslate": "Optimisation, performance, accéssibilité, améliorer votre réferencement.",
     "seoListTitleTranslate": "Outils :",
     "seoListTitle2Translate": "Améliorations :",
-    "collapseTranslate": "Plus de détails"
+    "collapseTranslate": "Plus de détails",
+    "linkFrontend": "Projet Frontend",
+    "linkBackend": "Projet Backend",
+    "linkSEO": "Projet SEO"
 }
