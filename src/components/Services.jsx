@@ -2,8 +2,11 @@ import '../styles/Services.css';
 import { Link as RouterLink } from 'react-router-dom';
 import { useEffect, useState, useContext } from 'react';
 import { ThemeContext } from '../components/ThemeSombre';
+import { useTranslation } from 'react-i18next';
 
 function Services(props) {
+    const { t } = useTranslation();
+
     const [CollapseOpen, setCollapseOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -84,7 +87,7 @@ function Services(props) {
                 </div>
             </div>
             <div className="collapse" onClick={toggleCollapse}>
-                <p>Plus de détails</p>
+                <p>{t('collapseTranslate')}</p>
                 <span
                     className={`material-symbols-rounded vectorDown ${
                         CollapseOpen ? 'rotate' : ''

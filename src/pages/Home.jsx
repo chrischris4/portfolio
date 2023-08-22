@@ -260,35 +260,35 @@ function Home() {
             </div>
             <div className="servicesContent">
                 <Services
-                    title="Web Développement"
-                    description="Développement d'applications web Frontend & Backend, sites vitrines."
+                    title={t('webDevTitleTranslate')}
+                    description={t('webDevDescriptionTranslate')}
                     cover="https://i.ibb.co/0Kz4zHD/responsive-1055687.png"
-                    listTitle="Langages :"
+                    listTitle={t('webDevListTitleTranslate')}
                     list={['HTML/CSS', 'React', 'JavaScript', 'MongoDB']}
-                    listTitle2="Développement :"
+                    listTitle2={t('webDevListTitle2Translate')}
                     list2={[
                         "Création d'application avec React.js",
                         "Mise en place / utilisation d'une API",
                         'Manipuler des données en format JSON',
                         'Mise en place / utilisation du Backend',
                     ]}
-                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
+                    p={t('servicesPTranslate')}
                     link={['/MonVieuxGrimoire', '/Kasa']}
                 />
                 <Services
-                    title="SEO"
-                    description="Optimisation, performance, accéssibilité, améliorer votre réferencement."
+                    title={t('seoTitleTranslate')}
+                    description={t('seoDescriptionTranslate')}
                     cover="https://i.ibb.co/h9j9H7t/ux.png"
-                    listTitle="Outils :"
+                    listTitle={t('seoListTitleTranslate')}
                     list={['Pagespeed', 'Wave']}
-                    listTitle2="Améliorations :"
+                    listTitle2={t('seoListTitle2Translate')}
                     list2={[
                         'Optimisation des balises meta',
                         'Minification du code',
                         'Mise en place des Richsnippet',
                         'Optimisation des images (format, dimensions)',
                     ]}
-                    p="Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :"
+                    p={t('servicesPTranslate')}
                     link={['/NinaCarducci']}
                 />
             </div>

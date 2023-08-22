@@ -60,7 +60,7 @@ function ContactForm() {
 
                 <form onSubmit={sendEmail}>
                     <div className="contactMail">
-                        <label htmlFor="email">Email :</label>
+                        <label htmlFor="email">{t('labelMailTranslate')}</label>
                         <input
                             id="email"
                             name="email"
@@ -71,7 +71,9 @@ function ContactForm() {
                         />
                     </div>
                     <div className="contactMsg">
-                        <label htmlFor="message">Message :</label>
+                        <label htmlFor="message">
+                            {t('labelMessageTranslate')}
+                        </label>
                         <textarea
                             id="message"
                             name="message"
@@ -84,10 +86,12 @@ function ContactForm() {
                         type="submit"
                         value="send message"
                     >
-                        Envoyer
+                        {t('sendTranslate')}
                     </button>
                     {isMessageSent && (
-                        <div className="alertMessage">Message envoyé !</div>
+                        <div className="alertMessage">
+                            {t('alertTranslate')}
+                        </div>
                     )}
                 </form>
             </div>
