@@ -2,8 +2,11 @@ import '../styles/AllProject.css';
 import { useEffect, useState, useContext } from 'react';
 import { ThemeContext } from '../components/ThemeSombre';
 import Project from './Project';
+import { useTranslation } from 'react-i18next';
 
 function AllProject() {
+    const { t } = useTranslation();
+
     const [activeFilter, setActiveFilter] = useState('tout');
     const [showProjects, setShowProjects] = useState(true);
 
@@ -87,7 +90,7 @@ function AllProject() {
                     }`}
                     data-filter="tout"
                 >
-                    Tout
+                    {t('filterTranslate')}
                 </button>
                 <button
                     className={`buttonFilter ${

@@ -1,8 +1,11 @@
 import '../styles/Reseaux.css';
 import { useEffect, useState, useContext } from 'react';
 import { ThemeContext } from '../components/ThemeSombre';
+import { useTranslation } from 'react-i18next';
 
 function Reseaux(props) {
+    const { t } = useTranslation();
+
     const { isDarkTheme } = useContext(ThemeContext);
 
     const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
@@ -45,9 +48,7 @@ function Reseaux(props) {
     }, [theme]);
     return (
         <div className={`reseaux ${theme === 'dark' ? 'night' : ''}`}>
-            <h3 className="reseauxP">
-                Vous pouvez me retrouver sur ces plateformes :
-            </h3>
+            <h3 className="reseauxP">{t('reseauxPTranslate')}</h3>
             <div className="reseauxLinks">
                 <a
                     className="linkedinLink"

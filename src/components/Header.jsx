@@ -189,7 +189,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                À propos
+                                {t('aboutLink')}
                             </ScrollLink>
                             <ScrollLink
                                 href="parcoursLien"
@@ -202,7 +202,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                Parcours
+                                {t('parcoursLink')}
                             </ScrollLink>
                             <ScrollLink
                                 href="competenceLien"
@@ -215,7 +215,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                Compétences
+                                {t('competenceLink')}
                             </ScrollLink>
                             <ScrollLink
                                 href="projectLien"
@@ -228,7 +228,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                Projets
+                                {t('projetLink')}
                             </ScrollLink>
                             <ScrollLink
                                 href="servicesLien"
@@ -254,7 +254,7 @@ function Header() {
                                 }`}
                                 onClick={closeMenu}
                             >
-                                Accueil
+                                {t('homeLink')}
                             </RouterLink>
                             <ScrollLink
                                 href="othersLien"
@@ -267,7 +267,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                Autres Projets
+                                {t('othersProjectsLink')}
                             </ScrollLink>
                         </>
                     )}
@@ -280,7 +280,7 @@ function Header() {
                         duration={800}
                         onClick={closeMenu}
                     >
-                        Réseaux
+                        {t('reseauxLink')}
                     </ScrollLink>
                     <ScrollLink
                         href="contactLien"

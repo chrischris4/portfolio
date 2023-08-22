@@ -1,9 +1,12 @@
 import '../styles/ContactForm.css';
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 emailjs.init('uFF5qZzQCkElWuX8Q');
 
 function ContactForm() {
+    const { t } = useTranslation();
+
     const [isMessageSent, setMessageSent] = useState(false);
     function sendEmail(e) {
         e.preventDefault();
@@ -42,7 +45,7 @@ function ContactForm() {
         <div className="contact">
             <div className="contactContent">
                 <div className="contactContentBorder">
-                    <h3>Contactez moi par Email</h3>
+                    <h3>{t('contacth3Translate')}</h3>
                     <a
                         className="myEmailLink"
                         href={`mailto:jostchristopher44@gmail.com`}
@@ -51,7 +54,7 @@ function ContactForm() {
                         <span className="material-symbols-outlined">mail</span>
                     </a>
                     <div className="contactForm">
-                        <h3>Ou via ce formulaire</h3>
+                        <h3>{t('contacth3Translate2')}</h3>
                     </div>
                 </div>
 

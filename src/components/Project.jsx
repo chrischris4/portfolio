@@ -1,10 +1,12 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { useEffect, useState, useContext } from 'react';
 import { ThemeContext } from '../components/ThemeSombre';
-
+import { useTranslation } from 'react-i18next';
 import '../styles/Project.css';
 
 function Project(props) {
+    const { t } = useTranslation();
+
     const { isDarkTheme } = useContext(ThemeContext);
 
     const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
@@ -52,7 +54,7 @@ function Project(props) {
             to={props.link}
         >
             <div className="overlay">
-                <h3>Voir plus...</h3>
+                <h3>{t('overlayProjetTranslate')}</h3>
             </div>
             <img
                 className="projectImg"

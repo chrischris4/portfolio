@@ -8,8 +8,11 @@ import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import Reseaux from '../components/Reseaux';
 import Services from '../components/Services';
 import { ThemeContext } from '../components/ThemeSombre';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+    const { t } = useTranslation();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -98,7 +101,7 @@ function Home() {
             <div id="aboutLien"></div>
             <div className="aboutAll">
                 <div className="about">
-                    <h2 className="titleAbout">À propos de moi</h2>
+                    <h2 className="titleAbout"> {t('titleAboutTranslate')}</h2>
                     <p className="pAbout">
                         Je vous souhaite la bienvenue sur mon
                         <strong> portfolio</strong> ! Jeune
@@ -109,25 +112,21 @@ function Home() {
                         <strong> projets</strong> ainsi que mes{' '}
                         <strong>services</strong>.
                     </p>
-                    <h3> Bonne visite !</h3>
+                    <h3>{t('h3AboutTranslate')}</h3>
                 </div>
             </div>
             <div id="parcoursLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
 
-                <h2>Parcours</h2>
+                <h2>{t('parcoursTitleTranslate')}</h2>
             </div>
             <div className="parcours">
                 <div className="parcoursContent">
                     <div className="parcoursP">
-                        <h3>Formation Adrar</h3>
+                        <h3>{t('parcourTitleTranslate')}</h3>
                         <h4>10/2021 - 06/2022</h4>
-                        <p>
-                            {' '}
-                            Formation découverte sur le métier de Développeur
-                            web
-                        </p>
+                        <p> {t('parcourPTranslate')}</p>
                     </div>
                     <a
                         className="parcoursLink"
@@ -136,7 +135,7 @@ function Home() {
                         rel="noreferrer"
                     >
                         <div className="overlayParcours">
-                            <h4> Visiter leur site :</h4>
+                            <h4>{t('overlayParcoursTranslate')}</h4>
                             <p> adrar-formation.com</p>
                         </div>
                         <img
@@ -161,7 +160,7 @@ function Home() {
                         rel="noreferrer"
                     >
                         <div className="overlayParcours">
-                            <h4> Visiter leur site :</h4>
+                            <h4>{t('overlayParcoursTranslate')}</h4>
                             <p> openclassrooms.com</p>
                         </div>
 
@@ -180,7 +179,7 @@ function Home() {
                         "
                         download
                     >
-                        Télécharger mon CV
+                        {t('buttonCvTranslate')}
                     </a>
                 </div>
             </div>
@@ -188,7 +187,7 @@ function Home() {
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
 
-                <h2>Compétences</h2>
+                <h2>{t('competenceTitleTranslate')}</h2>
             </div>
             <div id="competences">
                 <div className="competence">
@@ -251,7 +250,7 @@ function Home() {
             <div id="projectLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Projets</h2>
+                <h2>{t('projetTitleTranslate')}</h2>
             </div>
             <AllProject />
             <div id="servicesLien"></div>
@@ -297,13 +296,13 @@ function Home() {
             <div id="reseauxLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Réseaux</h2>
+                <h2>{t('reseauxTitleTranslate')}</h2>
             </div>
             <Reseaux />
             <div id="contactLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Contact</h2>
+                <h2>{t('contactTitleTranslate')}</h2>
             </div>
             <ContactForm />
         </div>
