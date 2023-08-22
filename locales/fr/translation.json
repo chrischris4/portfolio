@@ -5,7 +5,7 @@
     "titleAboutTranslate": "À propos de moi",
     "h3AboutTranslate": "Bonne visite !",
     "parcoursTitleTranslate": "Parcours",
-    "parcourTitleTranslate1": "Formation ADRAR",
+    "parcourTitleTranslate": "Formation ADRAR",
     "parcourPTranslate": "Formation découverte sur le métier de Développeur web",
     "overlayParcoursTranslate": "Visiter leur site",
     "buttonCvTranslate": "Télécharger mon CV",
@@ -24,5 +24,14 @@
     "parcoursLink": "Parcours",
     "competenceLink": "Compétences",
     "projetLink": "Projets",
-    "reseauxLink": "Réseaux"
+    "reseauxLink": "Réseaux",
+    "webDevTitleTranslate": "Développement Web",
+    "webDevDescriptionTranslate": "Développement d'applications web Frontend & Backend, sites vitrines.",
+    "webDevListTitleTranslate": "Langages :",
+    "webDevListTitle2Translate": "Développement",
+    "servicesPTranslate": "Pour plus d'informations sur mes compétences, je vous invite à découvrir ces projets :",
+    "seoDescriptionTranslate": "Optimisation, performance, accéssibilité, améliorer votre réferencement.",
+    "seoListTitleTranslate": "Outils :",
+    "seoListTitle2Translate": "Améliorations :",
+    "collapseTranslate": "Plus de détails"
 }
