@@ -102,16 +102,7 @@ function Home() {
             <div className="aboutAll">
                 <div className="about">
                     <h2 className="titleAbout"> {t('titleAboutTranslate')}</h2>
-                    <p className="pAbout">
-                        Je vous souhaite la bienvenue sur mon
-                        <strong> portfolio</strong> ! Jeune
-                        <strong> Développeur</strong> de 28 ans, je vous invite
-                        à en découvrir d'avantage sur moi et mon travail, vous
-                        retrouverez ici mon <strong>parcours</strong>, mes
-                        <strong> compétences</strong>, mes
-                        <strong> projets</strong> ainsi que mes{' '}
-                        <strong>services</strong>.
-                    </p>
+                    <p className="pAbout">{t('texteAbout')}</p>
                     <h3>{t('h3AboutTranslate')}</h3>
                 </div>
             </div>
@@ -267,10 +258,10 @@ function Home() {
                     list={['HTML/CSS', 'React', 'JavaScript', 'MongoDB']}
                     listTitle2={t('webDevListTitle2Translate')}
                     list2={[
-                        "Création d'application avec React.js",
-                        "Mise en place / utilisation d'une API",
-                        'Manipuler des données en format JSON',
-                        'Mise en place / utilisation du Backend',
+                        t('listWebTranslate'),
+                        t('listWebTranslate1'),
+                        t('listWebTranslate2'),
+                        t('listWebTranslate3'),
                     ]}
                     p={t('servicesPTranslate')}
                     link={['/MonVieuxGrimoire', '/Kasa']}
@@ -283,10 +274,10 @@ function Home() {
                     list={['Pagespeed', 'Wave']}
                     listTitle2={t('seoListTitle2Translate')}
                     list2={[
-                        'Optimisation des balises meta',
-                        'Minification du code',
-                        'Mise en place des Richsnippet',
-                        'Optimisation des images (format, dimensions)',
+                        t('listSeoTranslate'),
+                        t('listSeoTranslate1'),
+                        t('listSeoTranslate2'),
+                        t('listSeoTranslate3'),
                     ]}
                     p={t('servicesPTranslate')}
                     link={['/NinaCarducci']}

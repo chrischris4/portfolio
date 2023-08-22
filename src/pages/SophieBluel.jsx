@@ -5,8 +5,11 @@ import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
 import Reseaux from '../components/Reseaux';
 import { ThemeContext } from '../components/ThemeSombre';
+import { useTranslation } from 'react-i18next';
 
 function SophieBluel() {
+    const { t } = useTranslation();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -86,18 +89,18 @@ function SophieBluel() {
                 </div>
             </div>
             <div className="projetAbout">
-                <h2 className="projetTitleAbout">Langages utilisés </h2>
+                <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
                 </ul>
-                <h2 className="projetTitleAbout">Difficulté</h2>
+                <h2 className="projetTitleAbout">{t('pageh22')}</h2>
                 <p className="pProjetAbout">
                     L'utilisation d'une <strong>API</strong>, les différentes{' '}
                     <strong>requêtes</strong> et l'
                     <strong>authentification</strong> de l'utilisateur.
                 </p>
-                <h2 className="projetTitleAbout">Solution</h2>
+                <h2 className="projetTitleAbout">Solutions</h2>
                 <p className="pProjetAbout">
                     J'ai appris à effectuer des <strong>requêtes</strong> avec{' '}
                     <strong>fetch</strong>, afin de manipuler des données
@@ -106,7 +109,7 @@ function SophieBluel() {
                     <strong>DELETE</strong>, afin de poster, récupérer ou
                     supprimer des données.
                 </p>
-                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <h2 className="projetTitleAbout">{t('pageh3')}</h2>
                 <ul>
                     <li>API</li>
                     <li>Requêtes</li>
@@ -158,12 +161,12 @@ function SophieBluel() {
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Autres Projets</h2>
+                <h2>{t('othersTranslate')}</h2>
             </div>
             <div className="others">
                 <div className="othersMini">
                     <ProjectMini
-                        title="Booki - Agence de Location"
+                        title={t('BookiTitleTranslate')}
                         cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                         link={`/Booki`}
                         loading="lazy"
@@ -171,7 +174,7 @@ function SophieBluel() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="Kasa - Agence Immobilière"
+                        title={t('KasaTitleTranslate')}
                         cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
                         link={`/Kasa`}
                         loading="lazy"
@@ -179,7 +182,7 @@ function SophieBluel() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="Mon Vieux Grimoire - Notation de Livres"
+                        title={t('MVGTitleTranslate')}
                         cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                         link={`/MonVieuxGrimoire`}
                         loading="lazy"
@@ -187,7 +190,7 @@ function SophieBluel() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="Nina Carducci - Photographe"
+                        title={t('NinaTitleTranslate')}
                         cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                         link={`/NinaCarducci`}
                         loading="lazy"
@@ -197,7 +200,7 @@ function SophieBluel() {
             <div id="reseauxLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Réseaux</h2>
+                <h2>{t('reseauxTitleTranslate')}</h2>
             </div>
             <Reseaux />
             <div id="contactLien"></div>

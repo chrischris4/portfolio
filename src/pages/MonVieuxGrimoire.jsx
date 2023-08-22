@@ -5,8 +5,11 @@ import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
 import Reseaux from '../components/Reseaux';
 import { ThemeContext } from '../components/ThemeSombre';
+import { useTranslation } from 'react-i18next';
 
 function LeVieuxGrimoire() {
+    const { t } = useTranslation();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -68,9 +71,7 @@ function LeVieuxGrimoire() {
             />
             <div id="topPageLink"></div>
             <div className="pageTitle">
-                <h1 className="pageh1">
-                    Mon Vieux Grimoire - Notation de Livre
-                </h1>
+                <h1 className="pageh1">{t('MVGTitleTranslate')}</h1>
                 <div className="pageGithub">
                     <h2 className="pageh2">Backend</h2>
                     <a
@@ -87,20 +88,20 @@ function LeVieuxGrimoire() {
                 </div>
             </div>
             <div className="projetAbout">
-                <h2 className="projetTitleAbout">Langages utilisés </h2>
+                <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
                     <li>HTML/CSS</li>
                     <li>React</li>
                     <li>JavaScript</li>
                 </ul>
-                <h2 className="projetTitleAbout">Difficulté</h2>
+                <h2 className="projetTitleAbout">{t('pageh22')}</h2>
                 <p className="pProjetAbout">
                     L'utilisation d'une base de données, la création de
                     <strong> model</strong>, de <strong>controller</strong>, de
                     <strong> root</strong> et de
                     <strong> middleware</strong>.
                 </p>
-                <h2 className="projetTitleAbout">Solution</h2>
+                <h2 className="projetTitleAbout">Solutions</h2>
                 <p className="pProjetAbout">
                     J'ai appris à créer une base de données
                     <strong> MongoDB</strong> grâce à des cours et des
@@ -110,7 +111,7 @@ function LeVieuxGrimoire() {
                     pour mettre en place les paramêtres dont on a besoin pour le
                     bon fonctionnement du site.
                 </p>
-                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <h2 className="projetTitleAbout">{t('pageh23')}</h2>
                 <ul>
                     <li>MongoDB</li>
                     <li>Model</li>
@@ -174,12 +175,12 @@ function LeVieuxGrimoire() {
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Autres Projets</h2>
+                <h2>{t('othersTranslate')}</h2>
             </div>
             <div className="others">
                 <div className="othersMini">
                     <ProjectMini
-                        title="Booki - Agence de Location"
+                        title={t('BookiTitleTranslate')}
                         cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                         link={`/Booki`}
                         loading="lazy"
@@ -187,7 +188,7 @@ function LeVieuxGrimoire() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="Kasa - Agence Immobilière"
+                        title={t('KasaTitleTranslate')}
                         cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
                         link={`/Kasa`}
                         loading="lazy"
@@ -203,7 +204,7 @@ function LeVieuxGrimoire() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="Nina Carducci - Photographe"
+                        title={t('NinaTitleTranslate')}
                         cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                         link={`/NinaCarducci`}
                         loading="lazy"
@@ -213,7 +214,7 @@ function LeVieuxGrimoire() {
             <div id="reseauxLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Réseaux</h2>
+                <h2>{t('reseauxTitleTranslate')}</h2>
             </div>
             <Reseaux />
             <div id="contactLien"></div>

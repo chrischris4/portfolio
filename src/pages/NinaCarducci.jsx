@@ -5,8 +5,11 @@ import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
 import Reseaux from '../components/Reseaux';
 import { ThemeContext } from '../components/ThemeSombre';
+import { useTranslation } from 'react-i18next';
 
 function NinaCarducci() {
+    const { t } = useTranslation();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -68,7 +71,7 @@ function NinaCarducci() {
             />
             <div id="topPageLink"></div>
             <div className="pageTitle">
-                <h1 className="pageh1">Nina Carducci - Photographe</h1>
+                <h1 className="pageh1">{t('NinaTitleTranslate')}</h1>
                 <div className="pageGithub">
                     <h2 className="pageh2">SEO</h2>
 
@@ -86,16 +89,16 @@ function NinaCarducci() {
                 </div>
             </div>
             <div className="projetAbout">
-                <h2 className="projetTitleAbout">Langages utilisés </h2>
+                <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
                 </ul>
-                <h2 className="projetTitleAbout">Difficulté</h2>
+                <h2 className="projetTitleAbout">{t('pageh22')}</h2>
                 <p className="pProjetAbout">
                     L'optimisation des <strong>performances</strong>.
                 </p>
-                <h2 className="projetTitleAbout">Solution</h2>
+                <h2 className="projetTitleAbout">Solutions</h2>
                 <p className="pProjetAbout">
                     J'ai appris à utiliser des outils comme
                     <strong> Pagespeed</strong>, afin d'analyser les problèmes,
@@ -104,7 +107,7 @@ function NinaCarducci() {
                     puis j'ai mis en place les <strong>metas</strong> et
                     <strong> Richsnippet</strong>.
                 </p>
-                <h2 className="projetTitleAbout">Aqcuis</h2>
+                <h2 className="projetTitleAbout">{t('pageh23')}</h2>
                 <ul>
                     <li>Optimisation</li>
                     <li>Performance</li>
@@ -163,12 +166,12 @@ function NinaCarducci() {
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Autres Projets</h2>
+                <h2>{t('othersTranslate')}</h2>
             </div>
             <div className="others">
                 <div className="othersMini">
                     <ProjectMini
-                        title="Booki - Agence de Location"
+                        title={t('BookiTitleTranslate')}
                         cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                         link={`/Booki`}
                         loading="lazy"
@@ -176,7 +179,7 @@ function NinaCarducci() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="Kasa - Agence Immobilière"
+                        title={t('KasaTitleTranslate')}
                         cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
                         link={`/Kasa`}
                         loading="lazy"
@@ -192,7 +195,7 @@ function NinaCarducci() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="Mon Vieux Grimoire - Notation de Livres"
+                        title={t('MVGTitleTranslate')}
                         cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                         link={`/MonVieuxGrimoire`}
                         loading="lazy"
@@ -202,7 +205,7 @@ function NinaCarducci() {
             <div id="reseauxLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Réseaux</h2>
+                <h2>{t('reseauxTitleTranslate')}</h2>
             </div>
             <Reseaux />
             <div id="contactLien"></div>
