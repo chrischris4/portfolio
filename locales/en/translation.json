@@ -5,8 +5,11 @@
     "titleAboutTranslate": "About me",
     "h3AboutTranslate": "Good visit !",
     "parcoursTitleTranslate": "Training",
-    "parcourTitleTranslate": "ADRAR Training",
-    "parcourPTranslate": "Discovery training on the profession of Web Developer",
+    "adrarTitleTranslate": "ADRAR Training",
+    "adrarPTranslate": "Discovery training on the profession of Web Developer",
+    "openTitleTranslate": "OpenClassrooms Training",
+    "openPTranslate": "Web Developer / Integrator Training",
+    "openP2Translate": "Baccalaureate +2 standard level diploma",
     "overlayParcoursTranslate": "Visit their website",
     "buttonCvTranslate": "Download my CV",
     "competenceTitleTranslate": "Skills",
@@ -41,5 +44,7 @@
     "collapseTranslate": "More details",
     "linkFrontend": "Frontend Project",
     "linkBackend": "Backend Project",
-    "linkSEO": "SEO Project"
+    "linkSEO": "SEO Project",
+    "footerStartTranslate": "This site was created by me, you can find its code on ",
+    "footerEndTranslat": ". Thank you for your interest."
 }
