@@ -60,7 +60,7 @@ function ContactForm() {
 
                 <form onSubmit={sendEmail}>
                     <div className="contactMail">
-                        <label htmlFor="email">{t('labelMailTranslate')}</label>
+                        <label htmlFor="email">Email</label>
                         <input
                             id="email"
                             name="email"
@@ -71,13 +71,11 @@ function ContactForm() {
                         />
                     </div>
                     <div className="contactMsg">
-                        <label htmlFor="message">
-                            {t('labelMessageTranslate')}
-                        </label>
+                        <label htmlFor="message">Message</label>
                         <textarea
                             id="message"
                             name="message"
-                            placeholder="Message"
+                            placeholder={t('placeMessageTranslate')}
                             required
                         />
                     </div>

@@ -1,11 +1,13 @@
 import '../styles/Footer.css';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+    const { t } = useTranslation();
+
     return (
         <div className="footer">
             <p className="pFooter">
-                Ce site a été réalisé par mes soins, vous pouvez retrouvez son
-                code sur
+                {t('footerStartTranslate')}
                 <a
                     className="linkFooter"
                     href="https://github.com/chrischris4/portfolio"
@@ -14,7 +16,7 @@ function Footer() {
                 >
                     GitHub
                 </a>
-                . Merci pour votre interêt.
+                {t('footerEndTranslate')}
             </p>
             <p className="pFooter">© 2023 by JOST Christopher</p>
         </div>

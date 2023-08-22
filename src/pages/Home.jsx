@@ -124,9 +124,9 @@ function Home() {
             <div className="parcours">
                 <div className="parcoursContent">
                     <div className="parcoursP">
-                        <h3>{t('parcourTitleTranslate')}</h3>
+                        <h3>{t('adrarTitleTranslate')}</h3>
                         <h4>10/2021 - 06/2022</h4>
-                        <p> {t('parcourPTranslate')}</p>
+                        <p> {t('adrarPTranslate')}</p>
                     </div>
                     <a
                         className="parcoursLink"
@@ -148,10 +148,10 @@ function Home() {
                 </div>
                 <div className="parcoursContent">
                     <div className="parcoursP">
-                        <h3>Formation OpenClassrooms</h3>
+                        <h3>{t('openTitleTranslate')}</h3>
                         <h4>12/2022 - 08/2023</h4>
-                        <p>Formation Développeur / Intégrateur web</p>
-                        <p>Diplôme niveau bac +2</p>
+                        <p>{t('openPTranslate')}</p>
+                        <p>{t('openP2Translate')}</p>
                     </div>
                     <a
                         className="parcoursLink"
