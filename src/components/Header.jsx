@@ -165,19 +165,19 @@ function Header() {
                         theme === 'dark' ? 'night' : ''
                     }`}
                 >
+                    <div
+                        className={`translateBtnMobile ${
+                            isMobileScreen ? 'show' : ''
+                        }`}
+                        onClick={toggleLanguage}
+                    >
+                        <span className="material-symbols-rounded translateIcon">
+                            translate
+                        </span>{' '}
+                        {t('buttonText')}
+                    </div>
                     {linksHome && (
                         <>
-                            <div
-                                className={`translateBtnMobile ${
-                                    isMobileScreen ? 'show' : ''
-                                }`}
-                                onClick={toggleLanguage}
-                            >
-                                <span className="material-symbols-rounded translateIcon">
-                                    translate
-                                </span>{' '}
-                                {t('buttonText')}
-                            </div>
                             <ScrollLink
                                 href="aboutLien"
                                 to="aboutLien"
