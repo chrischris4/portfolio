@@ -70,6 +70,29 @@ function Services(props) {
         elementsToAnimate.forEach((element) => {
             observer.observe(element);
         });
+        const observerUp = new IntersectionObserver(
+            (entries, observerUp) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animateUp${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observerUp.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+
+        const elementsToAnimateUp = document.querySelectorAll(
+            '.btnLi, .normalLi, .linkCollapse'
+        );
+
+        elementsToAnimateUp.forEach((element) => {
+            observerUp.observe(element);
+        });
     }, [theme]);
 
     return (

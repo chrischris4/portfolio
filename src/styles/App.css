@@ -19,6 +19,22 @@ a {
     color: white;
 }
 
+.animateUp,
+.animateUpnight {
+    animation: slideFromUp 1.5s ease forwards;
+}
+
+@keyframes slideFromUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .animateLeft,
 .animateLeftnight {
     animation: slideFromLeft 1.5s ease forwards;

@@ -95,7 +95,7 @@ function Home() {
         );
 
         const elementsToAnimate = document.querySelectorAll(
-            '.competence, .parcours, .about'
+            '.competence, .parcours'
         );
 
         elementsToAnimate.forEach((element) => {

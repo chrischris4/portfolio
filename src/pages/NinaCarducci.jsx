@@ -31,6 +31,51 @@ function NinaCarducci() {
     }, [theme]);
 
     useEffect(() => {
+        const observerRight = new IntersectionObserver(
+            (entries, observerRight) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animateRight${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observerRight.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+
+        const elementsToAnimateRight = document.querySelectorAll('.pageh1');
+
+        elementsToAnimateRight.forEach((element) => {
+            observerRight.observe(element);
+        });
+
+        const observerUp = new IntersectionObserver(
+            (entries, observerUp) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animateUp${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observerUp.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+
+        const elementsToAnimateUp = document.querySelectorAll(
+            '.pageGithub, .pageh2'
+        );
+
+        elementsToAnimateUp.forEach((element) => {
+            observerUp.observe(element);
+        });
         const observer = new IntersectionObserver(
             (entries, observer) => {
                 entries.forEach((entry) => {
