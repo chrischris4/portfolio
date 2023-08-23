@@ -69,9 +69,7 @@ function SophieBluel() {
             }
         );
 
-        const elementsToAnimateUp = document.querySelectorAll(
-            '.pageGithub, .pageh2'
-        );
+        const elementsToAnimateUp = document.querySelectorAll('.pageGithub');
 
         elementsToAnimateUp.forEach((element) => {
             observerUp.observe(element);

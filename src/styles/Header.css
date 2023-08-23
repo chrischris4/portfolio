@@ -136,7 +136,7 @@
 }
 
 .nightShiftBtn {
-    padding-left: 1.5px;
+    padding-left: 2px;
     cursor: pointer;
     border-radius: 12px;
     height: 20px;
@@ -276,6 +276,9 @@
 
     .link {
         font-size: 20px;
+    }
+    .nightShiftBtn {
+        padding-left: 1.5px;
     }
 }
 
