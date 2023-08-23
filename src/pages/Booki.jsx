@@ -93,14 +93,9 @@ function Booki() {
                     <li>HTML/CSS</li>
                 </ul>
                 <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">La mise en place du responsive.</p>
+                <p className="pProjetAbout">{t('pageDiffBooki')}</p>
                 <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à modifier les différentes sections qui
-                    composent le site, suivant le format de l'écran, notamment
-                    avec le <strong>display flex</strong>. J'ai aussi appris à
-                    utiliser <strong>Git</strong> durant ce projet.
-                </p>
+                <p className="pProjetAbout">{t('pageSolBooki')}</p>
                 <h2 className="projetTitleAbout">{t('pageh23')}</h2>
                 <ul>
                     <li>HTML/CSS</li>
@@ -115,12 +110,7 @@ function Booki() {
                     alt="booki"
                     loading="lazy"
                 />
-                <p>
-                    Sur ce projet j'ai effectué l'intégration du site en
-                    <strong> HTML/CSS</strong>, j'ai du gérer le
-                    <strong> responsive</strong>, un format desktop, tablette et
-                    téléphone.
-                </p>
+                <p>{t('pageInfoBooki')}</p>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

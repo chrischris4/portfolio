@@ -95,20 +95,9 @@ function SophieBluel() {
                     <li>JavaScript</li>
                 </ul>
                 <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">
-                    L'utilisation d'une <strong>API</strong>, les différentes{' '}
-                    <strong>requêtes</strong> et l'
-                    <strong>authentification</strong> de l'utilisateur.
-                </p>
+                <p className="pProjetAbout">{t('pageDiffSophie')}</p>
                 <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à effectuer des <strong>requêtes</strong> avec{' '}
-                    <strong>fetch</strong>, afin de manipuler des données
-                    présentes sur un fichier <strong>JSON</strong>, les Méthodes
-                    : <strong>POST</strong>, <strong>GET</strong>,{' '}
-                    <strong>DELETE</strong>, afin de poster, récupérer ou
-                    supprimer des données.
-                </p>
+                <p className="pProjetAbout">{t('pageSolSophie')}</p>
                 <h2 className="projetTitleAbout">{t('pageh3')}</h2>
                 <ul>
                     <li>API</li>
@@ -124,12 +113,7 @@ function SophieBluel() {
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <p>
-                    Sur ce projet j'ai géré la partie <strong>Frontend</strong>,
-                    j'ai généré la galerie de la page d'accueil à partir d'un
-                    fichier <strong>JSON</strong> en effectuant des{' '}
-                    <strong>requêtes</strong> via une <strong>API</strong>.
-                </p>
+                <p>{t('pageInfoSophie')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -138,12 +122,7 @@ function SophieBluel() {
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <p>
-                    Le site contient une page d'
-                    <strong>authentification</strong>, pour qu'une fois
-                    identifié, le propriétaire du site puisse accéder à un mode
-                    édition.
-                </p>
+                <p>{t('pageInfoSophie')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -152,11 +131,7 @@ function SophieBluel() {
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <p>
-                    Une fois le mode édition activé, le propriétaire du site
-                    pourra, grâce à une <strong>modale</strong>, ajouter,
-                    modifier ou supprimer des images dans la galerie.
-                </p>
+                <p>{t('pageInfoSophie')}</p>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

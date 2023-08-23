@@ -95,22 +95,9 @@ function LeVieuxGrimoire() {
                     <li>JavaScript</li>
                 </ul>
                 <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">
-                    L'utilisation d'une base de données, la création de
-                    <strong> model</strong>, de <strong>controller</strong>, de
-                    <strong> root</strong> et de
-                    <strong> middleware</strong>.
-                </p>
+                <p className="pProjetAbout">{t('pageDiffMVG')}</p>
                 <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à créer une base de données
-                    <strong> MongoDB</strong> grâce à des cours et des
-                    recherches, puis j'ai utilisé les{' '}
-                    <strong>controller</strong>, <strong>model</strong> et{' '}
-                    <strong>root </strong>
-                    pour mettre en place les paramêtres dont on a besoin pour le
-                    bon fonctionnement du site.
-                </p>
+                <p className="pProjetAbout">{t('pageSolMVG')}</p>
                 <h2 className="projetTitleAbout">{t('pageh23')}</h2>
                 <ul>
                     <li>MongoDB</li>
@@ -128,15 +115,7 @@ function LeVieuxGrimoire() {
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
-                <p>
-                    Je me suis occupé de toute la partie
-                    <strong> Backend</strong> de ce projet, une application
-                    <strong> React</strong> avec <strong>express</strong> et une
-                    base de données
-                    <strong> MongoDB</strong>. Sur ce site nous pouvons créer un
-                    compte afin d'y ajouter les livres de notre choix, avec en
-                    plus un système de notation.
-                </p>
+                <p>{t('pageInfoMVG')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -145,14 +124,7 @@ function LeVieuxGrimoire() {
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
-                <p>
-                    J'ai créé un système d'authentification, afin que
-                    l'utilisateur puisse s'inscrire et se connecter à son compte
-                    personnel, un <strong>token</strong> est généré avec
-                    <strong> jsonwebtoken</strong>, un
-                    <strong> middleware</strong> a été créé pour vérifier
-                    l'authentification de l'utilisateur.
-                </p>
+                <p>{t('pageInfoMVG2')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -161,16 +133,7 @@ function LeVieuxGrimoire() {
                     alt="Mon-vieux-grimoire"
                     loading="lazy"
                 />
-                <p>
-                    J'ai créé un <strong>model</strong> pour les livres
-                    contenant leurs informations, un
-                    <strong> controller</strong> et un <strong>root </strong>
-                    afin que l'on puisse ajouter, modifier, supprimer ou noter
-                    ces livres. J'ai aussi ajouté un
-                    <strong> middleware</strong> afin qu'a l'ajout d'une image,
-                    celle-ci soit automatiquement convertit au format webp, et
-                    redimensionnée.
-                </p>
+                <p>{t('pageInfoMVG3')}</p>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

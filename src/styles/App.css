@@ -6,6 +6,7 @@ body {
     color: black;
     background-color: white;
     transition: color 0.5s ease, background-color 0.5s ease;
+    overflow-x: hidden;
 }
 
 a {
@@ -16,6 +17,22 @@ a {
 .night {
     background-color: #282a2c;
     color: white;
+}
+
+.animateLeft,
+.animateLeftnight {
+    animation: slideFromLeft 1.5s ease forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .animateRight,

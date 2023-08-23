@@ -34,27 +34,49 @@ function Home() {
     }, [theme]);
 
     useEffect(() => {
-        //     const observerRight = new IntersectionObserver(
-        //         (entries, observerRight) => {
-        //             entries.forEach((entry) => {
-        //                 if (entry.isIntersecting) {
-        //                     entry.target.classList.add(
-        //                         `animateRight${theme === 'dark' ? 'night' : ''}`
-        //                     );
-        //                     observerRight.unobserve(entry.target);
-        //                 }
-        //             });
-        //         },
-        //         {
-        //             threshold: 0.5,
-        //         }
-        //     );
+        const observerLeft = new IntersectionObserver(
+            (entries, observerLeft) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animateLeft${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observerLeft.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
 
-        //     const elementsToAnimateRight = document.querySelectorAll('.about');
+        const elementsToAnimateLeft = document.querySelectorAll('.about h3');
 
-        //     elementsToAnimateRight.forEach((element) => {
-        //         observerRight.observe(element);
-        //     });
+        elementsToAnimateLeft.forEach((element) => {
+            observerLeft.observe(element);
+        });
+
+        const observerRight = new IntersectionObserver(
+            (entries, observerRight) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animateRight${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observerRight.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+
+        const elementsToAnimateRight = document.querySelectorAll('.pAbout');
+
+        elementsToAnimateRight.forEach((element) => {
+            observerRight.observe(element);
+        });
 
         const observer = new IntersectionObserver(
             (entries, observer) => {

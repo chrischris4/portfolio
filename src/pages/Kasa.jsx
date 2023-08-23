@@ -95,23 +95,9 @@ function Kasa() {
                     <li>JavaScript</li>
                 </ul>
                 <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">
-                    La mise en place de l'application, l'utilisation des
-                    <strong> composants</strong>, apprendre à gérer leur état et
-                    transmettre des informations d'un
-                    <strong> composants</strong> à un autre.
-                </p>
+                <p className="pProjetAbout">{t('pageDiffKasa')}</p>
                 <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à mettre en place une{' '}
-                    <strong>application React</strong>, avec son système de
-                    routes et ses différents <strong>packages</strong>. J'ai
-                    appris à utiliser des <strong>hooks</strong> comme{' '}
-                    <strong>UseState</strong> et <strong>UseEffect</strong>,
-                    pour changer l'état des <strong>composants</strong>, et les
-                    <strong> props</strong> pour transmettre des informations
-                    d'un <strong>composants</strong> à un autre.
-                </p>
+                <p className="pProjetAbout">{t('pageSolKasa')}</p>
                 <h2 className="projetTitleAbout">{t('pageh23')}</h2>
                 <ul>
                     <li>Npm</li>
@@ -127,15 +113,7 @@ function Kasa() {
                     alt="kasa"
                     loading="lazy"
                 />
-                <p>
-                    Sur ce projet j'ai mis en place une application
-                    <strong> react</strong>, je me suis occupé de toute la
-                    partie
-                    <strong> Frontend</strong>. J'ai faits en sorte de générer
-                    des cards pour chaque logement sur la page d'accueil,
-                    contenant toutes les infomations provenant d'un fichier
-                    <strong> JSON</strong>.
-                </p>
+                <p>{t('pageInfoKasa')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -144,11 +122,7 @@ function Kasa() {
                     alt="kasa"
                     loading="lazy"
                 />
-                <p>
-                    Aux cliques sur une card, nous sommes redirigés vers une
-                    page logements qui contient toutes les informations
-                    présentes sur celle-ci, titre, photos, propriétaire...
-                </p>
+                <p>{t('pageInfoKasa2')}</p>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

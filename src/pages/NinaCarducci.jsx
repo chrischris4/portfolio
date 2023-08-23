@@ -95,18 +95,9 @@ function NinaCarducci() {
                     <li>JavaScript</li>
                 </ul>
                 <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">
-                    L'optimisation des <strong>performances</strong>.
-                </p>
+                <p className="pProjetAbout">{t('pageDiffNina')}</p>
                 <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">
-                    J'ai appris à utiliser des outils comme
-                    <strong> Pagespeed</strong>, afin d'analyser les problèmes,
-                    j'ai faits le nécessaire au niveau des images et du
-                    <strong> HTML/CSS</strong> pour l'alléger le plus possible,
-                    puis j'ai mis en place les <strong>metas</strong> et
-                    <strong> Richsnippet</strong>.
-                </p>
+                <p className="pProjetAbout">{t('pageSolNina')}</p>
                 <h2 className="projetTitleAbout">{t('pageh23')}</h2>
                 <ul>
                     <li>Optimisation</li>
@@ -123,14 +114,7 @@ function NinaCarducci() {
                     loading="lazy"
                 />
 
-                <p>
-                    Sur ce projet j'ai géré toute la partie <strong>SEO</strong>
-                    , conversion et compression des images, minification du code
-                    pour les
-                    <strong> performances</strong> et
-                    <strong> optimisation</strong> du HTML pour le
-                    <strong> référencement</strong>.
-                </p>
+                <p>{t('pageInfoNina')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -139,13 +123,7 @@ function NinaCarducci() {
                     alt="Nina-Carducci"
                     loading="lazy"
                 />
-                <p>
-                    J'ai ajouté des <strong>Richsnippet</strong> nécessaires
-                    pour le
-                    <strong> référencement</strong> sur google, ainsi que des
-                    <strong> meta og</strong> pour les partages sur les réseaux
-                    sociaux.
-                </p>
+                <p>{t('pageInfoNina2')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -154,14 +132,7 @@ function NinaCarducci() {
                     alt="Nina-Carducci"
                     loading="lazy"
                 />
-                <p>
-                    Afin d'atteindre le meilleur score possible, j'ai utilisé
-                    des outils tels que
-                    <strong> Pagespeed </strong>
-                    et l'extension
-                    <strong> Wave</strong> afin d'identifier au mieux les
-                    problèmes d'optimisation.
-                </p>
+                <p>{t('pageInfoNina3')}</p>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">
