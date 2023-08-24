@@ -16,9 +16,10 @@ function Footer() {
                 >
                     GitHub
                 </a>
-                {t('footerEndTranslate')}
+                .
             </p>
-            <p className="pFooter">© 2023 by JOST Christopher</p>
+            <p className="pFooter">{t('footerEndTranslate')}</p>
+            <p className="byFooter">© 2023 by JOST Christopher</p>
         </div>
     );
 }

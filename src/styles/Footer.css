@@ -7,15 +7,21 @@
 .pFooter {
     font-weight: 300;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    width: 355px;
+    color: white;
+    font-size: 18px;
+}
+
+.byFooter {
+    font-weight: 300;
+    margin: auto;
+    margin-top: 30px;
     width: 355px;
     color: white;
     font-size: 18px;
 }
 
 .linkFooter {
-    padding-left: 4px;
     color: #aaacbe;
 }
 
@@ -24,8 +30,9 @@
 }
 
 @media screen and (max-width: 635px) {
-    .pFooter {
-        width: 280px;
+    .pFooter,
+    .byFooter {
+        width: 70%;
         font-size: 14px;
     }
 }
