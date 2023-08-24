@@ -35,6 +35,10 @@ h3 {
     flex-direction: column;
 }
 
+.aboutSlide {
+    opacity: 0;
+}
+
 .about h3 {
     opacity: 0;
     width: 90%;
@@ -48,7 +52,6 @@ h3 {
 }
 
 .pAbout {
-    opacity: 0;
     padding-left: 10px;
     border-left: 3px solid;
     text-align: left;

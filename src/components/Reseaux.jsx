@@ -36,11 +36,13 @@ function Reseaux(props) {
                 });
             },
             {
-                threshold: 0.2,
+                threshold: 0.5,
             }
         );
 
-        const elementsToAnimate = document.querySelectorAll('.reseauxLinks');
+        const elementsToAnimate = document.querySelectorAll(
+            '.skypeLink, .linkedinLink, .githubLinkReseaux'
+        );
 
         elementsToAnimate.forEach((element) => {
             observer.observe(element);

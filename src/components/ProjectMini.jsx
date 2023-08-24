@@ -1,11 +1,14 @@
 import { Link as RouterLink } from 'react-router-dom';
 import '../styles/ProjectMini.css';
+import { useTranslation } from 'react-i18next';
 
 function ProjectMini(props) {
+    const { t } = useTranslation();
+
     return (
         <RouterLink className="projectLinkMini " to={props.link}>
             <div className="overlayMini">
-                <h3>Voir plus...</h3>
+                <h3>{t('overlayProjetTranslate')}</h3>
             </div>
             <img
                 className="projectImgMini"

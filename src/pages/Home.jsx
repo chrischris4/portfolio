@@ -68,11 +68,11 @@ function Home() {
                 });
             },
             {
-                threshold: 0.5,
+                threshold: 0.6,
             }
         );
 
-        const elementsToAnimateRight = document.querySelectorAll('.pAbout');
+        const elementsToAnimateRight = document.querySelectorAll('.aboutSlide');
 
         elementsToAnimateRight.forEach((element) => {
             observerRight.observe(element);
@@ -123,8 +123,13 @@ function Home() {
             <div id="aboutLien"></div>
             <div className="aboutAll">
                 <div className="about">
-                    <h2 className="titleAbout"> {t('titleAboutTranslate')}</h2>
-                    <p className="pAbout">{t('texteAbout')}</p>
+                    <div className="aboutSlide">
+                        <h2 className="titleAbout">
+                            {' '}
+                            {t('titleAboutTranslate')}
+                        </h2>
+                        <p className="pAbout">{t('texteAbout')}</p>
+                    </div>
                     <h3>{t('h3AboutTranslate')}</h3>
                 </div>
             </div>
