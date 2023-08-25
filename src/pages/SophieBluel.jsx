@@ -141,7 +141,7 @@ function SophieBluel() {
                 <p className="pProjetAbout">{t('pageDiffSophie')}</p>
                 <h2 className="projetTitleAbout">Solutions</h2>
                 <p className="pProjetAbout">{t('pageSolSophie')}</p>
-                <h2 className="projetTitleAbout">{t('pageh3')}</h2>
+                <h2 className="projetTitleAbout">{t('pageh23')}</h2>
                 <ul>
                     <li>API</li>
                     <li>Requêtes</li>

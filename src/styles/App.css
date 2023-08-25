@@ -13,6 +13,15 @@ a {
     color: inherit;
 }
 
+h2 {
+    font-weight: 400;
+}
+
+h4,
+h3 {
+    font-weight: 300;
+}
+
 .night {
     background-color: #282a2c;
     color: white;

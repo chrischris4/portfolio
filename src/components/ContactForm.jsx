@@ -86,11 +86,13 @@ function ContactForm() {
                     >
                         {t('sendTranslate')}
                     </button>
-                    {isMessageSent && (
-                        <div className="alertMessage">
-                            {t('alertTranslate')}
-                        </div>
-                    )}
+                    <div
+                        className={`alertMessage ${
+                            isMessageSent ? 'show' : ''
+                        }`}
+                    >
+                        {t('alertTranslate')}
+                    </div>
                 </form>
             </div>
         </div>
