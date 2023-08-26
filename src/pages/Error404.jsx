@@ -31,10 +31,10 @@ function Error404() {
             'https://i.ibb.co/nnXZD1Z/erreur-404-4.png',
             'https://i.ibb.co/d2mZfnS/erreur-404-3.png',
             'https://i.ibb.co/196YZkh/erreur.png',
+            'https://i.ibb.co/42hGMc1/error-404-9723235.png',
             'https://i.ibb.co/Jy7gnkz/erreur-404-1.png',
             'https://i.ibb.co/bXb3SRn/erreur-404.png',
             'https://i.ibb.co/9rt0cYk/server-control-6688463.png',
-            'https://i.ibb.co/42hGMc1/error-404-9723235.png',
             'https://i.ibb.co/fCRFBR5/skull-bones-5354410.png',
         ],
         []
