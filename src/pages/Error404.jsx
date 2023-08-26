@@ -61,6 +61,7 @@ function Error404() {
 
     return (
         <div className={`error${theme === 'dark' ? ' night' : ''}`}>
+            <div id="topPageLink"></div>
             <img className="error404" ref={imageRef} alt="" />
             <div className="errorPImg">
                 <p className="errorP">{t('errorP')}</p>{' '}
