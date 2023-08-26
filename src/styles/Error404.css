@@ -12,11 +12,24 @@
     width: 450px;
 }
 
-.errorP {
+.errorPImg {
     padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.errorP {
     text-align: center;
     font-size: 36px;
     align-items: center;
+}
+
+.dino {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    height: 60px;
+    width: 60px;
 }
 
 .errorLink {
@@ -40,6 +53,12 @@
         font-size: 24px;
     }
 
+    .dino {
+        margin-bottom: 22px;
+        height: 40px;
+        width: 40px;
+    }
+
     .errorLink {
         font-size: 20px;
     }
@@ -54,6 +73,12 @@
     }
     .errorP {
         font-size: 18px;
+    }
+
+    .dino {
+        margin-bottom: 9px;
+        height: 25px;
+        width: 25px;
     }
 
     .errorLink {

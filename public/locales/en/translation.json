@@ -85,6 +85,6 @@
     "pageInfoSophie": "As part of this project, I took care of the Frontend part. I created a gallery on the home page using data from a JSON file via API requests.",
     "pageInfoSophie2": "The site also includes an authentication page. Once logged in, the site owner can access an editing mode.",
     "pageInfoSophie3": "In edit mode, the site owner can add, modify or delete images in the gallery using a modal.",
-    "errorP": "Oops ! This page does not exist :(",
+    "errorP": "Oops ! This page does not exist",
     "errorLink": "Return to Home"
 }

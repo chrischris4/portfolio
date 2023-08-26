@@ -85,6 +85,6 @@
     "pageInfoSophie": "Dans le cadre de ce projet, j'ai pris en charge la partie Frontend. J'ai créé une galerie sur la page d'accueil en utilisant les données d'un fichier JSON via des requêtes API.",
     "pageInfoSophie2": "Le site comprend également une page d'authentification. Une fois connecté, le propriétaire du site peut accéder à un mode d'édition.",
     "pageInfoSophie3": "En mode d'édition, le propriétaire du site peut ajouter, modifier ou supprimer des images dans la galerie à l'aide d'une modale.",
-    "errorP": "Oups ! Cette page n'existe pas :(",
+    "errorP": "Oups ! Cette page n'existe pas",
     "errorLink": "Retourner à l'Accueil"
 }

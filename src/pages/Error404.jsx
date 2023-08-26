@@ -28,6 +28,11 @@ function Error404() {
 
     const images = useMemo(
         () => [
+            'https://i.ibb.co/nnXZD1Z/erreur-404-4.png',
+            'https://i.ibb.co/d2mZfnS/erreur-404-3.png',
+            'https://i.ibb.co/196YZkh/erreur.png',
+            'https://i.ibb.co/Jy7gnkz/erreur-404-1.png',
+            'https://i.ibb.co/bXb3SRn/erreur-404.png',
             'https://i.ibb.co/9rt0cYk/server-control-6688463.png',
             'https://i.ibb.co/42hGMc1/error-404-9723235.png',
             'https://i.ibb.co/fCRFBR5/skull-bones-5354410.png',
@@ -57,7 +62,14 @@ function Error404() {
     return (
         <div className={`error${theme === 'dark' ? ' night' : ''}`}>
             <img className="error404" ref={imageRef} alt="" />
-            <p className="errorP">{t('errorP')}</p>
+            <div className="errorPImg">
+                <p className="errorP">{t('errorP')}</p>{' '}
+                <img
+                    className="dino"
+                    src="https://i.ibb.co/wh7Hy6g/think-817844.png"
+                    alt=""
+                />
+            </div>
             <Link to="/" className="errorLink">
                 {t('errorLink')}
             </Link>
