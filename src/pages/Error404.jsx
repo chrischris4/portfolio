@@ -74,6 +74,10 @@ function Error404() {
             <Link to="/" className="errorLink">
                 {t('errorLink')}
             </Link>
+            <div className="secret">
+                Ma mimi fleur
+                <span className="material-symbols-rounded coeur">favorite</span>
+            </div>
         </div>
     );
 }
