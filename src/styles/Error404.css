@@ -8,25 +8,23 @@
 }
 
 .error404 {
-    margin: 0;
-    color: #aaacbe;
-    font-size: 288px;
+    margin-top: 10px;
+    width: 450px;
 }
 
 .errorP {
+    padding: 0 20px;
     text-align: center;
-    font-weight: 500;
     font-size: 36px;
     align-items: center;
 }
 
 .errorLink {
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 10px;
-    border: 3px solid;
+    border: 2px solid;
     text-align: center;
     font-size: 24px;
-    margin-top: 40px;
     margin-bottom: 70px;
     transition: 0.5s ease;
 }
@@ -38,8 +36,29 @@
 }
 
 @media screen and (max-width: 991px) {
+    .errorP {
+        font-size: 24px;
+    }
+
+    .errorLink {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .error {
+        padding-top: 50px;
+    }
     .error404 {
-        margin-top: 150px;
-        font-size: 96px;
+        width: 65%;
+    }
+    .errorP {
+        font-size: 18px;
+    }
+
+    .errorLink {
+        margin: 0 20px 70px;
+        border-radius: 5px;
+        font-size: 14px;
     }
 }
