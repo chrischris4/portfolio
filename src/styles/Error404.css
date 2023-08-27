@@ -12,7 +12,7 @@
     opacity: 0;
     transition: opacity 0.5s ease;
     position: absolute;
-    bottom: -35px;
+    top: 81px;
     left: 20px;
     display: flex;
     align-items: center;
@@ -103,5 +103,9 @@
         margin: 0 20px;
         border-radius: 5px;
         font-size: 14px;
+    }
+
+    .secret {
+        top: 57px;
     }
 }

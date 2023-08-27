@@ -8,10 +8,11 @@
 }
 
 .servicesContainer {
+    z-index: 3;
     color: white;
     padding: 20px 0;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     background-color: black;
     border-radius: 10px;
 }
@@ -52,6 +53,7 @@
 }
 
 .collapse {
+    opacity: 0;
     width: 100%;
     cursor: pointer;
     background-color: #aaacbe;
@@ -194,7 +196,7 @@
 @media screen and (max-width: 991px) {
     .services {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-bottom: 0;
     }
 
@@ -224,6 +226,10 @@
 }
 
 @media screen and (max-width: 635px) {
+    .services {
+        margin-bottom: 0px;
+    }
+
     .servicesContainer {
         border-radius: 5px;
     }

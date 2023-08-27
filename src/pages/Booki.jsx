@@ -47,7 +47,9 @@ function Booki() {
             }
         );
 
-        const elementsToAnimateRight = document.querySelectorAll('.pageh1');
+        const elementsToAnimateRight = document.querySelectorAll(
+            '.pageh1, .overlayTitleMini p, .projectTitleMini'
+        );
 
         elementsToAnimateRight.forEach((element) => {
             observerRight.observe(element);
@@ -167,6 +169,7 @@ function Booki() {
                         cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
                         link={`/Kasa`}
                         loading="lazy"
+                        filtre="Frontend"
                     />
                 </div>
                 <div className="othersMini">
@@ -175,6 +178,7 @@ function Booki() {
                         cover="https://i.ibb.co/8PCjj8K/sophiebluel-min.webp"
                         link={`/SophieBluel`}
                         loading="lazy"
+                        filtre="Frontend"
                     />
                 </div>
                 <div className="othersMini">
@@ -183,6 +187,7 @@ function Booki() {
                         cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                         link={`/MonVieuxGrimoire`}
                         loading="lazy"
+                        filtre="Backend"
                     />
                 </div>
                 <div className="othersMini">
@@ -191,6 +196,7 @@ function Booki() {
                         cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                         link={`/NinaCarducci`}
                         loading="lazy"
+                        filtre="SEO"
                     />
                 </div>
             </div>

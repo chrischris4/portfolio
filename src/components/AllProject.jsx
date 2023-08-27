@@ -126,6 +126,7 @@ function AllProject() {
                         cover="https://i.ibb.co/znVrBcm/kasa-min.webp"
                         link={`/Kasa`}
                         loading="lazy"
+                        filtre="Frontend"
                     />
                 </div>
                 <div className="projectContent tout front">
@@ -134,6 +135,7 @@ function AllProject() {
                         cover="https://i.ibb.co/8PCjj8K/sophiebluel-min.webp"
                         link={`/SophieBluel`}
                         loading="lazy"
+                        filtre="Frontend"
                     />
                 </div>
                 <div className="projectContent tout back">
@@ -142,6 +144,7 @@ function AllProject() {
                         cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                         link={`/MonVieuxGrimoire`}
                         loading="lazy"
+                        filtre="Backend"
                     />
                 </div>
                 <div className="projectContent tout seo">
@@ -150,6 +153,7 @@ function AllProject() {
                         cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                         link={`/NinaCarducci`}
                         loading="lazy"
+                        filtre="SEO"
                     />
                 </div>
                 <div className="projectContent tout front">
@@ -158,6 +162,7 @@ function AllProject() {
                         cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                         link={`/Booki`}
                         loading="lazy"
+                        filtre="Frontend"
                     />
                 </div>
             </div>

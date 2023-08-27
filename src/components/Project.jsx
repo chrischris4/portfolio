@@ -25,6 +25,29 @@ function Project(props) {
     }, [theme]);
 
     useEffect(() => {
+        const observerRight = new IntersectionObserver(
+            (entries, observerRight) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            `animateRight${theme === 'dark' ? 'night' : ''}`
+                        );
+                        observerRight.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.6,
+            }
+        );
+
+        const elementsToAnimateRight = document.querySelectorAll(
+            '.overlayTitle p, .projectTitle'
+        );
+
+        elementsToAnimateRight.forEach((element) => {
+            observerRight.observe(element);
+        });
         const observer = new IntersectionObserver(
             (entries, observer) => {
                 entries.forEach((entry) => {
@@ -63,6 +86,7 @@ function Project(props) {
                 loading="lazy"
             />
             <div className="overlayTitle">
+                <p>{props.filtre}</p>
                 <div className="projectTitle">{props.title} </div>
             </div>
         </RouterLink>

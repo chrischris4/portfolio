@@ -47,7 +47,9 @@ function Kasa() {
             }
         );
 
-        const elementsToAnimateRight = document.querySelectorAll('.pageh1');
+        const elementsToAnimateRight = document.querySelectorAll(
+            '.pageh1, .overlayTitleMini p, .projectTitleMini'
+        );
 
         elementsToAnimateRight.forEach((element) => {
             observerRight.observe(element);
@@ -179,6 +181,7 @@ function Kasa() {
                         cover="https://i.ibb.co/mFqVKV1/Booki-min.webp"
                         link={`/Booki`}
                         loading="lazy"
+                        filtre="Frontend"
                     />
                 </div>
                 <div className="othersMini">
@@ -187,6 +190,7 @@ function Kasa() {
                         cover="https://i.ibb.co/8PCjj8K/sophiebluel-min.webp"
                         link={`/SophieBluel`}
                         loading="lazy"
+                        filtre="Frontend"
                     />
                 </div>
                 <div className="othersMini">
@@ -195,6 +199,7 @@ function Kasa() {
                         cover="https://i.ibb.co/r5FVsdh/mvg-min.webp"
                         link={`/MonVieuxGrimoire`}
                         loading="lazy"
+                        filtre="Backend"
                     />
                 </div>
                 <div className="othersMini">
@@ -203,6 +208,7 @@ function Kasa() {
                         cover="https://i.ibb.co/TwtD4Fn/nina-min.webp"
                         link={`/NinaCarducci`}
                         loading="lazy"
+                        filtre="SEO"
                     />
                 </div>
             </div>

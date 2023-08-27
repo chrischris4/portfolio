@@ -127,7 +127,7 @@ input:focus {
     font-family: 'Oswald';
     display: flex;
     margin: auto;
-    padding: 5px 10px;
+    padding: 3px 10px 5px;
     margin-bottom: 20px;
     border: 2px solid white;
     background-color: black;

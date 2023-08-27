@@ -87,7 +87,7 @@ function Services(props) {
         );
 
         const elementsToAnimateUp = document.querySelectorAll(
-            '.btnLi, .normalLi, .linkCollapse'
+            '.btnLi, .normalLi, .linkCollapse, .collapse'
         );
 
         elementsToAnimateUp.forEach((element) => {

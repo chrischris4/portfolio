@@ -17,6 +17,7 @@ function ProjectMini(props) {
                 loading="lazy"
             />
             <div className="overlayTitleMini">
+                <p>{props.filtre}</p>
                 <div className="projectTitleMini">{props.title} </div>
             </div>
         </RouterLink>
