@@ -103,6 +103,14 @@
     .projectLinkMini {
         width: 90%;
     }
+
+    .overlayTitleMini p {
+        font-size: 13px;
+    }
+
+    .projectTitleMini {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 635px) {
