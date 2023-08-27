@@ -43,6 +43,7 @@
 }
 
 .pAbout {
+    margin: 0;
     padding-left: 10px;
     border-left: 3px solid;
     text-align: left;

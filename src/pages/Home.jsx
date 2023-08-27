@@ -128,6 +128,7 @@ function Home() {
                             {' '}
                             {t('titleAboutTranslate')}
                         </h2>
+                        <p className="pAbout">{t('textUpAbout')}</p>
                         <p className="pAbout">{t('textAbout')}</p>
                     </div>
                     <h3>{t('h3AboutTranslate')}</h3>
