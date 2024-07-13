@@ -15,8 +15,7 @@ i18n.use(Backend)
             escapeValue: false,
         },
         backend: {
-            loadPath:
-                'https://chrischris4.github.io/portfolio/locales/{{lng}}/translation.json', // Vérifiez ce chemin
+            loadPath: '/locales/{{lng}}/translation.json',
         },
     });
 

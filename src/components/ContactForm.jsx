@@ -84,7 +84,7 @@ function ContactForm() {
                         type="submit"
                         value="send message"
                     >
-                        {t('sendTranslate')}
+                        {t('sendTranslate')}{' '}
                     </button>
                     <div
                         className={`alertMessage ${

@@ -1,19 +1,24 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-function MetaTagsComponent(props) {
+function MetaTags(props) {
     return (
         <>
             <Helmet>
-                <title>{props.title ?? 'JOST Christopher'}</title>
+                <title>
+                    {props.title ?? 'Jost Christopher - Développeur FullStack'}
+                </title>
                 <meta
                     name="description"
                     content={
                         props.description ??
-                        "Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
+                        "Je suis Christopher Jost, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
                     }
                 />
-                <meta name="author" content={props.author ?? ''} />
+                <meta
+                    name="author"
+                    content={props.author ?? 'Jost Christopher'}
+                />
                 <meta
                     name="keywords"
                     content={
@@ -23,22 +28,25 @@ function MetaTagsComponent(props) {
                 />
                 <meta
                     property="og:title"
-                    content={props.og_title ?? 'JOST Christopher'}
+                    content={props.og_title ?? 'Jost Christopher'}
                 />
                 <meta
                     property="og:description"
                     content={
                         props.og_description ??
-                        "Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
+                        "Je suis Christopher Jost, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
                     }
                 />
-                <meta property="og:image" content={props.og_image ?? ''} />
+                <meta
+                    property="og:image"
+                    content={
+                        props.og_image ??
+                        'https://www.christopher-jost.fr/JC.ico'
+                    }
+                />
                 <meta
                     property="og:url"
-                    content={
-                        props.og_url ??
-                        'https://chrischris4.github.io/portfolio/'
-                    }
+                    content={props.og_url ?? 'https://www.christopher-jost.fr/'}
                 />
                 <meta property="og:type" content={props.og_type ?? 'website'} />
             </Helmet>
@@ -46,4 +54,4 @@ function MetaTagsComponent(props) {
     );
 }
 
-export default MetaTagsComponent;
+export default MetaTags;

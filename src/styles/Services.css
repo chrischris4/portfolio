@@ -58,7 +58,7 @@
     cursor: pointer;
     background-color: #aaacbe;
     color: black;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -180,7 +180,6 @@
 }
 
 .linkCollapse:hover {
-    color: #aaacbe;
     border-bottom: 3px solid black;
 }
 
@@ -242,6 +241,10 @@
         padding-left: 5px;
         font-size: 12px;
         margin: 0px;
+    }
+
+    .collapse {
+        border-radius: 5px;
     }
 
     .collapse p {

@@ -2,13 +2,16 @@ import Banner from '../components/Banner';
 import '../styles/Home.css';
 import { useEffect, useState, useContext } from 'react';
 import AllProject from '../components/AllProject';
+import Project from '../components/Project';
 import ContactForm from '../components/ContactForm';
-import MetaTagsComponent from '../components/MetaTags';
+import MetaTags from '../components/MetaTags';
 import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import Reseaux from '../components/Reseaux';
 import Services from '../components/Services';
 import { ThemeContext } from '../components/ThemeSombre';
 import { useTranslation } from 'react-i18next';
+import Competence from '../components/Competence';
+import Parcours from '../components/Parcours';
 
 function Home() {
     const { t } = useTranslation();
@@ -72,7 +75,8 @@ function Home() {
             }
         );
 
-        const elementsToAnimateRight = document.querySelectorAll('.aboutSlide');
+        const elementsToAnimateRight =
+            document.querySelectorAll('.aboutSlide, .cv');
 
         elementsToAnimateRight.forEach((element) => {
             observerRight.observe(element);
@@ -95,7 +99,7 @@ function Home() {
         );
 
         const elementsToAnimate = document.querySelectorAll(
-            '.competence, .parcours'
+            '.competence, .parcoursContent'
         );
 
         elementsToAnimate.forEach((element) => {
@@ -105,15 +109,15 @@ function Home() {
 
     return (
         <div className={`page-container ${theme === 'dark' ? 'night' : ''}`}>
-            <MetaTagsComponent
+            <MetaTags
                 title="Portfolio - JOST Christopher"
-                description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
-                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
+                description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mon portfolio, mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
+                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend, portfolio"
                 author="Jost Christopher"
                 og_title="Portfolio - JOST Christopher"
                 og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
-                og_image="https://chrischris4.github.io/p8/JC.ico"
-                og_url="https://chrischris4.github.io/p8/"
+                og_image="https://www.christopher-jost.fr/JC.ico"
+                og_url="https://www.christopher-jost.fr/"
                 og_type="website"
             />
             <RichSnippetAuthor />
@@ -137,133 +141,90 @@ function Home() {
             <div id="parcoursLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-
                 <h2>{t('parcoursTitleTranslate')}</h2>
             </div>
             <div className="parcours">
-                <div className="parcoursContent">
-                    <div className="parcoursP">
-                        <h3>{t('adrarTitleTranslate')}</h3>
-                        <h4>10/2021 - 06/2022</h4>
-                        <p> {t('adrarPTranslate')}</p>
-                    </div>
-                    <a
-                        className="parcoursLink"
-                        href="https://www.adrar-formation.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <div className="overlayParcours">
-                            <h4>{t('overlayParcoursTranslate')}</h4>
-                            <p> adrar-formation.com</p>
-                        </div>
-                        <img
-                            className="parcoursImg"
-                            src="https://i.ibb.co/Q6PbSS4/adrar-min.webp"
-                            alt="adrarhomepage"
-                            loading="lazy"
-                        />
-                    </a>
-                </div>
-                <div className="parcoursContent">
-                    <div className="parcoursP">
-                        <h3>{t('openTitleTranslate')}</h3>
-                        <h4>12/2022 - 08/2023</h4>
-                        <p>{t('openPTranslate')}</p>
-                        <p>{t('openP2Translate')}</p>
-                    </div>
-                    <a
-                        className="parcoursLink"
-                        href="https://openclassrooms.com/fr/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <div className="overlayParcours">
-                            <h4>{t('overlayParcoursTranslate')}</h4>
-                            <p> openclassrooms.com</p>
-                        </div>
+                <Parcours
+                    title={t('adrarTitleTranslate')}
+                    date="10/2021 - 06/2022"
+                    p={t('adrarPTranslate')}
+                    link="https://www.adrar-formation.com/"
+                    overlayTitle={t('overlayParcoursTranslate')}
+                    overlayP="adrar-formation.com"
+                    cover="https://i.ibb.co/Q6PbSS4/adrar-min.webp"
+                    altCover="adrarhomepage"
+                />
 
-                        <img
-                            className="parcoursImg"
-                            src="https://i.ibb.co/ZzwdcZF/open-min.webp"
-                            alt="openclassroomshomepage"
-                            loading="lazy"
-                        />
-                    </a>
-                </div>
+                <Parcours
+                    title={t('openTitleTranslate')}
+                    date="12/2022 - 08/2023"
+                    p={t('openPTranslate')}
+                    p2={t('openP2Translate')}
+                    link="https://openclassrooms.com/fr/"
+                    overlayTitle={t('overlayParcoursTranslate')}
+                    overlayP="openclassrooms.com"
+                    cover="https://i.ibb.co/ZzwdcZF/open-min.webp"
+                    altCover="openclassroomshomepage"
+                />
                 <div className="cv">
                     <a
                         className="buttonCv"
-                        href="https://drive.google.com/uc?export=download&id=1BpIdVawO7mGZ9Se-SI3CienXT6EoHjeU
+                        href="https://drive.google.com/uc?export=download&id=1Jihk9VWIyvt95WfdsHdrh-YC3eTm-ohl
                         "
                         download
                     >
                         {t('buttonCvTranslate')}
+                        <span className="material-symbols-rounded dl">
+                            download
+                        </span>
                     </a>
                 </div>
             </div>
             <div id="competenceLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-
                 <h2>{t('competenceTitleTranslate')}</h2>
             </div>
             <div id="competences">
-                <div className="competence">
-                    <h3>Frontend</h3>
-                    <div className="competenceContent">
-                        <img
-                            className="competenceImg"
-                            src="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
-                            alt="illustration frontend"
-                            loading="lazy"
-                        />
-                        <div className="vectorContainer">
-                            <div className="competenceVector"></div>
-                        </div>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>React.js</li>
-                        </ul>
-                    </div>
+                <Competence
+                    title="Frontend"
+                    cover="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
+                    list={['HTML/CSS', 'React.js']}
+                />
+                <Competence
+                    title="Backend"
+                    cover="https://i.ibb.co/427cG02/server-5993206.png"
+                    list={['MongoDB', 'JavaScript', 'Node.js']}
+                />
+                <Competence
+                    title="Outils"
+                    cover="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
+                    list={['VsCode', 'Postman', 'Git']}
+                />
+            </div>
+            <div id="projectPersoLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>Projets Personnel</h2>
+            </div>
+            <div id="projectsPerso">
+                <div className="projectContent perso">
+                    <Project
+                        title={t('EldenLoreTitleTranslate')}
+                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        link={`/EldenLore`}
+                        loading="lazy"
+                        filtre="PHP"
+                    />
                 </div>
-                <div className="competence">
-                    <h3>Backend</h3>
-                    <div className="competenceContent">
-                        <img
-                            className="competenceImg"
-                            src="https://i.ibb.co/427cG02/server-5993206.png"
-                            alt="illustration backend"
-                            loading="lazy"
-                        />
-                        <div className="vectorContainer">
-                            <div className="competenceVector"></div>
-                        </div>
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>JavaScript</li>
-                            <li>Node.js</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="competence">
-                    <h3>Outils</h3>
-                    <div className="competenceContent">
-                        <img
-                            className="competenceImg"
-                            src="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
-                            alt="illustration outil"
-                            loading="lazy"
-                        />
-                        <div className="vectorContainer">
-                            <div className="competenceVector"></div>
-                        </div>
-                        <ul>
-                            <li>VsCode</li>
-                            <li>Postman</li>
-                            <li>Git</li>
-                        </ul>
-                    </div>
+                <div className="projectContent perso">
+                    <Project
+                        title={t('10CentsTranslate')}
+                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        link={`/TenCents`}
+                        loading="lazy"
+                        filtre="React / Node.js"
+                    />
                 </div>
             </div>
             <div id="projectLien"></div>

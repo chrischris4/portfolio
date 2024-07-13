@@ -1,0 +1,140 @@
+.parcoursContent {
+    opacity: 0;
+    border-radius: 10px;
+    padding: 40px 80px;
+    background-color: black;
+    margin-bottom: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s ease;
+}
+
+.parcours h3 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0px;
+    border-top: 3px solid #aaacbe;
+    width: fit-content;
+}
+
+.parcours h4 {
+    margin-bottom: 15px;
+    margin-top: -2px;
+    font-size: 13px;
+}
+
+.parcoursP {
+    width: 45%;
+}
+
+.parcoursP p {
+    display: flex;
+    margin: 0;
+    font-size: 18px;
+}
+
+.parcoursImg {
+    border-radius: 10px;
+    width: 100%;
+}
+.parcoursImg:hover {
+    transform: scale(1.02);
+}
+.overlayParcours h4 {
+    transition: transform 0.5s ease;
+    transform: translateY(-150%);
+    margin: 0;
+    font-size: 18px;
+}
+
+.overlayParcours p {
+    transition: transform 0.5s ease;
+    transform: translateY(-150%);
+    margin: 0;
+    font-size: 12px;
+}
+.overlayParcours {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: opacity 0.5s ease;
+}
+.overlayParcours:hover {
+    opacity: 1;
+}
+
+.overlayParcours:hover p,
+.overlayParcours:hover h4 {
+    transform: translateY(0%);
+}
+
+.parcoursLink {
+    display: flex;
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 45%;
+}
+.parcoursLink:hover {
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 991px) {
+    .parcoursContent {
+        padding: 40px;
+        flex-direction: column;
+    }
+
+    .parcoursP {
+        width: 100%;
+    }
+    .parcoursLink {
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 635px) {
+    .parcoursLink {
+        border-radius: 5px;
+    }
+
+    .parcoursContent {
+        border-radius: 5px;
+        padding: 40px 20px;
+        margin-bottom: 20px;
+    }
+
+    .parcours p {
+        font-size: 14px;
+    }
+
+    .parcours h3 {
+        font-size: 18px;
+    }
+    .parcours h4 {
+        font-size: 12px;
+    }
+
+    .parcoursImg {
+        border-radius: 5px;
+    }
+    .overlayParcours {
+        border-radius: 5px;
+    }
+
+    .overlayParcours h4 {
+        font-size: 15px;
+    }
+    .overlayParcours p {
+        font-size: 10px;
+    }
+}

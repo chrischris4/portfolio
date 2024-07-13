@@ -1,5 +1,5 @@
 {
-    "homepage": "https://chrischris4.github.io/portfolio",
+    "homepage": "localhost://3000",
     "permissionsPolicy": "interest-cohort=()",
     "name": "my-app",
     "version": "0.1.0",

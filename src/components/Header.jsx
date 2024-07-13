@@ -165,17 +165,6 @@ function Header() {
                         theme === 'dark' ? 'night' : ''
                     }`}
                 >
-                    <div
-                        className={`translateBtnMobile ${
-                            isMobileScreen ? 'show' : ''
-                        }`}
-                        onClick={toggleLanguage}
-                    >
-                        <span className="material-symbols-rounded translateIcon">
-                            translate
-                        </span>{' '}
-                        {t('buttonText')}
-                    </div>
                     {linksHome && (
                         <>
                             <ScrollLink
@@ -302,6 +291,17 @@ function Header() {
                     >
                         GitHub
                     </RouterLink>
+                    <div
+                        className={`translateBtnMobile ${
+                            isMobileScreen ? 'show' : ''
+                        }`}
+                        onClick={toggleLanguage}
+                    >
+                        <span className="material-symbols-rounded translateIcon">
+                            translate
+                        </span>{' '}
+                        {t('buttonText')}
+                    </div>
                     <div
                         className={`nightShift ${
                             theme === 'dark' ? 'night' : ''

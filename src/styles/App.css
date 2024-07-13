@@ -8,6 +8,19 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Couleur du pouce de la barre de défilement */
+    border-radius: 6px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: white;
+  }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -20,6 +33,24 @@ h2 {
 h4,
 h3 {
     font-weight: 300;
+}
+
+.sectionTitle {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 80px;
+}
+.styleTitle {
+    border-radius: 2px;
+    margin-top: 0px;
+    margin-right: 5px;
+    width: 35px;
+    height: 22px;
+    background-color: black;
 }
 
 .night {
@@ -86,5 +117,12 @@ h3 {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .sectionTitle {
+        margin-top: 50px;
+        font-size: 15px;
     }
 }

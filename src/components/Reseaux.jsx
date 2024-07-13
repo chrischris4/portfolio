@@ -61,7 +61,7 @@ function Reseaux(props) {
                     <p>Linkedin</p>
                     <img
                         className="linkedinImg"
-                        src="https://i.ibb.co/SQVK6tV/linkedin.webp"
+                        src="https://i.ibb.co/3fdtLFX/linkedin-3536505.png"
                         alt="logo linkedin"
                     />
                 </a>

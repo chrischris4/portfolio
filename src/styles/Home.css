@@ -50,143 +50,46 @@
     width: 85%;
 }
 
-.sectionTitle {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 20px;
-    margin: auto;
-    margin-top: 80px;
-}
-.styleTitle {
-    border-radius: 2px;
-    margin-top: 0px;
-    margin-right: 5px;
-    width: 35px;
-    height: 22px;
-    background-color: black;
-}
-
-.parcours h4 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 12px;
-}
-
 .parcours {
-    opacity: 0;
     font-weight: 300;
-    padding: 40px 0;
-    background-color: #000;
-    border-radius: 10px;
     margin: auto;
     width: 90%;
     display: flex;
     flex-direction: column;
-}
-
-.parcoursContent {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 40px;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: 0.5s ease;
-}
-
-.parcours h3 {
-    font-size: 20px;
-    font-weight: 300;
-    margin: 0px;
-    border-top: 3px solid #aaacbe;
-    width: fit-content;
-}
-
-.parcoursP {
-    width: 45%;
-}
-
-.parcoursP p {
-    margin: 0;
-}
-
-.parcoursImg {
-    border-radius: 10px;
-    width: 100%;
-}
-.parcoursImg:hover {
-    transform: scale(1.02);
-}
-.overlayParcours h4 {
-    transition: transform 0.5s ease;
-    transform: translateY(-150%);
-    margin: 0;
-    font-size: 18px;
-}
-
-.overlayParcours p {
-    transition: transform 0.5s ease;
-    transform: translateY(-150%);
-    margin: 0;
-    font-size: 12px;
-}
-.overlayParcours {
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: opacity 0.5s ease;
-}
-.overlayParcours:hover {
-    opacity: 1;
-}
-
-.overlayParcours:hover p,
-.overlayParcours:hover h4 {
-    transform: translateY(0%);
-}
-
-.parcoursLink {
-    display: flex;
-    position: relative;
-    transition: transform 0.3s ease;
-    width: 45%;
-}
-.parcoursLink:hover {
-    transform: scale(1.01);
 }
 
 .cv {
+    opacity: 0;
+    background-color: #000;
+    padding: 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
 }
+
 .buttonCv {
+    display: flex;
+    align-items: center;
+    margin: auto;
     font-family: 'Oswald', sans-serif;
     border-radius: 5px;
     cursor: pointer;
-    border: 2px solid #fff;
-    font-size: 20px;
-    padding: 5px 10px;
-    text-decoration: none;
+    border: 2px solid white;
     color: #fff;
+    font-size: 20px;
+    padding: 5px 8px;
+    text-decoration: none;
     transition: 0.5s ease;
-    background-color: #000;
 }
 .buttonCv:hover {
     border: #aaacbe solid 2px;
     color: #000;
     background-color: #aaacbe;
+}
+
+.dl {
+    margin-left: 5px;
+    font-size: 25px;
 }
 
 #competences {
@@ -199,83 +102,14 @@
     margin: auto;
 }
 
-.competence {
-    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #aaacbe;
-    width: 25%;
-    height: 325px;
-    padding: 20px 0;
-}
-
-.competenceImg {
-    padding: 2px;
-    border: 2px solid black;
-    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    background-color: white;
-    width: 100px;
-}
-
-#competences h3 {
-    font-weight: 400;
-    color: #000;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-#competences ul {
-    margin: 0px;
-    margin-top: 5px;
-    padding: 0px;
-}
-
-#competences li {
-    margin: auto;
-    margin-bottom: 5px;
-    background-color: #000;
-    color: white;
-    width: fit-content;
-    padding: 5px 10px;
-    border-radius: 20px;
-    list-style: none;
-    font-size: 14px;
-}
-
-.vectorContainer {
-    margin: auto;
-    width: 20px;
-    overflow: hidden;
-    position: relative;
-    height: 60px;
-    display: flex;
+#projectsPerso {
+    padding-top: 30px;
     justify-content: space-between;
-}
-
-.competenceVector {
-    margin: 0 auto;
-    position: relative;
-    background-color: #000;
-    border-radius: 2px;
-    width: 20%;
-    height: 20px;
     display: flex;
-    transform: translateY(-20px);
-    animation: trail 1.5s linear infinite alternate;
-}
-
-@keyframes trail {
-    from {
-        top: -20px;
-    }
-    to {
-        top: calc(100% + 40px);
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
 
 .servicesContent {
@@ -290,27 +124,10 @@
     .aboutAll {
         width: 75%;
     }
-    .parcoursContent {
-        width: 100%;
-        flex-direction: column;
-    }
-    .parcours {
-        margin-bottom: 20px;
-    }
-    .parcoursP {
-        width: 90%;
-    }
-    .parcoursLink {
-        margin-top: 20px;
-        width: 90%;
-    }
+
     #competences {
         justify-content: center;
         flex-wrap: wrap;
-    }
-    .competence {
-        margin: 0 10px 20px;
-        width: 40%;
     }
 
     .servicesContent {
@@ -354,98 +171,20 @@
         padding: 0px;
     }
 
-    .sectionTitle {
-        margin-top: 50px;
-        font-size: 15px;
-    }
-    .parcours {
-        padding: 20px 0;
+    .cv {
+        padding: 20px;
         border-radius: 5px;
     }
 
-    .parcoursLink {
-        border-radius: 5px;
-    }
-
-    .parcours p {
-        font-size: 14px;
-    }
-
-    .parcours h3 {
-        font-size: 18px;
-    }
-
-    .parcoursImg {
-        border-radius: 5px;
-    }
-    .overlayParcours {
-        border-radius: 5px;
-    }
-
-    .overlayParcours h4 {
-        font-size: 15px;
-    }
-    .overlayParcours p {
-        font-size: 10px;
+    .dl {
+        font-size: 20px;
     }
 
     .buttonCv {
         font-size: 15px;
     }
+
     #competences {
         flex-direction: column;
-    }
-
-    #competences ul {
-        margin-top: 0px;
-    }
-
-    #competences li {
-        margin-top: 2.5px;
-        margin-bottom: 2.5px;
-    }
-
-    .competence {
-        margin: 0;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        width: 100%;
-        flex-direction: column;
-        height: fit-content;
-        padding: 10px 0 15px;
-    }
-
-    .competenceContent {
-        width: 80%;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 0;
-    }
-
-    .vectorContainer {
-        margin: 0 5px;
-        width: 100%;
-        overflow: hidden;
-        height: 20px;
-        flex-direction: column;
-    }
-
-    .competenceVector {
-        margin: auto 0;
-        width: 20px;
-        height: 20%;
-        transform: translateX(-40px);
-        animation: trail 1.5s linear infinite alternate;
-    }
-
-    @keyframes trail {
-        from {
-            left: -20px;
-        }
-        to {
-            left: calc(100% + 80px);
-        }
     }
 }

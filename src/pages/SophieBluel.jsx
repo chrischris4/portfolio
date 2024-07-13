@@ -4,6 +4,7 @@ import ContactForm from '../components/ContactForm';
 import MetaTagsComponent from '../components/MetaTags';
 import ProjectMini from '../components/ProjectMini';
 import Reseaux from '../components/Reseaux';
+import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import { ThemeContext } from '../components/ThemeSombre';
 import { useTranslation } from 'react-i18next';
 
@@ -110,12 +111,12 @@ function SophieBluel() {
                 author="Jost Christopher"
                 og_title="Portfolio - JOST Christopher"
                 og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
-                og_image="https://chrischris4.github.io/p8/JC.ico"
-                og_url="https://chrischris4.github.io/p8/"
+                og_image="https://www.christopher-jost.fr/JC.ico"
+                og_url="https://www.christopher-jost.fr/"
                 og_type="website"
             />
+            <RichSnippetAuthor />
             <div id="topPageLink"></div>
-
             <div className="pageTitle">
                 <h1 className="pageh1">Sophie Bluel - Designer</h1>
                 <div className="pageGithub">
@@ -167,7 +168,7 @@ function SophieBluel() {
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <p>{t('pageInfoSophie')}</p>
+                <p>{t('pageInfoSophie2')}</p>
             </div>
             <div className="pageInfo">
                 <img
@@ -176,7 +177,7 @@ function SophieBluel() {
                     alt="Sophie-Bluel"
                     loading="lazy"
                 />
-                <p>{t('pageInfoSophie')}</p>
+                <p>{t('pageInfoSophie3')}</p>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

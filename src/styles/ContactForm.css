@@ -126,6 +126,7 @@ input:focus {
     cursor: pointer;
     font-family: 'Oswald';
     display: flex;
+    align-items: center;
     margin: auto;
     padding: 3px 10px 5px;
     margin-bottom: 20px;
@@ -143,6 +144,7 @@ input:focus {
     background-color: #aaacbe;
     color: black;
 }
+
 .alertMessage {
     font-size: 15px;
     width: fit-content;
