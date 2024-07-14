@@ -189,17 +189,23 @@ function Home() {
                 <Competence
                     title="Frontend"
                     cover="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
-                    list={['HTML/CSS', 'React.js']}
+                    list={['HTML/CSS', 'Bootstrap', 'React.js', 'PHP']}
                 />
                 <Competence
                     title="Backend"
                     cover="https://i.ibb.co/427cG02/server-5993206.png"
-                    list={['MongoDB', 'JavaScript', 'Node.js']}
+                    list={[
+                        'MongoDB',
+                        'JavaScript',
+                        'Node.js',
+                        'PHP',
+                        'SQL / NoSQL',
+                    ]}
                 />
                 <Competence
                     title="Outils"
                     cover="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
-                    list={['VsCode', 'Postman', 'Git']}
+                    list={['VsCode', 'Postman', 'Git', 'XAMPP']}
                 />
             </div>
             <div id="projectPersoLien"></div>

@@ -162,34 +162,61 @@ function Booki() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                    src="https://i.ibb.co/S3Gt5HV/Elden-Lore-Article.png"
                     alt="eldenLore"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore')}</p>
+                <p>{t('pageInfoEldenLore2')}</p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                    src="https://i.ibb.co/L5FVc1c/Elden-Lore2.png"
                     alt="eldenLore"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore')}</p>
+                <p>{t('pageInfoEldenLore3')}</p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                    src="https://i.ibb.co/XFB9sDG/elden-Lore-User.png"
                     alt="eldenLore"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore')}</p>
+                <p>{t('pageInfoEldenLore4')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/DV2PmKL/Elden-Lore-Commentary.png"
+                    alt="eldenLore"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoEldenLore5')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/rwh0Qtk/elden-Lore-Edit.png"
+                    alt="eldenLore"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoEldenLore7')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/Xpy5cJx/elden-Lore-Lore.png"
+                    alt="eldenLore"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoEldenLore6')}</p>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>{t('othersTranslate')}</h2>
+                <h2>{t('othersPersoTranslate')}</h2>
             </div>
             <div className="others">
                 <div className="othersMini">
