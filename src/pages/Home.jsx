@@ -225,7 +225,7 @@ function Home() {
                 </div>
                 <div className="projectContent perso">
                     <Project
-                        title={t('10CentsTranslate')}
+                        title={t('TenCentsTitleTranslate')}
                         cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
                         link={`/TenCents`}
                         loading="lazy"

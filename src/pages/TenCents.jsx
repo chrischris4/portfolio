@@ -120,7 +120,7 @@ function Booki() {
             <div className="pageTitle">
                 <h1 className="pageh1">{t('TenCentsTitleTranslate')}</h1>
                 <div className="pageGithub">
-                    <h2 className="pageh2">Frontend</h2>
+                    <h2 className="pageh2">Frontend / Backend</h2>
                     <a
                         href="https://github.com/chrischris4/Booki_agence_de_location"
                         target="_blank"
@@ -162,13 +162,93 @@ function Booki() {
                 />
                 <p>{t('pageInfoTenCents')}</p>
             </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
+            <div className="pageInfo">
+                <img
+                    className="pageImg"
+                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                    alt="tenCents"
+                    loading="lazy"
+                />
+                <p>{t('pageInfoTenCents')}</p>
+            </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>{t('othersTranslate')}</h2>
+                <h2>{t('othersPersoTranslate')}</h2>
             </div>
             <div className="others">
-                {' '}
                 <div className="othersMini">
                     <ProjectMini
                         title={t('EldenLoreTitleTranslate')}

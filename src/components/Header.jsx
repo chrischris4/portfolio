@@ -16,6 +16,8 @@ function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
     const allLinksPages = [
+        '/EldenLore',
+        '/TenCents',
         '/Kasa',
         '/MonVieuxGrimoire',
         '/NinaCarducci',
@@ -205,6 +207,19 @@ function Header() {
                                 onClick={closeMenu}
                             >
                                 {t('competenceLink')}
+                            </ScrollLink>
+                            <ScrollLink
+                                href="projectPersoLien"
+                                to="projectPersoLien"
+                                className={`link ${
+                                    theme === 'dark' ? 'night' : ''
+                                }`}
+                                spy={true}
+                                smooth={true}
+                                duration={800}
+                                onClick={closeMenu}
+                            >
+                                {t('projetPersoLink')}
                             </ScrollLink>
                             <ScrollLink
                                 href="projectLien"
