@@ -88,21 +88,25 @@
 }
 
 .allExplainations {
-    margin: auto;
+    overflow: auto;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .explaination {
-    margin: 0px 10px;
+    margin-right: 20px;
     width: 260px;
     display: flex;
     flex-direction: column;
 }
 
+.explainationSlider {
+    display: flex;
+}
+
 .pageInfo h3 {
     text-align: start;
+    align-self: flex-start;
 }
 
 .pageInfo p {

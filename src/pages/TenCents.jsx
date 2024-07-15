@@ -167,68 +167,70 @@ function Booki() {
             <div className="pageInfo column">
                 <h3>Création d'un compte</h3>
                 <div className="allExplainations">
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/XjLWvG7/tencentsstart2.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/C73hGyJ/tencentsstart6.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/stry8bP/tencentsstart7.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/YcCGXjH/tencentsstart8.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/LzGWkRD/tencentsstart9.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/FzZ1LTc/tencentsstart10.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
+                    <div className="explainationSlider">
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/XjLWvG7/tencentsstart2.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/C73hGyJ/tencentsstart6.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/stry8bP/tencentsstart7.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/YcCGXjH/tencentsstart8.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/LzGWkRD/tencentsstart9.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/FzZ1LTc/tencentsstart10.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -236,32 +238,34 @@ function Booki() {
             <div className="pageInfo column">
                 <h3>Connexion</h3>
                 <div className="allExplainations">
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/y69bwnT/tencentsstart3.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/68tvNpQ/tencentsstart4.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/xYkpThR/tencentsstart5.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
+                    <div className="explainationSlider">
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/y69bwnT/tencentsstart3.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/68tvNpQ/tencentsstart4.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/xYkpThR/tencentsstart5.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,50 +273,52 @@ function Booki() {
             <div className="pageInfo column">
                 <h3>Les différentes pages</h3>
                 <div className="allExplainations">
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/DWvC5LQ/tencents-On.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/VWQGhjL/tencents-On2.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/XFKsLMM/tencents-On3.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/kSFfgtR/tencents-On4.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/x5zy4R6/tencents-On5.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
+                    <div className="explainationSlider">
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/DWvC5LQ/tencents-On.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/VWQGhjL/tencents-On2.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/XFKsLMM/tencents-On3.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/kSFfgtR/tencents-On4.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/x5zy4R6/tencents-On5.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,59 +326,61 @@ function Booki() {
             <div className="pageInfo column">
                 <h3>Experience utilisateur</h3>
                 <div className="allExplainations">
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
-                    </div>
-                    <div className="explaination">
-                        <img
-                            className="pageImg explainationImg"
-                            src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
-                            alt="tenCents"
-                            loading="lazy"
-                        />
-                        <p>{t('pageInfoTenCents')}</p>
+                    <div className="explainationSlider">
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
+                        <div className="explaination">
+                            <img
+                                className="pageImg explainationImg"
+                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                alt="tenCents"
+                                loading="lazy"
+                            />
+                            <p>{t('pageInfoTenCents')}</p>
+                        </div>
                     </div>
                 </div>
             </div>
