@@ -88,6 +88,7 @@
 }
 
 .allExplainations {
+    align-items: center;
     overflow: auto;
     width: 100%;
     display: flex;
@@ -105,8 +106,14 @@
 }
 
 .pageInfo h3 {
+    margin-top: 0;
     text-align: start;
     align-self: flex-start;
+}
+
+.pageInfo h4 {
+    text-align: center;
+    margin-left: 20px;
 }
 
 .pageInfo p {
@@ -127,6 +134,7 @@
 }
 
 .explainationImg {
+    height: 455px;
     border-radius: 5px;
     width: 100%;
 }

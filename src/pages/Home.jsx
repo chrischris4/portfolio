@@ -226,7 +226,7 @@ function Home() {
                 <div className="projectContent perso ">
                     <Project
                         title={t('TenCentsTitleTranslate')}
-                        cover="https://i.ibb.co/mDKVbkB/tencents-1-1.png"
+                        cover="https://i.ibb.co/27wv3t1/ten-Cents-Mini.png"
                         link={`/TenCents`}
                         loading="lazy"
                         filtre="React / Node.js"

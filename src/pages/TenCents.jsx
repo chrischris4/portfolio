@@ -121,23 +121,12 @@ function Booki() {
                 <h1 className="pageh1">{t('TenCentsTitleTranslate')}</h1>
                 <div className="pageGithub">
                     <h2 className="pageh2">Frontend / Backend</h2>
-                    <a
-                        href="https://github.com/chrischris4/Booki_agence_de_location"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img
-                            className="imgGithub"
-                            src="https://i.ibb.co/dD4Q3xW/git.png"
-                            alt=""
-                        />
-                    </a>
                 </div>
             </div>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
-                    <li>React</li>
+                    <li>React.js</li>
                     <li>Node.js</li>
                     <li>Express</li>
                 </ul>
@@ -153,15 +142,22 @@ function Booki() {
                     <li>Express</li>
                 </ul>
             </div>
-            <div className="video">
-                <h3>Je vous propose cette vidéo de présentation :</h3>
-                <video width="300" controls>
-                    <source src="/videos/TenCentsVideo.mp4" type="video/mp4" />
-                </video>
-                <h3>
-                    Vous retrouverez plus de détails sur les différentes
-                    fonctionnalités de l'application ci dessous :
-                </h3>
+            <div className="pageInfo column">
+                <h3>Vidéo de présentation :</h3>
+                <div className="allExplainations">
+                    <video width="300" controls preload="auto">
+                        <source
+                            src="/videos/TenCentsVideo.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <h4>
+                        Cette vidéo contient une éxperience utilisateur des plus
+                        classique, afin de vous donner une idée des
+                        fonctionnalités de l'application, vous retrouverez plus
+                        de détails sur celles-ci plus bas sur cette page.
+                    </h4>
+                </div>
             </div>
             {/* /////////////////////////////CREATION DU COMPTE////////////////////////// */}
             <div className="pageInfo column">
@@ -175,7 +171,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsSub')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -184,7 +180,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsSub2')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -193,7 +189,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsSub3')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -202,7 +198,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsSub4')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -211,7 +207,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsSub5')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -220,7 +216,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsSub6')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -229,7 +225,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsSub7')}</p>
                         </div>
                     </div>
                 </div>
@@ -246,7 +242,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsLog')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -255,7 +251,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsLog2')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -264,7 +260,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsLog3')}</p>
                         </div>
                     </div>
                 </div>
@@ -281,7 +277,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsPages')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -290,7 +286,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsPages2')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -299,7 +295,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsPages3')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -308,7 +304,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsPages4')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -317,75 +313,73 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsPages5')}</p>
                         </div>
                     </div>
                 </div>
             </div>
             {/* /////////////////////////////USER EXPERIENCE////////////////////////// */}
             <div className="pageInfo column">
-                <h3>Experience utilisateur</h3>
+                <h3>Experience utilisateur / jeux</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                src="https://i.ibb.co/XFKsLMM/tencents-On3.png"
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsgame')}</p>
                         </div>
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                src="https://i.ibb.co/vsP5vn9/tencentsgame.png"
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsgame2')}</p>
                         </div>
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                src="https://i.ibb.co/gvqCYHm/tencentsgame2.png"
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsgame3')}</p>
                         </div>
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                src="https://i.ibb.co/JsC7G3r/tencentsgame3.png"
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsgame4')}</p>
                         </div>
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                src="https://i.ibb.co/Pz7MxtT/tencentsgame4.png"
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsgame5')}</p>
                         </div>
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                src="https://i.ibb.co/wL94HVL/tencentsgame5.png"
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('pageInfoTenCents')}</p>
+                            <p>{t('tenCentsgame6')}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* //////////////////////////EXPERIENCE USER///////////////////////////////// */}
-
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

@@ -86,6 +86,15 @@
     "pageInfoSophie": "As part of this project, I took care of the Frontend part. I created a gallery on the home page using data from a JSON file via API requests.",
     "pageInfoSophie2": "The site also includes an authentication page. Once logged in, the site owner can access an editing mode.",
     "pageInfoSophie3": "In edit mode, the site owner can add, modify or delete images in the gallery using a modal.",
+    "pageDiffEldenLore": "Learning a new language and managing an SQL database.",
+    "pageSolEldenLore": "I learned to use this language through online courses, and similarly for the backend, I learned to use XAMP, Apache, and phpMyAdmin.",
+    "pageInfoEldenLore": "This site about the Elden Ring universe allows users to create an account, then log in to create articles where they can share their knowledge about a boss, weapon, item, or character encountered in the game.",
+    "pageInfoEldenLore2": "The articles are present on the homepage, and the search bar moves to the header when scrolling so that the user can perform searches at any time. They can also click on the icon next to the section title to filter articles by category.",
+    "pageInfoEldenLore3": "Creating an account requires a username, a password, and an image from the user. This information is then stored in a 'users' table, which will be used to authenticate the user when logging in.",
+    "pageInfoEldenLore4": "Once logged in, the user will have the ability to create articles that will be available on the homepage. They can then edit or delete them by clicking on the corresponding icons on their articles.",
+    "pageInfoEldenLore5": "By clicking on an article, we are redirected to a page dedicated to it, where users who have created an account can comment on each other's articles.",
+    "pageInfoEldenLore6": "The site also contains a 'Lore' section that explains the context in which the game's story takes place.",
+    "pageInfoEldenLore7": "Creating and editing an article is done in the same way: a form to fill out and a real-time preview of the article. If the information is valid, the article is successfully added or edited; otherwise, an error message is displayed.",
     "errorP": "Oops ! This page does not exist",
     "errorLink": "Return to Home"
 }
