@@ -85,6 +85,7 @@
 }
 
 .projectLink {
+    height: 100%;
     opacity: 0;
     box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -95,6 +96,7 @@
 }
 
 .projectImg {
+    object-fit: cover;
     border-radius: 10px;
     width: 100%;
 }

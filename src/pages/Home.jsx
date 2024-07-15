@@ -223,10 +223,10 @@ function Home() {
                         filtre="PHP"
                     />
                 </div>
-                <div className="projectContent perso">
+                <div className="projectContent perso ">
                     <Project
                         title={t('TenCentsTitleTranslate')}
-                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        cover="https://i.ibb.co/mDKVbkB/tencents-1-1.png"
                         link={`/TenCents`}
                         loading="lazy"
                         filtre="React / Node.js"

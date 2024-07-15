@@ -78,6 +78,7 @@
 }
 
 .projectLinkMini {
+    height: 100%;
     box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 100%;
@@ -87,6 +88,7 @@
 }
 
 .projectImgMini {
+    object-fit: cover;
     border-radius: 5px;
     width: 100%;
 }

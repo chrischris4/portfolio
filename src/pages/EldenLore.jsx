@@ -222,7 +222,7 @@ function Booki() {
                 <div className="othersMini">
                     <ProjectMini
                         title={t('TenCentsTitleTranslate')}
-                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        cover="https://i.ibb.co/mDKVbkB/tencents-1-1.png"
                         link={`/TenCents`}
                         loading="lazy"
                         filtre="React / Node.js"
