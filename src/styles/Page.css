@@ -149,7 +149,8 @@
 
 /* ////////////////////////////////////////10CENTS////////////////////////////////////// */
 
-.video {
+video {
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +163,7 @@
     justify-content: center;
 }
 .allExplainations {
-    align-items: center;
+    align-items: flex-start;
     overflow: auto;
     width: 100%;
     display: flex;
@@ -230,8 +231,24 @@
         width: 100%;
     }
 
+    .pageInfo h4 {
+        margin-left: 0;
+    }
+
     .projetAbout {
         width: 75%;
+    }
+
+    .allExplainations {
+        flex-direction: column;
+    }
+
+    video {
+        width: 90%;
+    }
+
+    .explaination p {
+        margin-bottom: 20px;
     }
 
     .others {

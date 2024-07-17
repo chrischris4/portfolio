@@ -145,7 +145,7 @@ function Booki() {
             <div className="pageInfo column">
                 <h3>Vidéo de présentation :</h3>
                 <div className="allExplainations">
-                    <video width="300" controls preload="auto">
+                    <video controls preload="auto">
                         <source
                             src="/videos/TenCentsVideo.mp4"
                             type="video/mp4"
