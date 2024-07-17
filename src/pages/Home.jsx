@@ -212,7 +212,7 @@ function Home() {
             <div id="projectPersoLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Projets Personnel</h2>
+                <h2>{t('projetPersoLink')}</h2>
             </div>
             <div id="projectsPerso">
                 <div className="projectContent perso">

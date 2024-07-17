@@ -143,7 +143,7 @@ function Booki() {
                 </ul>
             </div>
             <div className="pageInfo column">
-                <h3>Vidéo de présentation :</h3>
+                <h3>{t('tenCentsSectionTitle')}</h3>
                 <div className="allExplainations">
                     <video controls preload="auto">
                         <source
@@ -160,7 +160,7 @@ function Booki() {
             </div>
             {/* /////////////////////////////CREATION DU COMPTE////////////////////////// */}
             <div className="pageInfo column">
-                <h3>Création d'un compte</h3>
+                <h3>{t('tenCentsSectionTitle2')}</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
@@ -266,7 +266,7 @@ function Booki() {
             </div>
             {/* /////////////////////////////LES PAGES////////////////////////// */}
             <div className="pageInfo column">
-                <h3>Les différentes pages</h3>
+                <h3>{t('tenCentsSectionTitle3')}</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
@@ -319,7 +319,7 @@ function Booki() {
             </div>
             {/* /////////////////////////////USER EXPERIENCE////////////////////////// */}
             <div className="pageInfo column">
-                <h3>Experience utilisateur / jeux</h3>
+                <h3>{t('tenCentsSectionTitle4')}</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
