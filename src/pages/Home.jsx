@@ -199,13 +199,14 @@ function Home() {
                         'JavaScript',
                         'Node.js',
                         'PHP',
-                        'SQL / NoSQL',
+                        'SQL',
+                        'NoSQL',
                     ]}
                 />
                 <Competence
                     title="Outils"
                     cover="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
-                    list={['VsCode', 'Postman', 'Git', 'XAMPP']}
+                    list={['VsCode', 'Postman', 'Git', 'XAMPP', 'Figma']}
                 />
             </div>
             <div id="projectPersoLien"></div>

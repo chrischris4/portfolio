@@ -103,7 +103,6 @@
 }
 
 #projectsPerso {
-    padding-top: 30px;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -128,6 +127,10 @@
     #competences {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    #projectsPerso {
+        width: 100%;
     }
 
     .servicesContent {
