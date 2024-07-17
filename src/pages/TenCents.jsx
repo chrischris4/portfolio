@@ -151,12 +151,11 @@ function Booki() {
                             type="video/mp4"
                         />
                     </video>
-                    <h4>
-                        Cette vidéo contient une éxperience utilisateur des plus
-                        classique, afin de vous donner une idée des
-                        fonctionnalités de l'application, vous retrouverez plus
-                        de détails sur celles-ci plus bas sur cette page.
-                    </h4>
+                    <div className="tenCentsPresentation">
+                        <h4>{t('pageInfoTenCents')}</h4>
+                        <h4>{t('pageInfoTenCents2')}</h4>
+                        <h4>{t('pageInfoTenCents3')}</h4>
+                    </div>
                 </div>
             </div>
             {/* /////////////////////////////CREATION DU COMPTE////////////////////////// */}
@@ -330,7 +329,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('tenCentsgame')}</p>
+                            <p>{t('tenCentsGame')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -339,7 +338,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('tenCentsgame2')}</p>
+                            <p>{t('tenCentsGame2')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -348,7 +347,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('tenCentsgame3')}</p>
+                            <p>{t('tenCentsGame3')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -357,7 +356,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('tenCentsgame4')}</p>
+                            <p>{t('tenCentsGame4')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -366,7 +365,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('tenCentsgame5')}</p>
+                            <p>{t('tenCentsGame5')}</p>
                         </div>
                         <div className="explaination">
                             <img
@@ -375,7 +374,7 @@ function Booki() {
                                 alt="tenCents"
                                 loading="lazy"
                             />
-                            <p>{t('tenCentsgame6')}</p>
+                            <p>{t('tenCentsGame6')}</p>
                         </div>
                     </div>
                 </div>
