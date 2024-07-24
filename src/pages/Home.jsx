@@ -169,7 +169,7 @@ function Home() {
                 <div className="cv">
                     <a
                         className="buttonCv"
-                        href="https://drive.google.com/uc?export=download&id=1Jihk9VWIyvt95WfdsHdrh-YC3eTm-ohl
+                        href="https://drive.google.com/uc?export=download&id=1ghKfwIRnH3vLdos6XX9tphuhsYm8rPp4
                         "
                         download
                     >

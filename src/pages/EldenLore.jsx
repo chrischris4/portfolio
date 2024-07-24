@@ -8,7 +8,7 @@ import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import { ThemeContext } from '../components/ThemeSombre';
 import { useTranslation } from 'react-i18next';
 
-function Booki() {
+function EldenLore() {
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -122,7 +122,7 @@ function Booki() {
                 <div className="pageGithub">
                     <h2 className="pageh2">Frontend / Backend</h2>
                     <a
-                        href="https://github.com/chrischris4/Booki_agence_de_location"
+                        href="https://github.com/chrischris4/elden_lore"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -147,7 +147,7 @@ function Booki() {
                 <ul>
                     <li>PHP</li>
                     <li>SQL</li>
-                    <li>Xampp</li>
+                    <li>XAMPP</li>
                 </ul>
             </div>
             <div className="pageInfo">
@@ -245,4 +245,4 @@ function Booki() {
     );
 }
 
-export default Booki;
+export default EldenLore;

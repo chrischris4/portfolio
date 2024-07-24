@@ -8,7 +8,7 @@ import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import { ThemeContext } from '../components/ThemeSombre';
 import { useTranslation } from 'react-i18next';
 
-function Booki() {
+function TenCents() {
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -411,4 +411,4 @@ function Booki() {
     );
 }
 
-export default Booki;
+export default TenCents;
