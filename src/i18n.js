@@ -15,7 +15,8 @@ i18n.use(Backend)
             escapeValue: false,
         },
         backend: {
-            loadPath: '/locales/{{lng}}/translation.json',
+            loadPath:
+                'https://www.christopher-jost.fr/locales/{{lng}}/translation.json',
         },
     });
 
