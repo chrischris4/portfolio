@@ -16,7 +16,7 @@ i18n.use(Backend)
         },
         backend: {
             loadPath:
-                ' https://chrischris4.github.io/portfolio/locales/{{lng}}/translation.json',
+                'https://www.christopher-jost.fr/locales/{{lng}}/translation.json',
         },
     });
 

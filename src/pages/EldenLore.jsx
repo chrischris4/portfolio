@@ -138,6 +138,7 @@ function EldenLore() {
                 <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
                     <li>PHP</li>
+                    <li>JavaScript</li>
                 </ul>
                 <h2 className="projetTitleAbout">{t('pageh22')}</h2>
                 <p className="pProjetAbout">{t('pageDiffEldenLore')}</p>
@@ -148,6 +149,7 @@ function EldenLore() {
                     <li>PHP</li>
                     <li>SQL</li>
                     <li>XAMPP</li>
+                    <li>Apache</li>
                 </ul>
             </div>
             <div className="pageInfo">

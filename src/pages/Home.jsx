@@ -169,7 +169,7 @@ function Home() {
                 <div className="cv">
                     <a
                         className="buttonCv"
-                        href="https://drive.google.com/uc?export=download&id=1ghKfwIRnH3vLdos6XX9tphuhsYm8rPp4
+                        href="https://drive.google.com/uc?export=download&id=1Pf7efCGmqpNwOdOPCgAlWOrnsAaeK4Ph
                         "
                         download
                     >
@@ -189,19 +189,18 @@ function Home() {
                 <Competence
                     title="Frontend"
                     cover="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
-                    list={['HTML/CSS', 'Bootstrap', 'React.js', 'PHP']}
+                    list={[
+                        'HTML/CSS',
+                        'JavaScript',
+                        'Bootstrap',
+                        'React.js',
+                        'PHP',
+                    ]}
                 />
                 <Competence
                     title="Backend"
                     cover="https://i.ibb.co/427cG02/server-5993206.png"
-                    list={[
-                        'MongoDB',
-                        'JavaScript',
-                        'Node.js',
-                        'PHP',
-                        'SQL',
-                        'NoSQL',
-                    ]}
+                    list={['MongoDB', 'Node.js', 'SQL', 'NoSQL']}
                 />
                 <Competence
                     title="Outils"

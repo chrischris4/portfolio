@@ -102,6 +102,34 @@ function TenCents() {
         });
     }, [theme]);
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+        const carousel = document.querySelector('.carousel');
+        const explainations = document.querySelectorAll('.explaination');
+        const totalExplainations = explainations.length;
+        let currentIndex = 0;
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < totalExplainations - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        function updateCarousel() {
+            const translateX = -currentIndex * 100;
+            carousel.style.transform = `translateX(${translateX}%)`;
+        }
+    });
+
     return (
         <div className={`page-container ${theme === 'dark' ? 'night' : ''}`}>
             <MetaTagsComponent
