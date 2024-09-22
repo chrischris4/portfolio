@@ -232,6 +232,15 @@ function Home() {
                         filtre="React / Node.js"
                     />
                 </div>
+                <div className="projectContent perso">
+                    <Project
+                        title={t('MyAgenda - Votre agenda en ligne')}
+                        cover="https://i.ibb.co/WytrSc0/myAgenda.png"
+                        link={`/MyAgenda`}
+                        loading="lazy"
+                        filtre="React / Node.js"
+                    />
+                </div>
             </div>
             <div id="projectLien"></div>
             <div className="sectionTitle">

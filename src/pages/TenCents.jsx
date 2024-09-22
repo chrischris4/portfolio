@@ -412,14 +412,23 @@ function TenCents() {
                 <div className="styleTitle"></div>
                 <h2>{t('othersPersoTranslate')}</h2>
             </div>
-            <div className="others">
-                <div className="othersMini">
+            <div className="othersPerso ">
+                <div className="othersMini persoMargin">
                     <ProjectMini
                         title={t('EldenLoreTitleTranslate')}
                         cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
                         link={`/EldenLore`}
                         loading="lazy"
                         filtre="PHP"
+                    />
+                </div>
+                <div className="othersMini">
+                    <ProjectMini
+                        title="MyAgenda"
+                        cover="https://i.ibb.co/WytrSc0/myAgenda.png"
+                        link={`/MyAgenda`}
+                        loading="lazy"
+                        filtre="React / Node.js"
                     />
                 </div>
             </div>

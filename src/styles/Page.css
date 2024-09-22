@@ -202,10 +202,21 @@ video {
     flex-direction: row;
 }
 
+.othersPerso {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .othersMini {
     opacity: 0;
     margin-bottom: 20px;
     width: 31%;
+}
+.persoMargin {
+    margin-right: 3.3%;
 }
 
 .othersProject {
@@ -243,16 +254,16 @@ video {
         flex-direction: column;
     }
 
-    video {
-        width: 90%;
-    }
-
     .explaination p {
         margin-bottom: 20px;
     }
 
-    .others {
+    .others,
+    .othersPerso {
         width: 95%;
+    }
+    .persoMargin {
+        margin-right: 0;
     }
     .othersMini {
         display: flex;
@@ -290,6 +301,10 @@ video {
 
     .pageProjectTitle {
         padding: 0px 20px;
+    }
+
+    video {
+        width: 90%;
     }
 
     .pageInfo {

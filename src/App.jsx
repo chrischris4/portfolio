@@ -10,6 +10,7 @@ import EldenLore from './pages/EldenLore';
 import TenCents from './pages/TenCents';
 import Kasa from './pages/Kasa';
 import MonVieuxGrimoire from './pages/MonVieuxGrimoire';
+import MyAgenda from './pages/MyAgenda';
 import NinaCarducci from './pages/NinaCarducci';
 import SophieBluel from './pages/SophieBluel';
 import ThemeSombre from './components/ThemeSombre';
@@ -31,6 +32,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/Booki" element={<Booki />} />
+                        <Route path="/MyAgenda" element={<MyAgenda />} />
                         <Route path="/Kasa" element={<Kasa />} />
                         <Route path="/TenCents" element={<TenCents />} />
                         <Route path="/EldenLore" element={<EldenLore />} />

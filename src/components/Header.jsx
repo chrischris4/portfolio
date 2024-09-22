@@ -17,6 +17,7 @@ function Header() {
     const location = useLocation();
     const allLinksPages = [
         '/EldenLore',
+        '/MyAgenda',
         '/TenCents',
         '/Kasa',
         '/MonVieuxGrimoire',

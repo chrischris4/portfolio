@@ -8,7 +8,7 @@ import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import { ThemeContext } from '../components/ThemeSombre';
 import { useTranslation } from 'react-i18next';
 
-function EldenLore() {
+function MyAgenda() {
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -105,9 +105,9 @@ function EldenLore() {
     return (
         <div className={`page-container ${theme === 'dark' ? 'night' : ''}`}>
             <MetaTagsComponent
-                title="Elden Lore - Site sur l'univers de Elden Ring"
-                description="Projet PHP, SQL, PhpMyAdmin, Xampp"
-                keywords="Jost Christopher, développeur, FullStack, siteWeb, PHP, SQL, Xampp"
+                title="MyAgenda - Votre agenda en ligne "
+                description="Projet fullstack, react node.js express"
+                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend"
                 author="Jost Christopher"
                 og_title="Portfolio - JOST Christopher"
                 og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
@@ -118,11 +118,11 @@ function EldenLore() {
             <RichSnippetAuthor />
             <div id="topPageLink"></div>
             <div className="pageTitle">
-                <h1 className="pageh1">{t('EldenLoreTitleTranslate')}</h1>
+                <h1 className="pageh1">MyAgenda - Votre agenda en ligne</h1>
                 <div className="pageGithub">
                     <h2 className="pageh2">Frontend / Backend</h2>
                     <a
-                        href="https://github.com/chrischris4/elden_lore"
+                        href="https://github.com/chrischris4/myAgenda"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -137,88 +137,100 @@ function EldenLore() {
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
-                    <li>PHP</li>
-                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
                 </ul>
                 <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">{t('pageDiffEldenLore')}</p>
+                <p className="pProjetAbout">
+                    Générer les années / mois / jours, et la création des
+                    évenements.
+                </p>
                 <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">{t('pageSolEldenLore')}</p>
-                <h2 className="projetTitleAbout">{t('pageh23')}</h2>
-                <ul>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>XAMPP</li>
-                    <li>Apache</li>
-                </ul>
+                <p className="pProjetAbout">
+                    Je me suis document sur l'utilisation de Date en javascript,
+                    puis j'ai utiliser DatePicker pour la création et
+                    modification des évenements.
+                </p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
-                    alt="eldenLore"
+                    src="https://i.ibb.co/WytrSc0/myAgenda.png"
+                    alt="booki"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore')}</p>
+                <p>
+                    Ce site permet aux utilisateurs de gérer son quotidien et
+                    organiser ses évenements facilement. Depuis la page
+                    d'accueil, il peux se connecter ou crée un compte.
+                </p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/S3Gt5HV/Elden-Lore-Article.png"
-                    alt="eldenLore"
+                    src="https://i.ibb.co/xhzzbK6/my-Agenda2.png"
+                    alt="booki"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore2')}</p>
+                <p>
+                    Après s'être connecté, l'utilisateur est redirigé vers son
+                    Dashboard, oû il trouvera le mois actuel, ses évenements
+                    d'aujourd'hui et ses prochains évenements, il peux aussi
+                    naviguer vers les sections calendriers, évenements et
+                    paramêtre depuis la nav.
+                </p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/L5FVc1c/Elden-Lore2.png"
-                    alt="eldenLore"
+                    src="https://i.ibb.co/5rpvLvD/my-Agenda3.png"
+                    alt="booki"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore3')}</p>
+                <p>
+                    L'utilisateur peux crée un évenements depuis plusieurs
+                    sections, celle ci contient un champs pour la date, l'heure
+                    de début et de fin, le titre et la description de
+                    l'évenement.
+                </p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/XFB9sDG/elden-Lore-User.png"
-                    alt="eldenLore"
+                    src="https://i.ibb.co/58xrrjh/my-Agenda4.png"
+                    alt="booki"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore4')}</p>
+                <p>
+                    Une fois crée, les évenements sont disponibles dans la
+                    section du même nom, et suivant la date de celui-ci, il sera
+                    visible sur le Dashboard et une pastille sera présente sur
+                    le jour correspondant dans le mois actuel.{' '}
+                </p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/DV2PmKL/Elden-Lore-Commentary.png"
-                    alt="eldenLore"
+                    src="https://i.ibb.co/RztTfxk/my-Agenda6.png"
+                    alt="booki"
                     loading="lazy"
                 />
-                <p>{t('pageInfoEldenLore5')}</p>
-            </div>
-            <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/rwh0Qtk/elden-Lore-Edit.png"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore7')}</p>
-            </div>
-            <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/Xpy5cJx/elden-Lore-Lore.png"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore6')}</p>
+                <p>
+                    Les jours du mois actuel son cliquable et redirige vers une
+                    section correspondant au jour cliqué, dans cette section
+                    l'utilisateur peux voir tout les évenements correspondant à
+                    ce jour, et naviguer vers le jour suivant ou précedent.
+                    Cette section est également accessible depuis la section
+                    calendriers qui contient tout les mois de l'années actuelle
+                    et les jours y sont également cliquable.{' '}
+                </p>{' '}
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>{t('othersPersoTranslate')}</h2>
+                <h2>{t('othersTranslate')}</h2>
             </div>
             <div className="othersPerso">
                 <div className="othersMini persoMargin">
@@ -232,11 +244,11 @@ function EldenLore() {
                 </div>
                 <div className="othersMini">
                     <ProjectMini
-                        title="MyAgenda"
-                        cover="https://i.ibb.co/WytrSc0/myAgenda.png"
-                        link={`/MyAgenda`}
+                        title={t('EldenLoreTitleTranslate')}
+                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        link={`/EldenLore`}
                         loading="lazy"
-                        filtre="React / Node.js"
+                        filtre="PHP"
                     />
                 </div>
             </div>
@@ -256,4 +268,4 @@ function EldenLore() {
     );
 }
 
-export default EldenLore;
+export default MyAgenda;
