@@ -149,6 +149,10 @@
 
 /* ////////////////////////////////////////10CENTS////////////////////////////////////// */
 
+.tenCentsTitle {
+    background-color: #aaacbe;
+}
+
 video {
     width: 300px;
     display: flex;
@@ -164,9 +168,17 @@ video {
 }
 .allExplainations {
     align-items: flex-start;
-    overflow: auto;
+    overflow-x: auto; /* Assurer le défilement horizontal */
     width: 100%;
     display: flex;
+    scroll-snap-type: x mandatory; /* Scroll snap activé pour l'axe X */
+    scroll-behavior: smooth; /* Défilement fluide */
+    -webkit-overflow-scrolling: touch; /* Pour les appareils iOS */
+}
+
+.explainationSlider {
+    display: flex;
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
 }
 
 .explaination {
@@ -174,6 +186,11 @@ video {
     width: 260px;
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start; /* Chaque élément s'aligne au début du conteneur */
+    flex-shrink: 0; /* Empêche les éléments de rétrécir au-delà de leur taille définie */
+}
+.allExplainations::-webkit-scrollbar {
+    display: none;
 }
 
 .explainationImg {
@@ -188,9 +205,6 @@ video {
     padding: 0;
 }
 
-.explainationSlider {
-    display: flex;
-}
 /* ///////////////////////////////////////////////////////////////////////////// */
 
 .others {
@@ -345,7 +359,8 @@ video {
         width: 80%;
     }
 
-    .others {
+    .others,
+    .othersPerso {
         width: 90%;
         flex-direction: column;
     }

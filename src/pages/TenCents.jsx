@@ -171,7 +171,7 @@ function TenCents() {
                 </ul>
             </div>
             <div className="pageInfo column">
-                <h3>{t('tenCentsSectionTitle')}</h3>
+                <h3 className="tenCentsTitle">{t('tenCentsSectionTitle')}</h3>
                 <div className="allExplainations">
                     <video controls preload="auto">
                         <source
@@ -188,7 +188,7 @@ function TenCents() {
             </div>
             {/* /////////////////////////////CREATION DU COMPTE////////////////////////// */}
             <div className="pageInfo column">
-                <h3>{t('tenCentsSectionTitle2')}</h3>
+                <h3 className="tenCentsTitle">{t('tenCentsSectionTitle2')}</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
@@ -259,7 +259,7 @@ function TenCents() {
             </div>
             {/* /////////////////////////////CONNEXION////////////////////////// */}
             <div className="pageInfo column">
-                <h3>Connexion</h3>
+                <h3 className="tenCentsTitle">Connexion</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
@@ -294,7 +294,7 @@ function TenCents() {
             </div>
             {/* /////////////////////////////LES PAGES////////////////////////// */}
             <div className="pageInfo column">
-                <h3>{t('tenCentsSectionTitle3')}</h3>
+                <h3 className="tenCentsTitle">{t('tenCentsSectionTitle3')}</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
@@ -327,7 +327,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Bn2sY7f/tencentsgame4.webp"
+                                src="https://i.ibb.co/fFvN7mv/tencents-On4.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -347,7 +347,7 @@ function TenCents() {
             </div>
             {/* /////////////////////////////USER EXPERIENCE////////////////////////// */}
             <div className="pageInfo column">
-                <h3>{t('tenCentsSectionTitle4')}</h3>
+                <h3 className="tenCentsTitle">{t('tenCentsSectionTitle4')}</h3>
                 <div className="allExplainations">
                     <div className="explainationSlider">
                         <div className="explaination">
