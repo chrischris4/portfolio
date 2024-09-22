@@ -100,6 +100,7 @@
 }
 
 .pageImg {
+    object-fit: cover;
     border-radius: 10px;
     border: 2px solid black;
     width: 50%;
@@ -183,7 +184,7 @@ video {
 
 .explaination {
     margin-right: 40px;
-    width: 260px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     scroll-snap-align: start; /* Chaque élément s'aligne au début du conteneur */
@@ -194,7 +195,7 @@ video {
 }
 
 .explainationImg {
-    height: 455px;
+    height: 395px;
     border-radius: 5px;
     width: 100%;
 }
