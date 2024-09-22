@@ -149,16 +149,16 @@ function MyAgenda() {
                 </p>
                 <h2 className="projetTitleAbout">Solutions</h2>
                 <p className="pProjetAbout">
-                    Je me suis document sur l'utilisation de Date en javascript,
-                    puis j'ai utiliser DatePicker pour la création et
+                    Je me suis documenté sur l'utilisation de Date en
+                    javascript, puis j'ai utilisé DatePicker pour la création et
                     modification des évenements.
                 </p>
             </div>
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/WytrSc0/myAgenda.png"
-                    alt="booki"
+                    src="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
+                    alt="myAgenda"
                     loading="lazy"
                 />
                 <p>
@@ -170,8 +170,8 @@ function MyAgenda() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/xhzzbK6/my-Agenda2.png"
-                    alt="booki"
+                    src="https://i.ibb.co/30fFvpZ/my-Agenda2.webp"
+                    alt="myAgenda"
                     loading="lazy"
                 />
                 <p>
@@ -185,8 +185,8 @@ function MyAgenda() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/5rpvLvD/my-Agenda3.png"
-                    alt="booki"
+                    src="https://i.ibb.co/mFzRQtV/my-Agenda3.webp"
+                    alt="myAgenda"
                     loading="lazy"
                 />
                 <p>
@@ -199,8 +199,8 @@ function MyAgenda() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/58xrrjh/my-Agenda4.png"
-                    alt="booki"
+                    src="https://i.ibb.co/VT7hxdk/my-Agenda4.webp"
+                    alt="myAgenda"
                     loading="lazy"
                 />
                 <p>
@@ -213,8 +213,8 @@ function MyAgenda() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/RztTfxk/my-Agenda6.png"
-                    alt="booki"
+                    src="https://i.ibb.co/d49PMF8/my-Agenda6.webp"
+                    alt="myAgenda"
                     loading="lazy"
                 />
                 <p>
@@ -236,7 +236,7 @@ function MyAgenda() {
                 <div className="othersMini persoMargin">
                     <ProjectMini
                         title={t('TenCentsTitleTranslate')}
-                        cover="https://i.ibb.co/27wv3t1/ten-Cents-Mini.png"
+                        cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
                         link={`/TenCents`}
                         loading="lazy"
                         filtre="React / Node.js"
@@ -245,7 +245,7 @@ function MyAgenda() {
                 <div className="othersMini">
                     <ProjectMini
                         title={t('EldenLoreTitleTranslate')}
-                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
                         link={`/EldenLore`}
                         loading="lazy"
                         filtre="PHP"

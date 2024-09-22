@@ -194,7 +194,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Dt3Cn52/tencentsstart.png"
+                                src="https://i.ibb.co/8Kz4yvY/tencentsstart.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -203,7 +203,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/XjLWvG7/tencentsstart2.png"
+                                src="https://i.ibb.co/KhtndfK/tencentsstart2.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -212,7 +212,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/C73hGyJ/tencentsstart6.png"
+                                src="https://i.ibb.co/r3y7WP0/tencentsstart6.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -221,7 +221,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/stry8bP/tencentsstart7.png"
+                                src="https://i.ibb.co/6rdqRY4/tencentsstart7.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -230,7 +230,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/YcCGXjH/tencentsstart8.png"
+                                src="https://i.ibb.co/B22bCC8/tencentsstart8.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -239,7 +239,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/LzGWkRD/tencentsstart9.png"
+                                src="https://i.ibb.co/WKjMTD0/tencentsstart9.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -248,7 +248,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/FzZ1LTc/tencentsstart10.png"
+                                src="https://i.ibb.co/bWw3G2C/tencentsstart10.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -265,7 +265,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/y69bwnT/tencentsstart3.png"
+                                src="https://i.ibb.co/GPz5n9c/tencentsstart3.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -274,7 +274,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/68tvNpQ/tencentsstart4.png"
+                                src="https://i.ibb.co/1mPr5S8/tencentsstart4.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -283,7 +283,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/xYkpThR/tencentsstart5.png"
+                                src="https://i.ibb.co/TqcdQWb/tencentsstart5.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -300,7 +300,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/DWvC5LQ/tencents-On.png"
+                                src="https://i.ibb.co/mD80WRD/tencents-On.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -309,7 +309,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/VWQGhjL/tencents-On2.png"
+                                src="https://i.ibb.co/d64kmqb/tencents-On2.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -318,7 +318,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/XFKsLMM/tencents-On3.png"
+                                src="https://i.ibb.co/0mQ5Rwq/tencents-On3.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -327,7 +327,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/kSFfgtR/tencents-On4.png"
+                                src="https://i.ibb.co/Bn2sY7f/tencentsgame4.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -336,7 +336,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/x5zy4R6/tencents-On5.png"
+                                src="https://i.ibb.co/4tZX15y/tencents-On5.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -353,7 +353,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/XFKsLMM/tencents-On3.png"
+                                src="https://i.ibb.co/0mQ5Rwq/tencents-On3.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -362,7 +362,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/vsP5vn9/tencentsgame.png"
+                                src="https://i.ibb.co/xCn0xMB/tencentsgame.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -371,7 +371,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/gvqCYHm/tencentsgame2.png"
+                                src="https://i.ibb.co/y6H6r0h/tencentsgame2.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -380,7 +380,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/JsC7G3r/tencentsgame3.png"
+                                src="https://i.ibb.co/zh7bgZV/tencentsgame3.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -389,7 +389,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/Pz7MxtT/tencentsgame4.png"
+                                src="https://i.ibb.co/Bn2sY7f/tencentsgame4.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -398,7 +398,7 @@ function TenCents() {
                         <div className="explaination">
                             <img
                                 className="pageImg explainationImg"
-                                src="https://i.ibb.co/wL94HVL/tencentsgame5.png"
+                                src="https://i.ibb.co/74fCtbY/tencentsgame5.webp"
                                 alt="tenCents"
                                 loading="lazy"
                             />
@@ -416,7 +416,7 @@ function TenCents() {
                 <div className="othersMini persoMargin">
                     <ProjectMini
                         title={t('EldenLoreTitleTranslate')}
-                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
                         link={`/EldenLore`}
                         loading="lazy"
                         filtre="PHP"
@@ -425,7 +425,7 @@ function TenCents() {
                 <div className="othersMini">
                     <ProjectMini
                         title="MyAgenda"
-                        cover="https://i.ibb.co/WytrSc0/myAgenda.png"
+                        cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
                         link={`/MyAgenda`}
                         loading="lazy"
                         filtre="React / Node.js"

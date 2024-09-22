@@ -155,7 +155,7 @@ function EldenLore() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                    src="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
                     alt="eldenLore"
                     loading="lazy"
                 />
@@ -164,7 +164,7 @@ function EldenLore() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/S3Gt5HV/Elden-Lore-Article.png"
+                    src="https://i.ibb.co/VqjMf3T/Elden-Lore-Article.webp"
                     alt="eldenLore"
                     loading="lazy"
                 />
@@ -173,7 +173,7 @@ function EldenLore() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/L5FVc1c/Elden-Lore2.png"
+                    src="https://i.ibb.co/fHH23Hw/Elden-Lore2.webp"
                     alt="eldenLore"
                     loading="lazy"
                 />
@@ -182,7 +182,7 @@ function EldenLore() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/XFB9sDG/elden-Lore-User.png"
+                    src="https://i.ibb.co/TKDGmV0/elden-Lore-User.webp"
                     alt="eldenLore"
                     loading="lazy"
                 />
@@ -191,7 +191,7 @@ function EldenLore() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/DV2PmKL/Elden-Lore-Commentary.png"
+                    src="https://i.ibb.co/Jxs3bhB/Elden-Lore-Commentary.webp"
                     alt="eldenLore"
                     loading="lazy"
                 />
@@ -200,7 +200,7 @@ function EldenLore() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/rwh0Qtk/elden-Lore-Edit.png"
+                    src="https://i.ibb.co/hWgZ3rP/elden-Lore-Edit.webp"
                     alt="eldenLore"
                     loading="lazy"
                 />
@@ -209,7 +209,7 @@ function EldenLore() {
             <div className="pageInfo">
                 <img
                     className="pageImg"
-                    src="https://i.ibb.co/Xpy5cJx/elden-Lore-Lore.png"
+                    src="https://i.ibb.co/BG26mFC/elden-Lore-Lore.webp"
                     alt="eldenLore"
                     loading="lazy"
                 />
@@ -224,7 +224,7 @@ function EldenLore() {
                 <div className="othersMini persoMargin">
                     <ProjectMini
                         title={t('TenCentsTitleTranslate')}
-                        cover="https://i.ibb.co/27wv3t1/ten-Cents-Mini.png"
+                        cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
                         link={`/TenCents`}
                         loading="lazy"
                         filtre="React / Node.js"
@@ -233,7 +233,7 @@ function EldenLore() {
                 <div className="othersMini">
                     <ProjectMini
                         title="MyAgenda"
-                        cover="https://i.ibb.co/WytrSc0/myAgenda.png"
+                        cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
                         link={`/MyAgenda`}
                         loading="lazy"
                         filtre="React / Node.js"

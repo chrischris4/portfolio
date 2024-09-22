@@ -217,7 +217,7 @@ function Home() {
                 <div className="projectContent perso">
                     <Project
                         title={t('EldenLoreTitleTranslate')}
-                        cover="https://i.ibb.co/qCtMQ1M/elden-Lore.png"
+                        cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
                         link={`/EldenLore`}
                         loading="lazy"
                         filtre="PHP"
@@ -226,7 +226,7 @@ function Home() {
                 <div className="projectContent perso ">
                     <Project
                         title={t('TenCentsTitleTranslate')}
-                        cover="https://i.ibb.co/27wv3t1/ten-Cents-Mini.png"
+                        cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
                         link={`/TenCents`}
                         loading="lazy"
                         filtre="React / Node.js"
@@ -235,7 +235,7 @@ function Home() {
                 <div className="projectContent perso">
                     <Project
                         title={t('MyAgenda - Votre agenda en ligne')}
-                        cover="https://i.ibb.co/WytrSc0/myAgenda.png"
+                        cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
                         link={`/MyAgenda`}
                         loading="lazy"
                         filtre="React / Node.js"
