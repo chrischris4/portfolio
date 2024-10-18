@@ -4,7 +4,7 @@
 }
 
 .imgGithub {
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     margin-left: 20px;
     width: 60px;
 }
@@ -21,26 +21,32 @@
     justify-content: center;
 }
 .pageTitle {
+    box-sizing: border-box;
     border-radius: 10px;
     padding: 20px;
     margin: auto;
     margin-top: 85px;
-    width: 75%;
+    width: 80%;
     color: white;
     background-color: black;
 }
 
 .projetAbout {
-    color: #000;
-    background-color: #aaacbe;
+    box-sizing: border-box;
+    background: #aaacbe40;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
     padding: 20px;
     border-radius: 10px;
     margin: auto;
     margin-top: 40px;
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.projetAbout .night {
+    background-color: black;
 }
 
 .pageh1 {
@@ -50,7 +56,7 @@
 }
 
 .pageh2 {
-    padding: 4px 10px 6px;
+    padding: 4px 20px 6px;
     border-radius: 25px;
     background-color: white;
     color: black;
@@ -61,19 +67,36 @@
 }
 
 .pageInfo {
+    padding: 20px 0;
     opacity: 0;
-    color: black;
     border-radius: 10px;
-    background-color: #aaacbe;
-    padding: 20px;
-    font-size: 18px;
+    background: #aaacbe40;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    width: 100%;
     margin: auto;
     margin-top: 40px;
-    width: 75%;
+    width: 80%;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.pageInfoContent {
+    margin: 30px 0;
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    width: 90%;
+}
+
+.pageInfoDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageInfo ul {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 15px;
 }
 
 .column {
@@ -93,14 +116,15 @@
 }
 
 .pageInfo p {
-    border-radius: 10px;
-    font-size: 16px;
-    width: 35%;
-    padding: 20px;
+    width: 100%;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 18px;
 }
 
 .pageImg {
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 100%;
     border-radius: 10px;
     border: 2px solid black;
     width: 50%;
@@ -127,7 +151,7 @@
 .projetTitleAbout {
     padding-left: 5px;
     width: fit-content;
-    border-left: 5px solid black;
+    border-left: 5px solid;
     margin-bottom: -10px;
     display: flex;
 }
@@ -151,30 +175,52 @@
 /* ////////////////////////////////////////10CENTS////////////////////////////////////// */
 
 .tenCentsTitle {
-    background-color: #aaacbe;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
 video {
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
 }
 
 .tenCentsPresentation {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+.tenCentsPresentation p {
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
 .allExplainations {
-    align-items: flex-start;
-    overflow-x: auto; /* Assurer le défilement horizontal */
-    width: 100%;
+    align-items: center;
+    overflow-x: auto;
+    width: 90%;
+    margin: auto;
     display: flex;
-    scroll-snap-type: x mandatory; /* Scroll snap activé pour l'axe X */
-    scroll-behavior: smooth; /* Défilement fluide */
-    -webkit-overflow-scrolling: touch; /* Pour les appareils iOS */
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    direction: ltr;
+}
+.allExplainations > * {
+    scroll-snap-align: end; /* Ajoute un snapping correct à chaque élément */
+}
+.allExplainations::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #000;
+    display: flex;
+    border-radius: 20px;
+}
+
+.allExplainations::-webkit-scrollbar {
+    height: 3px;
 }
 
 .explainationSlider {
@@ -184,24 +230,25 @@ video {
 
 .explaination {
     margin-right: 40px;
+    margin-bottom: 20px;
     width: 220px;
     display: flex;
     flex-direction: column;
-    scroll-snap-align: start; /* Chaque élément s'aligne au début du conteneur */
-    flex-shrink: 0; /* Empêche les éléments de rétrécir au-delà de leur taille définie */
-}
-.allExplainations::-webkit-scrollbar {
-    display: none;
+    scroll-snap-align: start;
+    flex-shrink: 0;
 }
 
 .explainationImg {
-    height: 395px;
+    object-fit: cover;
+    height: fit-content;
     border-radius: 5px;
     width: 100%;
 }
 
 .explaination p {
     width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
     font-size: 14px;
     padding: 0;
 }
@@ -242,19 +289,32 @@ video {
 }
 
 @media screen and (max-width: 991px) {
+    .pageTitle {
+        width: 90%;
+    }
     .pageInfo {
+        width: 90%;
         flex-direction: column;
         font-size: 15px;
+    }
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    .pageInfoContent {
+        margin: 30px auto 30px auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
     }
 
     .pageImg {
         width: 100%;
     }
     .pageInfo p {
-        margin-bottom: 0px;
-        padding: 0px;
-        background-color: initial;
-        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
     .pageInfo h4 {
@@ -262,15 +322,7 @@ video {
     }
 
     .projetAbout {
-        width: 75%;
-    }
-
-    .allExplainations {
-        flex-direction: column;
-    }
-
-    .explaination p {
-        margin-bottom: 20px;
+        width: 90%;
     }
 
     .others,
@@ -303,7 +355,7 @@ video {
     .pageTitle {
         margin-top: 61px;
         border-radius: 5px;
-        width: 80%;
+        width: 90%;
     }
 
     .pageh1 {
@@ -312,6 +364,11 @@ video {
 
     .pageh2 {
         font-size: 20px;
+    }
+    .projetAbout {
+        margin-top: 20px;
+        border-radius: 5px;
+        width: 90%;
     }
 
     .pageProjectTitle {
@@ -324,16 +381,25 @@ video {
 
     .pageInfo {
         border-radius: 5px;
-        width: 80%;
+        width: 90%;
         margin-top: 20px;
         flex-direction: column;
     }
+
+    .pageInfo ul {
+        font-size: 13px;
+    }
+
+    .pageInfoContent {
+        margin: 0px auto;
+    }
+
+    .pageInfoDesc {
+        padding: 0;
+    }
+
     .pageInfo p {
         font-size: 14px;
-        padding: 0;
-        margin-top: 10px;
-        border-left: 0;
-        width: 100%;
     }
 
     .pageImg {
@@ -352,12 +418,6 @@ video {
     .projetAbout li {
         margin-right: 5px;
         font-size: 14px;
-    }
-
-    .projetAbout {
-        margin-top: 20px;
-        border-radius: 5px;
-        width: 80%;
     }
 
     .others,

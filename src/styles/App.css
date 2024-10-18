@@ -6,21 +6,8 @@ body {
     background-color: white;
     transition: color 0.5s ease, background-color 0.5s ease;
     overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    cursor: pointer;
-    background-color: #888;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 20px;
-    background-color: white;
+    max-width: 1600px;
+    margin: auto;
 }
 
 a {
@@ -56,13 +43,13 @@ h3 {
 }
 
 .night {
-    background-color: #282a2c;
+    background-color: #232424;
     color: white;
 }
 
 .animateUp,
 .animateUpnight {
-    animation: slideFromUp 1.5s ease forwards;
+    animation: slideFromUp 0.5s ease forwards;
 }
 
 @keyframes slideFromUp {
@@ -78,7 +65,7 @@ h3 {
 
 .animateLeft,
 .animateLeftnight {
-    animation: slideFromLeft 1.5s ease forwards;
+    animation: slideFromLeft 1s ease forwards;
 }
 
 @keyframes slideFromLeft {
@@ -94,7 +81,7 @@ h3 {
 
 .animateRight,
 .animateRightnight {
-    animation: slideFromRight 1.5s ease forwards;
+    animation: slideFromRight 1s ease forwards;
 }
 
 @keyframes slideFromRight {

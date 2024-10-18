@@ -31,6 +31,7 @@
 }
 
 .parcoursP p {
+    font-weight: 200;
     display: flex;
     margin: 0;
     font-size: 18px;
@@ -40,18 +41,16 @@
     border-radius: 10px;
     width: 100%;
 }
-.parcoursImg:hover {
-    transform: scale(1.02);
-}
+
 .overlayParcours h4 {
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease;
     transform: translateY(-150%);
     margin: 0;
     font-size: 18px;
 }
 
 .overlayParcours p {
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease;
     transform: translateY(-150%);
     margin: 0;
     font-size: 12px;
@@ -81,11 +80,7 @@
 .parcoursLink {
     display: flex;
     position: relative;
-    transition: transform 0.3s ease;
     width: 45%;
-}
-.parcoursLink:hover {
-    transform: scale(1.01);
 }
 
 @media screen and (max-width: 991px) {

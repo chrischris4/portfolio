@@ -188,23 +188,22 @@ function Home() {
             <div id="competences">
                 <Competence
                     title="Frontend"
-                    cover="https://i.ibb.co/WcqnJhx/social-media-5299596.png"
-                    list={[
-                        'HTML/CSS',
-                        'JavaScript',
-                        'Bootstrap',
-                        'React.js',
-                        'PHP',
-                    ]}
+                    cover="https://i.ibb.co/tLWdp4Z/computer-7358692.png
+"
+                    list={['HTML/CSS', 'JavaScript', 'Bootstrap', 'React.js']}
                 />
                 <Competence
                     title="Backend"
-                    cover="https://i.ibb.co/427cG02/server-5993206.png"
-                    list={['MongoDB', 'Node.js', 'SQL', 'NoSQL']}
+                    cover="
+https://i.ibb.co/D7d9JxP/database-658099.png
+"
+                    list={['MongoDB', 'Node.js', 'PHP', 'MySQL', 'NoSQL']}
                 />
                 <Competence
                     title="Outils"
-                    cover="https://i.ibb.co/RgvQkzz/wrench-9846327.png"
+                    cover="
+https://i.ibb.co/tzLVdzv/support-807303.png
+"
                     list={['VsCode', 'Postman', 'Git', 'XAMPP', 'Figma']}
                 />
             </div>
@@ -214,7 +213,7 @@ function Home() {
                 <h2>{t('projetPersoLink')}</h2>
             </div>
             <div id="projectsPerso">
-                <div className="projectContent perso">
+                <div className="projectContent perso tout back front seo">
                     <Project
                         title={t('EldenLoreTitleTranslate')}
                         cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
@@ -223,7 +222,7 @@ function Home() {
                         filtre="PHP"
                     />
                 </div>
-                <div className="projectContent perso ">
+                <div className="projectContent perso tout back front seo">
                     <Project
                         title={t('TenCentsTitleTranslate')}
                         cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
@@ -232,7 +231,7 @@ function Home() {
                         filtre="React / Node.js"
                     />
                 </div>
-                <div className="projectContent perso">
+                <div className="projectContent perso tout back front seo">
                     <Project
                         title={t('MyAgenda - Votre agenda en ligne')}
                         cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
@@ -259,7 +258,14 @@ function Home() {
                     description={t('webDevDescriptionTranslate')}
                     cover="https://i.ibb.co/0Kz4zHD/responsive-1055687.png"
                     listTitle={t('webDevListTitleTranslate')}
-                    list={['HTML/CSS', 'React', 'JavaScript', 'MongoDB']}
+                    list={[
+                        'HTML/CSS',
+                        'React',
+                        'Node.js',
+                        'JavaScript',
+                        'MongoDB',
+                        'PHP',
+                    ]}
                     listTitle2={t('webDevListTitle2Translate')}
                     list2={[
                         t('listWebTranslate'),
@@ -268,7 +274,7 @@ function Home() {
                         t('listWebTranslate3'),
                     ]}
                     p={t('servicesPTranslate')}
-                    link={['/MonVieuxGrimoire', '/Kasa']}
+                    link={['/TenCents', '/EldenLore']}
                 />
                 <Services
                     title="SEO"

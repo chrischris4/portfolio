@@ -1,47 +1,56 @@
 .competence {
-    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(151, 151, 151);
     opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color: #aaacbe;
-    width: 25%;
-    height: 430px;
-    padding: 20px 0;
+    background: #aaacbe;
+    width: 26%;
+    padding: 20px;
 }
 
-.competenceImg {
-    padding: 2px;
-    border: 2px solid black;
-    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    background-color: white;
-    width: 100px;
+.competenceContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .competence h3 {
-    font-weight: 400;
-    color: #000;
-    text-align: center;
+    color: black;
+    font-weight: 300;
     margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.competenceImg {
+    width: 70px;
     margin-bottom: 10px;
 }
 
 .competence ul {
+    align-self: flex-end;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
     margin: 0px;
     margin-top: 5px;
     padding: 0px;
 }
 
 .competence li {
-    margin: auto;
-    margin-bottom: 5px;
+    margin: 5px 5px 0 0;
     background-color: #000;
     color: white;
     width: fit-content;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     list-style: none;
     font-size: 14px;
 }
@@ -65,7 +74,7 @@
     height: 20px;
     display: flex;
     transform: translateY(-20px);
-    animation: trail 1.5s linear infinite alternate;
+    animation: trail 1.2s linear infinite alternate;
 }
 
 @keyframes trail {
@@ -84,11 +93,16 @@
     }
 }
 @media screen and (max-width: 635px) {
+    .competenceImg {
+        width: 60px;
+        margin-right: 10px;
+    }
     .competence ul {
         margin-top: 0px;
     }
 
     .competence li {
+        font-size: 12px;
         margin-top: 2.5px;
         margin-bottom: 2.5px;
     }
@@ -100,13 +114,19 @@
         width: 100%;
         flex-direction: column;
         height: fit-content;
-        padding: 10px 0 15px;
+        padding: 10px;
+        padding-top: 5px;
+    }
+
+    .competence h3 {
+        text-align: start;
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 
     .competenceContent {
-        width: 80%;
-        align-items: center;
-        justify-content: space-between;
+        width: 90%;
         display: flex;
         flex-direction: row;
         margin-bottom: 0;

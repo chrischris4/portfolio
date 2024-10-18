@@ -139,81 +139,87 @@ function EldenLore() {
                 <ul>
                     <li>PHP</li>
                     <li>JavaScript</li>
-                </ul>
-                <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">{t('pageDiffEldenLore')}</p>
-                <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">{t('pageSolEldenLore')}</p>
-                <h2 className="projetTitleAbout">{t('pageh23')}</h2>
-                <ul>
-                    <li>PHP</li>
-                    <li>SQL</li>
+                    <li>MySQL</li>
                     <li>XAMPP</li>
                     <li>Apache</li>
                 </ul>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
+                        alt="eldenLore"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoEldenLore')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/VqjMf3T/Elden-Lore-Article.webp"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore2')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/VqjMf3T/Elden-Lore-Article.webp"
+                        alt="eldenLore"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoEldenLore2')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/fHH23Hw/Elden-Lore2.webp"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore3')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/fHH23Hw/Elden-Lore2.webp"
+                        alt="eldenLore"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoEldenLore3')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/TKDGmV0/elden-Lore-User.webp"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore4')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/TKDGmV0/elden-Lore-User.webp"
+                        alt="eldenLore"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoEldenLore4')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/Jxs3bhB/Elden-Lore-Commentary.webp"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore5')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/Jxs3bhB/Elden-Lore-Commentary.webp"
+                        alt="eldenLore"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoEldenLore5')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/hWgZ3rP/elden-Lore-Edit.webp"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore7')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/hWgZ3rP/elden-Lore-Edit.webp"
+                        alt="eldenLore"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoEldenLore7')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/BG26mFC/elden-Lore-Lore.webp"
-                    alt="eldenLore"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoEldenLore6')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/BG26mFC/elden-Lore-Lore.webp"
+                        alt="eldenLore"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoEldenLore6')}</p>
+                </div>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

@@ -10,12 +10,12 @@ function Banner() {
         const linkTimeout = setTimeout(() => {
             const bannerLink = document.querySelector('.bannerLink');
             bannerLink.classList.add('show-link');
-        }, 2000);
+        }, 1500);
 
         const githubLinkTimeout = setTimeout(() => {
             const githubLink = document.querySelector('.githubLink');
             githubLink.classList.add('show-link');
-        }, 2000);
+        }, 1500);
 
         return () => {
             clearTimeout(linkTimeout);

@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: auto;
     width: 100%;
-    transition: color 0.5s ease, background-color 0.5s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
     overflow-x: hidden;
 }
 
@@ -79,7 +79,7 @@
     font-size: 20px;
     padding: 5px 8px;
     text-decoration: none;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 .buttonCv:hover {
     border: #aaacbe solid 2px;

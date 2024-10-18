@@ -154,32 +154,38 @@ function NinaCarducci() {
                 </ul>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/TwtD4Fn/nina-min.webp"
-                    alt="Nina-Carducci"
-                    loading="lazy"
-                />
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/TwtD4Fn/nina-min.webp"
+                        alt="Nina-Carducci"
+                        loading="lazy"
+                    />
 
-                <p>{t('pageInfoNina')}</p>
+                    <p>{t('pageInfoNina')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/qsNbWqj/nina2-min.webp"
-                    alt="Nina-Carducci"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoNina2')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/qsNbWqj/nina2-min.webp"
+                        alt="Nina-Carducci"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoNina2')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/dMHMXYn/nina3-min.webp"
-                    alt="Nina-Carducci"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoNina3')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/dMHMXYn/nina3-min.webp"
+                        alt="Nina-Carducci"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoNina3')}</p>
+                </div>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

@@ -151,13 +151,15 @@ function Booki() {
                 </ul>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
-                    alt="booki"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoBooki')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/mFqVKV1/Booki-min.webp"
+                        alt="booki"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoBooki')}</p>
+                </div>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

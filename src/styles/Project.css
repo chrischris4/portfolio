@@ -62,7 +62,7 @@
 
 .overlayTitle p {
     font-weight: 500;
-    opacity: 0;
+    opacity: 0.8;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
     padding: 3px 10px;
@@ -74,7 +74,7 @@
 }
 
 .projectTitle {
-    opacity: 0;
+    opacity: 0.8;
     font-size: 16px;
     margin: 0 0 5px 5px;
     padding: 4px 10px;
@@ -87,22 +87,17 @@
 .projectLink {
     height: 100%;
     opacity: 0;
-    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     width: 100%;
     display: flex;
     position: relative;
-    transition: transform 0.3s ease;
 }
 
 .projectImg {
     object-fit: cover;
     border-radius: 10px;
     width: 100%;
-}
-
-.projectLink:hover {
-    transform: scale(1.01);
 }
 
 .projectDisplay {

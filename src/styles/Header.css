@@ -11,10 +11,9 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     padding: 15px 0px;
-    transition: box-shadow 0.5s ease, color 0.5s ease,
-        background-color 0.5s ease;
+    transition: box-shadow 0.3s ease, color 0.3s ease,
+        background-color 0.3s ease;
 }
 
 .header.show {
@@ -28,7 +27,7 @@
     font-size: 40px;
     opacity: 0;
     animation: fade-in 1.5s ease forwards;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 @keyframes fade-in {
@@ -72,7 +71,7 @@
     transform: scale(1.1);
 }
 
-.headerRight {
+.headerContent {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -88,7 +87,7 @@
     border-radius: 20px;
     padding: 4px 8px;
     margin-right: 40px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .translateBtn:hover {
@@ -103,7 +102,7 @@
 
 .translateBtnMobile {
     display: none;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .translateBtnMobile:hover {
@@ -118,14 +117,14 @@
 
 .nightShift {
     color: black;
-    margin-top: 10px;
+    margin-top: 50px;
     width: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 80px;
-    transition: color 0.5s ease;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
 }
 .nightShift.night {
     color: white;
@@ -139,7 +138,7 @@
     width: 36px;
     border: solid black 2px;
     background-color: white;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
 .nightShiftVector.on {
@@ -148,7 +147,7 @@
 
 .nightShiftVector {
     margin-left: 0;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     height: 14px;
     width: 14px;
     border-radius: 50%;
@@ -159,7 +158,7 @@
     font-size: 22px;
 }
 
-.menuBurger {
+.headerNav {
     overflow: hidden;
     z-index: 2;
     margin-right: 40px;
@@ -169,31 +168,30 @@
 }
 
 .line {
-    border-radius: 2px;
+    border-radius: 6px;
     transition: transform 0.3s ease, background-color 0.5s ease;
     background-color: black;
-    width: 30px;
-    height: 3px;
-    margin: 3px 0;
+    width: 28px;
+    height: 2px;
+    margin: 2.6px 0;
 }
 
 .night .line {
     background-color: white;
 }
 
-.open .line1 {
-    transform: rotate(-45deg) translate(-5px, 7px);
+.open .line {
+    display: none;
 }
 
-.open .line2 {
-    opacity: 0;
+.modalClose {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
 }
-
-.open .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-}
-
-.overlayBurger {
+.overlayHeaderNav {
     position: fixed;
     top: 0;
     left: 0;
@@ -203,7 +201,7 @@
     display: block;
 }
 
-.burgerMenu {
+.headerNavContent {
     overflow-y: auto;
     font-weight: 400;
     max-height: calc(100vh - 50px);
@@ -220,7 +218,7 @@
     align-items: center;
 }
 
-.burgerMenu.night {
+.headerNavContent.night {
     background-color: #282a2c;
 }
 
@@ -233,32 +231,34 @@
     }
 }
 
-.burgerMenu.open {
+.headerNavContent.open {
     opacity: 1;
-    animation: slideInMenu 0.5s ease forwards;
+    animation: slideInMenu 0.4s ease-in-out;
     transform: translateX(0);
 }
 
 .link {
+    font-weight: 200;
     color: black;
     background-color: white;
     text-align: center;
-    width: 210px;
+    width: 230px;
     display: flex;
     margin: 10px 0px;
     font-size: 24px;
     text-decoration: none;
     cursor: pointer;
     justify-content: center;
-    transition: color 0.5s ease;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
 }
 
 .link.night {
     color: white;
 }
 
-.burgerMenu .link:hover {
-    color: #aaacbe;
+.headerNavContent .link:hover {
+    background-color: #aaaaaa5f;
 }
 
 .disable-scroll {
@@ -266,7 +266,7 @@
 }
 
 @media screen and (max-width: 991px) {
-    .burgerMenu {
+    .headerNavContent {
         width: 300px;
     }
 
@@ -292,24 +292,10 @@
         border: 2px solid;
         border-radius: 20px;
         padding: 4px 8px;
-        margin: 10px 0px;
+        margin-top: 50px;
     }
     .translateBtn {
         display: none;
-    }
-
-    .menuBurger .line {
-        border-radius: 2px;
-        width: 27px;
-        height: 3px;
-        margin: 2px 0;
-    }
-
-    .menuBurger.open .line1 {
-        transform: rotate(-45deg) translate(-3px, 7px);
-    }
-    .menuBurger.open .line3 {
-        transform: rotate(45deg) translate(-3px, -7px);
     }
 
     .home {
@@ -325,11 +311,17 @@
         margin: 0px 5px;
     }
 
-    .menuBurger {
+    .headerNav {
         margin-right: 20px;
     }
 
+    .modalClose {
+        top: 10px;
+        right: 20px;
+    }
+
     .nightShift {
+        margin-top: 20px;
         margin-bottom: 150px;
     }
 }

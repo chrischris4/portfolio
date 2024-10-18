@@ -155,31 +155,37 @@ function LeVieuxGrimoire() {
                 </ul>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/r5FVsdh/mvg-min.webp"
-                    alt="Mon-vieux-grimoire"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoMVG')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/r5FVsdh/mvg-min.webp"
+                        alt="Mon-vieux-grimoire"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoMVG')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/B3M0qkX/mvg3-min.webp"
-                    alt="Mon-vieux-grimoire"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoMVG2')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/B3M0qkX/mvg3-min.webp"
+                        alt="Mon-vieux-grimoire"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoMVG2')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/FhGNntW/mvg2-min.webp"
-                    alt="Mon-vieux-grimoire"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoMVG3')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/FhGNntW/mvg2-min.webp"
+                        alt="Mon-vieux-grimoire"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoMVG3')}</p>
+                </div>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

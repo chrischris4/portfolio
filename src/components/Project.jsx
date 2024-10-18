@@ -37,7 +37,7 @@ function Project(props) {
                 });
             },
             {
-                threshold: 0.6,
+                threshold: 0.4,
             }
         );
 

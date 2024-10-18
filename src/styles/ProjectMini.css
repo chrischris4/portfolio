@@ -10,7 +10,7 @@
 }
 
 .overlayMini h3 {
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     transform: translateY(-150%);
     font-size: 15px;
     margin: 0px;
@@ -29,7 +29,7 @@
     height: 100%;
     position: absolute;
     font-size: 20px;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .overlayMini:hover {
@@ -56,7 +56,7 @@
 
 .overlayTitleMini p {
     font-weight: 500;
-    opacity: 0;
+    opacity: 0.8;
     font-size: 14px;
     font-family: 'Oswald', sans-serif;
     padding: 3px 10px;
@@ -68,7 +68,7 @@
 }
 
 .projectTitleMini {
-    opacity: 0;
+    opacity: 0.8;
     font-size: 13px;
     padding: 4px 10px;
     margin: 0 0 5px 5px;
@@ -79,7 +79,7 @@
 
 .projectLinkMini {
     height: 100%;
-    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     width: 100%;
     display: flex;
@@ -91,11 +91,6 @@
     object-fit: cover;
     border-radius: 5px;
     width: 100%;
-}
-
-.projectLinkMini:hover {
-    border-radius: 5px;
-    transform: scale(1.01);
 }
 
 @media screen and (max-width: 991px) {

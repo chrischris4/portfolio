@@ -26,8 +26,8 @@ function Services(props) {
     };
 
     const linkMap = {
-        '/MonVieuxGrimoire': t('linkBackend'),
-        '/Kasa': t('linkFrontend'),
+        '/TenCents': t('linkBackend'),
+        '/EldenLore': t('linkFrontend'),
         '/NinaCarducci': t('linkSEO'),
     };
 

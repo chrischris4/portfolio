@@ -142,90 +142,114 @@ function MyAgenda() {
                     <li>MongoDB</li>
                     <li>Express</li>
                 </ul>
-                <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">
-                    Générer les années / mois / jours, et la création des
-                    évenements.
-                </p>
-                <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">
-                    Je me suis documenté sur l'utilisation de Date en
-                    javascript, puis j'ai utilisé DatePicker pour la création et
-                    modification des évenements.
-                </p>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
-                    alt="myAgenda"
-                    loading="lazy"
-                />
-                <p>
-                    Ce site permet aux utilisateurs de gérer son quotidien et
-                    organiser ses évenements facilement. Depuis la page
-                    d'accueil, il peux se connecter ou crée un compte.
-                </p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
+                        alt="myAgenda"
+                        loading="lazy"
+                    />
+                    <div className="pageInfoDesc">
+                        <p>
+                            Ce site permet aux utilisateurs de gérer leur
+                            quotidien et organiser leur évenements facilement.
+                        </p>
+                        <ul>
+                            <li>
+                                Enregistrement d'un 'user' dans la base de
+                                données
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/30fFvpZ/my-Agenda2.webp"
-                    alt="myAgenda"
-                    loading="lazy"
-                />
-                <p>
-                    Après s'être connecté, l'utilisateur est redirigé vers son
-                    Dashboard, oû il trouvera le mois actuel, ses évenements
-                    d'aujourd'hui et ses prochains évenements, il peux aussi
-                    naviguer vers les sections calendriers, évenements et
-                    paramêtre depuis la nav.
-                </p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/30fFvpZ/my-Agenda2.webp"
+                        alt="myAgenda"
+                        loading="lazy"
+                    />
+                    <div className="pageInfoDesc">
+                        <p>
+                            Après s'être connecté, l'utilisateur est redirigé
+                            vers son Dashboard.
+                        </p>
+                        <ul>
+                            <li>On genère le moi actuel</li>
+                            <li>
+                                On récupère tout les "event" crée par
+                                l'utilisateur dans la base de données grâce à
+                                leur id
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/mFzRQtV/my-Agenda3.webp"
-                    alt="myAgenda"
-                    loading="lazy"
-                />
-                <p>
-                    L'utilisateur peux crée un évenements depuis plusieurs
-                    sections, celle ci contient un champs pour la date, l'heure
-                    de début et de fin, le titre et la description de
-                    l'évenement.
-                </p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/mFzRQtV/my-Agenda3.webp"
+                        alt="myAgenda"
+                        loading="lazy"
+                    />
+
+                    <div className="pageInfoDesc">
+                        <p>
+                            L'utilisateur peux créer, modifier ou supprimer un
+                            évenement depuis plusieurs onglets.
+                        </p>
+                        <ul>
+                            <li>
+                                Création, suppression ou modification d'un
+                                'event' dans la base de données
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/VT7hxdk/my-Agenda4.webp"
-                    alt="myAgenda"
-                    loading="lazy"
-                />
-                <p>
-                    Une fois crée, les évenements sont disponibles dans la
-                    section du même nom, et suivant la date de celui-ci, il sera
-                    visible sur le Dashboard et une pastille sera présente sur
-                    le jour correspondant dans le mois actuel.{' '}
-                </p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/VT7hxdk/my-Agenda4.webp"
+                        alt="myAgenda"
+                        loading="lazy"
+                    />
+                    <div className="pageInfoDesc">
+                        <p>
+                            Une fois crée, les évenements sont disponibles dans
+                            plusieurs onglets.
+                        </p>
+                        <ul>
+                            <li>Calendrier</li>
+                            <li>Evenements</li>
+                            <li>Dashboard</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/d49PMF8/my-Agenda6.webp"
-                    alt="myAgenda"
-                    loading="lazy"
-                />
-                <p>
-                    Les jours du mois actuel son cliquable et redirige vers une
-                    section correspondant au jour cliqué, dans cette section
-                    l'utilisateur peux voir tout les évenements correspondant à
-                    ce jour, et naviguer vers le jour suivant ou précedent.
-                    Cette section est également accessible depuis la section
-                    calendriers qui contient tout les mois de l'années actuelle
-                    et les jours y sont également cliquable.{' '}
-                </p>{' '}
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/d49PMF8/my-Agenda6.webp"
+                        alt="myAgenda"
+                        loading="lazy"
+                    />
+                    <div className="pageInfoDesc">
+                        <p>
+                            Les jours du mois actuel son cliquable et redirige
+                            vers une section correspondant au jour cliqué, on
+                            compare la date contenue dans les 'event' pour
+                            choisir de les afficher ou non.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

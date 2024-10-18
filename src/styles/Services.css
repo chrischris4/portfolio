@@ -12,7 +12,7 @@
     color: white;
     padding: 20px 0;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     background-color: black;
     border-radius: 10px;
 }
@@ -30,7 +30,6 @@
 
 .servicesTitle {
     text-align: center;
-    border-top: 3px solid #aaacbe;
     width: fit-content;
     font-weight: 400;
     font-size: 20px;
@@ -46,13 +45,15 @@
 }
 
 .servicesImg {
-    margin: 5px 0;
+    margin: 20px 0;
     float: right;
     border-radius: 10px;
     width: 40%;
 }
 
 .collapse {
+    box-sizing: border-box;
+    padding-right: 10px;
     opacity: 0;
     width: 100%;
     cursor: pointer;
@@ -60,13 +61,12 @@
     color: black;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 .collapse p {
-    padding: 8px;
+    padding: 10px 20px;
     margin: 0;
     font-size: 18px;
 }
@@ -109,7 +109,7 @@
 }
 
 .collapseContent h4 {
-    font-weight: 400;
+    font-weight: 300;
     padding: 0px 20px;
     margin: 10px 0;
     font-size: 18px;
@@ -154,8 +154,8 @@
 .styleCollapseContent {
     margin: auto;
     margin-top: 20px;
-    height: 5px;
-    width: 75%;
+    height: 2px;
+    width: 95%;
     border-radius: 3px;
     background-color: #aaacbe;
 }
@@ -176,7 +176,7 @@
     opacity: 0;
     margin-bottom: 20px;
     border-bottom: 3px solid #aaacbe;
-    transition: border-bottom 0.5s ease, color 0.5s ease;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .linkCollapse:hover {
@@ -197,6 +197,10 @@
         width: 100%;
         margin-bottom: 10px;
         padding-bottom: 0;
+    }
+
+    .servicesContainer {
+        margin-bottom: 10px;
     }
 
     .collapse p {
@@ -230,6 +234,7 @@
     }
 
     .servicesContainer {
+        margin-bottom: 5px;
         border-radius: 5px;
     }
 

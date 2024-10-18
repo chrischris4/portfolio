@@ -6,6 +6,7 @@
 }
 
 .buttonFilter {
+    cursor: pointer;
     border-style: none;
     color: white;
     background-color: black;
@@ -15,13 +16,12 @@
     padding: 2px;
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
     border-bottom: solid 3px black;
 }
 
 .buttonFilter:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+    transform: translateY(-5%);
 }
 
 .filter {
@@ -54,9 +54,8 @@
     margin-right: 10px;
     padding: 2px;
     font-family: 'Oswald', sans-serif;
-    transform: scale(1.1);
     border-bottom: 3px solid #aaacbe;
-    transition: 0.5s ease;
+    transition: 0.4s ease;
 }
 
 @media screen and (max-width: 991px) {

@@ -138,7 +138,7 @@ function Header() {
                     </RouterLink>
                 </>
             )}
-            <div className="headerRight">
+            <div className="headerContent">
                 <div
                     className={`translateBtn ${isMobileScreen ? 'hide' : ''}`}
                     onClick={toggleLanguage}
@@ -149,7 +149,7 @@ function Header() {
                     {t('buttonText')}
                 </div>
                 <div
-                    className={`menuBurger ${isMenuOpen ? 'open ' : ''}${
+                    className={`headerNav ${isMenuOpen ? 'open ' : ''}${
                         theme === 'dark' ? 'night' : ''
                     }`}
                     onClick={toggleMenu}
@@ -160,14 +160,20 @@ function Header() {
                 </div>
             </div>
             {isMenuOpen && (
-                <div className="overlayBurger" onClick={closeMenu}></div>
+                <div className="overlayHeaderNav" onClick={closeMenu}></div>
             )}
             {isMenuOpen && (
                 <nav
-                    className={`burgerMenu ${isMenuOpen ? 'open' : ''} ${
+                    className={`headerNavContent ${isMenuOpen ? 'open' : ''} ${
                         theme === 'dark' ? 'night' : ''
                     }`}
                 >
+                    <span
+                        className="material-symbols-rounded modalClose"
+                        onClick={closeMenu}
+                    >
+                        close
+                    </span>
                     {linksHome && (
                         <>
                             <ScrollLink

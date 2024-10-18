@@ -154,22 +154,26 @@ function Kasa() {
                 </ul>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/znVrBcm/kasa-min.webp"
-                    alt="kasa"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoKasa')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/znVrBcm/kasa-min.webp"
+                        alt="kasa"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoKasa')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/vvft8b9/kasa2-min.webp"
-                    alt="kasa"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoKasa2')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/vvft8b9/kasa2-min.webp"
+                        alt="kasa"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoKasa2')}</p>
+                </div>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

@@ -40,7 +40,7 @@
 
 .myEmailLink:hover {
     color: white;
-    transform: scale(1.01);
+    transform: translateY(-3px);
 }
 
 .linkName {
@@ -85,7 +85,7 @@ textarea {
     border-radius: 10px;
     border: 4px solid black;
     width: 100%;
-    transition: border 0.5s ease;
+    transition: border 0.3s ease;
 }
 
 label {
@@ -136,7 +136,7 @@ input:focus {
     font-weight: 300;
     text-decoration: none;
     color: white;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .contactButton:hover {
@@ -154,7 +154,7 @@ input:focus {
     padding: 10px;
     border-radius: 5px;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .alertMessage.show {

@@ -153,31 +153,37 @@ function SophieBluel() {
                 </ul>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/8PCjj8K/sophiebluel-min.webp"
-                    alt="Sophie-Bluel"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoSophie')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/8PCjj8K/sophiebluel-min.webp"
+                        alt="Sophie-Bluel"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoSophie')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/GM9CK94/sophiebluel3-min.webp"
-                    alt="Sophie-Bluel"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoSophie2')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/GM9CK94/sophiebluel3-min.webp"
+                        alt="Sophie-Bluel"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoSophie2')}</p>
+                </div>
             </div>
             <div className="pageInfo">
-                <img
-                    className="pageImg"
-                    src="https://i.ibb.co/nsQVpXN/sophiebluel2-min.webp"
-                    alt="Sophie-Bluel"
-                    loading="lazy"
-                />
-                <p>{t('pageInfoSophie3')}</p>
+                <div className="pageInfoContent">
+                    <img
+                        className="pageImg"
+                        src="https://i.ibb.co/nsQVpXN/sophiebluel2-min.webp"
+                        alt="Sophie-Bluel"
+                        loading="lazy"
+                    />
+                    <p>{t('pageInfoSophie3')}</p>
+                </div>
             </div>
             <div id="othersLien"></div>
             <div className="sectionTitle">

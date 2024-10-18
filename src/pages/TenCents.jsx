@@ -151,28 +151,18 @@ function TenCents() {
                     <h2 className="pageh2">Frontend / Backend</h2>
                 </div>
             </div>
-            <div className="projetAbout">
+            <div className={`projetAbout ${theme === 'dark' ? 'night' : ''}`}>
                 <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
                     <li>React.js</li>
                     <li>Node.js</li>
                     <li>Express</li>
-                </ul>
-                <h2 className="projetTitleAbout">{t('pageh22')}</h2>
-                <p className="pProjetAbout">{t('pageDiffTenCents')}</p>
-                <h2 className="projetTitleAbout">Solutions</h2>
-                <p className="pProjetAbout">{t('pageSolTenCents')}</p>
-                <h2 className="projetTitleAbout">{t('pageh23')}</h2>
-                <ul>
-                    <li>React.js</li>
-                    <li>Node.js</li>
                     <li>MongoDB</li>
-                    <li>Express</li>
                 </ul>
             </div>
             <div className="pageInfo column">
                 <h3 className="tenCentsTitle">{t('tenCentsSectionTitle')}</h3>
-                <div className="allExplainations">
+                <div className="allExplainations presentation">
                     <video controls preload="auto">
                         <source
                             src="/videos/TenCentsVideo.mp4"
