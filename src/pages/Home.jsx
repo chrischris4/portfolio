@@ -210,7 +210,7 @@ https://i.ibb.co/tzLVdzv/support-807303.png
             <div id="projectPersoLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>{t('projetPersoLink')}</h2>
+                <h2>{t('projetPersoTitle')}</h2>
             </div>
             <div id="projectsPerso">
                 <div className="projectContent perso tout back front seo">
@@ -244,7 +244,7 @@ https://i.ibb.co/tzLVdzv/support-807303.png
             <div id="projectLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>{t('projetTitleTranslate')}</h2>
+                <h2>{t('projetTitle')}</h2>
             </div>
             <AllProject />
             <div id="servicesLien"></div>
