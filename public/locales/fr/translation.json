@@ -1,7 +1,7 @@
 {
     "buttonText": "Translate",
     "bannerTitleTranslate": "Développeur FullStack",
-    "bannerTranslate": "Spécialisé dans la création d'applications web dynamiques. Prêt à contribuer à des projets innovants.",
+    "bannerTranslate": "Spécialisé dans la création d'applications web dynamiques.",
     "titleAboutTranslate": "À propos de moi",
     "textUpAbout": "Bienvenue sur mon portfolio !",
     "textAbout": "Jeune Développeur de 28 ans, je vous invite à en découvrir d'avantage sur moi et mon travail, vous retrouverez ici mon parcours, mes compétences, mes projets ainsi que mes services.",
@@ -16,7 +16,7 @@
     "buttonCvTranslate": "Télécharger mon CV",
     "competenceTitleTranslate": "Compétences",
     "projetLink": "Projets de formation",
-    "projetPersoLink": "Personal projets",
+    "projetPersoLink": "Projets personnel",
     "reseauxTitleTranslate": "Réseaux",
     "contactTitleTranslate": "Contact",
     "filterTranslate": "Tout",

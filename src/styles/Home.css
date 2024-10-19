@@ -17,7 +17,19 @@
     width: 65%;
 }
 
+.aboutCircle {
+    position: absolute;
+    background-color: #aaacbe26;
+    height: 465px;
+    right: 45px;
+    top: -90px;
+    width: 465px;
+    opacity: 0;
+    border-radius: 50%;
+}
+
 .about {
+    position: relative;
     margin-left: 0;
     border-radius: 10px;
     margin-top: 70px;
@@ -147,6 +159,14 @@
         width: 100%;
         margin-top: 50px;
     }
+
+    .aboutCircle {
+        height: 370px;
+        right: 10px;
+        top: -70px;
+        width: 370px;
+    }
+
     .contentAbout {
         margin: auto;
         width: 100%;

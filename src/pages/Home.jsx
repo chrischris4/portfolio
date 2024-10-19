@@ -53,7 +53,9 @@ function Home() {
             }
         );
 
-        const elementsToAnimateLeft = document.querySelectorAll('.about h3');
+        const elementsToAnimateLeft = document.querySelectorAll(
+            '.about h3, .aboutCircle'
+        );
 
         elementsToAnimateLeft.forEach((element) => {
             observerLeft.observe(element);
@@ -127,6 +129,7 @@ function Home() {
             <div id="aboutLien"></div>
             <div className="aboutAll">
                 <div className="about">
+                    <div className="aboutCircle"></div>
                     <div className="aboutSlide">
                         <h2 className="titleAbout">
                             {' '}
