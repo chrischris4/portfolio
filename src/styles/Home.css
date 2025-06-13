@@ -1,0 +1,314 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    overflow-x: hidden;
+}
+
+#topPageLink {
+    position: absolute;
+    top: 0;
+}
+
+.aboutAll {
+    box-sizing: border-box;
+    padding-left: 10%;
+    margin: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 90%;
+    display: flex;
+    position: relative;
+}
+
+.aboutAnim {
+    position: absolute;
+    right: -0%;
+    bottom: -1%;
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.aboutAnim.finalAnimOn {
+    transform: scale(0);
+}
+
+.aboutAnimItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.aboutAnim p {
+    font-weight: 400;
+    font-size: 16px;
+    width: fit-content;
+    background-color: #08090c;
+    padding: 8px 16px;
+    margin: 0;
+    border-radius: 5px;
+    transform: scale(0);
+    translate: 0;
+    transition: transform 0.4s ease-in-out, padding 0.6s ease-in-out, translate 0.6s ease-in-out;
+}
+
+.aboutAnimItem p.animOn {
+    transform: scale(1);
+}
+
+.aboutAnimItem p.specialAnimOnLeft {
+    z-index: 2;
+    padding-left: 0;
+    transform: translateX(-52px);
+}
+
+.aboutAnimItem p.specialAnimOnRight {
+    z-index: 2;
+    padding-right: 0;
+    transform: translateX(52px);
+}
+
+
+.aboutAnimBtn {
+    position: absolute;
+    top: 7px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    transform: scale(1);
+    background-color: #08090c;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.aboutAnimBtn:hover {
+    transform: scale(1.2);
+}
+
+.aboutAnimBtn.animOn {
+    transform: scale(0);
+}
+
+.about {
+    position: relative;
+    margin-left: 0;
+    border-radius: 10px;
+    margin-top: 70px;
+    display: flex;
+    width: 460px;
+    flex-direction: column;
+}
+
+.about h2 {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 2px solid #08090c;
+    text-align: left;
+    width: 85%;
+    font-weight: 300;
+}
+
+.about h3 {
+    opacity: 0;
+    width: 90%;
+    margin-bottom: 0;
+    text-align: end;
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.parcoursSection {
+    opacity: 0;
+    font-weight: 300;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv {
+    opacity: 0;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 5%;
+}
+
+.buttonCv {
+    align-self: flex-end;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: border 0.4s ease-in-out;
+}
+
+
+.dl {
+    color: #50596e;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    font-size: 25px;
+}
+
+#competences {
+    width: 90%;
+    align-items: flex-start;
+    border-radius: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#projectsPerso {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    opacity: 0.8;
+}
+
+.servicesContent {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {
+    .aboutAll {
+        padding-left: 10%;
+    }
+
+    .aboutAnim {
+        bottom: -25%;
+    }
+
+    .aboutAnimBtn {
+        top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .parcoursSection {
+        font-weight: 300;
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #competences {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #projectsPerso {
+        width: 100%;
+    }
+
+    .servicesContent {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .aboutAll {
+        width: 90%;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .aboutAnim {
+        width: 180px;
+        right: inherit;
+        bottom: -17%;
+    }
+
+    .aboutAnim p {
+        padding: 4px 10px;
+    }
+
+    .aboutAnimItem p.specialAnimOnLeft {
+        z-index: 2;
+        padding-left: 0;
+        transform: translateX(-35px);
+    }
+
+    .aboutAnimItem p.specialAnimOnRight {
+        z-index: 2;
+        padding-right: 0;
+        transform: translateX(35px);
+    }
+
+    .aboutAnimBtn {
+        top: 8px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .about h2 {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 0;
+        width: 90%;
+        font-size: 22px;
+        padding-left: 0;
+    }
+
+    .about h3 {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .about p {
+        font-size: 17px;
+        width: 90%;
+        margin: auto;
+        border-left: none;
+        padding: 0px;
+    }
+
+    .dl {
+        font-size: 20px;
+    }
+
+    .buttonCv {
+        font-size: 15px;
+    }
+
+    #competences {
+        flex-direction: column;
+    }
+}

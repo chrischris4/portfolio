@@ -1,0 +1,133 @@
+.reseaux {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseauxP {
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.reseauxLinks {
+    height: 220px;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.reseauxLinks p {
+    margin: 0px;
+    align-self: flex-start;
+}
+
+.githubLinkReseaux,
+.linkedinLink {
+    opacity: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 35%;
+    transition: transform 0.3s ease;
+}
+
+.linkedinLink {
+    background-color: #0077b5;
+    height: 162px;
+}
+
+.linkedinLink:hover {
+    transform: translateY(-3px);
+}
+
+.linkedinImg {
+    align-self: flex-end;
+    width: 40px;
+}
+
+.githubLinkReseaux {
+    background: black;
+    height: 162px;
+}
+
+.githubLinkReseaux:hover {
+    transform: translateY(-3px);
+}
+
+.githubImgReseaux {
+    align-self: flex-end;
+    width: 55px;
+}
+
+@media screen and (max-width: 991px) {
+
+    .reseauxLinks {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .linkedinLink,
+    .githubLinkReseaux {
+        width: 90%;
+    }
+
+    .linkedinLink,
+    .githubLinkReseaux {
+        height: inherit;
+    }
+
+    .linkedinImg {
+        align-self: inherit;
+        width: 40px;
+    }
+
+    .githubImgReseaux {
+        align-self: inherit;
+        width: 45px;
+    }
+
+    .reseauxLinks p {
+        align-self: inherit;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .reseauxP {
+        text-align: left;
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .linkedinLink,
+    .githubLinkReseaux {
+        width: 90%;
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    .linkedinImg,
+    .githubImgReseaux {
+        width: 35px;
+        margin-right: 15px;
+    }
+
+    .reseauxLinks p {
+        margin: 15px;
+    }
+
+}

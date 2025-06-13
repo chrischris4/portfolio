@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Lato:wght@200;300;400;500&display=swapdisplay=swap');
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #0f1015;
+    color: #f0f0f0;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    overflow-x: hidden;
+    max-width: 1600px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h4,
+h3 {
+    font-weight: 300;
+}
+
+.sectionTitle {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 26px;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.styleTitle {
+    border: 2px solid #2A2F3A;
+    border-radius: 2px;
+    margin-top: 0px;
+    margin-right: 5px;
+    width: 35px;
+    height: 22px;
+    background-color: #08090c;
+}
+
+
+.animateUp,
+.animateUpnight {
+    animation: slideFromUp 0.5s ease forwards;
+}
+
+@keyframes slideFromUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animateLeft,
+.animateLeftnight {
+    animation: slideFromLeft 1s ease forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animateRight,
+.animateRightnight {
+    animation: slideFromRight 1s ease forwards;
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate,
+.animatenight {
+    animation: appear 1s ease forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .sectionTitle {
+        margin-top: 50px;
+        font-size: 22px;
+    }
+}

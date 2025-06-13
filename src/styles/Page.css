@@ -1,0 +1,360 @@
+#topPageLink {
+    position: absolute;
+    top: 0;
+}
+
+
+.pageTitle {
+    border: 2px solid #2A2F3A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 85px;
+    width: 80%;
+    background-color: #08090c;
+    transition: 0.4s ease-in-out;
+}
+
+.pageTitle:hover {
+    border: 2px solid #3d4454;
+}
+
+
+.pageh1 {
+    margin-top: 0;
+    padding-left: 0;
+    opacity: 0;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.imgGithub {
+    transition: transform 0.3s ease;
+    margin-left: 15px;
+    width: 60px;
+}
+
+.imgGithub:hover {
+    transform: scale(1.1);
+}
+
+.pageGithub {
+    opacity: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.projetAbout {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projetAbout li {
+    list-style: none;
+    color: #08090c;
+    background-color: #ededed;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: fit-content;
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: solid 2px #08090c;
+}
+
+.projetAbout ul {
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    border: none;
+    width: 100%;
+}
+
+
+.projetTitleAbout {
+    border: 2px solid #2A2F3A;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #08090c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.projetTitleAbout:hover {
+    border: 2px solid #3d4454;
+}
+
+
+.pageh2 {
+    padding: 4px 20px 6px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.pageInfo {
+    border: 2px solid #2A2F3A;
+    padding: 20px 0;
+    opacity: 0;
+    border-radius: 5px;
+    background: #08090c;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    transition: all 0.4s ease-in-out;
+}
+
+.pageInfo h3 {
+    margin-top: 0;
+    text-align: start;
+    align-self: flex-start;
+}
+
+.pageInfo h4 {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.pageInfo p {
+    width: 100%;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.pageInfo ul {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 16px;
+    list-style-type: disc;
+}
+
+.pageInfo:hover {
+    border: 2px solid #3d4454;
+}
+
+.pageInfoContent {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.pageInfoDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.column {
+    flex-direction: column;
+}
+
+
+.pageImg {
+    object-fit: contain;
+    max-height: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.sectionTitle {
+    width: 90%;
+}
+
+.lienInfo {
+    font-weight: 500;
+    margin: 0px 3px;
+    color: black;
+}
+
+.allProjectPage {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+
+/* ////////////////////////////////////////10CENTS////////////////////////////////////// */
+
+
+
+.allExplainations {
+    align-items: center;
+    overflow-x: auto;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    direction: ltr;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .pageTitle {
+        width: 90%;
+    }
+
+    .pageh1 {
+        font-size: 40px;
+    }
+
+    .pageInfo {
+        width: 90%;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    .tenCentsPresentation {
+        width: 90%;
+
+    }
+
+    .pageInfoContent {
+        margin: 30px auto 30px auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .pageImg {
+        width: 100%;
+    }
+
+    .pageInfo p {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .pageInfo ul {
+        margin-left: 20px;
+    }
+
+    .pageInfo h4 {
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .projetAbout {
+        width: 90%;
+    }
+
+
+    .allProjectPage {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 635px) {
+
+    .imgGithub {
+        width: 50px;
+    }
+
+    .pageGithub {
+        font-size: 15px;
+    }
+
+    .pageTitle {
+        margin-top: 52px;
+        width: 90%;
+    }
+
+    .pageh1 {
+        font-size: 32px;
+    }
+
+    .pageh2 {
+        font-size: 20px;
+    }
+
+    .projetAbout {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .projetTitleAbout {
+        font-size: 20px;
+    }
+
+    .projetAbout li {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .projetAbout ul {
+        margin-top: 10px;
+    }
+
+    .pageProjectTitle {
+        padding: 0px 20px;
+    }
+
+    video {
+        border-radius: 5px;
+        width: 90%;
+    }
+
+    .pageInfo {
+        width: 90%;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .pageInfo h4 {
+        font-size: 16px;
+    }
+
+    .pageInfo ul {
+        font-size: 15px;
+    }
+
+    .pageInfoContent {
+        margin: 0px auto;
+    }
+
+    .pageInfoDesc {
+        padding: 0;
+    }
+
+    .pageInfo p {
+        font-size: 16px;
+    }
+
+    .pageImg {
+        border-radius: 5px;
+        width: 100%;
+    }
+}

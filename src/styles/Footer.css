@@ -1,0 +1,32 @@
+.footer {
+    padding: 50px 0 30px;
+    text-align: center;
+    background-color: #08090c;
+}
+
+.pFooter {
+    font-weight: 200;
+    margin: auto;
+    width: 355px;
+    font-size: 16px;
+}
+
+.byFooter {
+    font-weight: 300;
+    margin: auto;
+    margin-top: 30px;
+    width: 355px;
+    font-size: 16px;
+}
+
+.linkFooter:hover {
+    color: #aaacbe;
+}
+
+@media screen and (max-width: 635px) {
+    .pFooter,
+    .byFooter {
+        width: 70%;
+        font-size: 14px;
+    }
+}

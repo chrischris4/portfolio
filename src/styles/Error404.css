@@ -1,0 +1,111 @@
+.error {
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.secret {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 81px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.secret:hover {
+    opacity: 1;
+}
+
+.coeur {
+    margin-left: 5px;
+    width: 16px;
+    color: red;
+}
+
+.error404 {
+    width: 350px;
+}
+
+.errorPImg {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.errorP {
+    text-align: center;
+    font-size: 36px;
+    align-items: center;
+}
+
+.dino {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    height: 60px;
+    width: 60px;
+}
+
+.errorLink {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid;
+    text-align: center;
+    font-size: 24px;
+    transition: 0.5s ease;
+    font-weight: 300;
+}
+
+.errorLink:hover {
+    background-color: #aaacbe;
+    border-color: #aaacbe;
+    color: black;
+}
+
+@media screen and (max-width: 991px) {
+    .errorP {
+        font-size: 24px;
+    }
+
+    .dino {
+        margin-bottom: 22px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .errorLink {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .error404 {
+        width: 65%;
+    }
+    .errorP {
+        font-size: 18px;
+    }
+
+    .dino {
+        margin-bottom: 9px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .errorLink {
+        margin: 0 20px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .secret {
+        top: 57px;
+    }
+}
