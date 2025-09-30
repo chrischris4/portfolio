@@ -8,7 +8,7 @@ import { FlipWords } from '../components/ui/flip-words';
 
 function Banner() {
     const { t } = useTranslation();
-    const words = ["Next", "React | Node", "React | Nest"];
+    const words = ["Next | React", "Nest | Node", "JavaScript | TypeScript"];
     const [animateBackground, setAnimateBackground] = useState(false);
 
     useEffect(() => {

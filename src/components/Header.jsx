@@ -14,14 +14,10 @@ function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
     const allLinksPages = [
+        '/Reptimorph',
         '/EldenLore',
         '/MyAgenda',
         '/TenCents',
-        '/Kasa',
-        '/MonVieuxGrimoire',
-        '/NinaCarducci',
-        '/SophieBluel',
-        '/Booki',
         '/*',
     ];
     const linksPage = allLinksPages.includes(location.pathname);

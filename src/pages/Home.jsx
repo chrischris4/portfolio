@@ -1,7 +1,6 @@
 import Banner from '../components/Banner';
 import '../styles/Home.css';
 import { useEffect, useState } from 'react';
-import AllProject from '../components/AllProject';
 import Project from '../components/Project';
 import ContactForm from '../components/ContactForm';
 import MetaTags from '../components/MetaTags';
@@ -248,6 +247,16 @@ function Home() {
             <div id="projectsPerso">
                 <div className="projectContent perso tout back front seo">
                     <Project
+                        title="Reptimorph"
+                        about="Vente de reptiles entre pros et particuliers"
+                        cover="https://i.ibb.co/svCQxS6K/Capture-d-cran-2025-09-30-013221.png"
+                        link={`/Reptimorph`}
+                        loading="lazy"
+                        filtre="Nest / Next"
+                    />
+                </div>
+                <div className="projectContent perso tout back front seo">
+                    <Project
                         title="Elden Lore"
                         about="Site sur l'univers d'Elden Ring"
                         cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
@@ -277,12 +286,6 @@ function Home() {
                     />
                 </div>
             </div>
-            <div id="projectLien"></div>
-            <div className="sectionTitle">
-                <div className="styleTitle"></div>
-                <h2>{t('projetTitle')}</h2>
-            </div>
-            <AllProject />
             <div id="servicesLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>

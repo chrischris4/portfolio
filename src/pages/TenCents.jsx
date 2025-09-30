@@ -213,8 +213,8 @@ function TenCents() {
                 <h2>{t('othersPersoTranslate')}</h2>
             </div>
             <div className="allProjectPage">
-            <div className="projectContent">
-            <Project
+                <div className="projectContent">
+                    <Project
                         title="Elden Lore"
                         about="Site sur l'univers d'Elden Ring"
                         cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
@@ -231,6 +231,16 @@ function TenCents() {
                         link={`/MyAgenda`}
                         loading="lazy"
                         filtre="React / Node.js"
+                    />
+                </div>
+                <div className="projectContent">
+                    <Project
+                        title="Reptimorph"
+                        about="Vente de reptiles en ligne"
+                        cover="https://i.ibb.co/svCQxS6K/Capture-d-cran-2025-09-30-013221.png"
+                        link={`/Reptimorph`}
+                        loading="lazy"
+                        filtre="Nest / Next"
                     />
                 </div>
             </div>
