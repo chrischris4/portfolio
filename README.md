@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Portfolio — JOST Christopher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio built with **React**, showcasing fullstack web and mobile projects.
 
-## Available Scripts
+Live: [christopher-jost.fr](https://www.christopher-jost.fr)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Layer | Tech |
+|-------|------|
+| Framework | React 18 |
+| Routing | React Router v6 |
+| Styling | CSS Modules + Tailwind CSS |
+| Animations | Motion, custom IntersectionObserver |
+| i18n | react-i18next (FR / EN) |
+| UI components | Aceternity UI (shooting stars, flip words, moving border) |
+| 3D / Globe | Three.js, @react-three/fiber, three-globe |
+| Contact form | EmailJS |
+| SEO | react-helmet-async, Open Graph, Rich Snippets |
+| Deployment | FileZilla FTP → OVH |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Projects featured
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pro
+| Project | Stack | Link |
+|---------|-------|------|
+| **Reptimorph** | Next.js, NestJS, PostgreSQL, Stripe, Socket.io | [reptimorph.fr](https://reptimorph.fr) |
+| **Flun** | React Native / Expo, NestJS, OpenAI, Replicate | [Google Play](https://play.google.com/store/apps/details?id=com.flun.app) |
 
-### `npm run build`
+### Personal
+| Project | Stack |
+|---------|-------|
+| **Elden Lore** | PHP, MySQL, XAMPP |
+| **10 Cents** | React, Node.js, Express, MongoDB |
+| **My Agenda** | React, Node.js, Express, MongoDB |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run eject`
+Production build:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `build/` folder is ready to be deployed via FTP. Make sure to upload the `locales/` folder as well (i18n translations).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project structure
 
-## Learn More
+```
+src/
+├── components/          # Reusable components
+│   ├── ui/              # Aceternity UI components
+│   ├── PageInfo.jsx     # Project detail section component
+│   ├── Carousel.jsx     # Screenshot carousel
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   └── ...
+├── pages/               # Route pages
+│   ├── Home.jsx
+│   ├── Reptimorph.jsx
+│   ├── Flun.jsx
+│   ├── EldenLore.jsx
+│   ├── TenCents.jsx
+│   ├── MyAgenda.jsx
+│   └── Error404.jsx
+├── styles/              # CSS files
+├── i18n.js              # i18n configuration
+└── App.jsx              # Routes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+public/
+└── locales/
+    ├── fr/translation.json
+    └── en/translation.json
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## i18n
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The portfolio supports **French** and **English**. Translation files are located in `public/locales/`.
 
-### Analyzing the Bundle Size
+When adding new translation keys, bump the version in `src/i18n.js` to bust the browser cache:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```js
+const version = 'v1.2.0'; // increment on each translation update
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Christopher JOST** — FullStack Developer  
+[christopher-jost.fr](https://www.christopher-jost.fr) · [GitHub](https://github.com/chrischris4) · [LinkedIn](https://www.linkedin.com/in/christopher-jost)
