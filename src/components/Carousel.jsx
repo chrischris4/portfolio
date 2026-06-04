@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Carousel.css';
 
-function Carousel({ items, descriptions }) {
+function Carousel({ items, descriptions, centered }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -14,7 +14,7 @@ function Carousel({ items, descriptions }) {
 
     return (
         <div className="carousel">
-            <div className='carouselContainer'>
+            <div className={`carouselContainer ${centered ? 'carouselContainerCentered' : ''}`}>
             <div className="carouselInner">
                 {items.map((item, index) => {
                     // Determine the class based on the position relative to currentIndex

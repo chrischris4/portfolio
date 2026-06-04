@@ -56,7 +56,7 @@ function Banner() {
                             <img
                                 className="imgContact"
                                 src="https://i.ibb.co/DVbScgL/icons8-github-128.png"
-                                alt=""
+                                alt="GitHub"
                             />
                         </a>
                     </div>

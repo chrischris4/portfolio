@@ -19,74 +19,51 @@ function TenCents() {
 
     useEffect(() => {
         const observerRight = new IntersectionObserver(
-            (entries, observerRight) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateRight"
-                        );
-                        observerRight.unobserve(entry.target);
+                        entry.target.classList.add("animateRight");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
-
-        const elementsToAnimateRight = document.querySelectorAll(
-            '.pageh1'
-        );
-
-        elementsToAnimateRight.forEach((element) => {
-            observerRight.observe(element);
-        });
 
         const observerUp = new IntersectionObserver(
-            (entries, observerUp) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateUp"
-                        );
-                        observerUp.unobserve(entry.target);
+                        entry.target.classList.add("animateUp");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
 
-        const elementsToAnimateUp = document.querySelectorAll('.pageGithub');
-
-        elementsToAnimateUp.forEach((element) => {
-            observerUp.observe(element);
-        });
         const observer = new IntersectionObserver(
-            (entries, observer) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animate"
-                        );
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add("animate");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.2,
-            }
+            { threshold: 0.2 }
         );
 
-        const elementsToAnimate = document.querySelectorAll(
-            '.pageInfo, .projectContent'
-        );
+        document.querySelectorAll('.pageh1').forEach((el) => observerRight.observe(el));
+        document.querySelectorAll('.pageGithub').forEach((el) => observerUp.observe(el));
+        document.querySelectorAll('.pageInfo, .projectContent').forEach((el) => observer.observe(el));
 
-        elementsToAnimate.forEach((element) => {
-            observer.observe(element);
-        });
-    },);
+        return () => {
+            observerRight.disconnect();
+            observerUp.disconnect();
+            observer.disconnect();
+        };
+    }, []);
 
 
     const images = [
@@ -216,7 +193,7 @@ function TenCents() {
                 <div className="projectContent">
                     <Project
                         title="Elden Lore"
-                        about="Site sur l'univers d'Elden Ring"
+                        about={t('eldenLoreAbout')}
                         cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
                         link={`/EldenLore`}
                         loading="lazy"
@@ -226,7 +203,7 @@ function TenCents() {
                 <div className="projectContent">
                     <Project
                         title="My Agenda"
-                        about="Votre agenda en ligne"
+                        about={t('myAgendaAbout')}
                         cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
                         link={`/MyAgenda`}
                         loading="lazy"
@@ -236,7 +213,7 @@ function TenCents() {
                 <div className="projectContent">
                     <Project
                         title="Reptimorph"
-                        about="Vente de reptiles en ligne"
+                        about={t('reptimorphAboutShort')}
                         cover="https://i.ibb.co/svCQxS6K/Capture-d-cran-2025-09-30-013221.png"
                         link={`/Reptimorph`}
                         loading="lazy"

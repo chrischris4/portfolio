@@ -20,7 +20,7 @@ function Footer() {
                 .
             </p>
             <p className="pFooter">{t('footerEndTranslate')}</p>
-            <p className="byFooter">© 2023 by JOST Christopher</p>
+            <p className="byFooter">© {new Date().getFullYear()} by JOST Christopher</p>
         </div>
     );
 }

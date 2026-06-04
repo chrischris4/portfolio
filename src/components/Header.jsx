@@ -18,6 +18,7 @@ function Header() {
         '/EldenLore',
         '/MyAgenda',
         '/TenCents',
+        '/Flun',
         '/*',
     ];
     const linksPage = allLinksPages.includes(location.pathname);
@@ -113,7 +114,7 @@ function Header() {
                             <img
                                 className="headerGit"
                                 src="https://i.ibb.co/DVbScgL/icons8-github-128.png"
-                                alt=""
+                                alt="GitHub"
                             />
                         </a>
                     </div>
@@ -155,8 +156,8 @@ function Header() {
                                 {t('competenceLink')}
                             </ScrollLink>
                             <ScrollLink
-                                href="projectPersoLien"
-                                to="projectPersoLien"
+                                href="projectProLien"
+                                to="projectProLien"
                                 className="link desktopLink"
 
                                 spy={true}
@@ -164,7 +165,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                Projets
+                                {t('projectsLink')}
                             </ScrollLink>
                             <ScrollLink
                                 href="servicesLien"
@@ -176,7 +177,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                Services
+                                {t('servicesLink')}
                             </ScrollLink>
                             <ScrollLink
                                 href="reseauxLien"
@@ -231,7 +232,7 @@ function Header() {
                                 duration={800}
                                 onClick={closeMenu}
                             >
-                                Contact
+                                {t('contactTitleTranslate')}
                             </ScrollLink>
                         </>
                     )}
@@ -243,26 +244,25 @@ function Header() {
                     {t('buttonText')}
                 </div>
 
-                <div
-                    className={`headerIconClose ${isMenuOpen ? 'navIsOpen ' : ''
-                        }`}
+                <button
+                    className={`headerIconClose ${isMenuOpen ? 'navIsOpen ' : ''}`}
                     onClick={toggleMenu}
+                    aria-label="Fermer le menu"
                 >
-                    <span className="material-symbols-rounded headerIcon"
-                        >
+                    <span className="material-symbols-rounded headerIcon">
                         close
                     </span>
-                </div>
-                
-                <div
-                    className={`headerIconOpen ${isMenuOpen ? 'navIsOpen ' : ''
-                        }`}
+                </button>
+
+                <button
+                    className={`headerIconOpen ${isMenuOpen ? 'navIsOpen ' : ''}`}
                     onClick={toggleMenu}
+                    aria-label="Ouvrir le menu"
                 >
                     <span className="material-symbols-rounded headerIcon">
                         menu
                     </span>
-                </div>
+                </button>
             </div>
             <div
                 className={`overlayNav ${isMenuOpen ? 'showOverlayNav' : ''}`}
@@ -309,6 +309,18 @@ function Header() {
                             {t('competenceLink')}
                         </ScrollLink>
                         <ScrollLink
+                            href="projectProLien"
+                            to="projectProLien"
+                            className="link"
+
+                            spy={true}
+                            smooth={true}
+                            duration={800}
+                            onClick={closeMenu}
+                        >
+                            {t('projectsProLink')}
+                        </ScrollLink>
+                        <ScrollLink
                             href="projectPersoLien"
                             to="projectPersoLien"
                             className="link"
@@ -321,18 +333,6 @@ function Header() {
                             {t('projetPersoLink')}
                         </ScrollLink>
                         <ScrollLink
-                            href="projectLien"
-                            to="projectLien"
-                            className="link"
-
-                            spy={true}
-                            smooth={true}
-                            duration={800}
-                            onClick={closeMenu}
-                        >
-                            {t('projetLink')}
-                        </ScrollLink>
-                        <ScrollLink
                             href="servicesLien"
                             to="servicesLien"
                             className="link"
@@ -342,7 +342,18 @@ function Header() {
                             duration={800}
                             onClick={closeMenu}
                         >
-                            Services
+                            {t('servicesLink')}
+                        </ScrollLink>
+                        <ScrollLink
+                            href="contactLien"
+                            to="contactLien"
+                            className="link"
+                            spy={true}
+                            smooth={true}
+                            duration={800}
+                            onClick={closeMenu}
+                        >
+                            {t('contactTitleTranslate')}
                         </ScrollLink>
                     </>
                 )}
@@ -390,7 +401,7 @@ function Header() {
                     duration={800}
                     onClick={closeMenu}
                 >
-                    Contact
+                    {t('contactTitleTranslate')}
                 </ScrollLink>
                 <RouterLink
                     className="link"

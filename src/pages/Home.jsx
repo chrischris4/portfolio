@@ -22,76 +22,51 @@ function Home() {
 
     useEffect(() => {
         const observerLeft = new IntersectionObserver(
-            (entries, observerLeft) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateLeft"
-                        );
-                        observerLeft.unobserve(entry.target);
+                        entry.target.classList.add("animateLeft");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
-
-        const elementsToAnimateLeft = document.querySelectorAll(
-            '.about h3'
-        );
-
-        elementsToAnimateLeft.forEach((element) => {
-            observerLeft.observe(element);
-        });
 
         const observerRight = new IntersectionObserver(
-            (entries, observerRight) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateRight"
-                        );
-                        observerRight.unobserve(entry.target);
+                        entry.target.classList.add("animateRight");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.6,
-            }
+            { threshold: 0.6 }
         );
-
-        const elementsToAnimateRight =
-            document.querySelectorAll(' .cv');
-
-        elementsToAnimateRight.forEach((element) => {
-            observerRight.observe(element);
-        });
 
         const observer = new IntersectionObserver(
-            (entries, observer) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animate"
-                        );
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add("animate");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.1,
-            }
+            { threshold: 0.1 }
         );
 
-        const elementsToAnimate = document.querySelectorAll(
-            '.competence, .parcoursSection'
-        );
+        document.querySelectorAll('.about h3').forEach((el) => observerLeft.observe(el));
+        document.querySelectorAll('.cv').forEach((el) => observerRight.observe(el));
+        document.querySelectorAll('.competence, .parcoursSection').forEach((el) => observer.observe(el));
 
-        elementsToAnimate.forEach((element) => {
-            observer.observe(element);
-        });
-    },);
+        return () => {
+            observerLeft.disconnect();
+            observerRight.disconnect();
+            observer.disconnect();
+        };
+    }, []);
 
     const [activeAnimItems, setActiveAnimItems] = useState([]); // Tableau des éléments actifs
     const [specialAnim, setSpecialAnim] = useState(false); // État pour gérer la classe spéciale
@@ -191,6 +166,73 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <div id="projectProLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>{t('projectProTitle')}</h2>
+            </div>
+            <div id="projectsPro">
+                <div className="projectContent perso tout back front seo">
+                    <Project
+                        title="Reptimorph"
+                        about={t('reptimorphAbout')}
+                        cover="https://i.ibb.co/4GfjsMb/Capture-d-cran-2026-06-04-175459.png"
+                        link={`/Reptimorph`}
+                        loading="lazy"
+                        filtre="Nest / Next"
+                    />
+                </div>
+                <div className="projectContent perso tout back front seo">
+                    <Project
+                        title="Flun"
+                        about={t('flunAbout')}
+                        cover="https://i.ibb.co/BKzXWnhT/Flun-7.png"
+                        link={`/Flun`}
+                        loading="lazy"
+                        filtre="React Native / NestJS"
+                    />
+                </div>
+            </div>
+
+            <div id="projectPersoLien"></div>
+            <div className="sectionTitle">
+                <div className="styleTitle"></div>
+                <h2>{t('projetPersoTitle')}</h2>
+            </div>
+            <div id="projectsPerso">
+                <div className="projectContent perso tout back front seo">
+                    <Project
+                        title="Elden Lore"
+                        about={t('eldenLoreAbout')}
+                        cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
+                        link={`/EldenLore`}
+                        loading="lazy"
+                        filtre="PHP"
+                    />
+                </div>
+                <div className="projectContent perso tout back front seo">
+                    <Project
+                        title="10 Cents"
+                        about={t('tenCentsAbout')}
+                        cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
+                        link={`/TenCents`}
+                        loading="lazy"
+                        filtre="React / Node.js"
+                    />
+                </div>
+                <div className="projectContent perso tout back front seo">
+                    <Project
+                        title="My agenda"
+                        about={t('myAgendaAbout')}
+                        cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
+                        link={`/MyAgenda`}
+                        loading="lazy"
+                        filtre="React / Node.js"
+                    />
+                </div>
+            </div>
+
             <div id="parcoursLien"></div>
             <div className="sectionTitle w-2">
                 <div className="styleTitle"></div>
@@ -201,8 +243,7 @@ function Home() {
             </div>
             <div className="cv">
                 <a
-                    href="https://drive.google.com/uc?export=download&id=1ecMex1jX0gzYyHsVC318f37oYFZRog-x
-                        "
+                    href="https://drive.google.com/uc?export=download&id=1yXz77Fcgvn97PwtHmHhpi5sYRbkhJ16z"
                     download
                 >
                     <Button
@@ -239,57 +280,10 @@ function Home() {
                     list={['./assets/svg/docker-icon-svgrepo-com.svg', './assets/svg/figma-svgrepo-com.svg', './assets/svg/vscode-svgrepo-com.svg', './assets/svg/postman-icon-svgrepo-com.svg', './assets/svg/xampp-svgrepo-com.svg', './assets/svg/gitlab-svgrepo-com.svg']}
                 />
             </div>
-            <div id="projectPersoLien"></div>
-            <div className="sectionTitle">
-                <div className="styleTitle"></div>
-                <h2>{t('projetPersoTitle')}</h2>
-            </div>
-            <div id="projectsPerso">
-                <div className="projectContent perso tout back front seo">
-                    <Project
-                        title="Reptimorph"
-                        about="Vente de reptiles entre pros et particuliers"
-                        cover="https://i.ibb.co/svCQxS6K/Capture-d-cran-2025-09-30-013221.png"
-                        link={`/Reptimorph`}
-                        loading="lazy"
-                        filtre="Nest / Next"
-                    />
-                </div>
-                <div className="projectContent perso tout back front seo">
-                    <Project
-                        title="Elden Lore"
-                        about="Site sur l'univers d'Elden Ring"
-                        cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
-                        link={`/EldenLore`}
-                        loading="lazy"
-                        filtre="PHP"
-                    />
-                </div>
-                <div className="projectContent perso tout back front seo">
-                    <Project
-                        title="10 Cents"
-                        about="Jeu de hasard en ligne"
-                        cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
-                        link={`/TenCents`}
-                        loading="lazy"
-                        filtre="React / Node.js"
-                    />
-                </div>
-                <div className="projectContent perso tout back front seo">
-                    <Project
-                        title="My agenda"
-                        about="Votre agenda en ligne"
-                        cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
-                        link={`/MyAgenda`}
-                        loading="lazy"
-                        filtre="React / Node.js"
-                    />
-                </div>
-            </div>
             <div id="servicesLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
-                <h2>Services</h2>
+                <h2>{t('servicesTitle')}</h2>
             </div>
             <div className="servicesContent">
                 <Services
@@ -312,9 +306,10 @@ function Home() {
                         t('listWebTranslate1'),
                         t('listWebTranslate2'),
                         t('listWebTranslate3'),
+                        t('listWebTranslate4'),
                     ]}
                     p={t('servicesPTranslate')}
-                    link={['/TenCents', '/EldenLore']}
+                    link={['/Reptimorph', '/Flun', '/TenCents']}
                 />
                 <Services
                     title="SEO"
@@ -331,7 +326,7 @@ function Home() {
                         t('listSeoTranslate3'),
                     ]}
                     p={t('servicesPTranslate')}
-                    link={['/NinaCarducci']}
+                    link={['/Reptimorph', '/EldenLore']}
                 />
             </div>
 

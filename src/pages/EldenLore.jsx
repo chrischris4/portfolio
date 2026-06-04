@@ -8,6 +8,7 @@ import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import { useTranslation } from 'react-i18next';
 import { ShootingStars } from "../components/ui/shooting-star";
 import { StarsBackground } from "../components/ui/star-background";
+import PageInfo from '../components/PageInfo';
 // import { Spotlight } from "../components/ui/spotlight-new";
 
 
@@ -21,74 +22,51 @@ function EldenLore() {
 
     useEffect(() => {
         const observerRight = new IntersectionObserver(
-            (entries, observerRight) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateRight"
-                        );
-                        observerRight.unobserve(entry.target);
+                        entry.target.classList.add("animateRight");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
-
-        const elementsToAnimateRight = document.querySelectorAll(
-            '.pageh1'
-        );
-
-        elementsToAnimateRight.forEach((element) => {
-            observerRight.observe(element);
-        });
 
         const observerUp = new IntersectionObserver(
-            (entries, observerUp) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateUp"
-                        );
-                        observerUp.unobserve(entry.target);
+                        entry.target.classList.add("animateUp");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
 
-        const elementsToAnimateUp = document.querySelectorAll('.pageGithub');
-
-        elementsToAnimateUp.forEach((element) => {
-            observerUp.observe(element);
-        });
         const observer = new IntersectionObserver(
-            (entries, observer) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animate"
-                        );
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add("animate");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.2,
-            }
+            { threshold: 0.2 }
         );
 
-        const elementsToAnimate = document.querySelectorAll(
-            '.pageInfo, .projectContent'
-        );
+        document.querySelectorAll('.pageh1').forEach((el) => observerRight.observe(el));
+        document.querySelectorAll('.pageGithub').forEach((el) => observerUp.observe(el));
+        document.querySelectorAll('.pageInfo, .projectContent').forEach((el) => observer.observe(el));
 
-        elementsToAnimate.forEach((element) => {
-            observer.observe(element);
-        });
-    },);
+        return () => {
+            observerRight.disconnect();
+            observerUp.disconnect();
+            observer.disconnect();
+        };
+    }, []);
 
     return (
         <div className="page-container">
@@ -120,7 +98,7 @@ function EldenLore() {
                         <img
                             className="imgGithub"
                             src="https://i.ibb.co/DVbScgL/icons8-github-128.png"
-                            alt=""
+                            alt="GitHub"
                         />
                     </a>
                 </div>
@@ -135,83 +113,13 @@ function EldenLore() {
                     <li>Apache</li>
                 </ul>
             </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
-                        alt="eldenLore"
-                        loading="lazy"
-                    />
-                    <p>{t('pageInfoEldenLore')}</p>
-                </div>
-            </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/VqjMf3T/Elden-Lore-Article.webp"
-                        alt="eldenLore"
-                        loading="lazy"
-                    />
-                    <p>{t('pageInfoEldenLore2')}</p>
-                </div>
-            </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/fHH23Hw/Elden-Lore2.webp"
-                        alt="eldenLore"
-                        loading="lazy"
-                    />
-                    <p>{t('pageInfoEldenLore3')}</p>
-                </div>
-            </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/TKDGmV0/elden-Lore-User.webp"
-                        alt="eldenLore"
-                        loading="lazy"
-                    />
-                    <p>{t('pageInfoEldenLore4')}</p>
-                </div>
-            </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/Jxs3bhB/Elden-Lore-Commentary.webp"
-                        alt="eldenLore"
-                        loading="lazy"
-                    />
-                    <p>{t('pageInfoEldenLore5')}</p>
-                </div>
-            </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/hWgZ3rP/elden-Lore-Edit.webp"
-                        alt="eldenLore"
-                        loading="lazy"
-                    />
-                    <p>{t('pageInfoEldenLore7')}</p>
-                </div>
-            </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/BG26mFC/elden-Lore-Lore.webp"
-                        alt="eldenLore"
-                        loading="lazy"
-                    />
-                    <p>{t('pageInfoEldenLore6')}</p>
-                </div>
-            </div>
+            <PageInfo image="https://i.ibb.co/z2dYpT7/elden-Lore.webp" imageAlt="eldenLore" text={t('pageInfoEldenLore')} />
+            <PageInfo image="https://i.ibb.co/VqjMf3T/Elden-Lore-Article.webp" imageAlt="eldenLore" text={t('pageInfoEldenLore2')} />
+            <PageInfo image="https://i.ibb.co/fHH23Hw/Elden-Lore2.webp" imageAlt="eldenLore" text={t('pageInfoEldenLore3')} />
+            <PageInfo image="https://i.ibb.co/TKDGmV0/elden-Lore-User.webp" imageAlt="eldenLore" text={t('pageInfoEldenLore4')} />
+            <PageInfo image="https://i.ibb.co/Jxs3bhB/Elden-Lore-Commentary.webp" imageAlt="eldenLore" text={t('pageInfoEldenLore5')} />
+            <PageInfo image="https://i.ibb.co/hWgZ3rP/elden-Lore-Edit.webp" imageAlt="eldenLore" text={t('pageInfoEldenLore7')} />
+            <PageInfo image="https://i.ibb.co/BG26mFC/elden-Lore-Lore.webp" imageAlt="eldenLore" text={t('pageInfoEldenLore6')} />
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
@@ -221,7 +129,7 @@ function EldenLore() {
                 <div className="projectContent">
                     <Project
                         title="10 Cents"
-                        about="Jeu de hasard en ligne"
+                        about={t('tenCentsAbout')}
                         cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
                         link={`/TenCents`}
                         loading="lazy"
@@ -231,7 +139,7 @@ function EldenLore() {
                 <div className="projectContent">
                     <Project
                         title="My Agenda"
-                        about="Votre agenda en ligne"
+                        about={t('myAgendaAbout')}
                         cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
                         link={`/MyAgenda`}
                         loading="lazy"
@@ -241,7 +149,7 @@ function EldenLore() {
                 <div className="projectContent">
                     <Project
                         title="Reptimorph"
-                        about="Vente de reptiles en ligne"
+                        about={t('reptimorphAboutShort')}
                         cover="https://i.ibb.co/svCQxS6K/Capture-d-cran-2025-09-30-013221.png"
                         link={`/Reptimorph`}
                         loading="lazy"

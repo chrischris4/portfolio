@@ -17,58 +17,47 @@ function Services(props) {
     };
 
     const linkMap = {
+        '/Reptimorph': t('linkReptimorph'),
+        '/Flun': t('linkFlun'),
         '/TenCents': t('linkBackend'),
         '/EldenLore': t('linkFrontend'),
-        '/NinaCarducci': t('linkSEO'),
+        '/MyAgenda': t('linkSEO'),
     };
 
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            (entries, observer) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animate"
-                        );
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add("animate");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.1,
-            }
+            { threshold: 0.1 }
         );
 
-        const elementsToAnimate = document.querySelectorAll('.services');
-
-        elementsToAnimate.forEach((element) => {
-            observer.observe(element);
-        });
         const observerUp = new IntersectionObserver(
-            (entries, observerUp) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateUp"
-                        );
-                        observerUp.unobserve(entry.target);
+                        entry.target.classList.add("animateUp");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
 
-        const elementsToAnimateUp = document.querySelectorAll(
-            '.btnLi, .normalLi, .linkCollapse, .collapse'
-        );
+        document.querySelectorAll('.services').forEach((el) => observer.observe(el));
+        document.querySelectorAll('.btnLi, .normalLi, .linkCollapse, .collapse').forEach((el) => observerUp.observe(el));
 
-        elementsToAnimateUp.forEach((element) => {
-            observerUp.observe(element);
-        });
-    },);
+        return () => {
+            observer.disconnect();
+            observerUp.disconnect();
+        };
+    }, []);
 
     return (
         <div className="services" onClick={toggleCollapse}>

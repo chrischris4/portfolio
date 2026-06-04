@@ -8,6 +8,7 @@ import RichSnippetAuthor from '../components/RichSnippetAuthor';
 import { useTranslation } from 'react-i18next';
 import { ShootingStars } from "../components/ui/shooting-star";
 import { StarsBackground } from "../components/ui/star-background";
+import PageInfo from '../components/PageInfo';
 
 function Reptimorph() {
     const { t } = useTranslation();
@@ -19,74 +20,51 @@ function Reptimorph() {
 
     useEffect(() => {
         const observerRight = new IntersectionObserver(
-            (entries, observerRight) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateRight"
-                        );
-                        observerRight.unobserve(entry.target);
+                        entry.target.classList.add("animateRight");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
-
-        const elementsToAnimateRight = document.querySelectorAll(
-            '.pageh1'
-        );
-
-        elementsToAnimateRight.forEach((element) => {
-            observerRight.observe(element);
-        });
 
         const observerUp = new IntersectionObserver(
-            (entries, observerUp) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animateUp"
-                        );
-                        observerUp.unobserve(entry.target);
+                        entry.target.classList.add("animateUp");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.5,
-            }
+            { threshold: 0.5 }
         );
 
-        const elementsToAnimateUp = document.querySelectorAll('.pageGithub');
-
-        elementsToAnimateUp.forEach((element) => {
-            observerUp.observe(element);
-        });
         const observer = new IntersectionObserver(
-            (entries, observer) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animate"
-                        );
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add("animate");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.2,
-            }
+            { threshold: 0.2 }
         );
 
-        const elementsToAnimate = document.querySelectorAll(
-            '.pageInfo, .projectContent'
-        );
+        document.querySelectorAll('.pageh1').forEach((el) => observerRight.observe(el));
+        document.querySelectorAll('.pageGithub').forEach((el) => observerUp.observe(el));
+        document.querySelectorAll('.pageInfo, .projectContent').forEach((el) => observer.observe(el));
 
-        elementsToAnimate.forEach((element) => {
-            observer.observe(element);
-        });
-    },);
+        return () => {
+            observerRight.disconnect();
+            observerUp.disconnect();
+            observer.disconnect();
+        };
+    }, []);
 
     return (
         <div className="page-container">
@@ -120,7 +98,7 @@ function Reptimorph() {
                 </div>
             </div>
             <a href="https://reptimorph.fr" target="_blank"
-                rel="noreferrer" className=' flex justify-center w-[90%] lg:w-[80%] mt-5 mx-auto bg-white/80 text-black p-3 rounded-lg font-medium text-lg hover:bg-gray-200'>Visiter le site</a>
+                rel="noreferrer" className=' flex justify-center w-[90%] lg:w-[80%] mt-5 mx-auto bg-white/80 text-black p-3 rounded-lg font-medium text-lg hover:bg-gray-200'>{t('visitWebsiteButton')}</a>
             <div className="projetAbout">
                 <h2 className="projetTitleAbout">{t('pageh2')}</h2>
                 <ul>
@@ -137,33 +115,50 @@ function Reptimorph() {
                     <li>0Auth</li>
                 </ul>
             </div>
-            <div className="pageInfo">
-                <div className="pageInfoContent">
-                    <img
-                        className="pageImg"
-                        src="https://i.ibb.co/svCQxS6K/Capture-d-cran-2025-09-30-013221.png"
-                        alt="Reptimorph"
-                        loading="lazy"
-                    />
-                    <div className="pageInfoDesc">
-                        <p>
-                            Reptimorph est un site mettant en relation des éleveurs et particuliers afin de vendre leurs reptiles / poissons et autres matériels.
-                        </p>
-                        <ul>
-                            <li>
-                                Nous avons choisis Nest coté back afin d'avoir un controle robuste sur les données
-                            </li>
-                            <li>
-                                Coté front nous utilisons Next, pour ses performances et rendu SSR permettant un référencement au top
-                            </li>
-                            <li>
-                                Concernant les transaction, nous utilisons stripe
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p className='w-[90%] lg:w-[80%] mx-auto text-center mt-6'>Une présentation du projet plus en détails sera disponible bientôt..</p>
+            <PageInfo
+                image="https://i.ibb.co/4GfjsMb/Capture-d-cran-2026-06-04-175459.png"
+                imageAlt="Reptimorph"
+                text={t('reptimorphPageInfo1Text')}
+                items={[
+                    t('reptimorphPageInfo1Item1'),
+                    t('reptimorphPageInfo1Item2'),
+                    t('reptimorphPageInfo1Item3'),
+                    t('reptimorphPageInfo1Item4'),
+                ]}
+            />
+            <PageInfo
+                image="https://i.ibb.co/sdPFZw55/Capture-d-cran-2026-06-04-175522.png"
+                text={t('reptimorphPageInfo2Text')}
+                items={[
+                    t('reptimorphPageInfo2Item1'),
+                    t('reptimorphPageInfo2Item2'),
+                    t('reptimorphPageInfo2Item3'),
+                    t('reptimorphPageInfo2Item4'),
+                    t('reptimorphPageInfo2Item5'),
+                ]}
+            />
+            <PageInfo
+                image="https://i.ibb.co/4gNwF051/Capture-d-cran-2026-06-04-175550.png"
+                text={t('reptimorphPageInfo3Text')}
+                items={[
+                    t('reptimorphPageInfo3Item1'),
+                    t('reptimorphPageInfo3Item2'),
+                    t('reptimorphPageInfo3Item3'),
+                    t('reptimorphPageInfo3Item4'),
+                ]}
+            />
+            <PageInfo
+                image="https://i.ibb.co/zTNNmMY3/Capture-d-cran-2026-06-04-175615.png"
+                text={t('reptimorphPageInfo4Text')}
+                items={[
+                    t('reptimorphPageInfo4Item1'),
+                    t('reptimorphPageInfo4Item2'),
+                    t('reptimorphPageInfo4Item3'),
+                    t('reptimorphPageInfo4Item4'),
+                    t('reptimorphPageInfo4Item5'),
+                    t('reptimorphPageInfo4Item6'),
+                ]}
+            />
             <div id="othersLien"></div>
             <div className="sectionTitle">
                 <div className="styleTitle"></div>
@@ -173,7 +168,7 @@ function Reptimorph() {
                 <div className="projectContent">
                     <Project
                         title="10 Cents"
-                        about="Jeu de hasard en ligne"
+                        about={t('tenCentsAbout')}
                         cover="https://i.ibb.co/BtNkKrp/ten-Cents-Mini.webp"
                         link={`/TenCents`}
                         loading="lazy"
@@ -183,7 +178,7 @@ function Reptimorph() {
                 <div className="projectContent">
                     <Project
                         title="My Agenda"
-                        about="Votre agenda en ligne"
+                        about={t('myAgendaAbout')}
                         cover="https://i.ibb.co/Pg9WvgH/myAgenda.webp"
                         link={`/MyAgenda`}
                         loading="lazy"
@@ -193,7 +188,7 @@ function Reptimorph() {
                 <div className="projectContent">
                     <Project
                         title="Elden Lore"
-                        about="Site sur l'univers d'Elden Ring"
+                        about={t('eldenLoreAbout')}
                         cover="https://i.ibb.co/z2dYpT7/elden-Lore.webp"
                         link={`/EldenLore`}
                         loading="lazy"

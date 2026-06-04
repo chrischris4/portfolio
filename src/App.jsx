@@ -9,6 +9,7 @@ import EldenLore from './pages/EldenLore';
 import TenCents from './pages/TenCents';
 import MyAgenda from './pages/MyAgenda';
 import Reptimorph from './pages/Reptimorph';
+import Flun from './pages/Flun';
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/Reptimorph" element={<Reptimorph />} />
                     <Route path="/TenCents" element={<TenCents />} />
                     <Route path="/EldenLore" element={<EldenLore />} />
+                    <Route path="/Flun" element={<Flun />} />
                     <Route path="/*" element={<Error404 />} />
                 </Routes>
                 <Footer />

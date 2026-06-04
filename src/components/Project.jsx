@@ -8,27 +8,21 @@ function Project(props) {
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            (entries, observer) => {
+            (entries, obs) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add(
-                            "animate"
-                        );
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add("animate");
+                        obs.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.2,
-            }
+            { threshold: 0.2 }
         );
 
-        const elementsToAnimate = document.querySelectorAll('.projectLink');
+        document.querySelectorAll('.projectLink').forEach((el) => observer.observe(el));
 
-        elementsToAnimate.forEach((element) => {
-            observer.observe(element);
-        });
-    },);
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <RouterLink
