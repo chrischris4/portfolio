@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm \"c:/Users/jostc/Desktop/portfolio/src/components/GlobeDemo.jsx\")",
+      "WebFetch(domain:www.christopher-jost.fr)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\jostc\\Desktop\\portfolio\\src\\components"
+    ]
+  }
+}
