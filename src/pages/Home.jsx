@@ -107,12 +107,12 @@ function Home() {
     return (
         <div className="page-container">
             <MetaTags
-                title="Portfolio - JOST Christopher"
-                description="Je suis Christopher JOST, un développeur FullStack spécialisé dans la création d'applications web dynamiques. Explorez mon portfolio, mes projets et découvrez mon parcours de formation en développement web. Contactez-moi pour collaborer sur des projets innovants."
-                keywords="Jost Christopher, développeur, FullStack, application, react, express, mongodb, frontend, backend, portfolio"
-                author="Jost Christopher"
-                og_title="Portfolio - JOST Christopher"
-                og_description="Découvrez mon portfolio qui met en valeur mes projets créatifs et mes compétences en développement web."
+                title="Christopher Jost | Développeur FullStack React & IA"
+                description="Développeur FullStack à Montpellier : React, Next.js, NestJS, React Native. J'intègre l'IA dans mes produits et l'utilise au quotidien dans mon workflow."
+                keywords="Jost Christopher, portfolio développeur, développeur fullstack, développeur react, next.js, nestjs, react native, typescript, node.js, prisma, postgresql, intégration ia, ia générative, développement assisté par ia, openai, application web, application mobile, seo, montpellier"
+                author="Christopher Jost"
+                og_title="Christopher Jost | Développeur FullStack React & IA"
+                og_description="Je conçois des applications web et mobiles complètes : marketplaces Next.js / NestJS, apps React Native, fonctionnalités IA. L'IA fait partie de mon quotidien de développeur, conception, code, tests et itérations plus rapides."
                 og_image="https://www.christopher-jost.fr/JC.ico"
                 og_url="https://www.christopher-jost.fr/"
                 og_type="website"
